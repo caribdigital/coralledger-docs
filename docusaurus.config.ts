@@ -138,10 +138,6 @@ const config: Config = {
               label: 'Contact Us',
               href: 'mailto:support@coralledger.com',
             },
-            {
-              label: 'System Status',
-              href: 'https://status.coralledger.com',
-            },
           ],
         },
       ],

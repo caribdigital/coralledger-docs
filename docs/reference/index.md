@@ -52,4 +52,3 @@ Definitions of common VAT and compliance terms:
 
 Contact CoralLedger Support:
 - **Email**: support@coralledger.com
-- **Status**: status.coralledger.com
