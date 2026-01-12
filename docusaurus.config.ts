@@ -127,7 +127,7 @@ const config: Config = {
             },
             {
               label: 'Pricing',
-              href: 'https://coralledger.com/#pricing',
+              href: 'https://www.coralledger.com/comply#pricing',
             },
           ],
         },
