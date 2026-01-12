@@ -2,6 +2,17 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// Environment-based configuration
+const isStaging = process.env.VERCEL_ENV === 'preview' || process.env.SITE_ENV === 'staging';
+
+const siteUrl = process.env.SITE_URL || (isStaging
+  ? 'https://stg-docs.coralledger.com'
+  : 'https://docs.coralledger.com');
+
+const complyUrl = process.env.COMPLY_URL || (isStaging
+  ? 'https://stg-comply.coralledger.com'
+  : 'https://comply.coralledger.com');
+
 const config: Config = {
   title: 'CoralLedger Comply Documentation',
   tagline: 'VAT Compliance Made Simple for The Bahamas',
@@ -11,7 +22,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://docs.coralledger.com',
+  url: siteUrl,
   baseUrl: '/',
 
   organizationName: 'caribdigital',
@@ -19,6 +30,10 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  customFields: {
+    complyUrl: complyUrl,
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -63,7 +78,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://comply.coralledger.com',
+          href: complyUrl,
           label: 'Open Comply',
           position: 'right',
         },
@@ -104,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'Comply',
-              href: 'https://comply.coralledger.com',
+              href: complyUrl,
             },
             {
               label: 'Point POS',

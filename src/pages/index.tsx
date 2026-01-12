@@ -10,6 +10,7 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const complyUrl = siteConfig.customFields?.complyUrl as string;
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -26,7 +27,7 @@ function HomepageHeader() {
           <Link
             className="button button--outline button--lg"
             style={{marginLeft: '1rem', color: 'white', borderColor: 'white'}}
-            to="https://comply.coralledger.com">
+            to={complyUrl}>
             Open Comply App
           </Link>
         </div>
