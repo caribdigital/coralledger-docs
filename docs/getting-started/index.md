@@ -35,4 +35,3 @@ CoralLedger Comply is a VAT compliance platform built specifically for businesse
 
 - **Email**: support@coralledger.com
 - **Documentation**: You're already here!
-- **Status**: [status.coralledger.com](https://status.coralledger.com)

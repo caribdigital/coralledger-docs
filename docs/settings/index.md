@@ -75,7 +75,6 @@ CoralLedger retains your data for:
 
 - **Email**: support@coralledger.com
 - **Documentation**: docs.coralledger.com
-- **Status**: status.coralledger.com
 
 ## Next Steps
 
