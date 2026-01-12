@@ -123,7 +123,7 @@ const config: Config = {
             },
             {
               label: 'Point POS',
-              href: 'https://point.coralledger.com',
+              href: 'https://www.coralledger.com/point',
             },
             {
               label: 'Pricing',
