@@ -28,15 +28,23 @@ The Firm Portal enables accounting professionals to manage VAT compliance for mu
 - Manage client users and permissions
 - Transfer clients between staff
 
-### Bulk Operations
+### Batch Operations
 - Import transactions for multiple clients
-- Generate multiple returns
-- Batch export for filing
+- **Batch filing** - File multiple returns in one workflow
+- Generate aggregated reports
+- Bulk client import via CSV
+
+### Firm Analytics
+- Cross-client compliance trends
+- Aggregate VAT metrics
+- Staff productivity tracking
+- Performance benchmarks
 
 ### Team Collaboration
 - Assign clients to team members
-- Track work status
+- Track work status and time
 - Review and approve returns
+- ROI calculator
 - Audit trail of all actions
 
 ## Getting Started
@@ -66,4 +74,6 @@ Lock in $99/mo for life. Limited to 20 spots.
 ## Next Steps
 
 - [Set up your first client](/docs/getting-started/setup-business)
+- [Use batch filing](/docs/firm-portal/batch-filing)
+- [View firm analytics](/docs/firm-portal/analytics)
 - [Import client transactions](/docs/transactions/import-csv)

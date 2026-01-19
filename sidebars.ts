@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'transactions/index',
         'transactions/import-csv',
+        'transactions/manual-entry',
         'transactions/categorization',
       ],
     },
@@ -41,11 +42,12 @@ const sidebars: SidebarsConfig = {
       link: {
         type: 'generated-index',
         title: 'VAT Returns',
-        description: 'Generate and submit VAT returns',
+        description: 'Generate, validate, and submit VAT returns',
       },
       items: [
         'vat-returns/index',
         'vat-returns/generate-return',
+        'vat-returns/return-preview',
         'vat-returns/submit-return',
       ],
     },
@@ -60,6 +62,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'compliance/index',
         'compliance/compliance-score',
+        'compliance/intelligence-dashboard',
+        'compliance/vat-2025-reforms',
       ],
     },
     {
@@ -72,6 +76,8 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'firm-portal/index',
+        'firm-portal/batch-filing',
+        'firm-portal/analytics',
       ],
     },
     {
@@ -80,7 +86,7 @@ const sidebars: SidebarsConfig = {
       link: {
         type: 'generated-index',
         title: 'Integrations',
-        description: 'Connect with Point POS and other systems',
+        description: 'Connect with Point POS, Manager, and other systems',
       },
       items: [
         'integrations/index',
@@ -96,6 +102,8 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'settings/index',
+        'settings/account',
+        'settings/notifications',
       ],
     },
     {

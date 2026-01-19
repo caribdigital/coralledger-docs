@@ -16,29 +16,30 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Designed specifically for VAT compliance under The Bahamas VAT Act 2014
-        and 2025 reforms. Handles standard (10%), reduced (5%), zero-rated, and
-        exempt supplies.
+        and 2025 reforms. Supports standard (10%), reduced (5%), zero-rated, and
+        exempt supplies with dedicated compliance dashboards.
       </>
     ),
   },
   {
-    title: 'Smart Categorization',
+    title: 'AI Intelligence',
     icon: '🤖',
     description: (
       <>
-        AI-powered transaction categorization learns from your business patterns.
-        Automatically assigns VAT rates based on descriptions, vendors, and
-        industry rules.
+        AI-powered Intelligence Dashboard with compliance grading, penalty risk
+        assessment, vendor analysis, and data quality scoring. Smart transaction
+        categorization learns from your patterns.
       </>
     ),
   },
   {
-    title: 'One-Click Returns',
+    title: 'Validated Returns',
     icon: '📋',
     description: (
       <>
-        Generate VAT returns ready for submission to the Comptroller. Automatic
-        calculations, validation checks, and PDF export for your records.
+        Generate VAT returns with 10-point pre-flight validation. Preview totals,
+        catch errors before filing, and export in PDF, CSV, or XML formats for
+        electronic submission.
       </>
     ),
   },
@@ -47,18 +48,18 @@ const FeatureList: FeatureItem[] = [
     icon: '✅',
     description: (
       <>
-        Real-time compliance score from A+ to F. Track your VAT compliance health
-        with anomaly detection and actionable improvement suggestions.
+        Real-time compliance score from A+ to F based on data quality, timeliness,
+        accuracy, and completeness. Anomaly detection alerts you to potential issues.
       </>
     ),
   },
   {
-    title: 'Multi-Client Support',
+    title: 'Firm Portal',
     icon: '🏢',
     description: (
       <>
-        Perfect for accounting firms and bookkeepers. Manage multiple client
-        businesses from a single dashboard with the Firm Portal.
+        Perfect for accounting firms. Batch filing for multiple clients, firm-wide
+        analytics, staff productivity tracking, and centralized deadline management.
       </>
     ),
   },
@@ -67,8 +68,8 @@ const FeatureList: FeatureItem[] = [
     icon: '🔗',
     description: (
       <>
-        Seamless sync with CoralLedger Point POS. Automatic transaction import,
-        real-time updates, and daily reconciliation.
+        Real-time sync with CoralLedger Point POS. Store-level controls, automatic
+        retry on failures, sync health monitoring, and daily reconciliation reports.
       </>
     ),
   },

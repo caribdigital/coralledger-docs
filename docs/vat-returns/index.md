@@ -40,10 +40,24 @@ Each VAT return includes:
 
 - **One-Click Generation** - Generate returns from your imported transactions
 - **Automatic Calculations** - All totals computed automatically
-- **Validation Checks** - Catch errors before submission
-- **Export Formats** - PDF for records, data for filing
+- **Return Preview** - Review totals and validation before filing
+- **10-Point Validation** - Comprehensive pre-flight checks
+- **Export Formats** - PDF, CSV, and XML for electronic filing
+- **Amendment Support** - Correct filed returns when needed
+- **Payment Tracking** - Record and track VAT payments
+
+## Return Preview & Validation
+
+Before submitting, preview your return with:
+- Period summary and totals
+- Output VAT, Input VAT, Net VAT breakdown
+- Transaction count verification
+- 10 validation checks (blocking and warning)
+
+Learn more about [Return Preview & Validation](/docs/vat-returns/return-preview).
 
 ## Next Steps
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)
+- [Preview and validate](/docs/vat-returns/return-preview)
 - [Submit to the Comptroller](/docs/vat-returns/submit-return)
