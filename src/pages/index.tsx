@@ -18,6 +18,9 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p style={{color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', marginBottom: '1rem'}}>
+          Free beta through September 2026 — all features included
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"

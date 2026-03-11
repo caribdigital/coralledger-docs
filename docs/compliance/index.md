@@ -63,9 +63,18 @@ Receive notifications for:
 4. **Address alerts promptly** - Don't let issues accumulate
 5. **File on time** - Before the 28th deadline
 
+## Filing Deadlines
+
+VAT returns are due by the **28th of the month** following the period end:
+- **Monthly filers**: Due the 28th of each month
+- **Quarterly filers**: Due the 28th of the month after quarter end
+
+The dashboard tracks upcoming deadlines across all your clients and highlights overdue returns.
+
 ## Next Steps
 
 - [Understand your compliance score](/docs/compliance/compliance-score)
 - [Explore the Intelligence Dashboard](/docs/compliance/intelligence-dashboard)
 - [Learn about 2025 VAT reforms](/docs/compliance/vat-2025-reforms)
 - [View VAT rates reference](/docs/reference/vat-rates)
+- [Security features](/docs/security)

@@ -114,23 +114,24 @@ Automate report generation and delivery:
 
 Access at **Settings > Report Scheduling**.
 
-## Subscription
+## Appearance
 
-### Current Plan
-View your subscription details:
-- Plan tier
-- Billing cycle
-- Next payment date
+Customize the look and feel:
+- Theme selection (Light, Dark, System)
+- Sidebar collapse preference
+- Compact mode
 
-### Upgrade/Downgrade
-- Compare plan features
-- Change your subscription
-- View billing history
+Access at **Settings > Appearance**. Learn more: [Appearance Settings](/docs/settings/appearance)
 
-### Payment Method
-- Update credit card
-- PayPal configuration
-- Billing address
+## Subscription & Licensing
+
+Manage your subscription and license:
+- View current plan and status
+- Usage statistics
+- License key activation
+- Plan comparison
+
+Access at **Settings > License**. Learn more: [Billing & Licensing](/docs/billing)
 
 ## Data Management
 
@@ -163,4 +164,6 @@ Access at **Settings > Privacy**.
 
 - [Configure account settings](/docs/settings/account)
 - [Set up notifications](/docs/settings/notifications)
+- [Customize appearance](/docs/settings/appearance)
+- [Manage your license](/docs/billing/licensing)
 - [Tour the dashboard](/docs/getting-started/dashboard-tour)

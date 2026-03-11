@@ -60,3 +60,4 @@ Every transaction maintains a complete history of:
 - [Import transactions from CSV](/docs/transactions/import-csv)
 - [Enter transactions manually](/docs/transactions/manual-entry)
 - [Understand VAT categorization](/docs/transactions/categorization)
+- [Manage credit notes](/docs/transactions/credit-notes)

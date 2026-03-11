@@ -14,68 +14,74 @@ Enter individual transactions directly when you don't have a CSV file or need to
 - Adding missing transactions
 - Correcting data not in your import file
 - Quick one-off entries
+- Mixed VAT rate transactions (multi-line mode)
 
 ## Accessing Manual Entry
 
-Navigate to **Transactions > Manual Entry** or use the quick action from the dashboard.
+Navigate to **VAT Entry** from the main navigation, or use the quick action from the dashboard.
 
-## Transaction Types
+## Entry Modes
 
-Select the appropriate transaction type:
+### Quick Entry
+Simple single-line transaction entry for straightforward transactions at a single VAT rate.
 
-| Type | Description | VAT Treatment |
-|------|-------------|---------------|
-| **Sale** | Revenue from goods/services sold | Output VAT collected |
-| **Purchase** | Business expenses | Input VAT claimed |
-| **Import** | Goods imported into The Bahamas | Import VAT at border |
-| **Export** | Goods exported from The Bahamas | Zero-rated |
-| **Credit Note** | Adjustment to previous sale | Reduces output VAT |
-| **Refund** | Customer refund issued | Reduces output VAT |
+### Advanced Mode
+Toggle to advanced mode for additional fields including export documentation, detailed descriptions, and reference numbers.
+
+### Multi-Line Mode
+For transactions that span multiple VAT rates (e.g., a sale containing both standard and reduced-rate items):
+1. Enable multi-line mode
+2. Add line items with individual VAT classifications
+3. Each line can have its own VAT rate (Standard 10%, Reduced 5%, Zero-Rated, Exempt)
 
 ## Entering a Transaction
 
 ### Step 1: Select Transaction Type
-Choose from Sale, Purchase, Import, Export, Credit Note, or Refund.
+Choose from Sale, Purchase, Import, Export, Credit Note, or Debit Note.
 
-### Step 2: Enter Amount
-Enter the transaction amount. The system will:
-- Display the applicable VAT rate
-- Calculate VAT automatically
-- Show the VAT-inclusive total
+### Step 2: Enter Details
+- **Business/Customer Name** — Start typing for autocomplete suggestions
+- **Transaction Date** — Defaults to today (future dates allowed)
+- **Description** — Add transaction details
 
-### Step 3: Select Category
-Choose from 30+ Bahamas-specific VAT categories:
-- Standard Rate (10%)
-- Reduced Rate (5%) - e.g., electricity, water
-- Zero-Rated - e.g., exports, basic food items
-- Exempt - e.g., financial services
+### Step 3: Enter Amount
+- **Net or Gross toggle** — Switch between entering the amount before or after VAT
+- **Amount** — The transaction value
+- **VAT Rate** — Select 0%, 5%, or 10%
+- The system automatically calculates the VAT amount and total
 
-### Step 4: Add Details
-- **Vendor/Customer**: Start typing for autocomplete suggestions
-- **Description**: Add transaction details
-- **Date**: Transaction date (defaults to today)
-- **Reference**: Optional invoice or receipt number
+### Step 4: Additional Fields (Advanced Mode)
+For zero-rated exports:
+- **Reference Number** — Invoice or customs reference
+- **Customer Country Code** — Destination country
+- **Shipping Tracking** — Tracking number for export documentation
 
 ### Step 5: Review and Save
-- Verify the VAT calculation
-- Check the category assignment
+- Verify the VAT breakdown (subtotal, VAT, total)
 - Click **Save Transaction**
 
-## Immediate Feedback
+:::info April 2026 VAT Rate Transition
+The system includes an April 2026 rate transition notice. Transactions near the transition date will show applicable rate guidance.
+:::
 
-After saving, you'll see:
-- Confirmation of the transaction
-- Impact on your current period totals
-- Any compliance alerts triggered
+## Fraud Detection
+
+The system monitors entries and may flag:
+- Unusually large amounts
+- Patterns inconsistent with historical data
+- Rapid repeated entries
+
+Flagged transactions are still saved but generate alerts for review.
 
 ## Tips for Accurate Entry
 
-1. **Use consistent vendor names** - Helps with reporting and categorization
-2. **Include invoice references** - Supports audit trail requirements
-3. **Verify VAT rates** - Especially for reduced-rate items
-4. **Enter promptly** - Don't let transactions accumulate
+1. **Use consistent vendor names** — Helps with reporting and auto-suggestions
+2. **Include invoice references** — Supports audit trail requirements
+3. **Verify VAT rates** — Especially for reduced-rate items requiring a food store license
+4. **Enter promptly** — Don't let transactions accumulate near filing deadlines
 
 ## Next Steps
 
 - [View your transactions](/docs/transactions)
+- [Import from CSV](/docs/transactions/import-csv)
 - [Generate a VAT return](/docs/vat-returns/generate-return)

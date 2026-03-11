@@ -1,0 +1,55 @@
+---
+sidebar_position: 5
+title: Shared Reports
+description: Share reports securely with clients and auditors
+---
+
+# Shared Reports
+
+Generate secure, shareable links to reports for clients, auditors, or team members without requiring them to have a CoralLedger Comply account.
+
+## How It Works
+
+1. Generate a report (VAT return, transaction list, etc.)
+2. Create a shared link with optional security controls
+3. Send the link to your recipient
+4. They access the report through a secure viewer
+
+## Security Options
+
+### Password Protection
+Add a password that recipients must enter before viewing the report. Share the password through a separate channel (e.g., phone call, text message).
+
+### Download Limits
+Set a maximum number of downloads to prevent unlimited redistribution.
+
+### Expiration Date
+Set an expiration date after which the link becomes inactive.
+
+## Shared Report Viewer
+
+Recipients who open a shared link see:
+- Report name and period
+- Report description
+- Format information
+- Who shared the report
+- Preview button (PDF reports)
+- Download button
+
+## Access Controls
+
+- Links that exceed their download limit are automatically disabled
+- Expired links show an "Access Denied" message
+- Invalid or tampered tokens are rejected
+- All downloads are tracked and counted
+
+## Use Cases
+
+- **Client delivery** — Share VAT returns with business clients
+- **Auditor access** — Provide read-only access to specific reports for audit
+- **Team collaboration** — Share reports with team members who don't have accounts
+
+## Next Steps
+
+- [Custom report builder](/docs/reports/custom-reports)
+- [Reports overview](/docs/reports)
