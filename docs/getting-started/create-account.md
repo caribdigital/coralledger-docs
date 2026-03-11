@@ -8,36 +8,60 @@ description: Sign up for CoralLedger Comply
 
 Get started with CoralLedger Comply by creating your account.
 
+:::info Free Beta — March through September 2026
+CoralLedger Comply is currently in free beta. All features are available at no cost through September 30, 2026. Billing begins October 1, 2026.
+
+**Founding Member Special**: Lock in $99/mo for life — limited to 20 spots.
+:::
+
 ## Step 1: Visit the Sign-Up Page
 
 Go to [comply.coralledger.com/Account/Register](https://comply.coralledger.com/Account/Register)
 
 ## Step 2: Enter Your Details
 
-- **Email address** - Use your business email
-- **Password** - At least 8 characters with uppercase, lowercase, and numbers
-- **Full name** - Your name as the account owner
+- **Email address** — Use your business email
+- **Password** — At least 8 characters with uppercase, lowercase, numbers, and a special character
+- **Full name** — Your name as the account owner
+
+You'll need to complete a CAPTCHA verification to proceed.
 
 ## Step 3: Verify Your Email
 
-Check your inbox for a verification email and click the confirmation link.
+Check your inbox for a verification email and click the confirmation link. You cannot log in until your email is verified.
 
-## Step 4: Complete Registration
-
-Once verified, you'll be redirected to set up your business profile.
-
-## Subscription Tiers
-
-| Tier | Price | Clients |
-|------|-------|---------|
-| Trial | Free (30 days) | Up to 5 |
-| Founding Member | $99/mo | Up to 25 |
-| Peer Network | $299/mo | Up to 25 |
-
-:::tip Founding Member Pricing
-Lock in $99/mo for life - this price never increases. Limited to 20 spots.
+:::tip Check Your Spam Folder
+If you don't see the verification email within a few minutes, check your spam or junk folder.
 :::
+
+## Step 4: Set Up Two-Factor Authentication
+
+On your first login, you'll be prompted to set up 2FA:
+
+1. Download an authenticator app (Google Authenticator, Microsoft Authenticator, Authy, or 1Password)
+2. Scan the QR code displayed on screen
+3. Enter the 6-digit verification code
+4. Save your backup codes securely
+
+2FA is required for all users to protect your financial data. [Learn more about 2FA](/docs/security/two-factor-auth).
+
+## Step 5: Complete Business Setup
+
+After 2FA setup, you'll configure your business:
+- **New Business** — Enter your business name, TIN, and details
+- **Join Existing** — Enter an invitation code if joining an existing firm
+
+## Subscription Tiers (Billing Begins October 2026)
+
+| Tier | Price | Clients | Details |
+|------|-------|---------|---------|
+| **Founding Member** | $99/mo | Up to 25 | Locked for life — limited to 20 spots |
+| **Accounting Firm** | $499/mo | Up to 25 | Standard pricing |
+| **Enterprise** | Custom | Unlimited | Custom integrations, dedicated support |
+
+During the free beta (March–September 2026), all features are available at no cost regardless of tier.
 
 ## Next Steps
 
 - [Set up your business](/docs/getting-started/setup-business)
+- [Learn about the Founders Circle](/docs/billing/founders-circle)

@@ -1,0 +1,87 @@
+---
+sidebar_position: 4
+title: Manual VAT Entry
+description: Enter transactions directly in CoralLedger Comply
+---
+
+# Manual VAT Entry
+
+Enter individual transactions directly when you don't have a CSV file or need to record one-off transactions.
+
+## When to Use Manual Entry
+
+- Recording cash transactions
+- Adding missing transactions
+- Correcting data not in your import file
+- Quick one-off entries
+- Mixed VAT rate transactions (multi-line mode)
+
+## Accessing Manual Entry
+
+Navigate to **VAT Entry** from the main navigation, or use the quick action from the dashboard.
+
+## Entry Modes
+
+### Quick Entry
+Simple single-line transaction entry for straightforward transactions at a single VAT rate.
+
+### Advanced Mode
+Toggle to advanced mode for additional fields including export documentation, detailed descriptions, and reference numbers.
+
+### Multi-Line Mode
+For transactions that span multiple VAT rates (e.g., a sale containing both standard and reduced-rate items):
+1. Enable multi-line mode
+2. Add line items with individual VAT classifications
+3. Each line can have its own VAT rate (Standard 10%, Reduced 5%, Zero-Rated, Exempt)
+
+## Entering a Transaction
+
+### Step 1: Select Transaction Type
+Choose from Sale, Purchase, Import, Export, Credit Note, or Debit Note.
+
+### Step 2: Enter Details
+- **Business/Customer Name** — Start typing for autocomplete suggestions
+- **Transaction Date** — Defaults to today (future dates allowed)
+- **Description** — Add transaction details
+
+### Step 3: Enter Amount
+- **Net or Gross toggle** — Switch between entering the amount before or after VAT
+- **Amount** — The transaction value
+- **VAT Rate** — Select 0%, 5%, or 10%
+- The system automatically calculates the VAT amount and total
+
+### Step 4: Additional Fields (Advanced Mode)
+For zero-rated exports:
+- **Reference Number** — Invoice or customs reference
+- **Customer Country Code** — Destination country
+- **Shipping Tracking** — Tracking number for export documentation
+
+### Step 5: Review and Save
+- Verify the VAT breakdown (subtotal, VAT, total)
+- Click **Save Transaction**
+
+:::info April 2026 VAT Rate Transition
+The system includes an April 2026 rate transition notice. Transactions near the transition date will show applicable rate guidance.
+:::
+
+## Fraud Detection
+
+The system monitors entries and may flag:
+- Unusually large amounts
+- Patterns inconsistent with historical data
+- Rapid repeated entries
+
+Flagged transactions are still saved but generate alerts for review.
+
+## Tips for Accurate Entry
+
+1. **Use consistent vendor names** — Helps with reporting and auto-suggestions
+2. **Include invoice references** — Supports audit trail requirements
+3. **Verify VAT rates** — Especially for reduced-rate items requiring a food store license
+4. **Enter promptly** — Don't let transactions accumulate near filing deadlines
+
+## Next Steps
+
+- [View your transactions](/docs/transactions)
+- [Import from CSV](/docs/transactions/import-csv)
+- [Generate a VAT return](/docs/vat-returns/generate-return)

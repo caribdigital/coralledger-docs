@@ -28,15 +28,23 @@ The Firm Portal enables accounting professionals to manage VAT compliance for mu
 - Manage client users and permissions
 - Transfer clients between staff
 
-### Bulk Operations
+### Batch Operations
 - Import transactions for multiple clients
-- Generate multiple returns
-- Batch export for filing
+- **Batch filing** - File multiple returns in one workflow
+- Generate aggregated reports
+- Bulk client import via CSV
+
+### Firm Analytics
+- Cross-client compliance trends
+- Aggregate VAT metrics
+- Staff productivity tracking
+- Performance benchmarks
 
 ### Team Collaboration
 - Assign clients to team members
-- Track work status
+- Track work status and time
 - Review and approve returns
+- ROI calculator
 - Audit trail of all actions
 
 ## Getting Started
@@ -54,16 +62,20 @@ The Firm Portal enables accounting professionals to manage VAT compliance for mu
 
 ## Subscription Tiers
 
-| Tier | Max Clients | Price |
-|------|-------------|-------|
-| Founding Member | 25 | $99/mo |
-| Peer Network | 25 | $299/mo |
-
-:::tip Founding Member
-Lock in $99/mo for life. Limited to 20 spots.
+:::info Free Beta — March through September 2026
+All Firm Portal features are available at no cost during the free beta period. Billing begins October 1, 2026.
 :::
+
+| Tier | Max Clients | Price | Notes |
+|------|-------------|-------|-------|
+| **Founding Member** | 25 | $99/mo | Locked for life — limited to 20 spots |
+| **Accounting Firm** | 25 | $499/mo | Standard pricing |
+| **Enterprise** | Unlimited | Custom | Dedicated support, SLA |
 
 ## Next Steps
 
 - [Set up your first client](/docs/getting-started/setup-business)
+- [Use batch filing](/docs/firm-portal/batch-filing)
+- [View firm analytics](/docs/firm-portal/analytics)
+- [Manage team members](/docs/firm-portal/user-management)
 - [Import client transactions](/docs/transactions/import-csv)

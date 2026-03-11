@@ -3,11 +3,18 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // Environment-based configuration
-const isStaging = process.env.VERCEL_ENV === 'preview' || process.env.SITE_ENV === 'staging';
+// VERCEL_ENV: 'production' | 'preview' | 'development'
+const isProduction = process.env.VERCEL_ENV === 'production';
+const isPreview = process.env.VERCEL_ENV === 'preview';
+const isStaging = isPreview || process.env.SITE_ENV === 'staging';
 
-const siteUrl = process.env.SITE_URL || (isStaging
-  ? 'https://stg-docs.coralledger.com'
-  : 'https://docs.coralledger.com');
+// Use VERCEL_URL for preview deployments, custom domains for prod/staging
+const siteUrl = process.env.SITE_URL || (
+  isProduction ? 'https://docs.coralledger.com' :
+  isPreview ? `https://${process.env.VERCEL_URL}` :
+  isStaging ? 'https://stg-docs.coralledger.com' :
+  'https://docs.coralledger.com'
+);
 
 const complyUrl = process.env.COMPLY_URL || (isStaging
   ? 'https://stg-comply.coralledger.com'

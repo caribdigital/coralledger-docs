@@ -15,10 +15,16 @@ A chronological record of all changes made to transactions, categories, and VAT 
 
 ## B
 
+### Bad Debt Relief
+A provision allowing businesses to claim back VAT on invoices that remain unpaid for 12 months or more. CoralLedger Comply tracks eligible debts automatically.
+
 ### Breadbasket Items
 Essential food items eligible for the reduced 5% VAT rate when sold by licensed food stores.
 
 ## C
+
+### Construction VAT
+The reverse charge mechanism for construction services exceeding $1 million. Part of the 2025 VAT reforms.
 
 ### Comptroller
 The Comptroller of the Department of Inland Revenue, responsible for VAT administration in The Bahamas.
@@ -56,6 +62,9 @@ VAT collected by a business on sales that must be remitted to the Comptroller.
 
 ## R
 
+### Refund Eligibility
+Businesses where 50% or more of supplies are zero-rated may be eligible for VAT refunds. CoralLedger Comply monitors this threshold.
+
 ### Registrant
 A business registered for VAT with the Department of Inland Revenue.
 
@@ -89,6 +98,11 @@ The time period covered by a VAT return (monthly or quarterly).
 ### VAT Return
 A periodic report submitted to the DIR summarizing taxable supplies and VAT collected/paid.
 
+## W
+
+### WORM
+Write Once Read Many — a data storage compliance standard ensuring records cannot be modified or deleted after creation. CoralLedger Comply's audit trail uses WORM compliance.
+
 ## Z
 
 ### Zero-Rated Supply
@@ -98,3 +112,5 @@ A taxable supply where VAT is charged at 0%, but input VAT can still be recovere
 
 - [View VAT rates](/docs/reference/vat-rates)
 - [Understand categorization](/docs/transactions/categorization)
+- [Audit trail](/docs/audit)
+- [Security features](/docs/security)

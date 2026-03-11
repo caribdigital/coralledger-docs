@@ -32,7 +32,9 @@ const sidebars: SidebarsConfig = {
       items: [
         'transactions/index',
         'transactions/import-csv',
+        'transactions/manual-entry',
         'transactions/categorization',
+        'transactions/credit-notes',
       ],
     },
     {
@@ -41,11 +43,12 @@ const sidebars: SidebarsConfig = {
       link: {
         type: 'generated-index',
         title: 'VAT Returns',
-        description: 'Generate and submit VAT returns',
+        description: 'Generate, validate, and submit VAT returns',
       },
       items: [
         'vat-returns/index',
         'vat-returns/generate-return',
+        'vat-returns/return-preview',
         'vat-returns/submit-return',
       ],
     },
@@ -60,6 +63,24 @@ const sidebars: SidebarsConfig = {
       items: [
         'compliance/index',
         'compliance/compliance-score',
+        'compliance/intelligence-dashboard',
+        'compliance/vat-2025-reforms',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Reports',
+      link: {
+        type: 'generated-index',
+        title: 'Reports & Analytics',
+        description: 'Financial reports, cash flow, and custom analytics',
+      },
+      items: [
+        'reports/index',
+        'reports/cash-flow',
+        'reports/variance-analysis',
+        'reports/custom-reports',
+        'reports/shared-reports',
       ],
     },
     {
@@ -72,6 +93,52 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'firm-portal/index',
+        'firm-portal/batch-filing',
+        'firm-portal/analytics',
+        'firm-portal/user-management',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Security',
+      link: {
+        type: 'generated-index',
+        title: 'Security & Access Control',
+        description: 'Authentication, threat protection, and data security',
+      },
+      items: [
+        'security/index',
+        'security/two-factor-auth',
+        'security/ip-blocking',
+        'security/fraud-alerts',
+        'security/kill-switch',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Audit Trail',
+      link: {
+        type: 'generated-index',
+        title: 'Audit Trail',
+        description: 'Immutable audit logging and compliance records',
+      },
+      items: [
+        'audit/index',
+        'audit/audit-reports',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Billing & Licensing',
+      link: {
+        type: 'generated-index',
+        title: 'Billing & Licensing',
+        description: 'Subscription plans, licensing, and the Founders Circle',
+      },
+      items: [
+        'billing/index',
+        'billing/licensing',
+        'billing/founders-circle',
       ],
     },
     {
@@ -80,7 +147,7 @@ const sidebars: SidebarsConfig = {
       link: {
         type: 'generated-index',
         title: 'Integrations',
-        description: 'Connect with Point POS and other systems',
+        description: 'Connect with Point POS, Manager, and other systems',
       },
       items: [
         'integrations/index',
@@ -96,6 +163,9 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'settings/index',
+        'settings/account',
+        'settings/notifications',
+        'settings/appearance',
       ],
     },
     {
