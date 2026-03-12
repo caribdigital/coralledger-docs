@@ -36,7 +36,12 @@ const config: Config = {
   projectName: 'coralledger-docs',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   customFields: {
     complyUrl: complyUrl,
