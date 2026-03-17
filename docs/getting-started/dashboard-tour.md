@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 title: Dashboard Tour
 description: Navigate the CoralLedger Comply dashboard
 ---

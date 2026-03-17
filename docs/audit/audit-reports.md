@@ -77,8 +77,10 @@ For manual overrides and corrections, administrators can revert specific audit e
 Export your audit trail for external review or compliance documentation:
 
 1. Apply your desired filters (date range, event type)
-2. Click **Download as CSV**
-3. The export includes all visible columns
+2. Click **Export Report**
+3. The export includes all visible columns in CSV format
+
+Exports respect your current filter selections, so you can create targeted reports for specific event types or date ranges.
 
 ## Best Practices
 

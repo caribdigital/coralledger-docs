@@ -38,10 +38,10 @@ Your overall compliance health displayed as a letter grade (A+ to F):
 - **F** - Critical, immediate action needed
 
 **Grade Factors:**
-- Data Quality (30%)
-- Timeliness (25%)
-- Accuracy (25%)
-- Completeness (20%)
+- Filing Compliance (30%)
+- Data Quality (25%)
+- Rate Accuracy (25%)
+- Documentation (20%)
 
 ### Penalty Risk Assessment
 

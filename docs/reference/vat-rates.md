@@ -90,10 +90,8 @@ Exempt supplies are outside the VAT system entirely. No VAT is charged and no in
 - **Rate Increase to 12%**: July 1, 2018
 - **Rate Reduction to 10%**: January 1, 2022
 - **2025 Reforms**: January 1, 2025
-- **April 2026 Rate Transition**: April 1, 2026 (upcoming)
-
-:::warning April 2026 Transition
-The April 2026 rate transition may affect how transactions near the transition date are categorized. CoralLedger Comply includes guidance for transactions near this date.
+:::info Transition Dates
+When VAT rates change, CoralLedger Comply automatically applies the correct rate based on the transaction date. Transactions near rate transition dates will show applicable rate guidance to ensure accurate categorization.
 :::
 
 ## Next Steps

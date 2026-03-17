@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: Submit VAT Return
 description: Submit your VAT return to the Comptroller
 ---

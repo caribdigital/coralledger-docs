@@ -17,8 +17,8 @@ The Bahamas now operates a three-tier VAT system:
 | Rate | Application |
 |------|-------------|
 | **10%** | Standard rate for most goods and services |
-| **5%** | Reduced rate for electricity, water, and select essentials |
-| **0%** | Zero-rated for exports, basic food items, and medicines |
+| **5%** | Reduced rate for breadbasket items at licensed food stores |
+| **0%** | Zero-rated for exports and specific supplies |
 
 ### Construction VAT Restrictions
 
@@ -109,9 +109,9 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 
 ### Important Dates
 
-- **July 2025** - Multi-rate system effective
-- **April 2025** - Food store qualification rules
-- **April 2026** - Next major compliance update
+- **January 2025** - 2025 VAT reforms enacted
+- **April 2025** - Food store qualification rules effective
+- **July 2025** - Multi-rate system fully effective
 
 ## Need Help?
 

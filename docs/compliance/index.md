@@ -20,10 +20,10 @@ Non-compliance with Bahamas VAT regulations can result in:
 
 ### Real-Time Scoring
 Your compliance score (A+ to F) is calculated from:
-- Data Quality (30%)
-- Timeliness (25%)
-- Accuracy (25%)
-- Completeness (20%)
+- Filing Compliance (30%)
+- Data Quality (25%)
+- Rate Accuracy (25%)
+- Documentation (20%)
 
 ### Intelligence Dashboard
 AI-powered analysis including:

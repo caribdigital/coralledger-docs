@@ -21,27 +21,27 @@ Your compliance score helps you understand your VAT compliance health at a glanc
 
 ## Scoring Factors
 
-Your score is calculated from four components:
+Your score is calculated from four weighted components:
 
-### Categorization Accuracy (40%)
-- Percentage of correctly categorized transactions
-- Low manual override rate
-- Consistent category patterns
-
-### Filing Timeliness (25%)
-- Returns filed before deadline
+### Filing Compliance (30%)
+- Returns filed before the 28th deadline
 - History of on-time submissions
 - No late filing penalties
+
+### Data Quality (25%)
+- Completeness of required fields (description, amount, date, VAT rate)
+- Consistency of vendor VAT rates and transaction types
+- Timeliness of data entry (within 7 days of occurrence)
+
+### Rate Accuracy (25%)
+- Correct VAT rate applied to each transaction
+- Valid amounts (positive values)
+- Transactions within the correct filing period
 
 ### Documentation (20%)
 - Complete transaction records
 - Supporting documentation attached
 - Audit trail maintained
-
-### Anomaly Resolution (15%)
-- Flagged issues addressed
-- Resolution time
-- Recurring issue prevention
 
 ## Improving Your Score
 

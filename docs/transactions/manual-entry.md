@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 title: Manual VAT Entry
 description: Enter transactions directly in CoralLedger Comply
 ---
@@ -60,8 +60,8 @@ For zero-rated exports:
 - Verify the VAT breakdown (subtotal, VAT, total)
 - Click **Save Transaction**
 
-:::info April 2026 VAT Rate Transition
-The system includes an April 2026 rate transition notice. Transactions near the transition date will show applicable rate guidance.
+:::info VAT Rate Transitions
+When VAT rates change, the system displays rate transition guidance for transactions near the effective date to ensure correct categorization.
 :::
 
 ## Fraud Detection
