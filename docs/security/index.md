@@ -51,6 +51,11 @@ Emergency control to immediately disable fraud detection or lock down specific a
 
 [Learn more about kill switch](/docs/security/kill-switch)
 
+### Impersonation
+PlatformAdmin operators can sign in as any user in a read-only session for support and debugging. Every session is time-limited, write-blocked, and fully audited.
+
+[Learn more about impersonation](/docs/security/impersonation)
+
 ## Data Protection
 
 ### Multi-Tenant Isolation
