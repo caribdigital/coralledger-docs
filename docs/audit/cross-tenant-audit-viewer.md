@@ -56,7 +56,7 @@ Select a specific business to scope the view to a single tenant, or leave unset 
 
 ### By Actor Email
 
-Filter entries by the email address of the person who performed the action. Matching is performed server-side against the `NormalizedEmail` field to ensure consistent case-insensitive lookups.
+Filter entries by the email address of the person who performed the action. Matching is performed server-side against the `NormalizedEmail` field to ensure consistent case-insensitive lookups. A minimum of 3 characters is required to trigger the search.
 
 ## Audit Entry Table
 
@@ -70,7 +70,6 @@ Each row in the cross-tenant viewer displays:
 | **Action** | Specific action performed |
 | **Actor** | Who performed the action (user email or operator ID) |
 | **Details** | Summary of changes or affected resources |
-| **Severity** | Normal, Warning, or Critical |
 | **Source** | `ImmutableAuditEntry` or `SecurityAuditLog` |
 | **IP Address** | Source IP address |
 
@@ -98,7 +97,7 @@ The viewer supports two modes of chain verification:
 A `PLATFORM_OPS_CHAIN_VERIFIED` event is recorded after each verification run, capturing the scope (per-business or platform-wide) and the result.
 
 :::warning Chain Integrity Failures
-If broken links are detected in any business's chain, this may indicate unauthorized data modification. The `PLATFORM_OPS_CHAIN_VERIFIED` event will be recorded with a **Critical** severity. Contact the security team immediately.
+If broken links are detected in any business's chain, this may indicate unauthorized data modification. Contact the security team immediately.
 :::
 
 ## Exporting Audit Data
@@ -126,8 +125,8 @@ When the viewer is open with no business filter applied, the operator is in **cr
 
 | Event | When It Fires |
 |-------|--------------|
-| `CROSS_TENANT_SCOPE_OPENED` | Operator opens the viewer or clears the business filter |
-| `CROSS_TENANT_SCOPE_CLOSED` | Operator applies a single-business filter or closes the viewer |
+| `PLATFORM_OPS_CROSS_TENANT_SCOPE_OPENED` | Operator opens the viewer or clears the business filter |
+| `PLATFORM_OPS_CROSS_TENANT_SCOPE_CLOSED` | Operator applies a single-business filter or closes the viewer |
 
 These events provide a complete audit trail of when platform staff had visibility across multiple businesses.
 
