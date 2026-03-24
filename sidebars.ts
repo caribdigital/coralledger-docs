@@ -19,6 +19,8 @@ const sidebars: SidebarsConfig = {
         'getting-started/create-account',
         'getting-started/setup-business',
         'getting-started/dashboard-tour',
+        'getting-started/mobile',
+        'getting-started/performance',
       ],
     },
     {
