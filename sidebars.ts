@@ -116,6 +116,22 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Data Operations',
+      link: {
+        type: 'generated-index',
+        title: 'Data Operations',
+        description: 'Deletion requests, legal holds, retention monitoring, and data export',
+      },
+      items: [
+        'data-ops/index',
+        'data-ops/deletion-requests',
+        'data-ops/legal-holds',
+        'data-ops/retention-monitoring',
+        'data-ops/data-export',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Audit Trail',
       link: {
         type: 'generated-index',
