@@ -125,6 +125,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'audit/index',
         'audit/audit-reports',
+        'audit/platform-ops-events',
+        'audit/cross-tenant-audit-viewer',
       ],
     },
     {

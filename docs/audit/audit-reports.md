@@ -29,6 +29,13 @@ Filter by specific categories such as:
 - User authentication events
 - Settings changes
 - Security events
+- Platform Ops events (`PLATFORM_OPS_*`)
+
+### By Business
+Filter entries to a specific business or tenant.
+
+### By Actor Email
+Filter entries by the email address of the person who performed the action.
 
 ### By Date Range
 - **Start Date** — Beginning of the reporting period
@@ -76,11 +83,20 @@ For manual overrides and corrections, administrators can revert specific audit e
 
 Export your audit trail for external review or compliance documentation:
 
-1. Apply your desired filters (date range, event type)
+1. Apply your desired filters (date range, event type, business, actor email)
 2. Click **Export Report**
-3. The export includes all visible columns in CSV format
+3. Choose the export format:
+
+| Format | Description |
+|--------|-------------|
+| **CSV** | Compatible with Excel and most reporting tools |
+| **JSON** | Structured format for programmatic processing |
 
 Exports respect your current filter selections, so you can create targeted reports for specific event types or date ranges.
+
+:::note Export Row Cap
+Exports are capped at **10,000 rows**. If your result set is larger, narrow your filters and export in batches.
+:::
 
 ## Best Practices
 
@@ -92,5 +108,7 @@ Exports respect your current filter selections, so you can create targeted repor
 ## Next Steps
 
 - [Audit trail overview](/docs/audit)
+- [Platform Ops event types](/docs/audit/platform-ops-events)
+- [Cross-Tenant Audit Viewer](/docs/audit/cross-tenant-audit-viewer)
 - [Security features](/docs/security)
 - [Compliance dashboard](/docs/compliance)
