@@ -32,17 +32,17 @@ Operators can export a complete JSON snapshot of all data belonging to a busines
 
 ## Access Requirements
 
-All Data Operations features are accessible only to users with **Operator** (or higher) privileges. Standard business users can submit deletion requests but cannot approve, execute, or configure any data operations.
+All Data Operations features are accessible only to users with the **PlatformAdmin** role. Standard business users can submit deletion requests but cannot approve, execute, or configure any data operations.
 
 | Feature | Minimum Role |
 |---------|-------------|
 | Submit deletion request | Any authenticated user |
-| Approve / reject deletion request | Operator |
-| Execute approved deletion | Operator |
-| Place / release legal hold | Operator |
-| Configure retention policies | Operator |
-| Preview & enforce retention | Operator |
-| Export business data | Operator |
+| Approve / reject deletion request | PlatformAdmin |
+| Execute approved deletion | PlatformAdmin |
+| Place / release legal hold | PlatformAdmin |
+| Configure retention policies | PlatformAdmin |
+| Preview & enforce retention | PlatformAdmin |
+| Export business data | PlatformAdmin |
 
 ## Next Steps
 

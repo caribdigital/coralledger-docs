@@ -10,7 +10,7 @@ CoralLedger Comply supports a structured, auditable workflow for permanent data 
 
 ## Accessing Deletion Requests
 
-Navigate to **Admin > Data Operations > Deletion Requests**. This feature requires Operator access.
+Navigate to **Platform Ops > Data Operations > Deletion Requests**. This feature requires PlatformAdmin access.
 
 ## How the Workflow Works
 
@@ -65,17 +65,19 @@ The request status changes to **Approved** and the 30-day DPA grace period begin
 
 The request status changes to **Rejected**. No data is deleted.
 
-## Approved Status Lifecycle
+## Request Status Lifecycle
 
-Once a request is approved, it enters the grace period phase:
+Deletion requests move through the following statuses:
 
 | Status | Meaning |
 |--------|---------|
-| **Pending** | Awaiting operator review |
-| **Approved** | Approved; grace period is running |
-| **Grace Period Expired** | 30-day window has passed; ready for execution |
-| **Executed** | Data has been permanently deleted |
+| **Pending** | Submitted by the user; awaiting operator review |
+| **Verified** | Request details have been verified; pending approval decision |
+| **Approved** | Approved by an operator; 30-day DPA grace period is running |
+| **InProgress** | Grace period has elapsed; deletion is actively being processed |
+| **Completed** | Data has been permanently deleted |
 | **Rejected** | Request was denied by an operator |
+| **Cancelled** | Request was withdrawn before execution |
 
 :::info DPA Grace Period
 The 30-day grace period is required under the Data Protection Act (DPA). During this window, the user can contact support to withdraw their request. Execution is blocked until the grace period expires.
@@ -88,20 +90,20 @@ After the 30-day grace period expires, an operator can execute the deletion:
 1. Open the approved request
 2. Click **Execute Deletion**
 3. A confirmation dialog appears explaining what will be permanently deleted
-4. Type **DELETE** (in capitals) in the confirmation box to confirm
+4. Type **EXECUTE DELETE NOW** (exact text, case-sensitive) in the confirmation box
 5. Click **Confirm Execution**
 
 :::danger Irreversible Action
 Data deletion is permanent and cannot be undone. All associated records, attachments, and audit references are destroyed. Ensure you have exported any data required for legal or compliance purposes before executing.
 :::
 
-The request status changes to **Executed** and a final audit entry is created.
+The request status changes to **Completed** and a final audit entry is created.
 
 ## Request History
 
 All deletion requests — regardless of outcome — are retained in the request history table. You can filter by:
 
-- **Status** — Pending, Approved, Rejected, Executed
+- **Status** — Pending, Verified, Approved, InProgress, Completed, Rejected, Cancelled
 - **Date range** — Submission date
 - **Requestor** — Search by name or email
 
