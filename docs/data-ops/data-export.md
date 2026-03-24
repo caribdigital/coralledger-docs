@@ -10,7 +10,7 @@ Operators can export a complete snapshot of all data belonging to a business as 
 
 ## Accessing Business Data Export
 
-Navigate to **Admin > Data Operations > Export**. This feature requires Operator access.
+Navigate to **Platform Ops > Data Operations > Export**. This feature requires PlatformAdmin access.
 
 ## What Is Included in the Export
 
@@ -18,15 +18,11 @@ A full business data export contains:
 
 | Data Category | Contents |
 |---------------|---------|
-| **Business Profile** | Name, registration details, contact information, VAT registration |
 | **Transactions** | All transaction records including amounts, categories, VAT, and attachments metadata |
 | **VAT Returns** | All generated and submitted returns with line-item detail |
-| **Credit Notes** | Credit note records linked to transactions |
-| **Audit Log** | Complete audit trail entries for the business |
-| **Users** | User accounts and permission settings scoped to the business |
-| **Settings** | Business settings, notification preferences, and configuration |
-| **Retention Policy** | The configured retention policy for the business |
-| **Legal Holds** | Active and historical legal hold records |
+| **Compliance Scores** | Historical compliance score snapshots for the business |
+| **Import Batches** | Records of all CSV and bulk import operations |
+| **Privacy Settings** | The business's data privacy configuration and consent records |
 
 :::info
 File attachments (binary content) are not included in the JSON export. The export contains attachment metadata — file name, type, size, and storage reference. Contact support if you require raw file exports.
@@ -34,7 +30,7 @@ File attachments (binary content) are not included in the JSON export. The expor
 
 ## Running an Export
 
-1. Navigate to **Admin > Data Operations > Export**
+1. Navigate to **Platform Ops > Data Operations > Export**
 2. Select the target business from the dropdown
 3. Optionally filter by date range to limit the export scope
 4. Click **Export Business Data**
@@ -57,15 +53,11 @@ The top-level structure is:
 {
   "exportedAt": "2025-08-15T10:30:00Z",
   "exportedBy": "operator@example.com",
-  "business": { ... },
   "transactions": [ ... ],
   "vatReturns": [ ... ],
-  "creditNotes": [ ... ],
-  "auditLog": [ ... ],
-  "users": [ ... ],
-  "settings": { ... },
-  "retentionPolicy": { ... },
-  "legalHolds": [ ... ]
+  "complianceScores": [ ... ],
+  "importBatches": [ ... ],
+  "privacySettings": { ... }
 }
 ```
 
@@ -78,17 +70,12 @@ Each export is recorded in the Export History table with:
 - **Requested By** — Operator who triggered the export
 - **Requested At** — Date and time of the request
 - **Status** — Queued, Processing, Complete, or Failed
-- **Download** — Link to download the completed export (available for 7 days)
-
-:::info Export Retention
-Download links expire after 7 days. Re-run the export if you need a fresh copy.
-:::
+- **Download** — Link to download the completed export
 
 ## Security Considerations
 
-- Exports are generated server-side and temporarily stored in encrypted, access-controlled storage
+- Exports are generated server-side and stored in access-controlled storage
 - Only the requesting operator can download the export file
-- Download links are signed and expire after 7 days
 - Each export download is recorded in the [Audit Trail](/docs/audit)
 - Exports should be stored securely and in compliance with your data handling obligations
 

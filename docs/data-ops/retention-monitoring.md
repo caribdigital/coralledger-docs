@@ -10,7 +10,7 @@ CoralLedger Comply enforces per-business data retention policies automatically. 
 
 ## Accessing Retention Monitoring
 
-Navigate to **Admin > Data Operations > Retention**. This feature requires Operator access.
+Navigate to **Platform Ops > Data Operations > Retention**. This feature requires PlatformAdmin access.
 
 ## Default Retention Policy
 
@@ -28,7 +28,7 @@ Records that are within their retention window cannot be permanently deleted, re
 
 Operators can configure a custom retention policy for each business:
 
-1. Navigate to **Admin > Data Operations > Retention > Policies**
+1. Navigate to **Platform Ops > Data Operations > Retention > Policies**
 2. Select the business
 3. Adjust the retention period (minimum 7 years; longer periods are permitted)
 4. Click **Save Policy**
@@ -54,7 +54,7 @@ The **Policy Summary** table lists all businesses with their configured retentio
 
 Before retention enforcement runs, operators can preview which records are scheduled to be purged:
 
-1. Navigate to **Admin > Data Operations > Retention > Preview**
+1. Navigate to **Platform Ops > Data Operations > Retention > Preview**
 2. Select the business (or view all)
 3. Set the preview window (e.g., next 30, 60, or 90 days)
 4. Click **Run Preview**
@@ -76,7 +76,7 @@ The system continuously monitors for retention policy violations — records tha
 
 ### Viewing Violations
 
-Navigate to **Admin > Data Operations > Retention > Violations** to see:
+Navigate to **Platform Ops > Data Operations > Retention > Violations** to see:
 
 | Column | Description |
 |--------|-------------|
@@ -107,12 +107,10 @@ When the enforcement schedule triggers (or an operator manually initiates a run)
 
 To manually trigger an enforcement run:
 
-1. Navigate to **Admin > Data Operations > Retention > Enforce**
+1. Navigate to **Platform Ops > Data Operations > Retention > Enforce**
 2. Select the scope (single business or all)
 3. Review the enforcement preview
 4. Click **Run Enforcement**
-5. Type **CONFIRM** in the confirmation box
-6. Click **Execute**
 
 :::warning
 Enforcement purges are permanent and cannot be undone. Always run and review an enforcement preview first.
