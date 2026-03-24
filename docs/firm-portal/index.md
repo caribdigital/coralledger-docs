@@ -27,6 +27,7 @@ The Firm Portal enables accounting professionals to manage VAT compliance for mu
 - Set up client business profiles
 - Manage client users and permissions
 - Transfer clients between staff
+- **Client invitations** — send, resend (token refresh), and revoke invitations with a 7-day expiry lifecycle
 
 ### Batch Operations
 - Import transactions for multiple clients
@@ -53,7 +54,7 @@ The Firm Portal enables accounting professionals to manage VAT compliance for mu
 1. Go to **Clients > Add New**
 2. Enter client business details
 3. Set up TIN and VAT number
-4. Invite client users (optional)
+4. Invite client users via **Invite Client** — see [Client Invitation Lifecycle](/docs/firm-portal/user-management#client-invitation-lifecycle)
 
 ### Managing Permissions
 - **Full Access** - Can import, edit, generate returns
