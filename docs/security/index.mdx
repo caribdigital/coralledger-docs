@@ -66,9 +66,9 @@ PlatformAdmin operators can sign in as any user in a read-only session for suppo
 ## Data Protection
 
 ### Multi-Tenant Isolation
-Every database query is filtered by Business ID at query execution time, ensuring complete data isolation between businesses. Cross-tenant access is prevented at the application and database level.
+All EF Core queries are filtered by Business ID at query execution time, providing strong logical separation between businesses. Cross-tenant access is prevented for all queries that go through the tenant-aware data access layer.
 
-The EF Core global query filter re-evaluates the current `BusinessId` on every query, so switching tenants mid-session — including via the `?bid=` query parameter in Blazor Server — takes effect immediately without requiring a page reload or new database connection.
+The EF Core global query filter re-evaluates the current `BusinessId` on every EF Core query, so switching tenants mid-session — including via the `?bid=` query parameter in Blazor Server — takes effect immediately without requiring a page reload or new database connection.
 
 [Learn more about the tenant filter architecture](/docs/security/tenant-isolation)
 
