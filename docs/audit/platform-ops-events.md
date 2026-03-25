@@ -85,8 +85,10 @@ Every impersonation session is bookended by `PLATFORM_OPS_IMPERSONATION_START` a
 
 | Event Type | Description |
 |------------|-------------|
-| `PLATFORM_OPS_DELETION_REQUEST_PROCESSED` | A data deletion request was processed (outcome captured in event details) |
-| `PLATFORM_OPS_DATA_DELETION_PROCESSED` | Data deletion was executed by the system |
+| `PLATFORM_OPS_DATA_DELETION_APPROVED` | Platform operator approved a data deletion request |
+| `PLATFORM_OPS_DATA_DELETION_REJECTED` | Platform operator rejected a data deletion request |
+| `PLATFORM_OPS_DATA_DELETION_CANCELLED` | Platform operator cancelled a previously approved deletion before execution |
+| `PLATFORM_OPS_DATA_DELETION_EXECUTED` | Data deletion was executed by the system after the grace period elapsed |
 
 ## Platform Administration Events
 
@@ -108,7 +110,7 @@ Every impersonation session is bookended by `PLATFORM_OPS_IMPERSONATION_START` a
 | `PLATFORM_OPS_CROSS_TENANT_SCOPE_CLOSED` | Platform operator closed an active cross-tenant scope |
 
 :::note Scope Event Availability
-`PLATFORM_OPS_CROSS_TENANT_SCOPE_OPENED` and `PLATFORM_OPS_CROSS_TENANT_SCOPE_CLOSED` are defined as constants but may not be actively fired in all deployments. Check with your platform team if you need to rely on these events for audit queries.
+`PLATFORM_OPS_CROSS_TENANT_SCOPE_OPENED` and `PLATFORM_OPS_CROSS_TENANT_SCOPE_CLOSED` are the primary events used by the Cross-Tenant Audit Viewer to track cross-tenant scope sessions. These events are emitted whenever an operator explicitly opens or closes a cross-tenant scope using the standard operator tooling. In some deployments, cross-tenant scope may be disabled or implemented via alternative tooling; in those cases these events may be defined but not produced. Check with your platform team if you need to rely on these events for audit queries.
 :::
 
 ## Audit Entry Fields
