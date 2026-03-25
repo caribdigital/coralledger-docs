@@ -12,7 +12,7 @@ export default function DemoVideo({src, title}: DemoVideoProps): ReactNode {
       <video
         className={styles.video}
         controls
-        preload="metadata"
+        preload="none"
         aria-label={title ?? 'Demo video'}
       >
         <source src={src} type="video/mp4" />

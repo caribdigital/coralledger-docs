@@ -74,9 +74,9 @@ while IFS= read -r -d '' input_file; do
     "$output_file"
 
   converted=$((converted + 1))
-done < <(find "$INPUT_DIR" -maxdepth 1 -name "*.webm" -print0 | sort -z)
+done < <(find "$INPUT_DIR" -maxdepth 1 -name "*.webm" -print0)
 
 echo ""
-echo "Done. Converted: $converted, Skipped (already exist): $skipped"
+echo "Done. Converted: $converted, Skipped (already exists): $skipped"
 echo ""
 echo "Next step: upload files in '$OUTPUT_DIR' to https://cdn.coralledger.com/demos/"
