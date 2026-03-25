@@ -94,7 +94,7 @@ After the 30-day grace period expires, an operator can execute the deletion:
 5. Click **Confirm Execution**
 
 :::danger Irreversible Action
-Data deletion is permanent and cannot be undone. All associated records, attachments, and audit references are destroyed. Ensure you have exported any data required for legal or compliance purposes before executing.
+Data deletion is permanent and cannot be undone. All associated records and attachments are destroyed. Audit trail entries remain immutable, but may display redacted or anonymized field values after deletion. Ensure you have exported any data required for legal or compliance purposes before executing.
 :::
 
 The request status changes to **Completed** and a final audit entry is created.
