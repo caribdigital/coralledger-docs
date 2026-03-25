@@ -4,9 +4,15 @@ title: Security Overview
 description: Security features in CoralLedger Comply
 ---
 
+import DemoVideo from '@site/src/components/DemoVideo';
+
 # Security & Access Control
 
 CoralLedger Comply implements multiple layers of security to protect your financial data and ensure regulatory compliance.
+
+## Multi-Tenant Security Demo
+
+<DemoVideo src="https://cdn.coralledger.com/demos/multi-tenant-01.mp4" title="Security — Multi-Tenant Isolation and Role-Based Access Control" />
 
 ## Authentication
 
@@ -29,6 +35,7 @@ All users are required to set up 2FA on first login. This adds a second verifica
 - Session timeout for inactive users
 - View and revoke active sessions from Account Settings
 - Login history with IP address and device tracking
+- **Session revocation on soft-delete** — when an operator account is soft-deleted, `UpdateSecurityStampAsync` is called immediately, invalidating all of that user's active sessions across every device
 
 ## Threat Protection
 
@@ -76,13 +83,36 @@ All data modifications are recorded in an immutable, hash-chain verified audit l
 
 ## Role-Based Access Control
 
-| Role | Permissions |
-|------|-------------|
-| **Owner** | Full access to all features and settings |
-| **Accountant** | Manage transactions, returns, and reports |
-| **User** | View-only access to data and reports |
+| Role | Scope | Permissions |
+|------|-------|-------------|
+| **PlatformAdmin** | Platform-wide (Ops Portal) | Full platform administration — manage all businesses, operators, and emergency controls. Requires 2FA. Granted via `RequirePlatformAdmin` policy. |
+| **Owner** | Business | Full access to all features and settings within a business |
+| **Accountant** | Business | Manage transactions, returns, and reports |
+| **User** | Business | View-only access to data and reports |
 
 Granular permissions can be configured per user for: Transactions, Reports, Compliance, Settings, User Management, and Security.
+
+### RequirePlatformAdmin Policy
+
+Access to the Ops Portal is enforced by the `RequirePlatformAdmin` authorization policy, implemented in `PlatformAdminAuthorizationHandler`. This policy combines two checks:
+
+1. **Role check** — the user must hold the `PlatformAdmin` role.
+2. **2FA check** — the user must have completed two-factor authentication for the current session.
+
+Requests that fail either check are rejected with a `403 Forbidden` response before any handler logic is executed.
+
+### Self-Operation Guards
+
+To prevent accidental or malicious lock-out, operators are blocked from performing destructive actions on their own account:
+
+- An operator **cannot lock their own account**.
+- An operator **cannot delete (soft-delete) their own account**.
+
+These guards are enforced server-side and cannot be bypassed through the API.
+
+### Impersonation Read-Only Mode
+
+When a PlatformAdmin impersonates a business account, an HTTP-level middleware enforces **read-only mode**. All mutating requests (`POST`, `PUT`, `PATCH`, `DELETE`) are rejected for the duration of the impersonation session, ensuring that platform operators cannot inadvertently or deliberately modify client data while impersonating.
 
 ## Best Practices
 
