@@ -26,7 +26,7 @@ Per-business retention policies are enforced automatically. The system defaults 
 [Learn more about retention monitoring](/docs/data-ops/retention-monitoring)
 
 ### Business Data Export
-Operators can export a complete JSON snapshot of all data belonging to a business. This includes transactions, returns, audit logs, and settings.
+Operators can export a complete JSON snapshot of all data belonging to a business. This includes transactions, VAT returns, compliance scores, import batches, and privacy & settings data.
 
 [Learn more about business data export](/docs/data-ops/data-export)
 
