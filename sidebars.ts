@@ -114,6 +114,7 @@ const sidebars: SidebarsConfig = {
         'security/ip-blocking',
         'security/fraud-alerts',
         'security/kill-switch',
+        'security/impersonation',
       ],
     },
     {
