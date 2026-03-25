@@ -128,7 +128,7 @@ When the viewer is open with no business filter applied, the operator is in **cr
 | `PLATFORM_OPS_CROSS_TENANT_SCOPE_OPENED` | Operator opens the viewer or clears the business filter |
 | `PLATFORM_OPS_CROSS_TENANT_SCOPE_CLOSED` | Operator applies a single-business filter or closes the viewer |
 
-These events provide a complete audit trail of when platform staff had visibility across multiple businesses.
+When enabled for your deployment, these events provide an audit trail of when platform staff had visibility across multiple businesses. Consult your deployment configuration and the [Platform Ops Event Types](/docs/audit/platform-ops-events) documentation for details on event availability.
 
 ## Best Practices for Operators
 
