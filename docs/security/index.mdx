@@ -89,7 +89,7 @@ All data modifications are recorded in an immutable, hash-chain verified audit l
 
 | Role | Scope | Permissions |
 |------|-------|-------------|
-| **PlatformAdmin** | Platform-wide (Ops Portal) | Full platform administration — manage all businesses, operators, and emergency controls. Requires 2FA. Granted via `RequirePlatformAdmin` policy. |
+| **PlatformAdmin** | Platform-wide (Ops Portal) | Full platform administration — manage all businesses, operators, and emergency controls. Requires 2FA. Ops Portal access controlled by `RequirePlatformAdmin` policy (role + 2FA); role assignment managed separately. |
 | **Owner** | Business | Full access to all features and settings within a business |
 | **Accountant** | Business | Manage transactions, returns, and reports |
 | **User** | Business | View-only access to data and reports |
@@ -103,7 +103,7 @@ Access to the Ops Portal is enforced by the `RequirePlatformAdmin` authorization
 1. **Role check** — the user must hold the `PlatformAdmin` role.
 2. **2FA check** — the user must have completed two-factor authentication for the current session.
 
-Requests that fail either check are rejected with a `403 Forbidden` response before any handler logic is executed.
+Requests that fail either check are rejected with a `403 Forbidden` response before any application endpoint or controller logic is executed.
 
 ### Self-Operation Guards
 
