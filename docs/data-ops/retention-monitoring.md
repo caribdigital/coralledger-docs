@@ -19,8 +19,8 @@ All businesses are subject to the platform-wide default:
 | Setting | Value | Basis |
 |---------|-------|-------|
 | **Minimum retention period** | 7 years | VAT Act s. 26 |
-| **Applies to** | Transactions, VAT returns, audit records, uploaded files |
-| **Enforcement** | Automatic; runs on a scheduled basis |
+| **Applies to** | Transactions, VAT returns, audit records, uploaded files | — |
+| **Enforcement** | Automatic; runs on a scheduled basis | — |
 
 Records that are within their retention window cannot be permanently deleted, regardless of operator action or approved deletion requests.
 

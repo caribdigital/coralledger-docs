@@ -70,7 +70,7 @@ To cancel an outstanding invitation before the client accepts it:
 1. Locate the invitation in the pending invitations table
 2. Click **Revoke**
 
-A revoked invitation is marked as consumed and cannot be used to accept entry. No business is linked to your firm as a result of the revocation.
+A revoked invitation is marked as consumed and cannot be used to accept the invitation. No business is linked to your firm as a result of the revocation.
 
 :::warning
 Revoking an invitation is irreversible. If you need to invite the same client again, send a new invitation.
