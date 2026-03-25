@@ -99,8 +99,8 @@ The `?bid=` parameter is an authorised context-switch, not an access bypass. The
 |----------|--------|
 | **Filter scope** | All EF Core entities with a `BusinessId` column |
 | **Evaluated** | At query execution time (per-query) |
-| **Bypass protection** | Raw SQL queries that bypass EF Core must explicitly include a `BusinessId` predicate — a code-review requirement enforced by the `NoRawSqlAnalyzer` Roslyn analyser |
-| **Cross-tenant detection** | The fraud detection layer logs and alerts on any query that returns rows for a `BusinessId` that does not match the current context (belt-and-suspenders check) |
+| **Bypass protection** | Raw SQL queries that bypass EF Core must explicitly include a `BusinessId` predicate — enforced as a mandatory code-review requirement |
+| **Cross-tenant detection** | The EF Core global query filter is the primary control preventing cross-tenant data from being returned; the fraud detection layer monitors for other anomalous cross-business access patterns |
 
 ## Next Steps
 

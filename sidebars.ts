@@ -19,6 +19,8 @@ const sidebars: SidebarsConfig = {
         'getting-started/create-account',
         'getting-started/setup-business',
         'getting-started/dashboard-tour',
+        'getting-started/mobile',
+        'getting-started/performance',
       ],
     },
     {
@@ -112,7 +114,24 @@ const sidebars: SidebarsConfig = {
         'security/ip-blocking',
         'security/fraud-alerts',
         'security/kill-switch',
+        'security/impersonation',
         'security/tenant-isolation',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Data Operations',
+      link: {
+        type: 'generated-index',
+        title: 'Data Operations',
+        description: 'Deletion requests, legal holds, retention monitoring, and data export',
+      },
+      items: [
+        'data-ops/index',
+        'data-ops/deletion-requests',
+        'data-ops/legal-holds',
+        'data-ops/retention-monitoring',
+        'data-ops/data-export',
       ],
     },
     {
@@ -126,6 +145,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'audit/index',
         'audit/audit-reports',
+        'audit/platform-ops-events',
+        'audit/cross-tenant-audit-viewer',
       ],
     },
     {
