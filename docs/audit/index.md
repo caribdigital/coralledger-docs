@@ -40,6 +40,9 @@ Administrators can verify the integrity of the entire audit chain at any time, d
 | **Settings Changes** | Business profile updates, permission changes |
 | **Security Events** | Failed logins, IP blocks, fraud alerts |
 | **Client Management** | Client added, modified, deactivated |
+| **Platform Ops** | Operator dashboard access, user/tenant/business management, impersonation, data deletion, cross-tenant scope |
+
+See [Platform Ops Event Types](/docs/audit/platform-ops-events) for a full reference of all `PLATFORM_OPS_*` events.
 
 ## Audit Entry Details
 
@@ -56,8 +59,14 @@ Each audit entry records:
 
 Navigate to **Reports > Audit Logs** to view the audit trail.
 
+## Cross-Tenant Audit Viewer
+
+Platform operators can access a unified view of audit activity across all businesses and tenants using the [Cross-Tenant Audit Viewer](/docs/audit/cross-tenant-audit-viewer). This viewer merges `ImmutableAuditEntry` and `SecurityAuditLog` sources, supports server-side filtering and pagination, and allows CSV/JSON export up to 10,000 rows.
+
 ## Next Steps
 
 - [View audit reports](/docs/audit/audit-reports)
+- [Platform Ops event types](/docs/audit/platform-ops-events)
+- [Cross-Tenant Audit Viewer](/docs/audit/cross-tenant-audit-viewer)
 - [Security overview](/docs/security)
 - [Data retention policy](/docs/billing)
