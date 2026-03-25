@@ -12,6 +12,16 @@ Two-factor authentication adds an extra layer of security by requiring a verific
 
 CoralLedger Comply handles sensitive financial data including VAT returns, transaction records, and business information. 2FA is mandatory for all users to protect this data.
 
+### 2FA for the Ops Portal (PlatformAdmin)
+
+The Ops Portal is the platform-administration interface used by **PlatformAdmin** operators. Because PlatformAdmins have platform-wide privileges — including the ability to manage all businesses and trigger emergency controls — 2FA is an **enforced prerequisite** for every Ops Portal session.
+
+Access is controlled by the `RequirePlatformAdmin` policy, which validates both the `PlatformAdmin` role **and** a completed 2FA challenge before granting entry. A PlatformAdmin who has not completed 2FA for their current session will be redirected to the 2FA prompt even if their role is correctly assigned.
+
+:::warning
+PlatformAdmin accounts without 2FA configured cannot access the Ops Portal. If you need to set up or reset 2FA for a PlatformAdmin account, contact your security team or raise a request through your organisation's IT helpdesk.
+:::
+
 ## Setting Up 2FA
 
 ### First-Time Setup

@@ -12,6 +12,15 @@ The kill switch is an emergency control for administrators to immediately disabl
 
 Navigate to **Admin > Kill Switch**. This feature requires Administrator access with 2FA enabled.
 
+:::info Ops Portal emergency controls
+**PlatformAdmin** operators can also trigger emergency controls — including kill-switch activation and forced account lock-down — directly from the **Ops Portal**.
+
+- All Ops Portal actions require the [`RequirePlatformAdmin` policy](/docs/security#requireplatformadmin-policy) (role + 2FA check).
+- Ops Portal events are recorded in the **platform-level audit log**, separately from business-level audit entries.
+
+See [Security Overview](/docs/security) for details on the PlatformAdmin role and self-operation guards.
+:::
+
 ## Status Display
 
 The kill switch dashboard shows:
