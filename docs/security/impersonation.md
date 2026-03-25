@@ -27,7 +27,7 @@ Impersonation allows **PlatformAdmin** operators to sign in as any user in a rea
 `ImpersonationReadOnlyMiddleware` intercepts every request during an active impersonation session:
 
 - **Blocked methods**: `POST`, `PUT`, `DELETE`, `PATCH` — any write operation returns **HTTP 403** with a JSON error body.
-- **Exempt paths**: Blazor/SignalR infrastructure (`_blazor/*` and hub endpoints) and the impersonation exit endpoint are whitelisted so the UI remains functional and the operator can end the session at any time.
+- **Exempt paths**: Blazor/SignalR infrastructure (`/_blazor`, `/dashboardHub`, `/pointSyncHub`, `/jobProgressHub`) and the impersonation exit endpoint (`/ops/impersonation/end`) are whitelisted so the UI remains functional and the operator can end the session at any time.
 
 :::warning
 Impersonation is strictly read-only. Attempting any write operation while impersonating a user will be blocked and logged.
