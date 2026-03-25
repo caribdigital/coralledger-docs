@@ -40,7 +40,7 @@ Click any subsystem row to navigate directly to the relevant portal section.
 The Recent Activity feed lists the last 50 `PLATFORM_OPS_*` audit events across all tenants. Each row shows:
 
 - **Timestamp** — UTC time of the event
-- **Event Type** — Colour-coded `PLATFORM_OPS_` badge
+- **Event Type** — Color-coded `PLATFORM_OPS_` badge
 - **Actor** — Platform admin who performed the action
 - **Target** — Affected tenant, user, or firm
 - **Summary** — Human-readable description

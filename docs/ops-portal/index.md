@@ -44,9 +44,9 @@ These events cannot be edited or deleted and are visible in both the Ops Audit L
 
 ### Health Indicators
 
-Throughout the portal, tenants and users are colour-coded by health status:
+Throughout the portal, tenants and users are color-coded by health status:
 
-| Colour | Meaning |
+| Color | Meaning |
 |--------|---------|
 | 🟢 **Green** | Healthy — no issues detected |
 | 🟡 **Yellow** | Warning — attention recommended |
