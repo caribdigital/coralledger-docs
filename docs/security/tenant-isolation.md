@@ -87,10 +87,10 @@ Append `?bid=<businessId>` to any Blazor Server URL to switch tenant context:
 https://your-instance.example.com/transactions?bid=3fa85f64-5717-4562-b3fc-2c963f66afa6
 ```
 
-The middleware intercepts the parameter, calls `SetCurrentBusinessId()`, and removes `?bid=` from the URL before the page renders. All EF Core queries made during that circuit session will be scoped to the requested business — subject to the usual authorisation checks that verify the current user has access to that business.
+The middleware intercepts the parameter, calls `SetCurrentBusinessId()`, and removes `?bid=` from the URL before the page renders. All EF Core queries made during that circuit session will be scoped to the requested business — subject to the usual authorization checks that verify the current user has access to that business.
 
 :::warning
-The `?bid=` parameter is an authorised context-switch, not an access bypass. The authorisation middleware validates that the authenticated user is a member of the target business before the switch takes effect. Attempts to switch to an unauthorised business ID are rejected with a 403.
+The `?bid=` parameter is an authorized context-switch, not an access bypass. The authorization middleware validates that the authenticated user is a member of the target business before the switch takes effect. Attempts to switch to an unauthorized business ID are rejected with a 403.
 :::
 
 ## Security Properties
