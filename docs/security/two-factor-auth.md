@@ -16,7 +16,7 @@ CoralLedger Comply handles sensitive financial data including VAT returns, trans
 
 The Ops Portal is the platform-administration interface used by **PlatformAdmin** operators. Because PlatformAdmins have platform-wide privileges — including the ability to manage all businesses and trigger emergency controls — 2FA is an **enforced prerequisite** for every Ops Portal session.
 
-Access is controlled by the `RequirePlatformAdmin` policy, which validates both the `PlatformAdmin` role **and** a completed 2FA challenge before granting entry. A PlatformAdmin who has not completed 2FA for their current session will be redirected to the 2FA prompt even if their role is correctly assigned.
+Access is controlled by the `RequirePlatformAdmin` policy, which validates both the `PlatformAdmin` role **and** a completed 2FA challenge before granting entry. If either check fails — including when a PlatformAdmin has not completed 2FA for their current session — the request is rejected with `403 Forbidden`.
 
 :::warning
 PlatformAdmin accounts without 2FA configured cannot access the Ops Portal. If you need to set up or reset 2FA for a PlatformAdmin account, contact your security team or raise a request through your organisation's IT helpdesk.
