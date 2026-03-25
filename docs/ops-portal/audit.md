@@ -97,7 +97,7 @@ The platform maintains a separate hash chain for `PLATFORM_OPS_*` events, indepe
 3. Review the results
 
 :::warning Broken Chain
-A broken chain link may indicate unauthorised modification of audit data. Escalate to the security team immediately and do not make further changes to the affected tenant's data until the investigation is complete.
+A broken chain link may indicate unauthorized modification of audit data. Escalate to the security team immediately and do not make further changes to the affected tenant's data until the investigation is complete.
 :::
 
 ## Exporting Audit Data

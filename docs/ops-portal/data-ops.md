@@ -30,12 +30,19 @@ Deletion requests are created in three ways:
 
 ### The 30-Day DPA Grace Period
 
-When a deletion request is raised, the following sequence begins:
+Deletion requests go through two phases: a **pending approval** phase (for requests that require admin approval) and a **30-day grace period** once the request is approved.
 
-1. **Day 0** — Request created; record is soft-deleted and inaccessible to the tenant
+For the purposes of the 30-day window, **Day 0** is defined as:
+
+- The time the request is **approved in the Ops Portal** for user or tenant-owner initiated requests that require approval.
+- The time the request is **created by a platform admin** when it is created and approved in a single step.
+
+From Day 0, the following sequence begins:
+
+1. **Day 0** — Request enters the grace period; the record is soft-deleted and is inaccessible to the tenant
 2. **Days 1–30** — Grace period: data is preserved and can be restored if the request is cancelled
-3. **Day 30** — Hard-delete job runs; personal data is permanently erased and replaced with anonymised placeholders
-4. **After Day 30** — Audit entries referencing the deleted record retain anonymised identifiers to preserve chain integrity
+3. **Day 30** — Hard-delete job runs; personal data is permanently erased and replaced with anonymized placeholders
+4. **After Day 30** — Audit entries referencing the deleted record retain anonymized identifiers to preserve chain integrity
 
 If a legal hold is active at Day 30, the hard-delete job is blocked until the hold is released.
 

@@ -93,10 +93,10 @@ Soft-deletion removes the user from all tenant memberships and prevents login wh
 3. Enter the reason and legal basis
 4. Click **Confirm**
 
-A `PLATFORM_OPS_USER_SOFT_DELETED` audit event is created. Soft-deleted users can be restored within the 30-day DPA grace period. After 30 days, the record is anonymised unless a legal hold is in place.
+A `PLATFORM_OPS_USER_SOFT_DELETED` audit event is created. Soft-deleted users can be restored within the 30-day DPA grace period. After 30 days, the record is anonymized unless a legal hold is in place.
 
 :::warning Data Protection
-Soft-deletion does not remove personal data immediately. If a deletion is requested under data-protection law, use the [Data Operations](/docs/ops-portal/data-ops) workflow to ensure the correct 30-day grace period and anonymisation steps are followed.
+Soft-deletion does not remove personal data immediately. If a deletion is requested under data-protection law, use the [Data Operations](/docs/ops-portal/data-ops) workflow to ensure the correct 30-day grace period and anonymization steps are followed.
 :::
 
 ## Next Steps
