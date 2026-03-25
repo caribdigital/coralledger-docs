@@ -115,6 +115,7 @@ const sidebars: SidebarsConfig = {
         'security/fraud-alerts',
         'security/kill-switch',
         'security/impersonation',
+        'security/tenant-isolation',
       ],
     },
     {
