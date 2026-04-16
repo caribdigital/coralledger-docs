@@ -36,21 +36,6 @@ Monitor sync health at **Admin > Point Sync Dashboard**:
 - Error logging and alerts
 - Manual sync triggers
 
-### CoralLedger Manager
-
-Integration with CoralLedger Manager for centralized business management.
-
-**Features:**
-- Multi-store sync coordination
-- Centralized reporting
-- Cross-location analytics
-
-**Setup:**
-1. Go to **Settings > Manager**
-2. Enter your Manager API credentials
-3. Select stores to sync
-4. Configure sync schedule
-
 ### CSV Import
 Universal import from any system that exports CSV.
 
