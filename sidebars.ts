@@ -37,6 +37,9 @@ const sidebars: SidebarsConfig = {
         'transactions/manual-entry',
         'transactions/categorization',
         'transactions/credit-notes',
+        'transactions/category-analytics',
+        'transactions/transaction-history',
+        'transactions/archived-records',
       ],
     },
     {
