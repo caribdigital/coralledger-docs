@@ -38,7 +38,6 @@ Navigate to **Settings > Notifications** from the main menu.
 | Notification | Trigger | Default |
 |--------------|---------|---------|
 | Import completed | Batch import finishes | On |
-| Sync completed | Point POS sync finishes | Off |
 | Categorization needed | Uncategorized transactions | On |
 | Large transaction | Above threshold | On |
 
