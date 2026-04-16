@@ -77,8 +77,16 @@ Before submitting, preview your return with:
 
 Learn more about [Return Preview & Validation](/docs/vat-returns/return-preview).
 
+## Filing Modes
+
+CoralLedger Comply supports two filing modes:
+
+- **Self-Filing** — You manage and submit your own VAT returns directly to the DIR. See [Self-Filing Mode](/docs/getting-started/self-filing).
+- **Firm-Managed** — An accounting firm handles filing on your behalf through the [Firm Portal](/docs/firm-portal/).
+
 ## Next Steps
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)
 - [Preview and validate](/docs/vat-returns/return-preview)
 - [Submit to the Comptroller](/docs/vat-returns/submit-return)
+- [Self-Filing Mode guide](/docs/getting-started/self-filing)
