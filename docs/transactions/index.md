@@ -15,7 +15,6 @@ You can import transactions from multiple sources:
 - **CSV Upload** - Import from any accounting system with intelligent column mapping
 - **Excel Files** - Direct .xlsx import with auto-detection
 - **Manual Entry** - Enter individual transactions directly
-- **Point POS** - Real-time automatic sync from CoralLedger Point
 
 ## Key Features
 
