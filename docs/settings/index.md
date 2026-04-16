@@ -63,13 +63,6 @@ Upload your logo for:
 
 ## Integration Settings
 
-### Point POS
-- Store configuration
-- Sync preferences
-- Reconciliation settings
-
-Access at **Settings > Point POS**.
-
 ### Manager Integration
 - Manager connection settings
 - Multi-store configuration
