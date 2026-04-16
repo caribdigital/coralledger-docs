@@ -112,6 +112,7 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 - **January 2025** - 2025 VAT reforms enacted
 - **April 2025** - Food store qualification rules effective
 - **July 2025** - Multi-rate system fully effective
+- **April 2026** - Rate transitions: certain unprepared food items move to Exempt
 
 ## Need Help?
 
@@ -123,3 +124,4 @@ The 2025 reforms are complex. Contact us for assistance:
 
 - [View VAT rates reference](/docs/reference/vat-rates)
 - [Check your compliance score](/docs/compliance/compliance-score)
+- [Understand rate transition handling](/docs/compliance/rate-transitions)
