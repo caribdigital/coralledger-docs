@@ -83,6 +83,7 @@ const sidebars: SidebarsConfig = {
         'reports/variance-analysis',
         'reports/custom-reports',
         'reports/shared-reports',
+        'reports/scheduled-reports',
       ],
     },
     {
