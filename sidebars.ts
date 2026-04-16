@@ -52,6 +52,7 @@ const sidebars: SidebarsConfig = {
         'vat-returns/generate-return',
         'vat-returns/return-preview',
         'vat-returns/submit-return',
+        'vat-returns/input-tax-apportionment',
       ],
     },
     {
