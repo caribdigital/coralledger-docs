@@ -77,31 +77,11 @@ Need a specific integration? Email us at support@coralledger.com
 
 ## API Access
 
-For custom integrations, CoralLedger Comply offers comprehensive API access.
-
-### API Keys
-Manage API keys at **Settings > API Keys**:
-- Create new API keys
-- Set key permissions
-- Revoke compromised keys
-- View usage statistics
-
-### Webhook Notifications
-Configure webhooks at **Settings > Webhooks**:
-- Transaction events
-- Filing events
-- Compliance alerts
-- Custom triggers
-
-### Authentication
-- OAuth 2.0 authentication
-- API key authentication
-- Rate limiting (configurable per endpoint)
-
-Contact support for full API documentation.
+:::info Coming Soon
+API access, including API key management, webhook notifications, and OAuth 2.0 authentication, is planned for a future release. It is not currently available.
+:::
 
 ## Next Steps
 
 - [Import from CSV](/docs/transactions/import-csv)
 - [Set up your business](/docs/getting-started/setup-business)
-- [Configure API keys](/docs/settings)
