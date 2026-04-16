@@ -52,7 +52,7 @@ Client invitations (covered in this section) are distinct from team member invit
 2. Enter the client's email address
 3. Click **Send Invitation**
 
-CoralLedger generates a unique, time-limited token and sends it to the provided email address. The token is valid for **7 days** from the time of sending. The pending invitations table is updated immediately.
+CoralLedger Comply generates a unique, time-limited token and sends it to the provided email address. The token is valid for **7 days** from the time of sending. The pending invitations table is updated immediately.
 
 ### 2 — Resend (token refresh)
 

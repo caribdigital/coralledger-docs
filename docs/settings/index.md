@@ -142,7 +142,7 @@ Export all your data at any time:
 - Full data backup
 
 ### Data Retention
-CoralLedger retains your data for:
+CoralLedger Comply retains your data for:
 - Active accounts: Unlimited
 - Closed accounts: 7 years (VAT Act Section 50)
 
