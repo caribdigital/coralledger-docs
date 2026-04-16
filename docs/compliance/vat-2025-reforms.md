@@ -12,13 +12,18 @@ The Bahamas implemented significant VAT reforms effective July 2025. CoralLedger
 
 ### Multi-Rate VAT System
 
-The Bahamas now operates a three-tier VAT system:
+The Bahamas now operates a multi-rate VAT system:
 
 | Rate | Application |
 |------|-------------|
 | **10%** | Standard rate for most goods and services |
-| **5%** | Reduced rate for breadbasket items at licensed food stores |
+| **5%** | Reduced rate for hygiene products and medications at licensed food stores (narrow scope) |
 | **0%** | Zero-rated for exports and specific supplies |
+| **Exempt** | No VAT charged and no input tax credit; includes unprepared food at licensed food stores from April 1, 2026 |
+
+:::info April 2026 Update
+From April 1, 2026, unprepared food at licensed food stores moved to **Exempt** status. See [April 2026 Food Exemption Transition](#april-2026-food-exemption-transition) below.
+:::
 
 ### Construction VAT Restrictions
 
@@ -71,6 +76,35 @@ Licensed food stores have specific VAT treatment:
 - Upload license documentation
 - Maintain qualification status
 
+### April 2026 Food Exemption Transition {#april-2026-food-exemption-transition}
+
+Effective **April 1, 2026**, unprepared food at licensed food stores moved to **VAT Exempt** status. This is distinct from both the 5% reduced rate and zero-rating.
+
+**What Changed:**
+- Unprepared food (bread, rice, flour, fresh produce, etc.) is no longer taxable at 5% — it is now Exempt
+- The 5% reduced rate now applies only to the narrow category of hygiene products and medications at licensed food stores
+- Exempt supplies carry **no input tax credit** for the supplier, unlike zero-rated supplies
+
+**Exempt vs Zero-Rated — Why It Matters:**
+
+| | Exempt | Zero-Rated |
+|---|---|---|
+| VAT charged to customer | No | No |
+| Supplier claims input tax credits | **No** | **Yes** |
+| Triggers apportionment | **Yes** | No |
+
+Because no input tax credit is available on exempt supplies, food stores that now sell a mix of exempt (unprepared food) and taxable goods must perform **input VAT apportionment** to determine the recoverable portion of their input tax.
+
+**Impact on Apportionment:**
+- If your business sells both Exempt and taxable supplies, you must calculate what proportion of input VAT is attributable to taxable activities
+- Only the taxable-activity proportion is recoverable
+- CoralLedger Comply tracks exempt vs taxable supply ratios and assists with apportionment calculations at **Compliance > Apportionment**
+
+**Comply Features:**
+- Automatic reclassification of unprepared food transactions dated on or after April 1, 2026
+- Apportionment ratio calculation and monitoring
+- Alerts when exempt supply proportion increases your non-recoverable input VAT exposure
+
 ### Bad Debt Relief (12-Month Rule)
 
 Claim relief on bad debts after 12 months:
@@ -97,6 +131,7 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 | Refund Eligibility | Compliance > Refund Eligibility | 50% rule monitoring |
 | Bad Debt Relief | Compliance > Bad Debt | 12-month tracking |
 | Tax Savings | Compliance > Tax Savings | Recovery opportunities |
+| Apportionment | Compliance > Apportionment | Exempt vs taxable supply ratio and input VAT recovery |
 
 ## Staying Compliant
 
@@ -106,12 +141,14 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 2. **Track construction projects** - Monitor against the $1M threshold
 3. **Review refund eligibility** - Check monthly if you have significant zero-rated sales
 4. **Document bad debts** - Maintain proper records for relief claims
+5. **Monitor apportionment** - If you sell unprepared food (Exempt from April 2026), review your input VAT apportionment ratio each period
 
 ### Important Dates
 
 - **January 2025** - 2025 VAT reforms enacted
 - **April 2025** - Food store qualification rules effective
 - **July 2025** - Multi-rate system fully effective
+- **April 1, 2026** - Unprepared food at licensed food stores moves to VAT Exempt; 5% rate narrows to hygiene/medication only
 
 ## Need Help?
 
