@@ -63,13 +63,6 @@ Upload your logo for:
 
 ## Integration Settings
 
-### Manager Integration
-- Manager connection settings
-- Multi-store configuration
-- Sync scheduling
-
-Access at **Settings > Manager**.
-
 ### API Keys
 - Create and manage API keys
 - Set permissions
