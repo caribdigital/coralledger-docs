@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: Cash Flow Report
 description: Track VAT payment obligations and cash flow
 ---
