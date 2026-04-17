@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: Intelligence Dashboard
-description: AI-powered compliance insights and analytics
+description: Automated compliance insights and analytics
 ---
 
 # Intelligence Dashboard
 
-The Intelligence Dashboard provides AI-powered analysis of your VAT compliance, offering deep insights into your business patterns and potential risks.
+The Intelligence Dashboard provides automated analysis of your VAT compliance, offering deep insights into your business patterns and potential risks.
 
 ## Accessing the Dashboard
 

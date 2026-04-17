@@ -78,7 +78,7 @@ See [Set Up Your Business](/docs/getting-started/setup-business) for full detail
 ### Step 2: Enter Transactions
 Record all taxable activity for the period:
 
-- **CSV Import** — Upload exports from Point POS or other systems via [Import CSV](/docs/transactions/import-csv)
+- **CSV Import** — Upload exports from your accounting system via [Import CSV](/docs/transactions/import-csv)
 - **Manual Entry** — Enter transactions one at a time via [Manual VAT Entry](/docs/transactions/manual-entry)
 
 Review automatic VAT categorizations and correct any misclassifications before proceeding.

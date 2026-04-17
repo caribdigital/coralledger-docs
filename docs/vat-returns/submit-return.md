@@ -54,9 +54,7 @@ CoralLedger Comply maintains all your return history for the required 7-year ret
 Track your return through its full lifecycle in CoralLedger Comply:
 - **Draft** — Generated but not finalized
 - **Ready** — All validations passed
-- **Filed** — Marked as submitted to DIR
-- **Submitted** — Submission confirmed
-- **Accepted** — DIR has accepted the return
+- **Filed** — Marked by you as submitted to DIR via OTAS
 - **Amended** — Correction submitted for a previously filed return
 
 ## Amendments

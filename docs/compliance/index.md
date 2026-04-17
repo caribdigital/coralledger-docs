@@ -6,7 +6,7 @@ description: Stay compliant with Bahamas VAT regulations
 
 # Compliance
 
-CoralLedger Comply helps you maintain VAT compliance with real-time monitoring, AI-powered intelligence, and comprehensive dashboards.
+CoralLedger Comply helps you maintain VAT compliance with real-time monitoring, real-time intelligence, and comprehensive dashboards.
 
 ## Why Compliance Matters
 
@@ -26,7 +26,7 @@ Your compliance score (A+ to F) is calculated from:
 - Documentation (20%)
 
 ### Intelligence Dashboard
-AI-powered analysis including:
+Automated analysis including:
 - Period-aware compliance grading
 - Penalty risk assessment
 - Data quality scoring

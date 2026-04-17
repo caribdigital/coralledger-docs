@@ -124,7 +124,7 @@ The data visualised in the Analytics Dashboard directly influences your [Complia
 
 Reviewing the Analytics Dashboard regularly helps you catch data issues early — before they affect your VAT return or compliance grade.
 
-For a deeper AI-powered analysis of your data patterns, see the [Intelligence Dashboard](/docs/compliance/intelligence-dashboard).
+For a deeper automated analysis of your data patterns, see the [Intelligence Dashboard](/docs/compliance/intelligence-dashboard).
 
 ## Next Steps
 
