@@ -82,6 +82,7 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'reports/index',
+        'reports/analytics-dashboard',
         'reports/cash-flow',
         'reports/variance-analysis',
         'reports/custom-reports',

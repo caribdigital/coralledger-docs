@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Custom Report Builder
 description: Build custom reports with configurable columns and filters
 ---
