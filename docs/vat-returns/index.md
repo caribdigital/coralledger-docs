@@ -15,7 +15,7 @@ VAT returns in The Bahamas are filed:
 - **Quarterly** - For most registered businesses
 
 :::info Filing Deadline
-VAT returns are due by the 28th of the month following the period end.
+VAT returns are due within **21 days** after the end of the tax period (14 days for large taxpayers with annual turnover ≥ $5M). The deadline varies by period — it is not a fixed calendar date.
 :::
 
 ## Return Components
