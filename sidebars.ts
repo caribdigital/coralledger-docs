@@ -69,6 +69,7 @@ const sidebars: SidebarsConfig = {
         'compliance/compliance-score',
         'compliance/intelligence-dashboard',
         'compliance/vat-2025-reforms',
+        'compliance/rate-transitions',
       ],
     },
     {
