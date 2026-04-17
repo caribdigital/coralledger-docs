@@ -60,3 +60,6 @@ Every transaction maintains a complete history of:
 - [Enter transactions manually](/docs/transactions/manual-entry)
 - [Understand VAT categorization](/docs/transactions/categorization)
 - [Manage credit notes](/docs/transactions/credit-notes)
+- [Analyze transactions by category](/docs/transactions/category-analytics)
+- [Search transaction history](/docs/transactions/transaction-history)
+- [Access archived records](/docs/transactions/archived-records)
