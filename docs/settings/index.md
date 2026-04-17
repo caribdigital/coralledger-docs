@@ -63,19 +63,9 @@ Upload your logo for:
 
 ## Integration Settings
 
-### API Keys
-- Create and manage API keys
-- Set permissions
-- View usage
-
-Access at **Settings > API Keys**.
-
-### Webhooks
-- Configure event triggers
-- Set callback URLs
-- Monitor webhook health
-
-Access at **Settings > Webhooks**.
+:::info Coming Soon
+API key management and webhook configuration are planned for a future release and are not currently available.
+:::
 
 ## Firm Settings (Firm Portal Users)
 
