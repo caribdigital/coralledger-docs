@@ -37,7 +37,7 @@ Definitions of common VAT and compliance terms:
 **10%** on most goods and services
 
 ### Filing Deadlines
-**28th** of the month following the period end
+**21 days** after the end of the tax period
 
 ### Record Retention
 **7 years** minimum

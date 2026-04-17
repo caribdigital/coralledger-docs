@@ -61,13 +61,13 @@ Receive notifications for:
 2. **Review categories monthly** - Ensure accuracy
 3. **Check Intelligence Dashboard** - Monitor AI insights
 4. **Address alerts promptly** - Don't let issues accumulate
-5. **File on time** - Before the 28th deadline
+5. **File on time** - Within 21 days of period end
 
 ## Filing Deadlines
 
-VAT returns are due by the **28th of the month** following the period end:
-- **Monthly filers**: Due the 28th of each month
-- **Quarterly filers**: Due the 28th of the month after quarter end
+VAT returns are due **21 days after the end of the tax period**:
+- **Monthly filers**: Due 21 days after each month end (e.g., January → February 21)
+- **Quarterly filers**: Due 21 days after each quarter end (e.g., Q1 ending March 31 → April 21)
 
 The dashboard tracks upcoming deadlines across all your clients and highlights overdue returns.
 

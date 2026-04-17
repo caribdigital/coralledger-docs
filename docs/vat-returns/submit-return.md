@@ -37,7 +37,7 @@ If you have VAT payable:
 - **Cheque** - At DIR offices
 
 :::warning Late Filing Penalties
-Returns filed after the 28th may incur penalties and interest.
+Returns filed after the 21-day deadline may incur penalties and interest.
 :::
 
 ## Record Keeping
