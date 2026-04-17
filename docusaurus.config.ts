@@ -134,12 +134,8 @@ const config: Config = {
               href: complyUrl,
             },
             {
-              label: 'Point POS',
-              href: 'https://www.coralledger.com/point',
-            },
-            {
               label: 'Pricing',
-              href: 'https://www.coralledger.com/comply#pricing',
+              href: 'https://www.coralledger.com/pricing',
             },
           ],
         },

@@ -19,7 +19,7 @@ You can import transactions from multiple sources:
 ## Key Features
 
 ### Automatic VAT Categorization
-Our AI-powered categorization engine automatically assigns VAT rates based on:
+Our Automated categorization engine automatically assigns VAT rates based on:
 - Product/service descriptions
 - Vendor information
 - Historical patterns

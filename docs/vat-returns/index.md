@@ -43,10 +43,12 @@ Each VAT return includes:
 |--------|-------------|
 | **Draft** | Return generated but not finalized — can be edited |
 | **Ready** | All validations passed, ready for submission |
-| **Filed** | Return has been filed with DIR |
-| **Submitted** | Submission confirmed |
-| **Accepted** | DIR has accepted the return |
+| **Filed** | Return marked as filed after you submit via OTAS |
 | **Amended** | A correction has been submitted for a previously filed return |
+
+:::note
+The "Filed" status is manually marked by you after submitting via the DIR's Online Tax Administration System (OTAS). CoralLedger Comply does not currently receive automated confirmation from the DIR.
+:::
 
 ## DIR Form Fields (L1-L31)
 

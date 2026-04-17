@@ -22,13 +22,13 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'AI Intelligence',
-    icon: '🤖',
+    title: 'Audit Defense',
+    icon: '🛡️',
     description: (
       <>
-        AI-powered Intelligence Dashboard with compliance grading, penalty risk
-        assessment, vendor analysis, and data quality scoring. Smart transaction
-        categorization learns from your patterns.
+        Immutable hash-chain verified audit trail with 7-year retention.
+        Export a complete audit defense package — transaction log, rate
+        classifications, and apportionment workings — in one click.
       </>
     ),
   },
@@ -64,12 +64,13 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Point POS Integration',
-    icon: '🔗',
+    title: 'Import & Export',
+    icon: '📤',
     description: (
       <>
-        Real-time sync with CoralLedger Point POS. Store-level controls, automatic
-        retry on failures, sync health monitoring, and daily reconciliation reports.
+        Import transactions via CSV or Excel from any accounting system with
+        intelligent column mapping. Export returns, audit trails, and reports
+        in PDF, CSV, XML, or Excel format.
       </>
     ),
   },
