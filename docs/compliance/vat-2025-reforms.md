@@ -107,7 +107,7 @@ Because no input tax credit is available on exempt supplies, food stores that no
 
 ### Bad Debt Relief (12-Month Rule)
 
-Claim relief on bad debts after 12 months:
+Claim relief on bad debts after 12 months. See the [Bad Debt Relief](/docs/compliance/bad-debt-relief) page for the full workflow.
 
 **Eligibility:**
 - Debt must be at least 12 months overdue

@@ -90,5 +90,6 @@ CoralLedger Comply supports two filing modes:
 - [Generate your VAT return](/docs/vat-returns/generate-return)
 - [Preview and validate](/docs/vat-returns/return-preview)
 - [Submit to the Comptroller](/docs/vat-returns/submit-return)
+- [Claim Bad Debt Relief (L16 adjustment)](/docs/compliance/bad-debt-relief)
 - [Input Tax Apportionment](/docs/vat-returns/input-tax-apportionment)
 - [Self-Filing Mode guide](/docs/getting-started/self-filing)
