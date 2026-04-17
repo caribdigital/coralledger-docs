@@ -53,6 +53,7 @@ const sidebars: SidebarsConfig = {
         'vat-returns/generate-return',
         'vat-returns/return-preview',
         'vat-returns/submit-return',
+        'vat-returns/input-tax-apportionment',
       ],
     },
     {
@@ -84,6 +85,7 @@ const sidebars: SidebarsConfig = {
         'reports/variance-analysis',
         'reports/custom-reports',
         'reports/shared-reports',
+        'reports/scheduled-reports',
       ],
     },
     {
