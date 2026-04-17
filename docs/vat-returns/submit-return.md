@@ -43,7 +43,7 @@ Returns filed after the 28th may incur penalties and interest.
 ## Record Keeping
 
 After submission, store:
-- Your CoralLedger generated return (PDF)
+- Your CoralLedger Comply generated return (PDF)
 - DIR submission confirmation
 - Payment receipt (if applicable)
 
@@ -51,7 +51,7 @@ CoralLedger Comply maintains all your return history for the required 7-year ret
 
 ## Filing Status
 
-Track your return through its full lifecycle in CoralLedger:
+Track your return through its full lifecycle in CoralLedger Comply:
 - **Draft** — Generated but not finalized
 - **Ready** — All validations passed
 - **Filed** — Marked as submitted to DIR

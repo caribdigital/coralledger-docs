@@ -19,6 +19,7 @@ const sidebars: SidebarsConfig = {
         'getting-started/create-account',
         'getting-started/setup-business',
         'getting-started/dashboard-tour',
+        'getting-started/self-filing',
         'getting-started/mobile',
         'getting-started/performance',
       ],
@@ -52,6 +53,7 @@ const sidebars: SidebarsConfig = {
         'vat-returns/generate-return',
         'vat-returns/return-preview',
         'vat-returns/submit-return',
+        'vat-returns/input-tax-apportionment',
       ],
     },
     {
@@ -67,6 +69,7 @@ const sidebars: SidebarsConfig = {
         'compliance/compliance-score',
         'compliance/intelligence-dashboard',
         'compliance/vat-2025-reforms',
+        'compliance/rate-transitions',
       ],
     },
     {
@@ -83,6 +86,7 @@ const sidebars: SidebarsConfig = {
         'reports/variance-analysis',
         'reports/custom-reports',
         'reports/shared-reports',
+        'reports/scheduled-reports',
       ],
     },
     {

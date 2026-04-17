@@ -38,7 +38,6 @@ Navigate to **Settings > Notifications** from the main menu.
 | Notification | Trigger | Default |
 |--------------|---------|---------|
 | Import completed | Batch import finishes | On |
-| Sync completed | Point POS sync finishes | Off |
 | Categorization needed | Uncategorized transactions | On |
 | Large transaction | Above threshold | On |
 
@@ -111,7 +110,7 @@ Add a backup email for:
 - Billing communications
 
 ### Mobile (Coming Soon)
-Push notifications for the CoralLedger mobile app:
+Push notifications for the CoralLedger Comply mobile app:
 - Real-time alerts
 - Quick actions
 - Deadline reminders
