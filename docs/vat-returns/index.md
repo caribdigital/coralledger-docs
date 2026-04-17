@@ -31,6 +31,7 @@ Each VAT return includes:
 ### Input VAT (Purchases)
 - VAT paid on business purchases
 - Eligible input tax credits
+- [Input tax apportionment](/docs/vat-returns/input-tax-apportionment) for businesses with mixed taxable and exempt supplies
 
 ### Net Position
 - VAT payable (if output > input)
@@ -77,9 +78,18 @@ Before submitting, preview your return with:
 
 Learn more about [Return Preview & Validation](/docs/vat-returns/return-preview).
 
+## Filing Modes
+
+CoralLedger Comply supports two filing modes:
+
+- **Self-Filing** — You manage and submit your own VAT returns directly to the DIR. See [Self-Filing Mode](/docs/getting-started/self-filing).
+- **Firm-Managed** — An accounting firm handles filing on your behalf through the [Firm Portal](/docs/firm-portal/).
+
 ## Next Steps
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)
 - [Preview and validate](/docs/vat-returns/return-preview)
 - [Submit to the Comptroller](/docs/vat-returns/submit-return)
 - [Claim Bad Debt Relief (L16 adjustment)](/docs/compliance/bad-debt-relief)
+- [Input Tax Apportionment](/docs/vat-returns/input-tax-apportionment)
+- [Self-Filing Mode guide](/docs/getting-started/self-filing)

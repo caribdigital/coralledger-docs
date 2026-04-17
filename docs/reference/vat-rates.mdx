@@ -19,9 +19,9 @@ Current VAT rates under The Bahamas VAT Act 2014 and 2025 reforms.
 | Rate | Name | Application |
 |------|------|-------------|
 | 10% | Standard | Default rate for taxable supplies |
-| 5% | Reduced | Breadbasket items at licensed food stores |
+| 5% | Reduced | Hygiene products and medications at licensed food stores (narrow scope) |
 | 0% | Zero-Rated | Exports and specific supplies |
-| N/A | Exempt | Excluded from VAT system |
+| N/A | Exempt | Excluded from VAT system; includes unprepared food at licensed food stores from April 1, 2026 |
 
 ## Standard Rate (10%)
 
@@ -35,24 +35,24 @@ The default rate applies to most goods and services including:
 
 ## Reduced Rate (5%)
 
-The 5% reduced rate applies to **breadbasket items** sold by **licensed food stores** only.
+:::note Narrow Scope
+The 5% reduced rate is limited to a narrow category of items — hygiene products and medications sold at licensed food stores. It is **not** a general third rate and does not apply to unprepared food (see [Exempt Supplies](#exempt-supplies) below).
+:::
+
+The 5% reduced rate applies to **hygiene products and medications** sold by **licensed food stores** only.
 
 ### Qualifying Items
-- Bread and bread products
-- Rice
-- Grits
-- Flour
-- Sugar
-- Cooking oil
-- Milk (fresh and powdered)
-- Baby formula
-- Corned beef
-- Sardines
-- Certain fruits and vegetables
+- Hygiene products (soap, toothpaste, sanitary products, etc.)
+- Over-the-counter medications
+- Other eligible health and hygiene items as defined by the Comptroller
+
+:::caution Breadbasket Items No Longer at 5%
+Prior to April 1, 2026, the 5% rate also covered breadbasket staples (bread, rice, flour, etc.). From April 1, 2026, those items moved to **VAT Exempt**. See [Exempt Supplies](#exempt-supplies).
+:::
 
 ### Requirements
 - Must be sold by a business with a valid food store license
-- Must be breadbasket items as defined by the Comptroller
+- Must be qualifying hygiene or medication items as defined by the Comptroller
 - Regular retail sales only (not food service)
 
 :::warning License Required
@@ -74,12 +74,29 @@ Zero-rated supplies charge 0% VAT but allow input VAT recovery.
 
 Exempt supplies are outside the VAT system entirely. No VAT is charged and no input VAT can be claimed.
 
+:::info April 2026 — Unprepared Food Moves to Exempt
+As of **April 1, 2026**, unprepared food sold at licensed food stores is **VAT Exempt** — not zero-rated. Unlike zero-rated supplies, exempt supplies do **not** entitle the supplier to claim input tax credits on related purchases. Businesses that sell a mix of taxable and exempt supplies must apportion their input VAT accordingly.
+:::
+
+### Exempt vs Zero-Rated: Key Distinction
+
+Both Exempt and Zero-Rated supplies result in no VAT being charged to the customer, but they differ critically for the **supplier**:
+
+| | Exempt | Zero-Rated |
+|---|---|---|
+| VAT charged to customer | No | No |
+| Supplier claims input tax credits | **No** | **Yes** |
+| Affects apportionment | **Yes** | No |
+
+Because exempt supplies block input tax credit recovery, a business selling both exempt and taxable supplies must calculate a **partial exemption / apportionment** to determine how much input VAT it can recover.
+
 ### Exempt Categories
 - Financial services (banking, insurance)
 - Educational services
 - Medical and healthcare services
 - Residential rent
 - Certain government services
+- **Unprepared food at licensed food stores** (from April 1, 2026)
 
 ## Input VAT Recovery
 
@@ -96,6 +113,7 @@ Exempt supplies are outside the VAT system entirely. No VAT is charged and no in
 - **Rate Increase to 12%**: July 1, 2018
 - **Rate Reduction to 10%**: January 1, 2022
 - **2025 Reforms**: January 1, 2025
+- **April 2026 Food Exemption**: April 1, 2026 — unprepared food at licensed food stores moves to Exempt
 :::info Transition Dates
 When VAT rates change, CoralLedger Comply automatically applies the correct rate based on the transaction date. Transactions near rate transition dates will show applicable rate guidance to ensure accurate categorization.
 :::

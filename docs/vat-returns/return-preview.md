@@ -31,7 +31,7 @@ The preview displays:
 
 ## 10-Point Validation
 
-CoralLedger performs 10 validation checks before you can file:
+CoralLedger Comply performs 10 validation checks before you can file:
 
 ### Blocking Validations (Must Fix)
 

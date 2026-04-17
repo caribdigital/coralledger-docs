@@ -19,6 +19,7 @@ const sidebars: SidebarsConfig = {
         'getting-started/create-account',
         'getting-started/setup-business',
         'getting-started/dashboard-tour',
+        'getting-started/self-filing',
         'getting-started/mobile',
         'getting-started/performance',
       ],
@@ -37,6 +38,9 @@ const sidebars: SidebarsConfig = {
         'transactions/manual-entry',
         'transactions/categorization',
         'transactions/credit-notes',
+        'transactions/category-analytics',
+        'transactions/transaction-history',
+        'transactions/archived-records',
       ],
     },
     {
@@ -52,6 +56,7 @@ const sidebars: SidebarsConfig = {
         'vat-returns/generate-return',
         'vat-returns/return-preview',
         'vat-returns/submit-return',
+        'vat-returns/input-tax-apportionment',
       ],
     },
     {
@@ -68,6 +73,7 @@ const sidebars: SidebarsConfig = {
         'compliance/intelligence-dashboard',
         'compliance/vat-2025-reforms',
         'compliance/bad-debt-relief',
+        'compliance/rate-transitions',
       ],
     },
     {
@@ -80,10 +86,12 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'reports/index',
+        'reports/analytics-dashboard',
         'reports/cash-flow',
         'reports/variance-analysis',
         'reports/custom-reports',
         'reports/shared-reports',
+        'reports/scheduled-reports',
       ],
     },
     {

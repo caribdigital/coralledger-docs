@@ -77,5 +77,7 @@ The dashboard tracks upcoming deadlines across all your clients and highlights o
 - [Explore the Intelligence Dashboard](/docs/compliance/intelligence-dashboard)
 - [Learn about 2025 VAT reforms](/docs/compliance/vat-2025-reforms)
 - [Claim Bad Debt Relief](/docs/compliance/bad-debt-relief)
+- [Input Tax Apportionment](/docs/vat-returns/input-tax-apportionment)
+- [Rate transition handling](/docs/compliance/rate-transitions)
 - [View VAT rates reference](/docs/reference/vat-rates)
 - [Security features](/docs/security)
