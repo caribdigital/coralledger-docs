@@ -86,7 +86,7 @@ Each export is recorded in the Export History table with:
 | **Regulatory audit** | Provide the full JSON export to DIR or other authorities |
 | **Legal discovery** | Export before or alongside legal hold placement |
 | **Business migration** | Export data before moving to another system |
-| **Off-platform archive** | Retain a copy outside CoralLedger for long-term storage |
+| **Off-platform archive** | Retain a copy outside CoralLedger Comply for long-term storage |
 | **Data subject request** | Fulfil a data subject access request (DSAR) |
 
 ## Next Steps
