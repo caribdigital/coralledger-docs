@@ -61,13 +61,20 @@ Receive notifications for:
 2. **Review categories monthly** - Ensure accuracy
 3. **Check Intelligence Dashboard** - Monitor AI insights
 4. **Address alerts promptly** - Don't let issues accumulate
-5. **File on time** - Within 21 days of period end
+5. **File on time** - Within 21 days of period end (14 days for large taxpayers)
 
 ## Filing Deadlines
 
-VAT returns are due **21 days after the end of the tax period**:
-- **Monthly filers**: Due 21 days after each month end (e.g., January → February 21)
-- **Quarterly filers**: Due 21 days after each quarter end (e.g., Q1 ending March 31 → April 21)
+VAT returns are due within **21 days** after the end of the tax period. Large taxpayers (annual turnover ≥ $5M) must file within **14 days**. The deadline is not a fixed calendar date — it varies depending on when the period ends.
+
+| Period example | Period end | Standard deadline | Large taxpayer deadline |
+|----------------|-----------|-------------------|-------------------------|
+| Q1 2026 | March 31 | April 21 | April 14 |
+| Q2 2026 | June 30 | July 21 | July 14 |
+| Q3 2026 | September 30 | October 21 | October 14 |
+| Q4 2026 | December 31 | January 21 | January 14 |
+| February (monthly) | February 28 | March 21 | March 14 |
+| June (monthly) | June 30 | July 21 | July 14 |
 
 The dashboard tracks upcoming deadlines across all your clients and highlights overdue returns.
 
