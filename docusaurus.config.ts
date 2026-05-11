@@ -65,6 +65,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/caribdigital/coralledger-docs/tree/main/',
           routeBasePath: 'docs',
+          showLastUpdateTime: true,
         },
         blog: false, // Disable blog for now
         theme: {
