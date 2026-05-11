@@ -12,8 +12,8 @@ CoralLedger Comply makes it easy to import, review VAT categories, and manage yo
 
 You can import transactions from multiple sources:
 
-- **CSV Upload** - Import from any accounting system with intelligent column mapping
-- **Excel Files** - Direct .xlsx import with auto-detection
+- **CSV Upload** - Import from any accounting system with header-driven column mapping (manual override available)
+- **Excel Files** - Direct .xlsx import with column-detection assistance
 - **Manual Entry** - Enter individual transactions directly
 
 ## Key Features
@@ -29,7 +29,7 @@ Our categorization guidance suggests VAT rates based on:
 Real-time validation during import:
 - VAT compliance checking
 - Duplicate detection (SHA-256 + fuzzy matching)
-- AI categorization suggestions for review
+- Category suggestions for your review
 - Error and warning panels
 
 ### Bulk Operations
