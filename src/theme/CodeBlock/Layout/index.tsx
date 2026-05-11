@@ -12,20 +12,19 @@ import styles from './styles.module.css';
 export default function CodeBlockLayout({className}: Props): ReactNode {
   const {metadata} = useCodeBlockContext();
   const hasLanguageLabel = metadata.language && metadata.language !== 'text';
-  const languageLabel = hasLanguageLabel ? metadata.language : undefined;
 
   return (
     <Container as="div" className={clsx(className, metadata.className)}>
-      {(metadata.title || languageLabel) && (
+      {(metadata.title || hasLanguageLabel) && (
         <div className={styles.codeBlockHeader}>
           {metadata.title && (
             <div className={styles.codeBlockTitle}>
               <Title>{metadata.title}</Title>
             </div>
           )}
-          {languageLabel && (
+          {hasLanguageLabel && (
             <div className={styles.codeBlockLanguage}>
-              {languageLabel}
+              {metadata.language}
             </div>
           )}
         </div>
