@@ -10,8 +10,8 @@ Quick reference materials for Bahamas VAT compliance.
 
 ## In This Section
 
-### VAT Rates
-Complete guide to current VAT rates in The Bahamas:
+### VAT Categories
+Complete guide to current VAT categories in The Bahamas:
 - Standard rate (10%)
 - Reduced rate (5%)
 - Zero-rated supplies

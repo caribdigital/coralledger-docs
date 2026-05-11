@@ -67,8 +67,8 @@ function QuickLinks() {
           </div>
           <div className="col col--3">
             <div className={styles.quickLinkCard}>
-              <h3>VAT Rates</h3>
-              <p>10%, 5%, 0%, and exempt rates</p>
+              <h3>VAT Categories</h3>
+              <p>Standard, Reduced, Zero-Rated, and Exempt</p>
               <Link to="/docs/reference/vat-rates">Reference →</Link>
             </div>
           </div>

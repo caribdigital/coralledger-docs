@@ -19,7 +19,7 @@ You can import transactions from multiple sources:
 ## Key Features
 
 ### VAT Categorization Guidance
-Our categorization guidance suggests VAT rates based on:
+Our categorization guidance suggests VAT categories based on:
 - Product/service descriptions
 - Vendor information
 - Historical patterns
