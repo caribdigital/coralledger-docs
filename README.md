@@ -39,3 +39,15 @@ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Algolia DocSearch
+
+Set these environment variables in your deploy environment to enable documentation search:
+
+- `ALGOLIA_APP_ID`
+- `ALGOLIA_API_KEY` (search-only key)
+- `ALGOLIA_INDEX_NAME`
+
+When configured, Docusaurus shows the DocSearch modal from the navbar and supports keyboard shortcuts like `Cmd+K` / `Ctrl+K`, with relevance-ranked results from your Algolia index.
+
+To keep results fresh, configure your Algolia crawler to reindex on each deploy (for example, by connecting your hosting provider deploy webhook to Algolia crawl triggers).
