@@ -78,6 +78,28 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Section 32 Attestation',
+      link: {
+        type: 'generated-index',
+        title: 'Section 32 Attestation Pathway',
+        description: 'Formal attestation process for VAT return submissions under Section 32 of the Bahamas VAT Act',
+      },
+      items: [
+        'attestation/index',
+        'attestation/qualifying-screen',
+        'attestation/variant-standard',
+        'attestation/variant-agent',
+        'attestation/variant-professional',
+        'attestation/variant-digital',
+        'attestation/bica-verification',
+        'attestation/session-affirmation',
+        'attestation/handover',
+        'attestation/carve-outs',
+        'attestation/audit-trail',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Reports',
       link: {
         type: 'generated-index',
