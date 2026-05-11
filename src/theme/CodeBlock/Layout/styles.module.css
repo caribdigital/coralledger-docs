@@ -21,10 +21,10 @@
 }
 
 .codeBlockLanguage {
-  border: 1px solid var(--ifm-color-emphasis-300);
+  border: 1px solid var(--ifm-color-emphasis-500);
   border-radius: var(--ifm-global-radius);
   color: var(--ifm-color-emphasis-700);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   padding: 0.2rem 0.45rem;
