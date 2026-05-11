@@ -11,8 +11,8 @@ import styles from './styles.module.css';
 
 export default function CodeBlockLayout({className}: Props): ReactNode {
   const {metadata} = useCodeBlockContext();
-  const languageLabel =
-    metadata.language && metadata.language !== 'text' ? metadata.language : undefined;
+  const hasLanguageLabel = metadata.language && metadata.language !== 'text';
+  const languageLabel = hasLanguageLabel ? metadata.language : undefined;
 
   return (
     <Container as="div" className={clsx(className, metadata.className)}>
