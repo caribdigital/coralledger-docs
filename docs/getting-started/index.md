@@ -17,7 +17,7 @@ CoralLedger Comply is currently in free beta. All features are available at no c
 CoralLedger Comply is a VAT compliance platform built specifically for businesses operating under The Bahamas VAT Act 2014 and the 2025 reforms. It helps you:
 
 - **Record transactions** via CSV import or manual entry
-- **Automatically categorize** transactions by VAT rate (10%, 5%, 0%, exempt)
+- **Review and assign VAT categories** with guided suggestions (10%, 5%, 0%, exempt)
 - **Generate VAT returns** with L1-L31 DIR form fields ready for filing
 - **Monitor compliance** with real-time scoring, anomaly detection, and intelligence dashboards
 - **Manage multiple clients** through the Firm Portal for accounting professionals
