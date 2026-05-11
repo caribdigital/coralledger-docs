@@ -178,7 +178,7 @@ const sidebars: SidebarsConfig = {
       link: {
         type: 'generated-index',
         title: 'Integrations',
-        description: 'Connect with Point POS, Manager, and other systems',
+        description: 'Connect CoralLedger with your existing business systems via CSV, Excel, and upcoming direct integrations',
       },
       items: [
         'integrations/index',
