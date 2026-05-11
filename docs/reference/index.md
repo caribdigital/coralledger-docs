@@ -54,9 +54,8 @@ Canonical citation format for legal/statutory references in this documentation:
 ## Official Resources
 
 - [Department of Inland Revenue](https://inlandrevenue.finance.gov.bs/)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 26](https://laws.bahamas.gov.bs/)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 61](https://laws.bahamas.gov.bs/)
+- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/)
+- Commonly cited sections in this documentation: s. 26, s. 50, s. 61
 - [2025 VAT Reforms](https://inlandrevenue.finance.gov.bs/)
 
 ## Need Help?

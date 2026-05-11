@@ -8,20 +8,20 @@ description: Canonical citation pattern for versioned statutory references in Co
 
 All statutory references in this documentation should follow this canonical format:
 
-`[Statute Name, Year (as amended by Amendment Name, Year), s. SectionNumber](OfficialLink)`
+`[Statute Name, Year (as amended by Amendment Name, Year)](OfficialLink), s. SectionNumber`
 
 ## Required Elements
 
 1. **Statute name** (full official name)
 2. **Version/amendment information** (original year and amendment context)
-3. **Hyperlink** to an official source
+3. **Hyperlink** to an official source for the statute text (or section-deep link where available)
 4. **Section reference** in `s. N` format
 
 ## Canonical Examples
 
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 26](https://laws.bahamas.gov.bs/)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 61](https://laws.bahamas.gov.bs/)
+- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 26
+- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 50
+- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 61
 
 ## Notes
 
