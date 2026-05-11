@@ -21,7 +21,7 @@
 }
 
 .codeBlockLanguage {
-  border: 1px solid var(--ifm-color-emphasis-500);
+  border: 1px solid var(--ifm-font-color-base);
   border-radius: var(--ifm-global-radius);
   background: var(--ifm-background-surface-color);
   color: var(--ifm-font-color-base);
@@ -34,7 +34,7 @@
 }
 
 :global([data-theme='dark']) .codeBlockLanguage {
-  border-color: var(--ifm-color-emphasis-400);
+  border-color: var(--ifm-font-color-base);
 }
 
 .codeBlockHeader + .codeBlockContent .codeBlock {

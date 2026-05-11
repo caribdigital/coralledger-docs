@@ -1,3 +1,6 @@
+// Unsafe swizzle of @theme/CodeBlock/Layout (marked `unsafe` in Docusaurus 3.x).
+// Re-verify rendering on every Docusaurus minor/major bump; the upstream
+// component's prop surface or internal imports may change without notice.
 import React, {type ReactNode} from 'react';
 import clsx from 'clsx';
 import {useCodeBlockContext} from '@docusaurus/theme-common/internal';

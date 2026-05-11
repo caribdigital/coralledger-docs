@@ -33,7 +33,7 @@
   /* Layout */
   --ifm-container-width-xl: 1280px;
   --ifm-spacing-horizontal: 1.5rem;
-  --coralledger-anchor-scroll-offset: calc(var(--ifm-navbar-height) + 0.5rem);
+  --docs-anchor-scroll-offset: calc(var(--ifm-navbar-height) + 0.5rem);
 }
 
 /* Dark mode palette */
@@ -117,10 +117,10 @@ a {
   border-radius: 8px;
 }
 
-.theme-code-block .clean-btn,
-.theme-code-block .clean-btn:hover,
-.theme-code-block .clean-btn:focus-visible {
-  opacity: 1;
+@media (hover: none), (pointer: coarse) {
+  .theme-code-block .clean-btn {
+    opacity: 1;
+  }
 }
 
 /* Table styling */
@@ -156,5 +156,5 @@ th {
 }
 
 :target {
-  scroll-margin-top: var(--coralledger-anchor-scroll-offset);
+  scroll-margin-top: var(--docs-anchor-scroll-offset);
 }
