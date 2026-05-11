@@ -8,11 +8,11 @@ description: How CoralLedger Comply calculates recoverable input VAT when a busi
 
 When a business makes both **taxable** and **exempt supplies**, not all input VAT can be recovered in full. Input tax apportionment is the process of determining what fraction of the residual input VAT is deductible for each return period.
 
-CoralLedger Comply calculates apportionment automatically using the taxable/exempt supply ratio method required under Bahamas VAT legislation.
+CoralLedger Comply calculates apportionment automatically using the taxable/exempt supply ratio method required under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 44.
 
 ## Why Apportionment Is Required
 
-Under Bahamas VAT legislation, input tax credit is only available for VAT incurred in making **taxable** supplies. Businesses that also make exempt supplies must restrict their input tax claim to the portion that relates to taxable activity.
+Under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 44, input tax credit is only available for VAT incurred in making **taxable** supplies. Businesses that also make exempt supplies must restrict their input tax claim to the portion that relates to taxable activity.
 
 Examples of businesses affected:
 

@@ -9,7 +9,7 @@ description: Claim VAT relief on invoices that remain unpaid for 12 months or mo
 Bad Debt Relief allows VAT-registered businesses to reclaim VAT already paid to the government on invoices that remain unpaid for **12 months or more**. CoralLedger Comply tracks eligible debts automatically and guides you through the claim process.
 
 :::info Legal Basis
-Bad Debt Relief is governed by the Bahamas VAT legal framework, which permits a registered person to make a deduction in a subsequent VAT return once a debt meets the statutory criteria.
+Bad Debt Relief is governed by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 29, which permits a registered person to make a deduction in a subsequent VAT return once a debt meets the statutory criteria.
 :::
 
 ## What Qualifies as a "Bad Debt"
