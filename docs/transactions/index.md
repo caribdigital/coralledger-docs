@@ -6,7 +6,7 @@ description: Import and manage your business transactions in CoralLedger Comply
 
 # Managing Transactions
 
-CoralLedger Comply makes it easy to import, categorize, and manage your business transactions for VAT compliance.
+CoralLedger Comply makes it easy to import, review VAT categories, and manage your business transactions for VAT compliance.
 
 ## Transaction Sources
 
@@ -18,8 +18,8 @@ You can import transactions from multiple sources:
 
 ## Key Features
 
-### Automatic VAT Categorization
-Our Automated categorization engine automatically assigns VAT rates based on:
+### VAT Categorization Guidance
+Our categorization guidance suggests VAT rates based on:
 - Product/service descriptions
 - Vendor information
 - Historical patterns
@@ -29,7 +29,7 @@ Our Automated categorization engine automatically assigns VAT rates based on:
 Real-time validation during import:
 - VAT compliance checking
 - Duplicate detection (SHA-256 + fuzzy matching)
-- AI categorization preview
+- AI categorization suggestions for review
 - Error and warning panels
 
 ### Bulk Operations

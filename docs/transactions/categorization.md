@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: VAT Categorization
-description: How CoralLedger Comply categorizes transactions for VAT
+description: How CoralLedger Comply supports VAT categorization decisions
 ---
 
 # VAT Categorization
 
-Understanding how transactions are categorized for VAT compliance in The Bahamas.
+Understanding how to categorize transactions for VAT compliance in The Bahamas.
 
 ## VAT Rates in The Bahamas
 
@@ -27,26 +27,30 @@ As of **April 1, 2026**, unprepared food sold at licensed food stores moved from
 This affects apportionment calculations for businesses that sell a mix of taxable and exempt supplies. See [2025 VAT Reforms — April 2026 Food Exemption](/docs/compliance/vat-2025-reforms#april-2026-food-exemption-transition) for details.
 :::
 
-## Automatic Categorization
+## Categorization Suggestions
 
-CoralLedger Comply uses intelligent categorization based on:
+CoralLedger Comply provides guided categorization suggestions based on:
 
 ### Description Analysis
-Keywords in transaction descriptions trigger automatic categorization:
+Keywords in transaction descriptions can suggest likely categories:
 - "bread", "rice", "flour", "produce", "groceries" → Exempt (if from licensed food store, dated April 1, 2026 or later)
 - "hygiene", "soap", "medication", "toothpaste" → 5% (if from licensed food store)
 - "export", "shipping to" → 0%
 - "insurance premium" → Exempt
 
 ### Vendor Matching
-Previously categorized transactions from the same vendor inform new categorizations.
+Previously categorized transactions from the same vendor inform future suggestions.
 
 ### Industry Rules
 Your business industry setting applies sector-specific rules.
 
-## Manual Override
+:::info Your Responsibility
+CoralLedger Comply provides categorization support, but you remain responsible for the final VAT treatment applied to each transaction, including Section 32 determinations where relevant.
+:::
 
-You can always override automatic categorization:
+## Review and Edit Categories
+
+You can always review and change suggested categories:
 
 1. Go to **Transactions**
 2. Select the transaction
