@@ -117,12 +117,12 @@ a {
 }
 
 .theme-code-block .clean-btn {
-  opacity: 0.85 !important;
+  opacity: 0.85;
 }
 
 .theme-code-block .clean-btn:hover,
 .theme-code-block .clean-btn:focus-visible {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 /* Table styling */
