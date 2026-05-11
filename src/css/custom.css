@@ -116,6 +116,15 @@ a {
   border-radius: 8px;
 }
 
+.theme-code-block .clean-btn {
+  opacity: 0.85 !important;
+}
+
+.theme-code-block .clean-btn:hover,
+.theme-code-block .clean-btn:focus-visible {
+  opacity: 1 !important;
+}
+
 /* Table styling */
 table {
   display: table;
@@ -140,4 +149,15 @@ th {
   .navbar__title {
     font-size: 1rem;
   }
+
+  .theme-doc-markdown table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+}
+
+:target {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
 }

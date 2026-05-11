@@ -1,0 +1,38 @@
+.codeBlockContent {
+  position: relative;
+  direction: ltr;
+  border-radius: inherit;
+}
+
+.codeBlockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.75rem var(--ifm-pre-padding);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.codeBlockTitle {
+  font-size: var(--ifm-code-font-size);
+  font-weight: 500;
+}
+
+.codeBlockLanguage {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.45rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.codeBlockHeader + .codeBlockContent .codeBlock {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
