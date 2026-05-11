@@ -109,7 +109,7 @@ Go to **Compliance > Rate Transitions** to see a list of vendor/category rules t
 
 Possibly. Goods moving from 5%-taxable to Exempt reduce your taxable supplies, which affects the 50% zero-rated threshold for refund eligibility. Review your position in **Compliance > Refund Eligibility** after the transition date.
 
-## By Statute Reference
+## By Statute References
 
 - [Time of Supply and Period Assignment](/docs/statutes/time-of-supply-period-assignment)
 

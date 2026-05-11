@@ -151,7 +151,7 @@ Claims should be made as soon as the debt qualifies. There is no indefinite carr
 **How do I record collection efforts?**
 Attach documentation in the **Notes & Attachments** section of the transaction or use the debt record in the Bad Debt dashboard. Acceptable evidence includes demand letters, email correspondence, and evidence of legal proceedings.
 
-## By Statute Reference
+## By Statute References
 
 - [Bad Debt Relief](/docs/statutes/bad-debt-relief)
 

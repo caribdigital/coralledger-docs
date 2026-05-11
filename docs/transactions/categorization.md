@@ -65,7 +65,7 @@ We recommend reviewing categorizations:
 - Monthly once patterns are established
 - Before generating each VAT return
 
-## By Statute Reference
+## By Statute References
 
 - [Output Tax Calculation and Declaration](/docs/statutes/output-tax-calculation-declaration)
 

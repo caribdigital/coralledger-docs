@@ -65,7 +65,7 @@ Once a credit note is issued, it can be applied to a VAT return:
 
 Click the **Download PDF** button on any issued or applied credit note to generate a PDF document for your records.
 
-## By Statute Reference
+## By Statute References
 
 - [Tax Invoices and Credit Notes](/docs/statutes/tax-invoices-credit-notes)
 
