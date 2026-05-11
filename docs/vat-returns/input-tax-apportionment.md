@@ -12,7 +12,7 @@ CoralLedger Comply calculates apportionment automatically using the taxable/exem
 
 ## Why Apportionment Is Required
 
-Under the Bahamas VAT Act, input tax credit is only available for VAT incurred in making **taxable** supplies. Businesses that also make exempt supplies must restrict their input tax claim to the portion that relates to taxable activity.
+Under Bahamas VAT legislation, input tax credit is only available for VAT incurred in making **taxable** supplies. Businesses that also make exempt supplies must restrict their input tax claim to the portion that relates to taxable activity.
 
 Examples of businesses affected:
 

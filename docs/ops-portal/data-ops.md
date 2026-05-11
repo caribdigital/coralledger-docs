@@ -128,7 +128,7 @@ The Retention Monitor tab shows data retention schedules and storage volumes acr
 | Retention Rule | Duration | Trigger |
 |---------------|----------|---------|
 | **Active tenant data** | Indefinite | While tenant is active |
-| **Closed tenant data** | 7 years | From closure date (VAT Act Section 50) |
+| **Closed tenant data** | 7 years | From closure date ([Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/)) |
 | **Soft-deleted user data** | 30 days | From deletion request approval |
 | **Audit entries** | 7 years | From entry creation date |
 | **Export files** | 30 days | From export generation date |

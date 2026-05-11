@@ -45,7 +45,7 @@ Previously categorized transactions from the same vendor inform future suggestio
 Your business industry setting applies sector-specific rules.
 
 :::info Your Responsibility
-CoralLedger Comply provides categorization support, but you remain responsible for the final VAT treatment applied to each transaction, including Section 32 determinations where relevant.
+CoralLedger Comply provides categorization support, but you remain responsible for the final VAT treatment applied to each transaction, including [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 32](https://laws.bahamas.gov.bs/) determinations where relevant.
 :::
 
 ## Review and Edit Categories
