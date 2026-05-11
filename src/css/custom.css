@@ -33,6 +33,7 @@
   /* Layout */
   --ifm-container-width-xl: 1280px;
   --ifm-spacing-horizontal: 1.5rem;
+  --coralledger-anchor-scroll-offset: calc(var(--ifm-navbar-height) + 0.5rem);
 }
 
 /* Dark mode palette */
@@ -158,5 +159,5 @@ th {
 }
 
 :target {
-  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
+  scroll-margin-top: var(--coralledger-anchor-scroll-offset);
 }

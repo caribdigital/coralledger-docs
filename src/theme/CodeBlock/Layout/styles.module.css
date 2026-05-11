@@ -23,13 +23,18 @@
 .codeBlockLanguage {
   border: 1px solid var(--ifm-color-emphasis-500);
   border-radius: var(--ifm-global-radius);
-  color: var(--ifm-color-emphasis-700);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   padding: 0.2rem 0.45rem;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+:global([data-theme='dark']) .codeBlockLanguage {
+  border-color: var(--ifm-color-emphasis-400);
 }
 
 .codeBlockHeader + .codeBlockContent .codeBlock {
