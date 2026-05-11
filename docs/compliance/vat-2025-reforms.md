@@ -121,6 +121,11 @@ Claim relief on bad debts after 12 months. See the [Bad Debt Relief](/docs/compl
 3. Calculate relief amount
 4. Include in your next return
 
+## By Statute References
+
+- [Partial Exemption and Apportionment](/docs/statutes/partial-exemption-apportionment)
+- [Refunds and Repayments](/docs/statutes/refunds-repayments)
+
 ## Compliance Dashboards
 
 CoralLedger Comply includes dedicated dashboards for each 2025 reform:

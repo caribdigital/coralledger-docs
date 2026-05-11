@@ -242,6 +242,30 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'By Statute',
+      link: {
+        type: 'generated-index',
+        title: 'By Statute',
+        description: 'Statute-first compliance navigation mapped to product workflows',
+      },
+      items: [
+        'statutes/index',
+        'statutes/registration-obligation-threshold',
+        'statutes/tax-invoices-credit-notes',
+        'statutes/time-of-supply-period-assignment',
+        'statutes/output-tax-calculation-declaration',
+        'statutes/input-tax-deduction-eligibility',
+        'statutes/partial-exemption-apportionment',
+        'statutes/bad-debt-relief',
+        'statutes/filing-payment-deadlines',
+        'statutes/record-keeping-retention',
+        'statutes/assessments-interest-penalties',
+        'statutes/audit-information-powers',
+        'statutes/refunds-repayments',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Reference',
       link: {
         type: 'generated-index',

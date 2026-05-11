@@ -13,12 +13,6 @@ docusaurus.config.js
 sidebars.js
 *.js.map
 
-# TypeScript compilation output
-**/*.js.map
-docusaurus.config.js
-sidebars.js
-src/**/*.js
-
 # Misc
 .DS_Store
 .env.local
