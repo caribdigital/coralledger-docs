@@ -8,15 +8,15 @@ description: How CoralLedger Comply supports VAT categorization decisions
 
 Understanding how to categorize transactions for VAT compliance in The Bahamas.
 
-## VAT Rates in The Bahamas
+## VAT Categories in The Bahamas
 
-As of 2025, The Bahamas applies these VAT rates:
+As of 2025, The Bahamas applies these VAT categories:
 
-| Rate | Name | Applies To |
+| Category | Name | Applies To |
 |------|------|------------|
-| 10% | Standard Rate | Most goods and services |
-| 5% | Reduced Rate | Hygiene products and medications at licensed food stores (narrow scope — not a general food rate) |
-| 0% | Zero-Rated | Exports, inter-island shipping |
+| Standard (10%) | Standard Rate | Most goods and services |
+| Reduced (5%) | Reduced Rate | Hygiene products and medications at licensed food stores (narrow scope — not a general food rate) |
+| Zero-Rated (0%) | Zero-Rated | Exports, inter-island shipping |
 | Exempt | VAT Exempt | Financial services, education, healthcare, **unprepared food at licensed food stores (from April 1, 2026)** |
 
 :::info April 2026 Change — Unprepared Food is Now Exempt
@@ -55,7 +55,7 @@ You can always review and change suggested categories:
 1. Go to **Transactions**
 2. Select the transaction
 3. Click **Edit Category**
-4. Choose the correct VAT rate
+4. Choose the correct VAT category
 5. Optionally add a note explaining the change
 
 ## Category Review
@@ -68,4 +68,4 @@ We recommend reviewing categorizations:
 ## Next Steps
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)
-- [View VAT rate reference](/docs/reference/vat-rates)
+- [View VAT category reference](/docs/reference/vat-rates)

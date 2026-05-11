@@ -38,7 +38,7 @@ CoralLedger Comply performs 10 validation checks before you can file:
 | Check | What It Validates |
 |-------|-------------------|
 | **Transaction Processing** | All transactions are fully processed |
-| **Missing VAT Rates** | Every transaction has a VAT rate assigned |
+| **Missing VAT Categories** | Every transaction has a VAT category assigned |
 | **Required Fields** | All mandatory fields are complete |
 
 ### Warning Validations (Review Recommended)
@@ -68,7 +68,7 @@ Each check displays a status:
 - Complete any missing data
 - Re-run the preview
 
-### Missing VAT Rates
+### Missing VAT Categories
 1. Go to **Transactions**
 2. Filter by "Uncategorized"
 3. Assign appropriate VAT categories
