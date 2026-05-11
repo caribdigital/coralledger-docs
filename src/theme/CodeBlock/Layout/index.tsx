@@ -24,7 +24,7 @@ export default function CodeBlockLayout({className}: Props): ReactNode {
             </div>
           )}
           {languageLabel && (
-            <div className={styles.codeBlockLanguage} aria-label={`Language: ${languageLabel}`}>
+            <div className={styles.codeBlockLanguage}>
               {languageLabel}
             </div>
           )}
