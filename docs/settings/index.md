@@ -83,7 +83,7 @@ Access at **Settings > Firm** or **User Management**.
 
 ## Report Scheduling
 
-Automate report generation and delivery:
+Schedule report generation and delivery:
 - Schedule recurring reports
 - Configure delivery format
 - Set recipients

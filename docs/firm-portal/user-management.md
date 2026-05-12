@@ -95,7 +95,7 @@ Once accepted, the client business appears in your **Clients** dashboard and can
 
 ### 5 — Expire
 
-Tokens that have not been accepted or revoked within 7 days are automatically rejected when the client attempts to use the link. The invitation remains visible in the pending invitations table as **Expired**. You can send a fresh invitation from the actions menu.
+Tokens that have not been accepted or revoked within 7 days are rejected when the client attempts to use the link. The invitation remains visible in the pending invitations table as **Expired**. You can send a fresh invitation from the actions menu.
 
 ### Invitation Status Reference
 

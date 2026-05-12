@@ -19,8 +19,8 @@ Choose your preferred theme:
 | Theme | Description |
 |-------|-------------|
 | **Light** | Clean and bright — best for well-lit environments |
-| **Dark** | Easy on the eyes — reduces eye strain in low light |
-| **System** | Automatically follows your operating system's theme setting |
+| **Dark** | Designed for low-light use |
+| **System** | Matches your operating system's theme setting |
 
 ## Layout Options
 

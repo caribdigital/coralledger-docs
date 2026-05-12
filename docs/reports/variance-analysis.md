@@ -38,7 +38,7 @@ After running an analysis, three summary cards display:
 
 ## Attention Flags
 
-The system automatically generates severity-based attention flags:
+The report groups attention flags by severity:
 - **Critical** — Issues requiring immediate investigation
 - **Review** — Items that should be examined
 - **Warning** — Potential concerns to monitor

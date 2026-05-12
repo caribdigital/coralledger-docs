@@ -1,16 +1,16 @@
 ---
 sidebar_position: 6
 title: Scheduled Reports
-description: Automate report delivery on a recurring daily, weekly, or monthly schedule
+description: Schedule report delivery on a recurring daily, weekly, or monthly cadence
 ---
 
 # Scheduled Reports
 
-Scheduled Reports let you automate report generation and delivery on a recurring basis — daily, weekly, or monthly — so you always have the latest data in your inbox without manual intervention.
+Scheduled Reports let you schedule report generation and delivery on a recurring basis — daily, weekly, or monthly — so each run is sent to your chosen destination on the configured cadence.
 
 ## What Are Scheduled Reports?
 
-A scheduled report is any supported report (Cash Flow, Variance Analysis, Custom Report, VAT Summary) configured to run automatically at a set frequency. Each run generates the report for the relevant period and delivers it via your chosen method.
+A scheduled report is any supported report (Cash Flow, Variance Analysis, Custom Report, VAT Summary) configured to run at a set frequency. Each run generates the report for the relevant period and delivers it via your chosen method.
 
 Schedules are independent of manual report runs — you can still generate reports on demand at any time while a schedule is active.
 
