@@ -64,7 +64,7 @@ You enter a grace period with read-only access. Your data is preserved. Activate
 Yes. Contact support@coralledger.com to discuss plan changes.
 
 ### What's the cancellation policy?
-You can cancel at any time. Your data is retained for 7 years per [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/).
+You can cancel at any time. Your data is retained for 7 years per [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/).
 
 ### Is my Founding Member price really locked for life?
 Yes. Founding Members pay $99/mo forever, regardless of future price increases.

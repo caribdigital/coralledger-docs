@@ -11,7 +11,7 @@ CoralLedger Comply helps you maintain VAT compliance with real-time monitoring, 
 ## Why Compliance Matters
 
 Non-compliance with Bahamas VAT regulations can result in:
-- **Penalties** - Up to 200% of unpaid VAT ([Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 61](https://laws.bahamas.gov.bs/))
+- **Penalties** - Up to 200% of unpaid VAT ([Value Added Tax Act, 2014, s. 61](https://laws.bahamas.gov.bs/))
 - **Interest** - 5% monthly on late payments
 - **Audits** - Increased scrutiny from DIR
 - **License Issues** - Business license complications

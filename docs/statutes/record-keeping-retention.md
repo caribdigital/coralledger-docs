@@ -10,7 +10,7 @@ Statutory Basis: VAT Act §26, §50
 
 ## What statute says
 
-[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 26 sets the minimum **record-keeping period**, and [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 50 governs **retention** beyond the record-keeping period (including for cancelled or closed accounts). The combined effect is a minimum **7-year retention** for all VAT-relevant records, reinforced by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 41(3) (record-keeping requirements and good-faith reliance).
+[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 26 sets the minimum **record-keeping period**, and [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 50 governs **retention** beyond the record-keeping period (including for cancelled or closed accounts). The combined effect is a minimum **7-year retention** for all VAT-relevant records, reinforced by [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 41(3) (record-keeping requirements and good-faith reliance).
 
 Records must remain accessible and complete enough for inspection. Retention duties usually apply across transactions, returns, adjustments, and supporting evidence. Deleting records too early can weaken audit defensibility and may itself be non-compliant.
 

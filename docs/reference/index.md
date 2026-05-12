@@ -48,6 +48,11 @@ Signed second-pass audit coverage for remaining unaudited documentation categori
 
 [View Second-Pass Audit Memo](/docs/reference/second-pass-audit-memo)
 
+### Amendment Chain Verification Memo (JR-008)
+Per-section verification of VAT Act amendment chains — sign-off by Julian Rolle (CCO) and Cass:
+
+[View Amendment Chain Verification Memo](/docs/reference/amendment-chain-verification-memo)
+
 ## Quick Facts
 
 ### VAT Registration Threshold
