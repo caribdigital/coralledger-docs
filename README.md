@@ -2,6 +2,10 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## Internal Ops Portal Documentation
+
+Platform Operations Portal documentation is maintained outside this public repository in the private `caribdigital/coralledger-ops-docs` repository.
+
 ## Installation
 
 ```bash
