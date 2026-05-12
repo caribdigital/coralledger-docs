@@ -6,6 +6,8 @@ description: Relief for VAT previously remitted on qualifying unpaid debts
 
 # Bad Debt Relief
 
+Statutory Basis: VAT Act §20
+
 ## What statute says
 
 [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 20 sets out the four-criteria test for bad debt relief. A registered person can recover VAT already remitted on supplies that remain unpaid after the statutory conditions are met:

@@ -6,6 +6,8 @@ description: VAT registration threshold obligations and how CoralLedger Comply s
 
 # Registration Obligation and Threshold
 
+Statutory Basis: VAT Act §19, §31
+
 ## What statute says
 
 [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 19 (self-filing requirement) and s. 31 (turnover-based filing requirements) frame the registration obligation. A business must register once taxable supplies exceed the statutory threshold (currently BSD 100,000 in annual taxable supplies). The obligation is based on expected or actual taxable activity and applies even when a business is still building its internal bookkeeping process. Businesses that should be registered but delay registration can face back-dated liabilities, penalties, and filing exposure.
