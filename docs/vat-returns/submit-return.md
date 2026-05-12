@@ -9,7 +9,7 @@ description: Submit your VAT return to the Comptroller
 After generating your VAT return, submit it to the Department of Inland Revenue.
 
 :::info §32 Attestation
-Submitting a VAT return is a **legal attestation under VAT Act 2014 §32** that the return is true and correct in your authorised capacity. For the full §32 pathway (signatory scenarios, BICA practitioner alignment, prefill activation flow), see the marketing-site reference at <a href="https://www.coralledger.com/section-32-pathway">coralledger.com/section-32-pathway</a>. Comprehensive docs-native coverage is tracked in caribdigital/coralledger-docs#89.
+Submitting a VAT return is a **legal attestation under VAT Act 2014 §32** that the return is true and correct in your authorised capacity. For the full §32 pathway (signatory scenarios, BICA practitioner alignment, prefill activation flow), see the marketing-site reference at [coralledger.com/section-32-pathway](https://www.coralledger.com/section-32-pathway). Comprehensive docs-native coverage is tracked in caribdigital/coralledger-docs#89.
 :::
 
 ## Submission Methods

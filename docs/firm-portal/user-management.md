@@ -38,8 +38,8 @@ Beyond the base permission level, you can configure granular access per user acr
 - **User Management** — Add/remove users
 - **Security** — View audit logs, security settings
 
-:::info §32 attestation pathway for complex-supply clients
-Assigning a practitioner as the **practitioner of record** on a client (and activating their attestation profile) gates BICA prefill for complex-supply returns. See <a href="https://www.coralledger.com/section-32-pathway">coralledger.com/section-32-pathway</a> for the full pathway documentation; canonical docs-site coverage tracked in caribdigital/coralledger-docs#89.
+:::info §32 Attestation Pathway for Complex-Supply Clients
+Assigning a practitioner as the **practitioner of record** on a client (and activating their attestation profile) gates BICA prefill for complex-supply returns. See [coralledger.com/section-32-pathway](https://www.coralledger.com/section-32-pathway) for the full pathway documentation; canonical docs-site coverage tracked in caribdigital/coralledger-docs#89.
 :::
 
 ## Client Invitation Lifecycle
