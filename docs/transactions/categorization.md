@@ -32,11 +32,13 @@ This affects apportionment calculations for businesses that sell a mix of taxabl
 CoralLedger Comply provides guided categorization suggestions based on:
 
 ### Description Analysis
-Keywords in transaction descriptions can suggest likely categories:
-- "bread", "rice", "flour", "produce", "groceries" → Exempt (if from licensed food store, dated April 1, 2026 or later)
-- "hygiene", "soap", "medication", "toothpaste" → 5% (if from licensed food store)
+Keywords in transaction descriptions can suggest categories for review:
+- "bread", "rice", "flour", "produce", "groceries" → food-related VAT categories
+- "hygiene", "soap", "medication", "toothpaste" → reduced-rate or exempt categories
 - "export", "shipping to" → 0%
 - "insurance premium" → Exempt
+
+Suggestions are prompts only. You must confirm the final VAT category based on the transaction facts and applicable law (including supplier licence status and effective dates where relevant).
 
 ### Vendor Matching
 Previously categorized transactions from the same vendor inform future suggestions.
