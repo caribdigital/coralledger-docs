@@ -68,9 +68,10 @@ const FeatureList: FeatureItem[] = [
     icon: '📤',
     description: (
       <>
-        Import transactions via CSV or Excel from any accounting system with
-        intelligent column mapping. Export returns, audit trails, and reports
-        in PDF, CSV, XML, or Excel format.
+        Import transactions via CSV or Excel from any accounting system. Column
+        mappings are proposed for your review based on header text, with manual
+        override available. Export returns, audit trails, and reports in PDF,
+        CSV, XML, or Excel format.
       </>
     ),
   },
