@@ -65,7 +65,7 @@ Legal holds are tracked with a boolean flag on each record:
 | **Held** (`true`) | Hold is in effect; the record or file is protected from deletion |
 | **Not held** (`false`) | No hold is active; normal retention and deletion rules apply |
 
-An optional **Hold Until** date can be recorded as a reference, but it does not automatically release the hold. The hold remains in effect until an operator explicitly releases it.
+An optional **Hold Until** date can be recorded as a reference, but it does not release the hold on its own. The hold remains in effect until an operator explicitly releases it.
 
 :::info
 The **Hold Until** date is informational only. The hold is still enforced after that date and must be manually released.

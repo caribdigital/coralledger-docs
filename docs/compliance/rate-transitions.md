@@ -6,7 +6,7 @@ description: How CoralLedger Comply manages VAT rate changes across transition d
 
 # Rate Transition Handling
 
-When VAT rates change — such as the April 2026 reforms that moved certain goods between rate categories — CoralLedger Comply automatically applies the correct rate based on each transaction's date and preserves the historical accuracy of all existing records.
+When VAT rates change — such as the April 2026 reforms that moved certain goods between rate categories — CoralLedger Comply applies the correct rate based on each transaction's date and preserves the historical accuracy of all existing records.
 
 ## What Is a Rate Transition?
 
@@ -25,14 +25,14 @@ A rate transition occurs when a category of goods or services moves from one VAT
 The April 2026 rate changes took effect on **April 1, 2026**. Transactions dated on or after this date use the new rates; transactions dated before this date retain their original rates.
 :::
 
-## How Comply Handles the Transition Date
+## How Comply Manages the Transition Date
 
 ### Date-Based Rate Application
 
 Comply uses each transaction's **transaction date** — not the import date or filing date — to determine the applicable VAT rate. This means:
 
 - A grocery purchase dated **March 31, 2026** retains the pre-transition rate (e.g., 5% Reduced).
-- The same grocery purchase dated **April 1, 2026** is automatically assigned the post-transition rate (Exempt).
+- The same grocery purchase dated **April 1, 2026** is assigned the post-transition rate (Exempt).
 
 You do not need to manually update categorization rules; the system applies the correct rate based on the date you record.
 
@@ -46,11 +46,11 @@ Existing transactions are **never retroactively re-rated**. Once a transaction i
 
 ### Categorization Rule Behaviour at Transition
 
-When a rate change takes effect, existing **categorization rules** (automatic vendor/keyword rules) are updated by Comply to reflect the new rate schedule. The update happens at the system level on the effective date:
+When a rate change takes effect, existing **categorization rules** (vendor/keyword rules) are updated by Comply to reflect the new rate schedule. The update happens at the system level on the effective date:
 
 | Scenario | Behaviour |
 |----------|-----------|
-| New transaction after the effective date | New rate applied automatically |
+| New transaction after the effective date | New rate applied by transaction date |
 | Historical transaction already saved | Rate unchanged; original rate preserved |
 | Categorization rule pointing to a changed category | Rule updated to new rate for future transactions |
 | Manual category override on a historical transaction | Override preserved; an alert reminds you to confirm accuracy |
@@ -80,7 +80,7 @@ After April 1, 2026, the goods that previously populated Box 5 as 5%-rated are r
 | Periods that span April 1, 2026 | Split: pre-transition transactions at 5%; post-transition transactions as Exempt |
 | Periods starting on or after April 1, 2026 | Only 5%-rated items that remain in the reduced category |
 
-When generating a return that **spans** the April 1, 2026 date, Comply automatically splits the Box 5 calculation so that each transaction is reported at the rate applicable on its transaction date.
+When generating a return that **spans** the April 1, 2026 date, Comply splits the Box 5 calculation so that each transaction is reported at the rate applicable on its transaction date.
 
 ## Transition Alerts in the UI
 

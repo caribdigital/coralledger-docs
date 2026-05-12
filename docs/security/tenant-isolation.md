@@ -10,7 +10,7 @@ CoralLedger Comply is a multi-tenant application. Every business's data lives in
 
 ## Overview
 
-Data isolation is enforced through an EF Core [global query filter](https://learn.microsoft.com/en-us/ef/core/querying/filters) that automatically appends a `WHERE BusinessId = @currentId` predicate to every relevant query. The filter is **dynamic**: it re-evaluates the current business identity on every query execution rather than being baked in at startup.
+Data isolation is enforced through an EF Core [global query filter](https://learn.microsoft.com/en-us/ef/core/querying/filters) that appends a `WHERE BusinessId = @currentId` predicate to every relevant query. The filter is **dynamic**: it re-evaluates the current business identity on every query execution rather than being baked in at startup.
 
 ## VATContext Dynamic Filter
 
@@ -77,7 +77,7 @@ public void SetCurrentBusinessId(Guid businessId)
 }
 ```
 
-The `?bid=` query parameter middleware calls `SetCurrentBusinessId()` early in the pipeline. Because `GetCurrentBusinessIdSync()` reads from `HttpContext.Items`, every subsequent EF Core query within that request automatically targets the correct tenant.
+The `?bid=` query parameter middleware calls `SetCurrentBusinessId()` early in the pipeline. Because `GetCurrentBusinessIdSync()` reads from `HttpContext.Items`, every subsequent EF Core query within that request targets the correct tenant.
 
 ### Switching tenants with ?bid=
 

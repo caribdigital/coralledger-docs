@@ -81,7 +81,7 @@ Record all taxable activity for the period:
 - **CSV Import** — Upload exports from your accounting system via [Import CSV](/docs/transactions/import-csv)
 - **Manual Entry** — Enter transactions one at a time via [Manual VAT Entry](/docs/transactions/manual-entry)
 
-Review automatic VAT categorizations and correct any misclassifications before proceeding.
+Review suggested VAT categorizations and correct any misclassifications before proceeding.
 
 ### Step 3: Generate Your Return
 Once all transactions are entered:
@@ -92,7 +92,7 @@ Once all transactions are entered:
 4. Review the summary — output VAT, input VAT, and net position
 5. Address any compliance alerts before proceeding
 
-CoralLedger Comply calculates all L1–L31 DIR form fields automatically.
+CoralLedger Comply calculates all L1–L31 DIR form fields from your transaction data.
 
 See [Generate VAT Return](/docs/vat-returns/generate-return) for the full guide.
 

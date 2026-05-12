@@ -20,7 +20,7 @@ Impersonation allows **PlatformAdmin** operators to sign in as any user in a rea
 1. The operator navigates to the platform admin area and selects the target user.
 2. The system creates a short-lived session cookie containing an `impersonated_by` claim that identifies the operator.
 3. The browser is signed in under the target user's identity while the original operator cookie is preserved in a separate secure cookie.
-4. The session automatically expires after **30 minutes** via cookie expiry.
+4. The session expires after **30 minutes** via cookie expiry.
 
 ### Read-Only Enforcement
 

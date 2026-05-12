@@ -6,7 +6,7 @@ description: Data lifecycle management in CoralLedger Comply
 
 # Data Operations
 
-CoralLedger Comply gives operators full control over the data lifecycle — from user-initiated deletion requests and legal holds through to automated retention enforcement and full business data export.
+CoralLedger Comply gives operators full control over the data lifecycle — from user-initiated deletion requests and legal holds through to scheduled retention enforcement and full business data export.
 
 ## Features
 
@@ -21,7 +21,7 @@ Files and tombstone records can be placed under a legal hold to prevent deletion
 [Learn more about legal holds](/docs/data-ops/legal-holds)
 
 ### Retention Monitoring
-Per-business retention policies are enforced automatically. The system defaults to the 7-year minimum required by [Value Added Tax Act, 2014, s. 26](https://laws.bahamas.gov.bs/). Operators can preview enforcement and review detected policy violations before taking action.
+Per-business retention policies are enforced on a scheduled run. The system defaults to the 7-year minimum required by [Value Added Tax Act, 2014, s. 26](https://laws.bahamas.gov.bs/). Operators can preview enforcement and review detected policy violations before taking action.
 
 [Learn more about retention monitoring](/docs/data-ops/retention-monitoring)
 
