@@ -47,6 +47,10 @@ If you're not yet registered:
 2. Receive your VAT number
 3. Enter it in CoralLedger Comply at **Settings > Business**
 
+## By Statute References
+
+- [Registration Obligation and Threshold](/docs/statutes/registration-obligation-threshold)
+
 ## Next Steps
 
 - [Tour the dashboard](/docs/getting-started/dashboard-tour)

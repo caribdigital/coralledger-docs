@@ -125,6 +125,11 @@ This provides a complete audit trail and supports any review by the Department o
 - **Category accuracy** — Correct VAT categorization of your supplies (taxable vs. exempt) directly affects the deductible fraction; errors will over- or under-state recoverable input VAT
 - **Partial exemption review** — If your business mix changes significantly, review your apportionment methodology with a VAT advisor
 
+## By Statute References
+
+- [Input Tax Deduction Eligibility](/docs/statutes/input-tax-deduction-eligibility)
+- [Partial Exemption and Apportionment](/docs/statutes/partial-exemption-apportionment)
+
 ## Next Steps
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)

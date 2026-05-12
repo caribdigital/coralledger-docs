@@ -10,6 +10,12 @@ Quick reference materials for Bahamas VAT compliance.
 
 ## In This Section
 
+### By Statute
+Read requirements from legal obligation to platform behavior:
+
+- [By Statute overview](/docs/statutes)
+- 12 statute reference pages with topic cross-links
+
 ### VAT Categories
 Complete guide to current VAT categories in The Bahamas:
 - Standard rate (10%)

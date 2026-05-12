@@ -105,6 +105,10 @@ Exports are capped at **10,000 rows**. If your result set is larger, narrow your
 3. **Export quarterly** — Keep external backups of audit data for your records
 4. **Investigate anomalies** — Follow up on any unexpected entries
 
+## By Statute References
+
+- [Audit and Information Powers](/docs/statutes/audit-information-powers)
+
 ## Next Steps
 
 - [Audit trail overview](/docs/audit)

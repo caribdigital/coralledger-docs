@@ -66,6 +66,11 @@ If you need to correct a filed return:
 4. Submit the amendment
 5. The return status changes to **Amended**
 
+## By Statute References
+
+- [Filing and Payment Deadlines](/docs/statutes/filing-payment-deadlines)
+- [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties)
+
 ## Next Steps
 
 - [Monitor your compliance score](/docs/compliance/compliance-score)

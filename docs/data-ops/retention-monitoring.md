@@ -124,6 +124,10 @@ Enforcement purges are permanent and cannot be undone. Always run and review an 
 4. **Coordinate with legal holds** — Ensure that any records subject to litigation are held before enforcement runs
 5. **Export before purge** — Use [Business Data Export](/docs/data-ops/data-export) to archive records before they are purged if needed
 
+## By Statute References
+
+- [Record Keeping and Retention](/docs/statutes/record-keeping-retention)
+
 ## Next Steps
 
 - [Deletion requests](/docs/data-ops/deletion-requests)
