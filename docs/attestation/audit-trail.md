@@ -91,7 +91,7 @@ Attestation audit records are subject to the same immutability and retention rul
 
 - **WORM compliance** — Records cannot be modified or deleted after creation
 - **Hash-chain verification** — Each record is cryptographically linked to the previous entry; any tampering breaks the chain
-- **7-year retention** — All attestation records are retained for a minimum of 7 years, in compliance with [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 50
+- **7-year retention** — All attestation records are retained for a minimum of 7 years, in compliance with [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 50
 
 ## Exporting Attestation Records
 

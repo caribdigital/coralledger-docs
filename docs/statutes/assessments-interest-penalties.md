@@ -10,7 +10,7 @@ Statutory Basis: VAT Act §60, §61
 
 ## What statute says
 
-[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 60 sets the **late-payment interest rate** (Central Bank of The Bahamas prime lending rate **plus 1%** on the unpaid balance, applied monthly), and [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 61 sets **penalties** (up to 200% of unpaid VAT).
+[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 60 sets the **late-payment interest rate** (Central Bank of The Bahamas prime lending rate **plus 1%** on the unpaid balance, applied monthly), and [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61 sets **penalties** (up to 200% of unpaid VAT).
 
 Where VAT is under-declared, over-claimed, or filed late, the authority may assess additional tax and apply both interest and penalties according to these provisions. Repeated non-compliance typically increases regulatory risk and can lead to deeper scrutiny.
 

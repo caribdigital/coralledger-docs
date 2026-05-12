@@ -6,7 +6,7 @@ description: Access and understand archived transaction data in CoralLedger Comp
 
 # Archived Records
 
-Archived Records is the long-term store for transaction data that is no longer part of an active filing workflow but must be retained for regulatory compliance. CoralLedger Comply retains all transaction data for **7 years** in accordance with [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/).
+Archived Records is the long-term store for transaction data that is no longer part of an active filing workflow but must be retained for regulatory compliance. CoralLedger Comply retains all transaction data for **7 years** in accordance with [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/).
 
 ## Accessing Archived Records
 

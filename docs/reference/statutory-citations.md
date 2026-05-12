@@ -11,7 +11,7 @@ All statutory references in this documentation should follow this canonical form
 `[Statute Name, Year (as amended by Amendment Name, Year)](OfficialLink), s. SectionNumber`
 
 Example:
-`[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 50`
+`[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32`
 
 ## Required Elements
 
@@ -22,13 +22,14 @@ Example:
 
 ## Canonical Examples
 
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 26
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 50
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 61
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 26
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 50
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 47(1)(a)
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32(2)
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32(3)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 61(c)
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61(c)
 
 ## Subsection and Paragraph Rules
 
@@ -38,13 +39,27 @@ Example:
 
 ## Amendment Chain Rules
 
-- Use the **2021 chain** when citing provisions whose current cited form is reflected through the VAT (Amendment) (No. 2) Act, 2021.
+- Omit the amendment chain when citing a section that has not been amended since the original Act: `[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 26`.
+- Use the **2021 chain** when citing a provision whose substance was changed by the VAT (Amendment) (No. 2) Act, 2021 (e.g., provisions updated as part of the rate reduction to 10% or the redefined international-service definitions). Verified under JR-008.
 - Use the **2025 chain** when citing provisions introduced or updated by the VAT (Amendment) (No. 2) Act, 2025 (for example, the licensed food-store reduced-rate provision under JR-007).
 - If more than one amending Act is material to the cited provision, list each in chronological order using `and`.
 
+### Sections verified as unamended since 2014 (JR-008)
+
+The following sections were confirmed as unamended since the original Value Added Tax Act, 2014, and must **not** carry any amendment-chain qualifier:
+
+| Section | Topic |
+|---------|-------|
+| s. 26 | Record keeping obligations |
+| s. 41(3) | Record-keeping requirements and good-faith reliance |
+| s. 44 | Partial exemption and input-tax apportionment |
+| s. 50 | Retention period (seven years) |
+| s. 60 | Late-payment interest rate |
+| s. 61 | Penalties |
+
 Canonical amendment-chain examples:
 
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 50
+- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2025)](https://laws.bahamas.gov.bs/), s. 12A
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) Act, 2018 and the VAT (Amendment) (No. 2) Act, 2025)](https://laws.bahamas.gov.bs/), s. 12A
 

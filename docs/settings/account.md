@@ -136,7 +136,7 @@ Permanently delete your account:
 - This action cannot be undone
 
 :::warning Data Retention
-Due to [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/) requirements, transaction data must be retained for 7 years even after account deletion.
+Due to [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/) requirements, transaction data must be retained for 7 years even after account deletion.
 :::
 
 ## Next Steps

@@ -6,7 +6,7 @@ description: Data retention policies, enforcement preview, and violation detecti
 
 # Retention Monitoring
 
-CoralLedger Comply enforces per-business data retention policies automatically. The default retention period is 7 years, as required by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 26](https://laws.bahamas.gov.bs/). Operators can review retention schedules, preview upcoming enforcement actions, and investigate detected violations before data is affected.
+CoralLedger Comply enforces per-business data retention policies automatically. The default retention period is 7 years, as required by [Value Added Tax Act, 2014, s. 26](https://laws.bahamas.gov.bs/). Operators can review retention schedules, preview upcoming enforcement actions, and investigate detected violations before data is affected.
 
 ## Accessing Retention Monitoring
 
@@ -18,7 +18,7 @@ All businesses are subject to the platform-wide default:
 
 | Setting | Value | Basis |
 |---------|-------|-------|
-| **Minimum retention period** | 7 years | [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 26](https://laws.bahamas.gov.bs/) |
+| **Minimum retention period** | 7 years | [Value Added Tax Act, 2014, s. 26](https://laws.bahamas.gov.bs/) |
 | **Applies to** | Transactions, VAT returns, audit records, uploaded files | — |
 | **Enforcement** | Automatic; runs on a scheduled basis | — |
 
