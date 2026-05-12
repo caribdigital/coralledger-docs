@@ -8,7 +8,14 @@ description: Relief for VAT previously remitted on qualifying unpaid debts
 
 ## What statute says
 
-Bad debt relief allows a registered person to recover VAT already remitted on supplies that remain unpaid after statutory conditions are met, including age of debt, write-off status, and evidence of recovery efforts.
+[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 20 sets out the four-criteria test for bad debt relief. A registered person can recover VAT already remitted on supplies that remain unpaid after the statutory conditions are met:
+
+1. The debt is **at least 12 months old** from the invoice date
+2. The debt has been **written off** in the registrant's books
+3. The registrant has taken **reasonable steps** to recover the debt
+4. The original supply was a **taxable supply** on which output VAT was accounted for
+
+The legal policy is corrective: if output VAT was paid on a supply that is not ultimately collected, the law may permit relief to avoid permanent overpayment.
 
 The legal policy is corrective: if output VAT was paid on a supply that is not ultimately collected, the law may permit relief to avoid permanent overpayment.
 

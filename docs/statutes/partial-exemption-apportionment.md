@@ -8,7 +8,7 @@ description: Statutory apportionment requirements for mixed taxable and exempt s
 
 ## What statute says
 
-Where a business makes both taxable and exempt supplies, input VAT recovery must be restricted to the taxable-use portion. This is commonly handled through an apportionment method that separates directly attributable input VAT from residual shared costs.
+[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 44 governs partial exemption and apportionment. Where a business makes both taxable and exempt supplies, input VAT recovery must be restricted to the taxable-use portion. This is commonly handled through an apportionment method that separates directly attributable input VAT from residual shared costs.
 
 The legal objective is to prevent over-claiming while still allowing fair recovery for taxable activity. Apportionment must be consistent, evidenced, and suitable for review.
 

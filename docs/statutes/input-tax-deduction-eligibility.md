@@ -8,7 +8,7 @@ description: Conditions for input VAT recovery and evidence requirements
 
 ## What statute says
 
-Input VAT is deductible only where legal conditions are met, including valid VAT documentation and business use connected to taxable supplies. Where expenditure relates to exempt activity, deduction may be blocked or restricted.
+[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 22 governs zero-rated export documentation; eligibility for input-tax deduction on those exports depends on the supporting evidence requirements set out there. Input VAT is deductible only where legal conditions are met, including valid VAT documentation and business use connected to taxable supplies. Where expenditure relates to exempt activity, deduction may be blocked or restricted (see [Partial Exemption and Apportionment](/docs/statutes/partial-exemption-apportionment) for the apportionment rule).
 
 The legal focus is entitlement, not convenience: claiming input VAT requires documentary support and a defensible link between the expense and eligible taxable activity.
 
