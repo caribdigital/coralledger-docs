@@ -51,3 +51,14 @@ Set these environment variables in your deploy environment to enable documentati
 When configured, Docusaurus shows the DocSearch modal from the navbar and supports keyboard shortcuts like `Cmd+K` / `Ctrl+K`, with relevance-ranked results from your Algolia index.
 
 To keep results fresh, configure your Algolia crawler to reindex on each deploy (for example, by connecting your hosting provider deploy webhook to Algolia crawl triggers).
+
+## Last-Updated Timestamps
+
+`showLastUpdateTime: true` is enabled on the docs preset. Docusaurus reads each file's most recent git commit timestamp at build time and renders it as "Last updated on …" at the bottom of every doc page.
+
+**Vercel deploy note:** the default Vercel shallow clone (`--depth=1`) silently breaks `git log`-based timestamps — every page renders the current build date. To fix:
+
+- In the Vercel project settings → **Git** → set **Clone Depth** to **Unlimited** (or 0), OR
+- Add `git fetch --unshallow || true` as the first line of the Vercel Install Command.
+
+Without this, the "Last updated" stamp will show every page as updated on every deploy.
