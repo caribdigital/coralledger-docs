@@ -6,6 +6,8 @@ description: Return filing deadlines, payment timing, and late-risk controls
 
 # Filing and Payment Deadlines
 
+Statutory Basis: VAT Act §47(1)(a), §46
+
 ## What statute says
 
 [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 47(1)(a) sets the **standard filing rule** — returns and payment due within **21 days** of the end of the tax period. Large taxpayers fall under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 46, which compresses the window to **14 days** for the specified large-taxpayer threshold.

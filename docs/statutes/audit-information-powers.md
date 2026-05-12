@@ -6,6 +6,8 @@ description: Statutory audit rights and operational response through CoralLedger
 
 # Audit and Information Powers
 
+Statutory Basis: VAT Act §TBD (pending validation)
+
 ## What statute says
 
 The [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) grants the Comptroller of Revenue audit and information-gathering powers, including the right to inspect records, request explanations, and obtain supporting evidence to verify VAT compliance. Businesses are expected to provide complete, timely, and coherent documentation of filed returns and underlying transactions.

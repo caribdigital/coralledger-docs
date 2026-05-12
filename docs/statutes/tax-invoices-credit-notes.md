@@ -6,6 +6,8 @@ description: Statutory invoice evidence requirements and credit note adjustments
 
 # Tax Invoices and Credit Notes
 
+Statutory Basis: VAT Act §41(3)
+
 ## What statute says
 
 [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 41(3) (record-keeping requirements) requires taxable supplies to be supported by valid tax invoice evidence. Input tax deduction and output tax accuracy both depend on invoice-level records that identify supplier, date, value, and VAT treatment. Where a supply is adjusted after issue (returns, discounts, cancellations, pricing errors), the adjustment must be documented through a valid credit note or debit note.

@@ -6,6 +6,8 @@ description: How transaction date controls VAT treatment and return period place
 
 # Time of Supply and Period Assignment
 
+Statutory Basis: VAT Act §32
+
 ## What statute says
 
 [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32 governs **time of supply** — the rule that determines when tax becomes due and which filing period includes the transaction. Even when an invoice is uploaded later, the legal treatment usually follows the transaction or tax-point date rather than the data entry date.

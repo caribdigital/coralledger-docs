@@ -6,6 +6,8 @@ description: Exposure from inaccurate or late VAT compliance and control expecta
 
 # Assessments, Interest, and Penalties
 
+Statutory Basis: VAT Act §60, §61
+
 ## What statute says
 
 [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 60 sets the **late-payment interest rate** (Central Bank of The Bahamas prime lending rate **plus 1%** on the unpaid balance, applied monthly), and [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 61 sets **penalties** (up to 200% of unpaid VAT).
