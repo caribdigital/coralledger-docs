@@ -45,7 +45,10 @@ Goods or services that are outside the VAT system. No VAT is charged and no inpu
 ## F
 
 ### Food Store License
-A license from the Ministry of Health required to charge the 5% reduced rate on breadbasket items.
+A licensed food store qualification for VAT purposes.
+
+In current Bahamas food-safety law, food-business registration and oversight sit with the Bahamas Agricultural Health and Food Safety Authority (BAHFSA), not the Ministry of Health.
+See [Bahamas Agricultural Health and Food Safety Authority Act, 2016](http://laws.bahamas.gov.bs/cms/images/LEGISLATION/PRINCIPAL/2016/2016-0004/2016-0004.pdf), s. 4; [Food Safety and Quality Act, 2016](https://laws.bahamas.gov.bs/cms/images/LEGISLATION/PRINCIPAL/2016/2016-0005/2016-0005_1.pdf), ss. 25-27.
 
 ## I
 
