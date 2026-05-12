@@ -43,6 +43,11 @@ Canonical citation format for legal/statutory references in this documentation:
 
 [View Statutory Citation Style Guide](/docs/reference/statutory-citations)
 
+### Documentation Audit Memo
+Signed second-pass audit coverage for remaining unaudited documentation categories:
+
+[View Second-Pass Audit Memo](/docs/reference/second-pass-audit-memo)
+
 ## Quick Facts
 
 ### VAT Registration Threshold
