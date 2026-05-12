@@ -12,7 +12,7 @@ The Analytics Dashboard gives you a visual overview of your business's VAT posit
 
 Navigate to **Analytics** in the main sidebar under the MAIN section.
 
-The dashboard updates automatically whenever new transactions are imported or categorised. No manual refresh is required.
+The dashboard refreshes when new transactions are imported or categorized. No manual refresh is required.
 
 ## Dashboard Overview
 
@@ -52,7 +52,7 @@ Hover over any point on the chart to see a tooltip with:
 - Previous period value
 - Percentage change
 
-This makes it easy to identify seasonal patterns or sudden spikes that may require investigation.
+This helps you identify seasonal patterns or sudden spikes that may require investigation.
 
 ## Output vs Input Breakdown
 
@@ -98,7 +98,7 @@ Use the date filter controls at the top of the dashboard to change the analysis 
 1. Select **Custom range** from the preset dropdown.
 2. Click the **Start date** field and choose a date.
 3. Click the **End date** field and choose a date.
-4. The charts update automatically.
+4. The charts refresh to reflect the selected range.
 
 All charts and summary cards on the page reflect the same selected period.
 
@@ -124,7 +124,7 @@ The data visualised in the Analytics Dashboard directly influences your [Complia
 
 Reviewing the Analytics Dashboard regularly helps you catch data issues early — before they affect your VAT return or compliance grade.
 
-For a deeper automated analysis of your data patterns, see the [Intelligence Dashboard](/docs/compliance/intelligence-dashboard).
+For a deeper review of your data patterns, see the [Intelligence Dashboard](/docs/compliance/intelligence-dashboard).
 
 ## Next Steps
 

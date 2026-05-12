@@ -27,7 +27,7 @@ Entries from both sources are combined and ordered chronologically. The **Source
 
 ### Server-Side Pagination
 
-The viewer uses server-side pagination to handle the large volume of cross-tenant data efficiently. Page size and cursor are managed on the server, and the fan-out merge is performed before results are returned to the client.
+The viewer uses server-side pagination for large cross-tenant result sets. Page size and cursor are managed on the server, and the fan-out merge is performed before results are returned to the client.
 
 ## Accessing the Viewer
 
