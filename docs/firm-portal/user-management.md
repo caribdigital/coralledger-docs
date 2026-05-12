@@ -38,6 +38,13 @@ Beyond the base permission level, you can configure granular access per user acr
 - **User Management** — Add/remove users
 - **Security** — View audit logs, security settings
 
+:::info §32 Attestation Pathway for Complex-Supply Clients
+Assigning a practitioner as the **practitioner of record** on a client (and activating their attestation profile) controls access to BICA prefill for complex-supply returns.
+
+- **Customer-facing overview:** [coralledger.com/section-32-pathway](https://www.coralledger.com/section-32-pathway)
+- **Operator documentation:** [Section 32 Attestation Pathway](/docs/attestation/) — practitioner-of-record assignment, BICA verification, prefill activation, audit trail.
+:::
+
 ## Client Invitation Lifecycle
 
 When a firm invites a client business to CoralLedger Comply, the invitation passes through several states. Understanding each stage helps you manage outstanding invitations and troubleshoot delivery issues.
