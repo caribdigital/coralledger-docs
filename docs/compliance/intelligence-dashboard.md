@@ -45,13 +45,13 @@ Your overall compliance health displayed as a letter grade (A+ to F):
 
 ### Penalty Risk Assessment
 
-Calculates your exposure under VAT Act Section 61:
+Calculates your exposure under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 61](https://laws.bahamas.gov.bs/):
 - Current penalty exposure amount
 - Risk factors contributing to exposure
 - Recommended actions to reduce risk
 
 :::warning Penalty Rates
-The Bahamas VAT Act allows penalties up to 200% of unpaid VAT, plus 5% monthly interest.
+The [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 61](https://laws.bahamas.gov.bs/) allows penalties up to 200% of unpaid VAT, plus 5% monthly interest.
 :::
 
 ### Data Quality Score

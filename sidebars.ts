@@ -228,6 +228,7 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'reference/index',
+        'reference/statutory-citations',
         'reference/vat-rates',
         'reference/glossary',
       ],

@@ -73,7 +73,7 @@ You'll be prompted to add a payment method before October 1, 2026.
 ## Data Retention
 
 - **Active accounts**: Unlimited data retention
-- **Cancelled accounts**: Data retained for 7 years per VAT Act Section 50
+- **Cancelled accounts**: Data retained for 7 years per [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/)
 
 ## Next Steps
 

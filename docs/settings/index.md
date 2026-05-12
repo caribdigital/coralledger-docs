@@ -120,7 +120,7 @@ Export all your data at any time:
 ### Data Retention
 CoralLedger Comply retains your data for:
 - Active accounts: Unlimited
-- Closed accounts: 7 years (VAT Act Section 50)
+- Closed accounts: 7 years ([Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 50](https://laws.bahamas.gov.bs/))
 
 ## Privacy Settings
 

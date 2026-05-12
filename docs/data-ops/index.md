@@ -21,7 +21,7 @@ Files and tombstone records can be placed under a legal hold to prevent deletion
 [Learn more about legal holds](/docs/data-ops/legal-holds)
 
 ### Retention Monitoring
-Per-business retention policies are enforced automatically. The system defaults to the 7-year minimum required by the VAT Act (s. 26). Operators can preview enforcement and review detected policy violations before taking action.
+Per-business retention policies are enforced automatically. The system defaults to the 7-year minimum required by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021), s. 26](https://laws.bahamas.gov.bs/). Operators can preview enforcement and review detected policy violations before taking action.
 
 [Learn more about retention monitoring](/docs/data-ops/retention-monitoring)
 

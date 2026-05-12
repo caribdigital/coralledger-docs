@@ -28,6 +28,15 @@ Definitions of common VAT and compliance terms:
 
 [View Glossary](/docs/reference/glossary)
 
+### Statutory Citation Style
+Canonical citation format for legal/statutory references in this documentation:
+- Statute name
+- Version/amendment information
+- Hyperlink to the official source
+- Section reference
+
+[View Statutory Citation Style Guide](/docs/reference/statutory-citations)
+
 ## Quick Facts
 
 ### VAT Registration Threshold
@@ -45,7 +54,8 @@ Definitions of common VAT and compliance terms:
 ## Official Resources
 
 - [Department of Inland Revenue](https://inlandrevenue.finance.gov.bs/)
-- [VAT Act 2014](https://laws.bahamas.gov.bs/)
+- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/)
+- Commonly cited sections in this documentation: s. 26, s. 50, s. 61
 - [2025 VAT Reforms](https://inlandrevenue.finance.gov.bs/)
 
 ## Need Help?
