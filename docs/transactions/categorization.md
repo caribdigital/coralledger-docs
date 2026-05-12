@@ -19,6 +19,8 @@ As of 2025, The Bahamas applies these VAT categories:
 | Zero-Rated (0%) | Zero-Rated | Exports, inter-island shipping |
 | Exempt | VAT Exempt | Financial services, education, healthcare, **unprepared food at licensed food stores (from April 1, 2026)** |
 
+Inter-island shipping remains Zero-Rated in CoralLedger Comply under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 9, First Schedule Part I.
+
 :::info April 2026 Change — Unprepared Food is Now Exempt
 As of **April 1, 2026**, unprepared food sold at licensed food stores moved from a reduced/breadbasket rate to **VAT Exempt** status. This means:
 - **No VAT is charged** on the sale
