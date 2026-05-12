@@ -38,6 +38,10 @@ Beyond the base permission level, you can configure granular access per user acr
 - **User Management** — Add/remove users
 - **Security** — View audit logs, security settings
 
+:::info §32 attestation pathway for complex-supply clients
+Assigning a practitioner as the **practitioner of record** on a client (and activating their attestation profile) gates BICA prefill for complex-supply returns. See <a href="https://www.coralledger.com/section-32-pathway">coralledger.com/section-32-pathway</a> for the full pathway documentation; canonical docs-site coverage tracked in caribdigital/coralledger-docs#89.
+:::
+
 ## Client Invitation Lifecycle
 
 When a firm invites a client business to CoralLedger Comply, the invitation passes through several states. Understanding each stage helps you manage outstanding invitations and troubleshoot delivery issues.
