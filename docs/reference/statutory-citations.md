@@ -10,7 +10,7 @@ All statutory references in this documentation should follow this canonical form
 
 `[Statute Name, Year (as amended by Amendment Name, Year)](OfficialLink), s. SectionNumber`
 
-Example:
+Example (s. 32 was substantively changed by the 2021 Act and is a canonical example for the 2021 chain):
 `[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32`
 
 ## Required Elements

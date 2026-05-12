@@ -12,7 +12,6 @@
 docusaurus.config.js
 sidebars.js
 *.js.map
-src/**/*.js
 
 # Misc
 .DS_Store

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 title: JR-008 — Amendment Chain Verification Memo
-description: CCO sign-off memo verifying amendment chains for §26, §29, §44, §50, §61 (DDS-005 follow-up)
+description: CCO sign-off memo verifying amendment chains for §26, §41(3), §44, §50, §60, §61 (DDS-005 follow-up)
 ---
 
 # JR-008 — Amendment Chain Verification Memo (DDS-005 Follow-up)
