@@ -20,6 +20,11 @@ const complyUrl = process.env.COMPLY_URL || (isStaging
   ? 'https://stg-comply.coralledger.com'
   : 'https://comply.coralledger.com');
 
+const algoliaAppId = process.env.ALGOLIA_APP_ID;
+const algoliaApiKey = process.env.ALGOLIA_API_KEY;
+const algoliaIndexName = process.env.ALGOLIA_INDEX_NAME;
+const hasAlgoliaConfig = Boolean(algoliaAppId && algoliaApiKey && algoliaIndexName);
+
 const config: Config = {
   title: 'CoralLedger Comply Documentation',
   tagline: 'VAT Compliance Made Simple for The Bahamas',
@@ -71,6 +76,17 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/coralledger-social-card.png',
+    ...(hasAlgoliaConfig
+      ? {
+          algolia: {
+            appId: algoliaAppId!,
+            apiKey: algoliaApiKey!,
+            indexName: algoliaIndexName!,
+            contextualSearch: true,
+            searchPagePath: 'search',
+          },
+        }
+      : {}),
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
