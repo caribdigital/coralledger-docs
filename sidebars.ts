@@ -288,6 +288,7 @@ const sidebars: SidebarsConfig = {
         'reference/statutory-citations',
         'reference/vat-rates',
         'reference/glossary',
+        'reference/second-pass-audit-memo',
       ],
     },
   ],
