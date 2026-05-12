@@ -47,7 +47,7 @@ Each VAT return includes:
 | **Amended** | A correction has been submitted for a previously filed return |
 
 :::note
-The "Filed" status is manually marked by you after submitting via the DIR's Online Tax Administration System (OTAS). CoralLedger Comply does not currently receive automated confirmation from the DIR.
+The "Filed" status is manually marked by you after submitting via the DIR's Online Tax Administration System (OTAS). CoralLedger Comply does not currently receive direct confirmation from the DIR.
 :::
 
 ## DIR Form Fields (L1-L31)
@@ -63,7 +63,7 @@ Your return includes all standard Bahamas VAT return lines:
 ## CoralLedger Comply Features
 
 - **One-Click Generation** - Generate returns from your imported transactions
-- **Automatic Calculations** - All L1-L31 fields computed automatically
+- **Calculated Fields** - All L1-L31 fields computed from your transaction data
 - **Return Preview** - Review totals and validation before filing
 - **10-Point Validation** - Comprehensive pre-flight checks
 - **Export Formats** - PDF, XML, Excel, and CSV for electronic filing
@@ -85,7 +85,7 @@ Learn more about [Return Preview & Validation](/docs/vat-returns/return-preview)
 CoralLedger Comply supports two filing modes:
 
 - **Self-Filing** — You manage and submit your own VAT returns directly to the DIR. See [Self-Filing Mode](/docs/getting-started/self-filing).
-- **Firm-Managed** — An accounting firm handles filing on your behalf through the [Firm Portal](/docs/firm-portal/).
+- **Firm-Managed** — An accounting firm manages filing on your behalf through the [Firm Portal](/docs/firm-portal/).
 
 ## Next Steps
 

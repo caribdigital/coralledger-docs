@@ -14,7 +14,7 @@ Navigate to **Admin > IP Blocking**. This feature requires Administrator access 
 
 ## How It Works
 
-When multiple failed login attempts are detected from the same IP address, the system automatically blocks that IP. Administrators can also manually block IPs.
+When multiple failed login attempts are detected from the same IP address, the system blocks that IP. Administrators can also manually block IPs.
 
 ## Blocking an IP Address
 

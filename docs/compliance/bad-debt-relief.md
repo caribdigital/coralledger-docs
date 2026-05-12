@@ -6,7 +6,7 @@ description: Claim VAT relief on invoices that remain unpaid for 12 months or mo
 
 # Bad Debt Relief
 
-Bad Debt Relief allows VAT-registered businesses to reclaim VAT already paid to the government on invoices that remain unpaid for **12 months or more**. CoralLedger Comply tracks eligible debts automatically and guides you through the claim process.
+Bad Debt Relief allows VAT-registered businesses to reclaim VAT already paid to the government on invoices that remain unpaid for **12 months or more**. CoralLedger Comply tracks eligible debts based on invoice age and guides you through the claim process.
 
 :::info Legal Basis
 Bad Debt Relief is governed by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 20, which sets the four-criteria test and permits a registered person to make a deduction in a subsequent VAT return once a debt meets the statutory criteria.
@@ -30,7 +30,7 @@ If a partial payment has been received, only the VAT attributable to the **unpai
 
 ## 12-Month Tracking Workflow
 
-CoralLedger Comply automatically monitors outstanding invoices and advances them through the following stages:
+CoralLedger Comply monitors outstanding invoices and advances them through the following stages:
 
 ### Stage 1: Overdue Monitoring (0–11 months)
 - Unpaid invoices appear in the **Accounts Receivable** ageing report
@@ -55,7 +55,7 @@ CoralLedger Comply automatically monitors outstanding invoices and advances them
 5. Click **Mark as Written Off** to formally write off the debt in CoralLedger
 
 ### Stage 4: Include in VAT Return
-Once debts are written off, the relief amount is automatically included in your next VAT return. See [VAT Return Impact](#vat-return-impact) below.
+Once debts are written off, the relief amount is queued for inclusion in your next VAT return. See [VAT Return Impact](#vat-return-impact) below.
 
 ## VAT Return Impact
 
@@ -122,7 +122,7 @@ The Comptroller may request supporting evidence during an audit. Retain:
 - Correspondence or records evidencing collection efforts
 - Internal write-off authorisation or accounting journal entry
 
-CoralLedger automatically links the original transaction and return period to each claim, making this evidence readily exportable.
+CoralLedger links the original transaction and return period to each claim, making this evidence readily exportable.
 
 ## Step-by-Step Claim Guide
 
@@ -133,7 +133,7 @@ CoralLedger automatically links the original transaction and return period to ea
    - The debt has been written off in your books
 4. Select the debt(s) to claim and click **Write Off & Claim Relief**
 5. The system calculates the relief amount and schedules it for your next return
-6. When you generate your next VAT return, the relief amount populates **Line 16** automatically
+6. When you generate your next VAT return, the relief amount is placed into **Line 16**
 7. Review the figure in the [Return Preview](/docs/vat-returns/return-preview) before submitting
 8. After filing, the claim appears in the **Claim History** report with the return reference
 

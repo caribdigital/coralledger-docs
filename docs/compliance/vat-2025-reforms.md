@@ -36,7 +36,7 @@ New rules for construction projects exceeding $1 million:
 
 **How Comply Helps:**
 - Track project values against the $1M threshold
-- Monitor input VAT restrictions automatically
+- Monitor input VAT restrictions with period-based tracking
 - Generate compliance reports for construction projects
 
 Access the Construction VAT dashboard at **Compliance > Construction VAT**.
@@ -57,7 +57,7 @@ To claim a VAT refund, at least 50% of your taxable supplies must be zero-rated.
 **Comply Features:**
 - Real-time eligibility tracking
 - Period-by-period analysis
-- Automatic threshold monitoring
+- Threshold monitoring
 - Refund calculation assistance
 
 Access at **Compliance > Refund Eligibility**.
@@ -104,7 +104,7 @@ Because no input tax credit is available on exempt supplies, food stores that no
 - CoralLedger Comply tracks exempt vs taxable supply ratios and assists with apportionment calculations at **Compliance > Apportionment**
 
 **Comply Features:**
-- Automatic reclassification of unprepared food transactions dated on or after April 1, 2026
+- Date-based reclassification of unprepared food transactions dated on or after April 1, 2026
 - Apportionment ratio calculation and monitoring
 - Alerts when exempt supply proportion increases your non-recoverable input VAT exposure
 

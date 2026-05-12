@@ -58,7 +58,7 @@ Activating the kill switch disables fraud detection. Only use in genuine emergen
 Super administrators can perform an emergency override:
 - Enter override reason
 - Set duration (1-60 minutes)
-- System automatically reverts after the duration expires
+- System reverts after the duration expires
 
 ## Activation History
 

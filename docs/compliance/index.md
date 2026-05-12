@@ -26,7 +26,7 @@ Your compliance score (A+ to F) is calculated from:
 - Documentation (20%)
 
 ### Intelligence Dashboard
-Automated analysis including:
+Compliance analysis includes:
 - Period-aware compliance grading
 - Penalty risk assessment
 - Data quality scoring

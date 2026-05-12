@@ -10,7 +10,7 @@ Two-factor authentication adds an extra layer of security by requiring a verific
 
 ## Why 2FA is Required
 
-CoralLedger Comply handles sensitive financial data including VAT returns, transaction records, and business information. 2FA is mandatory for all users to protect this data.
+CoralLedger Comply stores and processes sensitive financial data including VAT returns, transaction records, and business information. 2FA is mandatory for all users to protect this data.
 
 ### 2FA for the Ops Portal (PlatformAdmin)
 

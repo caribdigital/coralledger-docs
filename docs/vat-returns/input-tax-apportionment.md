@@ -8,7 +8,7 @@ description: How CoralLedger Comply calculates recoverable input VAT when a busi
 
 When a business makes both **taxable** and **exempt supplies**, not all input VAT can be recovered in full. Input tax apportionment is the process of determining what fraction of the residual input VAT is deductible for each return period.
 
-CoralLedger Comply calculates apportionment automatically using the taxable/exempt supply ratio method required under [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44.
+CoralLedger Comply calculates apportionment using the taxable/exempt supply ratio method required under [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44.
 
 ## Why Apportionment Is Required
 
@@ -71,7 +71,7 @@ The deductible fraction is **recalculated fresh for each return period** using t
 
 This means:
 
-- A change in your business mix (e.g., more exempt activity one quarter) is automatically reflected in that period's return
+- A change in your business mix (e.g., more exempt activity one quarter) is reflected in that period's return
 - You do not need to make prior-period adjustments for changes in the ratio
 - Each period stands independently for apportionment purposes
 

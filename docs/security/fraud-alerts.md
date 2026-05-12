@@ -18,7 +18,7 @@ The fraud alerts dashboard displays:
 - **Total Alerts** — All detected alerts in the selected time period
 - **Critical** — Highest severity alerts requiring immediate attention
 - **High Priority** — Important alerts to investigate
-- **Blocked Actions** — Actions automatically prevented by the system
+- **Blocked Actions** — Actions blocked by the system
 
 ## Filtering Alerts
 

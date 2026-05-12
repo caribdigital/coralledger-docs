@@ -16,7 +16,7 @@ A chronological record of all changes made to transactions, categories, and VAT 
 ## B
 
 ### Bad Debt Relief
-A provision allowing businesses to claim back VAT on invoices that remain unpaid for 12 months or more. CoralLedger Comply tracks eligible debts automatically.
+A provision allowing businesses to claim back VAT on invoices that remain unpaid for 12 months or more. CoralLedger Comply tracks eligible debts by invoice age.
 
 ### Breadbasket Items
 Essential food items eligible for the reduced 5% VAT rate when sold by licensed food stores.
