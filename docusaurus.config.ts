@@ -160,6 +160,10 @@ const config: Config = {
           title: 'Support',
           items: [
             {
+              label: 'System Status',
+              href: 'https://status.coralledger.com/status',
+            },
+            {
               label: 'Contact Us',
               href: 'mailto:support@coralledger.com',
             },
