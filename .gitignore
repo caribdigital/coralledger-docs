@@ -7,7 +7,7 @@
 # Generated files
 .docusaurus
 .cache-loader
-# Transpiled JS artifacts at repo root (emitted when a contributor runs `tsc` manually
+# Transpiled JS artifacts (emitted when a contributor runs `tsc` manually
 # instead of `docusaurus build`, which uses Babel and never emits .js into src/).
 docusaurus.config.js
 sidebars.js
