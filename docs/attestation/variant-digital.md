@@ -6,6 +6,10 @@ description: Section 32 attestation for returns submitted with a qualified elect
 
 # Digital Filing Variant
 
+:::warning Coming Soon — not yet available
+The Digital Filing Variant (qualified electronic signature) is **planned functionality** and is not yet available in the production platform. The settings path `Settings > Account > Digital Signing` referenced below has not yet been built; certificate registration, browser-based signing, and signature-verification flows are subject to change before launch. This page is published in advance so integrators can plan against the intended behavior. Until launch, use the [Standard](/docs/attestation/variant-standard), [Agent](/docs/attestation/variant-agent), or [Professional](/docs/attestation/variant-professional) variants.
+:::
+
 The Digital Filing Variant applies when the filer signs the VAT return using a **qualified electronic signature** backed by a recognized digital certificate. This variant meets the heightened signature requirements available to businesses that have provisioned a digital signing credential in CoralLedger Comply.
 
 ## Who Uses This Variant
@@ -39,7 +43,7 @@ When this variant is active:
 1. CoralLedger Comply generates a **return digest** — a SHA-256 hash of the return data package
 2. The return digest is displayed for review
 3. You sign the digest using your private key:
-   - **Browser-based signing** — Use the CoralLedger signing extension or a PKCS#11-compatible device (hardware token / smart card)
+   - **Browser-based signing** — Use the CoralLedger signing extension or a PKCS#11-compatible device (hardware token or smartcard)
    - **File-based signing** — Download the digest, sign it offline with your certificate toolchain, and upload the signature file
 4. CoralLedger Comply verifies the signature against the registered certificate
 5. If verification passes, the declaration confirmation screen is shown
@@ -48,7 +52,7 @@ When this variant is active:
 
 After the signature is verified, the following declaration is presented:
 
-> *I declare that I have applied my qualified electronic signature to this VAT return, that I am the registered person or an authorized representative of the registered person named herein, and that the information provided in this return is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the VAT Act (The Bahamas).*
+> *I declare that I have applied my qualified electronic signature to this VAT return, that I am the registered person or an authorized representative of the registered person named herein, and that the information provided in this return is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32.*
 
 The filer confirms by checking **I confirm the above declaration** and clicking **Submit Return**. A password re-entry is not required for this variant because the cryptographic signature serves as the identity confirmation.
 
@@ -79,7 +83,7 @@ Once the Digital Filing Declaration is accepted:
 | Password re-entry required | Yes | No |
 | Signature verifiable offline | No | Yes |
 | Certificate-backed identity | No | Yes |
-| Suitable for automated filing pipelines | No | Yes |
+| Suitable for headless filing pipelines | No | Yes |
 
 ## Next Steps
 

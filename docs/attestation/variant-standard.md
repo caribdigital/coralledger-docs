@@ -6,20 +6,20 @@ description: Standard Section 32 attestation for business owners and directors f
 
 # Standard Declaration Variant
 
-The Standard Declaration Variant applies when the registered business owner or director completes the attestation personally, using an in-session electronic confirmation. This is the most common attestation pathway for self-filing businesses.
+The Standard Declaration Variant applies when the registered business owner or director completes the attestation personally, using an in-session electronic confirmation. This is the most common attestation pathway for self-filing businesses, and corresponds to the `SignatoryCapacity.RegisteredTaxpayer` enum value in the platform.
 
 ## Who Uses This Variant
 
-This variant is presented when the [Qualifying Screen](/docs/attestation/qualifying-screen) determines:
+This variant is presented when the [Qualifying Screen](/docs/attestation/qualifying-screen) determines that:
 
-- The filer is the **registered business owner or director**
+- The filer's signatory capacity is **`RegisteredTaxpayer`** (the registered business owner or director attesting personally)
 - The chosen signature method is **electronic confirmation in this session**
 
 ## Declaration Text
 
 When this variant is active, the following declaration is presented before final submission:
 
-> *I, the undersigned, being the registered person or an officer of the registered person named in this return, hereby declare that the information provided in this VAT return and all accompanying schedules is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the VAT Act (The Bahamas) and may result in penalties, interest, and prosecution.*
+> *I, the undersigned, being the registered person or an officer of the registered person named in this return, hereby declare that the information provided in this VAT return and all accompanying schedules is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) and may result in penalties, interest, and prosecution.*
 
 The filer must confirm this declaration by:
 
@@ -29,7 +29,7 @@ The filer must confirm this declaration by:
 4. Clicking **Submit Return**
 
 :::info Why a Password Is Required
-The password re-entry step is a standard security measure. It ensures that the person completing the attestation is the authenticated session holder — not an unattended browser session. This is consistent with electronic signature requirements under Section 32.
+The password re-entry step is a standard security measure. It ensures that the person completing the attestation is the authenticated session holder — not an unattended browser session. This is consistent with the electronic signature expectation under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32.
 :::
 
 ## Validation Checks

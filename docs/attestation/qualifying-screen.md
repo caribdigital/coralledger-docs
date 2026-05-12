@@ -6,11 +6,11 @@ description: How CoralLedger Comply determines which Section 32 attestation vari
 
 # Qualifying Screen
 
-The Qualifying Screen is the first step in the Section 32 Attestation Pathway. It presents a short set of questions to determine which attestation variant — standard, agent, professional, or digital — applies to the current filer and filing context.
+The Qualifying Screen is the first step in the Section 32 Attestation Pathway. It presents a short set of questions to determine which **signatory capacity** applies to the current filer and filing context — mapping to one of the four variants (Standard `RegisteredTaxpayer`, Agent `AuthorisedAgent`, Professional `BicaLicensedPractitioner`, or Digital `AuthorisedEmployee` *coming soon*).
 
 ## When the Qualifying Screen Appears
 
-The Qualifying Screen is displayed automatically when:
+The Qualifying Screen is displayed when:
 
 - You initiate the final submission step of a VAT return
 - A VAT return that was previously started has its submission resumed
@@ -39,7 +39,7 @@ The screen presents up to four questions, shown in sequence. Later questions app
 | Option | Result |
 |--------|--------|
 | Electronic confirmation in this session | Routes to [Standard Declaration Variant](/docs/attestation/variant-standard) |
-| Qualified electronic signature (digital certificate) | Routes to [Digital Filing Variant](/docs/attestation/variant-digital) |
+| Qualified electronic signature (digital certificate) | *(Coming soon)* Routes to [Digital Filing Variant](/docs/attestation/variant-digital) — disabled in current build |
 
 ### Question 3 — Carve-Out Check
 
@@ -71,7 +71,7 @@ After completing the screen, a summary banner displays the selected pathway:
 
 | Field | Value |
 |-------|-------|
-| **Attestation Variant** | Standard / Agent / Professional / Digital |
+| **Signatory Capacity / Variant** | `RegisteredTaxpayer` (Standard) / `AuthorisedAgent` (Agent) / `BicaLicensedPractitioner` (Professional) / `AuthorisedEmployee` (Digital, coming soon) |
 | **Qualifying Session ID** | Unique identifier for the current attestation session |
 | **Timestamp** | UTC date and time of qualification |
 | **Filer** | Logged-in user who completed the qualifying screen |

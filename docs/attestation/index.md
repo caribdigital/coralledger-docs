@@ -6,10 +6,10 @@ description: Overview of the Section 32 Attestation Pathway in CoralLedger Compl
 
 # Section 32 Attestation Pathway
 
-The Section 32 Attestation Pathway is a structured declaration process built into CoralLedger Comply that satisfies the formal attestation requirements under **Section 32 of the Bahamas VAT Act**. Before a VAT return can be submitted, the responsible party must pass through this pathway and confirm — under penalty of law — that the return is accurate and complete.
+The Section 32 Attestation Pathway is a structured declaration process built into CoralLedger Comply that satisfies the formal attestation requirements under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32. Before a VAT return can be submitted, the responsible party must pass through this pathway and confirm — under penalty of law — that the return is accurate and complete.
 
 :::info Legal Basis
-Section 32 of the VAT Act (The Bahamas) requires that every VAT return be accompanied by a signed declaration that the information provided is true, correct, and complete to the best of the declarant's knowledge and belief. CoralLedger Comply implements this requirement as a guided digital pathway.
+[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32 requires that every VAT return be accompanied by a signed declaration that the information provided is true, correct, and complete to the best of the declarant's knowledge and belief. CoralLedger Comply implements this requirement as a guided digital pathway.
 :::
 
 ## Why Attestation Matters
@@ -21,18 +21,22 @@ A VAT return submitted without a valid attestation is treated as incomplete by t
 - **Penalty exposure** — False declarations carry criminal and civil penalties under the VAT Act
 - **Audit risk** — Unsigned or improperly attested returns attract increased Comptroller scrutiny
 
-## Who Attests
+## Who Attests — Signatory Capacity
 
-The attestation may be completed by any of the following authorized parties depending on the business structure and filing arrangement:
+The attestation is completed by exactly one party per submission, identified by their **signatory capacity**. Comply recognizes four capacities, each backed by an enum value in the platform (`SignatoryCapacity`):
 
-| Party | When Used |
-|-------|-----------|
-| **Business owner / director** | Standard self-filing |
-| **Authorized agent** | Agent filing on behalf of the registrant |
-| **BICA-registered accountant** | Professional preparer with verified BICA credentials |
-| **Digital filer** | Returns submitted via electronic signature |
+| Signatory capacity | Variant page | Who this is |
+|---|---|---|
+| **`RegisteredTaxpayer`** | [Standard Variant](/docs/attestation/variant-standard) | The registered business owner or director, attesting personally |
+| **`AuthorisedAgent`** | [Agent Variant](/docs/attestation/variant-agent) | A third-party agent acting on the registrant's behalf with a written authorization |
+| **`BicaLicensedPractitioner`** | [Professional Variant](/docs/attestation/variant-professional) | A BICA-licensed accountant attesting under one of the practice-area attestation bodies (Variants A / B / C / combinations — see Professional page) |
+| **`AuthorisedEmployee`** | [Digital Variant](/docs/attestation/variant-digital) *(coming soon)* | An authorized employee submitting with a qualified electronic signature; documented in advance for integrator planning, not yet available in the production platform |
 
-The [Qualifying Screen](/docs/attestation/qualifying-screen) determines which pathway applies.
+The [Qualifying Screen](/docs/attestation/qualifying-screen) determines which capacity applies based on the filer's role and the business's filing arrangement.
+
+:::note Variant vs Signatory Capacity
+The four variant pages map to the `SignatoryCapacity` enum. Within the Professional variant, the BICA-licensed practitioner additionally selects one of seven `AttestationVariant` bodies (Variant A — General VAT Compliance; Variant B — Return Preparation; Variant C — Advisory Services; and the four practice-area combinations A+B, A+C, B+C, A+B+C). See the [Professional Variant](/docs/attestation/variant-professional) page for details.
+:::
 
 ## Pathway Structure
 

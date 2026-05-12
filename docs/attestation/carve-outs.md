@@ -16,7 +16,7 @@ A carve-out exempts the filer from the full pathway — it does not exempt them 
 
 During the [Qualifying Screen](/docs/attestation/qualifying-screen), Question 3 asks whether any carve-out scenario applies. If the filer answers **Yes**, they are directed to confirm which specific carve-out applies before proceeding.
 
-A carve-out may also be applied automatically by CoralLedger Comply based on system-detected conditions (for example, a nil return generated when no transactions exist for the period).
+A carve-out may also be detected by CoralLedger Comply on entry to the attestation pathway when the data unambiguously matches a carve-out scenario — for example, a nil return when no transactions exist for the period. Detected carve-outs are still presented for filer confirmation; they are not silently applied.
 
 ## Carve-Out Scenarios
 
@@ -54,7 +54,7 @@ Amendments filed after the 30-day correction window require the full attestation
 
 ### 3. Comptroller-Approved Filing Arrangements
 
-Businesses that operate under a formal filing arrangement approved by the Comptroller of Revenue may have a modified attestation requirement specified in their arrangement. When such an arrangement is on file in CoralLedger Comply, the system applies the arrangement's conditions automatically.
+Businesses that operate under a formal filing arrangement approved by the Comptroller of Revenue may have a modified attestation requirement specified in their arrangement. When such an arrangement is on file in CoralLedger Comply, the system surfaces the arrangement's conditions during qualification and routes the filer to the modified pathway specified by the arrangement.
 
 **Eligibility conditions:**
 - The business has an active, approved filing arrangement reference number recorded in **Settings > Business Profile**
@@ -93,7 +93,7 @@ All carve-out submissions are recorded in the [Attestation Audit Trail](/docs/at
 | Field | Contents |
 |-------|----------|
 | **Carve-Out Type** | Nil / Amendment / Approved Arrangement / Test |
-| **Auto-Detected** | Whether the carve-out was detected automatically or selected by the filer |
+| **Detection Source** | Whether the carve-out was detected by Comply or selected by the filer |
 | **Arrangement Reference** | Arrangement number, if applicable |
 | **Declarant** | User ID and name of the confirming party |
 | **Timestamp** | UTC timestamp of the carve-out confirmation |

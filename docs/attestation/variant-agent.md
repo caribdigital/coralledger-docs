@@ -6,17 +6,17 @@ description: Section 32 attestation for authorized agents filing on behalf of a 
 
 # Authorized Agent Variant
 
-The Authorized Agent Variant applies when a third party — such as an accountant, law firm, or business representative — files a VAT return on behalf of the registered person under a formal agency arrangement.
+The Authorized Agent Variant applies when a third party — such as an accountant, law firm, or business representative — files a VAT return on behalf of the registered person under a formal agency arrangement. This variant corresponds to the `SignatoryCapacity.AuthorisedAgent` enum value in the platform.
 
 ## Who Uses This Variant
 
-This variant is presented when the [Qualifying Screen](/docs/attestation/qualifying-screen) determines that the filer is an **authorized agent** acting on behalf of the registered person, rather than the registrant themselves.
+This variant is presented when the [Qualifying Screen](/docs/attestation/qualifying-screen) determines that the filer's signatory capacity is **`AuthorisedAgent`** — acting on behalf of the registered person, rather than the registrant themselves.
 
 An authorized agent is any individual or firm that:
 
 - Holds a current, valid agent authorization from the registrant
 - Has been granted **Accountant** or **Owner** role access to the business in CoralLedger Comply
-- Is not a BICA-registered professional operating under the [Professional Accountant Variant](/docs/attestation/variant-professional)
+- Is not a BICA-registered professional operating under the [Professional Accountant Variant](/docs/attestation/variant-professional) (those use `SignatoryCapacity.BicaLicensedPractitioner`)
 
 ## Agent Authorization Requirement
 
@@ -32,7 +32,7 @@ If the agent has not been formally added to the business, they cannot select thi
 
 When this variant is active, the following declaration is presented:
 
-> *I declare that I am an authorized agent of the registered person named in this return, that I have been duly authorized to prepare and file this VAT return on their behalf, and that the information provided is, to the best of my knowledge and belief, true, correct, and complete. I understand that as agent I share responsibility for the accuracy of this return and that submitting a false or misleading return is an offence under the VAT Act (The Bahamas).*
+> *I declare that I am an authorized agent of the registered person named in this return, that I have been duly authorized to prepare and file this VAT return on their behalf, and that the information provided is, to the best of my knowledge and belief, true, correct, and complete. I understand that as agent I share responsibility for the accuracy of this return and that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/).*
 
 The agent must confirm this declaration by:
 

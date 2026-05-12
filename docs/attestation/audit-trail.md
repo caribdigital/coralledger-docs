@@ -10,7 +10,7 @@ Every event in the Section 32 Attestation Pathway is recorded in an immutable, h
 
 ## Why the Attestation Audit Trail Exists
 
-Under Section 32 of the Bahamas VAT Act, a VAT return must be accompanied by a signed declaration. The attestation audit trail documents that this requirement was met for every submitted return, preserving:
+Under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32, a VAT return must be accompanied by a signed declaration. The attestation audit trail documents that this requirement was met for every submitted return, preserving:
 
 - **Identity** — Exactly who completed the attestation and their role at the time
 - **Method** — Which variant was used (Standard, Agent, Professional, Digital, or Carve-Out)
@@ -20,26 +20,29 @@ Under Section 32 of the Bahamas VAT Act, a VAT return must be accompanied by a s
 
 ## Events Recorded
 
-The attestation audit trail captures events at each stage of the pathway:
+The attestation audit trail captures events at each stage of the pathway. The current build emits the five lifecycle events listed under **Currently emitted** below; the events under **Planned** are reserved for upcoming features (Handover, Session Affirmation, Carve-Out routing, Digital Filing) — they will start emitting as those features ship. Integrators consuming the audit feed should ignore unknown event types gracefully.
+
+### Currently emitted
 
 | Event | Description |
 |-------|-------------|
-| `ATT_SESSION_STARTED` | A new attestation session was initiated for a return |
-| `ATT_QUALIFIER_COMPLETED` | The Qualifying Screen was answered; variant and session ID recorded |
-| `ATT_BICA_VERIFIED` | BICA membership check completed (result: Verified / Not Verified / Fallback) |
-| `ATT_BICA_FALLBACK` | Manual BICA fallback document uploaded |
-| `ATT_SESSION_AFFIRMED` | Session Affirmation was completed successfully |
-| `ATT_SESSION_AFFIRMATION_FAILED` | Session Affirmation attempt failed (includes attempt count) |
-| `ATT_HANDOVER_INITIATED` | A Handover was initiated; sender, recipient, and reason recorded |
-| `ATT_HANDOVER_ACCEPTED` | The Handover recipient completed Session Affirmation |
-| `ATT_HANDOVER_RECALLED` | A pending Handover was recalled by the sender |
-| `ATT_HANDOVER_EXPIRED` | A Handover link expired before the recipient acted |
-| `ATT_CARVEOUT_APPLIED` | A carve-out scenario was identified and the abbreviated pathway was used |
-| `ATT_DECLARATION_PRESENTED` | The final declaration text was shown to the filer |
-| `ATT_DECLARATION_CONFIRMED` | The filer confirmed the declaration and submitted the return |
-| `ATT_SESSION_ABANDONED` | The attestation session was abandoned before completion |
-| `ATT_SESSION_EXPIRED` | The 30-minute submission window elapsed before the return was submitted |
-| `ATT_SESSION_INVALIDATED` | The session was invalidated due to repeated affirmation failures |
+| `ATTESTATION_CREATED` | A new attestation record was created for a return |
+| `ATTESTATION_SUPERSEDED` | A prior attestation was superseded by a later one on the same return (re-attest cycle) |
+| `ATTESTATION_VOIDED_BY_ASSIGNMENT_CHANGE` | The active client assignment was changed, invalidating the prior attestation authority |
+| `ATTESTATION_RE_ATTEST_REQUIRED` | A return change after attestation requires re-attestation before submission |
+| `ATTESTATION_MODAL_CANCELLED` | The filer cancelled the attestation confirmation modal before submitting |
+
+### Planned (not yet emitted)
+
+| Event | Status / target feature |
+|-------|-------------------------|
+| `ATT_SESSION_STARTED` / `ATT_QUALIFIER_COMPLETED` | Planned with [Qualifying Screen](/docs/attestation/qualifying-screen) instrumentation |
+| `ATT_BICA_VERIFIED` / `ATT_BICA_FALLBACK` | Planned with [BICA Verification](/docs/attestation/bica-verification) live registry check |
+| `ATT_SESSION_AFFIRMED` / `ATT_SESSION_AFFIRMATION_FAILED` | Planned with [Session Affirmation](/docs/attestation/session-affirmation) live capture |
+| `ATT_HANDOVER_INITIATED` / `_ACCEPTED` / `_RECALLED` / `_EXPIRED` | Planned with [Handover](/docs/attestation/handover) feature |
+| `ATT_CARVEOUT_APPLIED` | Planned with [Carve-Outs](/docs/attestation/carve-outs) routing instrumentation |
+| `ATT_DECLARATION_PRESENTED` / `_CONFIRMED` | Planned alongside session-affirmed/declaration UI capture |
+| `ATT_SESSION_ABANDONED` / `_EXPIRED` / `_INVALIDATED` | Planned with full session-lifecycle instrumentation |
 
 ## Audit Entry Fields
 
@@ -88,7 +91,7 @@ Attestation audit records are subject to the same immutability and retention rul
 
 - **WORM compliance** — Records cannot be modified or deleted after creation
 - **Hash-chain verification** — Each record is cryptographically linked to the previous entry; any tampering breaks the chain
-- **7-year retention** — All attestation records are retained for a minimum of 7 years, in compliance with VAT Act Section 50
+- **7-year retention** — All attestation records are retained for a minimum of 7 years, in compliance with [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 50
 
 ## Exporting Attestation Records
 

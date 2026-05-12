@@ -6,7 +6,7 @@ description: How CoralLedger Comply verifies BICA membership for the Professiona
 
 # BICA Verification
 
-BICA Verification is the automated step within the [Professional Accountant Variant](/docs/attestation/variant-professional) that confirms a filing accountant's membership in the **Bahamas Institute of Chartered Accountants** is current and in good standing at the time of attestation.
+BICA Verification is the registry-lookup step within the [Professional Accountant Variant](/docs/attestation/variant-professional) that confirms a filing accountant's membership in the **Bahamas Institute of Chartered Accountants** is current and in good standing at the time of attestation.
 
 ## Why BICA Verification Is Required
 
@@ -46,7 +46,7 @@ You may proceed with the attestation despite this warning. The renewal reminder 
 
 If the BICA registry service is unavailable at the time of filing, CoralLedger Comply activates a **manual fallback** mode:
 
-1. A notice is displayed explaining that automated verification is temporarily unavailable
+1. A notice is displayed explaining that live registry verification is temporarily unavailable
 2. You are asked to upload a copy of your **current BICA membership certificate** (PDF, JPG, or PNG, maximum 5 MB)
 3. Enter your membership number and the certificate expiry date
 4. Check the **I confirm this certificate is current and authentic** declaration
@@ -65,7 +65,7 @@ Every verification attempt — whether successful or not — is recorded in the 
 | Field | Contents |
 |-------|----------|
 | **Membership Number** | As entered by the accountant |
-| **Verification Method** | Automated or Manual Fallback |
+| **Verification Method** | Live Registry Lookup or Manual Fallback |
 | **Verification Result** | Verified / Not Verified / Fallback |
 | **Timestamp** | UTC date and time of the check |
 | **Registry Response** | Status code returned by the BICA registry |
