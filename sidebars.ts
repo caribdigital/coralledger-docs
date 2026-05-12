@@ -230,25 +230,6 @@ const sidebars: SidebarsConfig = {
         'settings/appearance',
       ],
     },
-    {
-      type: 'category',
-      label: 'Platform Operations Portal',
-      link: {
-        type: 'generated-index',
-        title: 'Platform Operations Portal',
-        description: 'Internal platform administration — PlatformAdmin access required',
-      },
-      items: [
-        'ops-portal/index',
-        'ops-portal/dashboard',
-        'ops-portal/tenants',
-        'ops-portal/users',
-        'ops-portal/firms',
-        'ops-portal/audit',
-        'ops-portal/data-ops',
-        'ops-portal/support',
-      ],
-    },
       ],
     },
     {
