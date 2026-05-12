@@ -10,16 +10,16 @@ The Bahamas implemented significant VAT reforms effective July 2025. CoralLedger
 
 ## Key Changes
 
-### Multi-Rate VAT System
+### Four VAT Categories
 
-The Bahamas now operates a multi-rate VAT system:
+The Bahamas now operates a four-category VAT system: Standard (10%), Reduced (5%), Zero-Rated (0%), and Exempt.
 
 | Rate | Application |
 |------|-------------|
-| **10%** | Standard rate for most goods and services |
-| **5%** | Reduced rate for hygiene products and medications at licensed food stores (narrow scope) |
-| **0%** | Zero-rated for exports and specific supplies |
-| **Exempt** | No VAT charged and no input tax credit; includes unprepared food at licensed food stores from April 1, 2026 |
+| **10%** Standard | Default rate for most goods and services |
+| **5%** Reduced | Hygiene products and medications at licensed food stores (narrow scope) |
+| **0%** Zero-Rated | Exports, international transport, and Third Schedule unprepared food sold by retailers that do **not** qualify as licensed food stores |
+| **Exempt** | Unprepared food at licensed food stores (from April 1, 2026), financial services, residential rent, education, healthcare |
 
 :::info April 2026 Update
 From April 1, 2026, unprepared food at licensed food stores moved to **Exempt** status. See [April 2026 Food Exemption Transition](#april-2026-food-exemption-transition) below.
@@ -84,6 +84,9 @@ Effective **April 1, 2026**, unprepared food at licensed food stores moved to **
 - Unprepared food (bread, rice, flour, fresh produce, etc.) is no longer taxable at 5% — it is now Exempt
 - The 5% reduced rate now applies only to the narrow category of hygiene products and medications at licensed food stores
 - Exempt supplies carry **no input tax credit** for the supplier, unlike zero-rated supplies
+
+**Seller-Axis Clarification:**
+The same Third Schedule items are **Zero-Rated** when sold by retailers that do **not** qualify as licensed food stores, but **Exempt** when sold by licensed food stores from April 1, 2026. The category turns on seller qualification, not on a different item list.
 
 **Exempt vs Zero-Rated — Why It Matters:**
 
@@ -152,7 +155,7 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 
 - **January 2025** - 2025 VAT reforms enacted
 - **April 2025** - Food store qualification rules effective
-- **July 2025** - Multi-rate system fully effective
+- **July 2025** - Four-category VAT framework fully effective
 - **April 1, 2026** - Unprepared food at licensed food stores moves to VAT Exempt; 5% rate narrows to hygiene/medication only (see [Rate Transition Handling](/docs/compliance/rate-transitions))
 
 ## Need Help?
