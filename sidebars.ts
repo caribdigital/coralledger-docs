@@ -2,10 +2,19 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 /**
  * CoralLedger Comply Documentation Sidebar
- * Organized by feature area for easy navigation
+ * Organized by navigation axis: By Topic and By Statute
  */
 const sidebars: SidebarsConfig = {
   docsSidebar: [
+    {
+      type: 'category',
+      label: 'By Topic',
+      link: {
+        type: 'generated-index',
+        title: 'By Topic',
+        description: 'Product-first navigation organized by feature area',
+      },
+      items: [
     {
       type: 'category',
       label: 'Getting Started',
@@ -238,6 +247,8 @@ const sidebars: SidebarsConfig = {
         'ops-portal/audit',
         'ops-portal/data-ops',
         'ops-portal/support',
+      ],
+    },
       ],
     },
     {

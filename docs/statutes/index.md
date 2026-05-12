@@ -35,4 +35,4 @@ This section is a practical product guide, not legal advice. Use it alongside of
 
 ## Navigate by Topic
 
-Prefer product-first documentation? Continue through the existing topic guides in the sidebar, including Transactions, VAT Returns, Compliance, Audit Trail, and Data Operations.
+Prefer product-first documentation? Use the **By Topic** section in the sidebar to navigate feature guides such as Transactions, VAT Returns, Compliance, Audit Trail, and Data Operations.
