@@ -137,6 +137,10 @@ Scheduled Reports with the **Shared Link** delivery method use the same share-li
 - Schedule history is retained for **90 days**
 - VAT Summary schedules always use the **previous month** period regardless of the period setting
 
+:::note Schedule events vs immutable audit ledger
+Schedule lifecycle events (create, edit, pause, resume, delete, execute) and per-run history are recorded today in the **schedule's own history** surface, separate from Comply's [immutable audit ledger](/docs/audit/). The two surfaces are tracked together as a Comply repo follow-up so that recurring-report activity is traceable from the same audit trail as filings and lodgements.
+:::
+
 ## Next Steps
 
 - [Shared reports](/docs/reports/shared-reports)

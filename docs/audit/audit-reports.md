@@ -10,7 +10,11 @@ Access detailed audit reports to review all system activity, verify data integri
 
 ## Accessing Audit Reports
 
-Navigate to **Reports > Audit Logs**. Some features require 2FA to be enabled.
+The page lives at `/reports/audit` (also reachable as `/reports/audit-logs`). Navigate via **Reports > Audit Logs** in the sidebar. Some features require 2FA to be enabled.
+
+:::note "Audit Reports" and "Audit Logs" are the same page
+This page IS the audit-log viewer. "Reports" framing reflects the page's read-and-export capability — there is no separate report-generator surface for audit data. The filtered Export button on this page is the only audit-export path.
+:::
 
 ## Dashboard Overview
 
@@ -25,7 +29,7 @@ The audit reports page displays summary cards:
 ### By Event Type
 Filter by specific categories such as:
 - Transaction events
-- Return filing events
+- Return filing events (note: the newer VAT Returns lifecycle events — `FILING_INITIATED`, `RETURN_LODGED_WITH_DIR`, `RETURN_LODGEMENT_RETRACTED`, `PAYMENT_RECORDED`, etc. — are emitted today but the dropdown's hard-coded category list does not yet include them; use "All Events" to see them. Tracked as a Comply repo follow-up.)
 - User authentication events
 - Settings changes
 - Security events
