@@ -6,7 +6,7 @@ description: Manage multiple client businesses in CoralLedger Comply
 
 # Firm Portal
 
-The Firm Portal enables accounting professionals to manage VAT compliance for multiple client businesses.
+The Firm Portal is the central surface for accounting professionals managing VAT compliance across multiple client businesses. It exposes the firm-wide dashboard, the client grid with search, batch and per-client filing surfaces, multi-client reporting, staff productivity, and (where applicable) the §32 attestation entry pathway for restricted-segment clients.
 
 ## Client Management Walkthrough
 
@@ -18,75 +18,97 @@ Demo recordings of this workflow will be added here. Topics:
 - Batch filing workflow
 :::
 
-## Who Should Use Firm Portal?
+## Who uses the Firm Portal
 
-- **Accounting Firms** - Managing client VAT compliance
-- **Bookkeepers** - Handling multiple business clients
-- **Tax Professionals** - Preparing client VAT returns
+- **Accounting firms** managing client VAT compliance under a single firm umbrella
+- **Bookkeepers** handling multiple business clients on a shared team
+- **Tax professionals** preparing and lodging client VAT returns
 
-## Features
+Each of these workflows is shaped by the same access traversal — see [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) for the model that determines which clients appear in your grid.
 
-### Multi-Client Dashboard
-- View all clients at a glance
-- Aggregate compliance scores
-- Prioritized action items
-- Deadline tracking across clients
+## The dashboard at a glance
 
-### Client Management
-- Add and remove client businesses
-- Set up client business profiles
-- Manage client users and permissions
-- Transfer clients between staff
-- **Client invitations** — send, resend (token refresh), and revoke invitations with a 7-day expiry lifecycle
+The Firm Portal landing page renders **seven KPI cards** drawing on aggregate data across every active client your account has access to. The cards are designed to surface the highest-stakes items first.
 
-### Batch Operations
-- Import transactions for multiple clients
-- **Batch filing** - File multiple returns in one workflow
-- Generate aggregated reports
-- Bulk client import via CSV
+| Card | What it shows | Notes |
+|---|---|---|
+| **Total Clients** | Count of active client businesses in your access set | Excludes archived clients |
+| **Pending Filings** | Count of returns in `ReadyToFile` / `AwaitingDirConfirmation` state across clients | Bridges to [Filing Wizard](/docs/vat-returns/filing-wizard) |
+| **Pending Re-attestations** | Count of clients with no active §32 attestation or with a stale attestation (text-drift detected) | **Clickable** — links to the client grid pre-filtered to `?filter=pending-reattestation`. Surfaces the §32 Attestation Entry Pathway _(documentation coming in Wave 2.2)_ for the firm administrator |
+| **Compliance Score** | Aggregate firm compliance health with High / Medium / Low / Not-Assessed chips | Computed from per-client compliance scores |
+| **Portfolio Net VAT** | Sum of net VAT due / refundable across the period | Negative if the portfolio is a net refund |
+| **Returns Filed This Quarter** | Count of returns that reached `Lodged` or `Lodged & Paid` in the current quarter | See the [canonical lifecycle](/docs/vat-returns/#return-lifecycle) for state definitions |
+| **Next Deadline** | Countdown to the next filing deadline across your portfolio | Displays an overdue overlay if any return is past its deadline |
 
-### Firm Analytics
-- Cross-client compliance trends
-- Aggregate VAT metrics
-- Staff productivity tracking
-- Performance benchmarks
+:::warning Pending Re-attestations is regulatorily significant
+The `Pending Re-attestations` count is the firm-administrator's view of clients that cannot currently be filed for under the §32 pathway. Clicking it opens the client grid filtered to those clients so each can be routed through the §32 Attestation Entry Pathway _(documentation coming in Wave 2.2)_. Treat a non-zero count as actionable work, not a status indicator.
+:::
 
-### Team Collaboration
-- Assign clients to team members
-- Track work status and time
-- Review and approve returns
-- ROI calculator
-- Audit trail of all actions
+## Quick actions
 
-## Getting Started
+The Quick Actions row sits below the KPI cards and offers four navigation shortcuts plus a refresh:
 
-### Adding a Client
-1. Go to **Clients > Add New**
-2. Enter client business details
-3. Set up TIN and VAT number
-4. Invite client users via **Invite Client** — see [Client Invitation Lifecycle](/docs/firm-portal/user-management#client-invitation-lifecycle)
+| Button | Destination |
+|---|---|
+| **Add Client** | `/firm/clients/onboard` — see [Adding a client](#adding-a-client) below |
+| **Batch VAT Filing** | `/firm/batch-filing` — see [Batch Filing](/docs/firm-portal/batch-filing) |
+| **Multi-Client Reports** | `/firm/reports` — see [Firm Analytics](/docs/firm-portal/analytics) |
+| **Staff Productivity** | `/firm/productivity` — workload distribution + per-staff metrics |
+| **Refresh** | Reloads dashboard data without leaving the page |
 
-### Managing Permissions
-- **Full Access** - Can import, edit, generate returns
-- **View Only** - Can view but not modify
-- **Review Only** - Can approve returns only
+## The client grid
 
-## Subscription Tiers
+Below the KPI cards and Quick Actions, the Firm Portal renders a paginated **client businesses grid** with columns BusinessName, TIN, VAT#, Status, FilingFrequency, ComplianceScore, NetVAT, NextFilingDue, LastActivity, and Actions. Each row exposes per-client navigation (View Dashboard / VAT Returns / Import Transactions).
+
+### Finding clients
+
+The client grid supports search across the **business name, TIN, and VAT number** columns. Type at least **two characters** in the search input above the grid; results filter live with a short (300 ms) debounce, and a screen-reader-friendly live region announces "N clients match" alongside the result count.
+
+The search composes with the **Filing Frequency filter** (All / Monthly / Quarterly) — both apply together. The grid paginates and sorts server-side.
+
+If no clients match, an empty-state panel describes the active filters so you know whether to broaden your search or clear the filing-frequency filter.
+
+The search is being extended with additional matching modes (fuzzy / tokenised) tracked under [Comply #3125](https://github.com/caribdigital/coralledgercomply/issues/3125). The current shipped behaviour described above is stable.
+
+## Adding a client
+
+From the Firm Portal landing, click the **Add Client** quick action (or the Add Client button on the Clients grid). This opens the Client Onboarding wizard at `/firm/clients/onboard`.
+
+The wizard captures six structured sections (Business Identification, VAT Configuration, Contact + Billing, Address, Engagement, conditional Food Store License). It is gated to **firm Owners only** — non-Owners cannot onboard clients.
+
+See Client Onboarding _(detailed page coming in Wave 2.2)_ for the full capture sequence, the validation rules, and what onboarding does *not* do (specifically: it does not create a §32 attestation; that is a separate step for restricted-segment clients).
+
+## Managing permissions
+
+The Firm Portal recognises two base permission levels — **Owner** and **Accountant**. Non-Owner access is further refined via the **granular permission matrix**, which lets an Owner toggle per-category access (Transactions, Reports, Compliance, Settings, User Management, Security) for any Accountant user.
+
+There is no separate "View Only" or "Review Only" tier as a named third level — a read-only experience is achieved via granular permissions on an Accountant.
+
+See [User Management](/docs/firm-portal/user-management) for the canonical permission reference, the Last-Owner protection, and the client invitation lifecycle.
+
+## §32 attestation in the Firm Portal
+
+The Firm Portal is the entry point for the firm-administrator side of the §32 attestation lifecycle. The `Pending Re-attestations` KPI card surfaces clients that need attention; clicking through routes you to the §32 Attestation Entry Pathway _(documentation coming in Wave 2.2)_, which walks a practitioner through the carve-out qualifying screen and the regulatory acknowledgement modal that ultimately writes the `ATTESTATION_CREATED` audit event.
+
+The lifecycle states themselves (Active / Superseded / VoidedByAssignmentChange) and the relationship to the per-return Signatory Capacity Declaration are documented separately at [Section 32 Attestation Overview](/docs/attestation/).
+
+## Subscription tiers
 
 :::info Free Beta — Open Beta in progress
 All Firm Portal features are available at no cost during open beta. Subscription billing begins after open beta.
 :::
 
 | Tier | Max Clients | Price | Notes |
-|------|-------------|-------|-------|
+|---|---|---|---|
 | **Founding Member** | 25 | $99/mo | Locked for life — limited to 20 spots |
 | **Accounting Firm** | 25 | $499/mo | Standard pricing |
 | **Enterprise** | Unlimited | Custom | Dedicated support, SLA |
 
-## Next Steps
+## Next steps
 
-- [Set up your first client](/docs/getting-started/setup-business)
-- [Use batch filing](/docs/firm-portal/batch-filing)
-- [View firm analytics](/docs/firm-portal/analytics)
-- [Manage team members](/docs/firm-portal/user-management)
-- [Import client transactions](/docs/transactions/import-csv)
+- [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) — the access model that resolves your client set
+- Client Onboarding _(detailed page coming in Wave 2.2)_ — the 6-section wizard for adding a client
+- §32 Attestation Entry Pathway _(documentation coming in Wave 2.2)_ — what to do for restricted-segment clients
+- [Batch Filing](/docs/firm-portal/batch-filing) — file multiple returns in a single workflow
+- [Firm Analytics](/docs/firm-portal/analytics) — cross-client trends and staff productivity
+- [User Management](/docs/firm-portal/user-management) — permissions, granular access, and the client invitation lifecycle
