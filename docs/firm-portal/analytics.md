@@ -1,175 +1,94 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 title: Firm Analytics
-description: Cross-client analytics and performance metrics
+description: Cross-client analytics and per-staff productivity metrics surfaced by the Multi-Client Report and Staff Productivity dashboards
 ---
 
 # Firm Analytics
 
-Get insights across all your client businesses with firm-level analytics and performance tracking.
+CoralLedger Comply exposes firm-level analytics through two dedicated pages and a set of aggregate KPI cards on the Firm Portal landing.
 
-## Accessing Firm Analytics
+| Surface | Route | What it covers |
+|---|---|---|
+| Firm Portal landing | `/firm`, `/firm/portal`, `/firm/portfolio` | Real-time KPI cards aggregated across your active client set |
+| Multi-Client Report | `/firm/reports` | Date-range filtered cross-client compliance summary with CSV export |
+| Staff Productivity | `/firm/productivity` | Per-staff workload, time tracking, and ROI Calculator |
 
-Navigate to **Firm Portal > Analytics** from the main menu.
+Each surface respects the [firm-to-client access traversal](/docs/firm-portal/firm-client-access) — you only see aggregates over clients you have access to.
 
-## Dashboard Overview
+## The landing-page KPI cards
 
-### Client Compliance Distribution
+The seven KPI cards on the [Firm Portal landing](/docs/firm-portal/#the-dashboard-at-a-glance) — Total Clients, Pending Filings, Pending Re-attestations, Compliance Score, Portfolio Net VAT, Returns Filed This Quarter, and Next Deadline — are the firm-wide at-a-glance view. They refresh on every page load and reflect the current state of your active client set.
 
-Visual breakdown of client compliance scores:
+For deeper trend analysis and date-range reporting, use the Multi-Client Report surface described below.
 
-| Grade | Clients | Percentage |
-|-------|---------|------------|
-| A+ / A | 12 | 48% |
-| B+ / B | 8 | 32% |
-| C+ / C | 4 | 16% |
-| D / F | 1 | 4% |
+## Multi-Client Report (`/firm/reports`)
 
-### Aggregate Metrics
+The Multi-Client Report consolidates cross-client compliance and aggregate VAT data into a single date-range filtered view.
 
-Key metrics across all clients:
+### Controls
 
-- **Total Clients** - Active client count
-- **Total Transactions** - Sum of all client transactions
-- **Total VAT Managed** - Combined VAT liability
-- **Average Compliance Score** - Firm-wide average
+- **Report Period** — date range picker (defaults to the current quarter; configurable for any range)
+- **Generate Report** — triggers the aggregation across your accessible clients
+- **Export CSV** — download the per-client rollup as CSV
 
-### Deadline Countdown
+### What the report shows
 
-Upcoming filing deadlines across clients:
+Once generated, the dashboard renders:
 
-- Clients due this week
-- Clients due this month
-- Overdue returns (requires immediate attention)
+- **Firm Analytics Dashboard header** — top-of-page summary banner
+- **KPI cards row** — Total Clients, Total Transactions, Total VAT Managed, Average Compliance Score across the selected period
+- **Compliance Distribution** — per-grade client counts (A+ through F)
+- **Per-client rollup table** — one row per client business showing transaction count, net VAT, compliance score, and last activity
 
-## Cross-Client Trends
+The data is backed by `IFirmAnalyticsService` and rendered server-side. It honors the same access boundary as the Firm Portal landing.
 
-### Compliance Trend Analysis
+### Export formats
 
-Track compliance scores over time:
-- 30-day trend
-- Quarterly comparison
-- Year-over-year analysis
+Today the Multi-Client Report exports as **CSV** only. PDF and Excel exports are not currently exposed from this surface — for PDF/Excel of an individual return, use the per-return artefact downloads from the [Filing Wizard](/docs/vat-returns/filing-wizard) or the read-only View Filed Return page.
 
-### Transaction Volume Trends
+## Staff Productivity (`/firm/productivity`)
 
-Monitor transaction patterns:
-- Monthly transaction counts
-- Seasonal patterns
-- Growth trends
+The Staff Productivity dashboard covers per-staff metrics and workload distribution.
 
-### VAT Liability Trends
+### Workload distribution
 
-Analyze VAT obligations:
-- Monthly payable/refundable
-- Cash flow forecasting
-- Budget planning data
-
-## Staff Productivity
-
-### Workload Distribution
-
-View client assignments by team member:
-
-| Staff Member | Clients | Transactions | Avg Score |
-|--------------|---------|--------------|-----------|
-| Jane Smith | 10 | 2,450 | A |
-| John Doe | 8 | 1,890 | A- |
-| Mary Johnson | 7 | 2,100 | B+ |
-
-### Time Tracking
-
-Track time spent per client:
-- Average hours per client
-- Time per filing period
-- Efficiency metrics
+A grid showing each firm staff member alongside their assigned client count, transaction volume, and average compliance score across their assigned clients. The grid reads from the `ClientAssignment` entity (workload assignment is distinct from access — see [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access)).
 
 ### ROI Calculator
 
-Calculate value delivered:
-- Time saved vs manual processing
-- Error reduction metrics
-- Client retention impact
+An interactive section that estimates the value Comply delivers based on staff inputs:
+- Hours per filing without Comply vs with Comply (per-staff or per-firm aggregates)
+- Error-reduction percentage
+- Client-retention impact
 
-Access at **Firm Portal > Staff Productivity**.
+The calculator is informational — its outputs are not persisted to any audit-ledger entry or report. Use it as a conversation aid for client demos and renewal discussions.
 
-## Multi-Client Reporting
+### Pending Re-attestations workload signal
 
-### Comparison Reports
+The Staff Productivity surface also indicates per-staff outstanding §32 re-attestations. This bridges the workload view back to the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) — a staff member with high pending re-attestation count needs that flow run for each affected client.
 
-Compare metrics across clients:
-- Side-by-side compliance scores
-- Transaction volume comparison
-- VAT liability comparison
+## Industry benchmarks
 
-### Consolidated Reports
+CoralLedger seeds **industry benchmark** reference data (sourced from anonymised cross-tenant aggregates and external industry classifications). The benchmarks surface alongside per-client compliance scores so a practitioner can contextualise whether a B+ score is above or below industry norm for that vertical.
 
-Aggregate reports for:
-- Total firm VAT managed
-- Combined compliance metrics
-- Firm-wide trends
+The benchmark seed runs at platform initialisation; firms do not need to upload or maintain it. Benchmarks update as the underlying classifications are revised by the CoralLedger compliance team.
 
-### Export Options
+## Multi-tenant safety
 
-- **PDF** - Presentation-ready reports
-- **Excel** - Detailed data for analysis
-- **CSV** - Raw data export
+Every analytic surface reads through the same access boundary as the rest of the Firm Portal — the [firm-to-client access traversal](/docs/firm-portal/firm-client-access) limits aggregations to clients your account has access to, and the underlying queries are `BusinessId`-scoped per the project's mandatory multi-tenant rule.
 
-## Performance Benchmarks
+This means: the Compliance Distribution table on your dashboard reflects your firm's client set, not platform-wide statistics. Industry benchmarks (anonymised, aggregated) are the only data drawn from beyond your firm's boundary.
 
-### Industry Benchmarks
+## What this page does NOT cover
 
-Compare client performance:
-- Industry average compliance scores
-- Typical transaction patterns
-- Common compliance issues
+- **A public analytics API.** There is no `api/firm/analytics/*` REST surface today. The `IFirmAnalyticsService` is internal to the Comply web app. If a firm requires programmatic access, raise that as a feature request — it is not yet built.
+- **Custom alert thresholds.** Per-firm configurable thresholds for compliance score drops, transaction volume anomalies, or VAT liability spikes are not surfaced today as a configuration panel. The Firm Portal landing renders some alerts automatically based on built-in heuristics (e.g. overdue deadlines).
+- **Per-client side-by-side comparison reports.** The Multi-Client Report aggregates per-client rows but does not render a side-by-side comparison view today. Use CSV export and an external spreadsheet for that.
 
-### Firm Benchmarks
+## Next steps
 
-Track firm-level performance:
-- Client acquisition trends
-- Retention metrics
-- Service quality indicators
-
-## Alerts and Notifications
-
-### Firm-Level Alerts
-
-Configure alerts for:
-- Any client score drops
-- Multiple clients approaching deadline
-- Aggregate anomaly detection
-- Staff workload imbalances
-
-### Custom Thresholds
-
-Set custom alert thresholds:
-- Compliance score threshold
-- Transaction count alerts
-- VAT liability alerts
-
-## Data Security
-
-All firm analytics:
-- Respect client data isolation
-- Aggregate without exposing individual transactions
-- Follow data protection regulations
-- Maintain complete audit trail
-
-## API Access
-
-For custom dashboards and integrations:
-
-```
-GET /api/firm/analytics/summary
-GET /api/firm/analytics/compliance-distribution
-GET /api/firm/analytics/trends
-GET /api/firm/clients/metrics
-```
-
-Contact support for API documentation.
-
-## Next Steps
-
-- [Set up batch filing](/docs/firm-portal/batch-filing)
-- [Configure firm settings](/docs/settings)
+- [Firm Portal landing](/docs/firm-portal/) — the real-time KPI cards and quick actions
+- [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) — the access boundary every analytic surface respects
+- [Batch Filing](/docs/firm-portal/batch-filing) — the place to act on what the analytics surface
+- [User Management](/docs/firm-portal/user-management) — assigning clients to staff (the workload distribution upstream of Staff Productivity)
