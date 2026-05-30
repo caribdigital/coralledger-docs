@@ -58,20 +58,25 @@ CoralLedger Comply maintains all your return history for the required 7-year ret
 
 ## Filing Status
 
-Track your return through its full lifecycle in CoralLedger Comply:
-- **Draft** — Generated but not finalized
-- **Ready** — All validations passed
-- **Filed** — Marked by you as submitted to DIR via OTAS
-- **Amended** — Correction submitted for a previously filed return
+Comply tracks every return through an eight-state lifecycle. The states most relevant to submission are:
+
+- **Awaiting Lodgement** — artifacts have been generated; you now submit externally to the DIR.
+- **Lodged** — you have recorded the DIR lodgement in Comply via **Record DIR Acknowledgement**.
+- **Lodged & Paid** — final state once payment is recorded (or automatically for credit/zero returns).
+
+See the canonical state machine table on the [VAT Returns Overview](/docs/vat-returns/) page.
 
 ## Amendments
 
-If you need to correct a filed return:
-1. Navigate to the submitted return
-2. Click **Amend**
-3. Make corrections to the affected line items
-4. Submit the amendment
-5. The return status changes to **Amended**
+If you need to correct a previously-lodged return:
+
+1. Navigate to the lodged return on the VAT Returns page.
+2. Click **Amend**. The amendment is created in the **Amendment Draft** state — distinct from the original return, which remains in its existing Lodged / Lodged & Paid state for audit history.
+3. Make corrections to the affected line items.
+4. Submit the amendment through the same approval and submission workflow as a fresh return — Section 61 acknowledgement, signatory capture, artifact generation, and Record DIR Acknowledgement.
+5. When the amendment is lodged it follows the same lifecycle and ends at **Lodged** (or **Lodged & Paid** once paid).
+
+There is no separate "Amended" final state — both the original return and its amendment are durable lifecycle records visible in the audit trail.
 
 ## By Statute References
 
