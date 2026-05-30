@@ -48,9 +48,18 @@ When you click **Approve** to close the dialog, Comply writes a `RETURN_APPROVED
 
 ### §32 attestation prefill
 
-If your CoralLedger account has an active **§32 attestation** for this client business (you are the BICA-licensed practitioner of record), Comply will pre-fill your name and set Capacity to `BICA-Licensed Practitioner`. The prefill is checked at the moment the dialog opens via a single correlated existence query against both your active client assignment and your active attestation record — see [Section 32 Attestation Pathway](/docs/attestation/) for how that determination is made.
+If your CoralLedger account has an active **§32 attestation** for this client business (you are the BICA-licensed practitioner of record), Comply will pre-fill your name and set Capacity to `BICA-Licensed Practitioner`. The prefill is checked at the moment the dialog opens via a single correlated existence query against both your active client assignment and your active attestation record — see [Section 32 Attestation Overview](/docs/attestation/) for how that determination is made.
 
 You can override the prefilled values if a different signatory is signing this specific return.
+
+:::warning Is a §32 attestation also required for this return?
+The Signatory Capacity Declaration captured here is a **per-return** artefact — it is required on every return regardless of client type. It is **not** the same as a §32 attestation in the firm-admin lifecycle.
+
+- If your client is in a **§3 restricted segment** (per Julian's CLR memorandum §3 — construction with retention, retainer-billed services, SaaS subscription, real-estate developers, and similar regulated categories), the firm must **also** have an `Active` persistent §32 attestation for this `(client, practitioner)` pair before the return can be lodged. See [§32 Attestation Lifecycle (Firm Admin)](/docs/attestation/).
+- If your client is **not** in a restricted segment, the Signatory Capacity Declaration captured here is sufficient on its own.
+
+If you are unsure whether your client is in a restricted segment, see [Carve-Outs](/docs/attestation/carve-outs).
+:::
 
 ## Signatory capacities
 
