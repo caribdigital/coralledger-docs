@@ -139,6 +139,7 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'firm-portal/index',
+        'firm-portal/firm-client-access',
         'firm-portal/batch-filing',
         'firm-portal/analytics',
         'firm-portal/user-management',
