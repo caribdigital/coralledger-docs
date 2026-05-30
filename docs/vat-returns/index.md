@@ -57,7 +57,7 @@ The regulatorily significant transition is **lodgement** — recorded by you in 
 :::
 
 :::info Every return passes through Lodged first (VR-STATE-001)
-Even **credit and zero-balance returns** transition through `Lodged` before reaching `Lodged & Paid`, so the `RETURN_LODGED_WITH_DIR` audit entry always has a clean lodgement timestamp. Credit/zero returns auto-advance to `Lodged & Paid` immediately after the audit entry has been written. This is a deliberate regulatory invariant.
+Even **credit and zero-balance returns** transition through `Lodged` before reaching `Lodged & Paid`, so the `RETURN_LODGED_WITH_DIR` audit entry always has a clean lodgement timestamp. Credit/zero returns auto-advance to `Lodged & Paid` immediately after the audit entry has been written. This is a deliberate regulatory invariant — see [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement#vr-state-001-every-return-passes-through-lodged-first) for the full state-transition table.
 :::
 
 ## DIR Form Fields (L1-L31)
@@ -101,7 +101,9 @@ CoralLedger Comply supports two filing modes:
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)
 - [Preview and validate](/docs/vat-returns/return-preview)
-- [Submit to the Comptroller](/docs/vat-returns/submit-return)
+- [Filing Wizard](/docs/vat-returns/filing-wizard) — §61 acknowledgement, signatory capture, and artifact generation
+- [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) — capture the DIR-side lodgement; retract and record payment
+- [Submit to the Comptroller](/docs/vat-returns/submit-return) — the external submission workflow
 - [Claim Bad Debt Relief (L16 adjustment)](/docs/compliance/bad-debt-relief)
 - [Input Tax Apportionment](/docs/vat-returns/input-tax-apportionment)
 - [Self-Filing Mode guide](/docs/getting-started/self-filing)

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 title: Submit VAT Return
 description: Submit your VAT return to the Comptroller
 ---
@@ -85,6 +85,8 @@ There is no separate "Amended" final state — both the original return and its 
 
 ## Next Steps
 
+- [Filing Wizard](/docs/vat-returns/filing-wizard) — the in-app capture before external submission
+- [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) — what you do in Comply after DIR confirms receipt
 - [Monitor your compliance score](/docs/compliance/compliance-score)
 - [View filing history](/docs/vat-returns/)
 - [Cash flow report](/docs/reports/cash-flow)

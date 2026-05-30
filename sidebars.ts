@@ -64,6 +64,8 @@ const sidebars: SidebarsConfig = {
         'vat-returns/index',
         'vat-returns/generate-return',
         'vat-returns/return-preview',
+        'vat-returns/filing-wizard',
+        'vat-returns/record-dir-acknowledgement',
         'vat-returns/submit-return',
         'vat-returns/input-tax-apportionment',
       ],
