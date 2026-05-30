@@ -39,15 +39,25 @@ Each VAT return includes:
 
 ## Return Lifecycle
 
-| Status | Description |
-|--------|-------------|
-| **Draft** | Return generated but not finalized — can be edited |
-| **Ready** | All validations passed, ready for submission |
-| **Filed** | Return marked as filed after you submit via OTAS |
-| **Amended** | A correction has been submitted for a previously filed return |
+Comply tracks every VAT return through a structured eight-state lifecycle. Each transition is recorded in the [audit trail](/docs/audit/) with a named event so the regulatory record is reproducible.
 
-:::note
-The "Filed" status is manually marked by you after submitting via the DIR's Online Tax Administration System (OTAS). CoralLedger Comply does not currently receive direct confirmation from the DIR.
+| State | Displayed label | Description |
+|---|---|---|
+| **Draft** | Draft | Return created from the period's transactions; can still be edited |
+| **Ready to File** | Ready to File | All validations passed and the Section 61 acknowledgement + signatory have been captured. The return is locked from edits |
+| **Filing in Progress** | Filing in Progress | Artifacts (PDF / XML / Excel / Form 301) are being generated. Brief — usually seconds |
+| **Awaiting Lodgement** | Awaiting Lodgement | Artifacts are ready. You now submit externally to the DIR via OTAS / a DIR office / an authorised agent, then return to Comply to record the lodgement |
+| **Lodged** | Lodged | You have recorded the DIR lodgement using **Record DIR Acknowledgement**. The `RETURN_LODGED_WITH_DIR` audit entry has been written. Payable returns wait here until payment is recorded |
+| **Lodged & Paid** | Lodged & Paid | Final state for payable returns once cumulative payments cover the net VAT due. Credit/zero returns reach this state automatically immediately after Lodged |
+| **Amendment Draft** | Amendment Draft | A correction to a previously-lodged return is being composed. When lodged, the amendment goes through the same lifecycle and ends at Lodged / Lodged & Paid — there is no separate "Amended" final state |
+| **Disputed** | Disputed | A previously-lodged return is under DIR dispute. Used when the DIR challenges the return; tracking-only state |
+
+:::note Lodgement, not "filing"
+The regulatorily significant transition is **lodgement** — recorded by you in Comply when you have submitted the return to the DIR. "Filed" is not a state name in Comply; the displayed labels are **Awaiting Lodgement**, **Lodged**, and **Lodged & Paid**. Comply does not currently receive direct confirmation from the DIR.
+:::
+
+:::info Every return passes through Lodged first (VR-STATE-001)
+Even **credit and zero-balance returns** transition through `Lodged` before reaching `Lodged & Paid`, so the `RETURN_LODGED_WITH_DIR` audit entry always has a clean lodgement timestamp. Credit/zero returns auto-advance to `Lodged & Paid` immediately after the audit entry has been written. This is a deliberate regulatory invariant.
 :::
 
 ## DIR Form Fields (L1-L31)
