@@ -38,8 +38,8 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Generate VAT returns with 10-point pre-flight validation. Preview totals,
-        catch errors before filing, and export in PDF, CSV, or XML formats for
-        electronic submission.
+        catch errors before filing, and export in PDF, XML, Excel, or Form 301
+        formats ready for OTAS upload or in-person DIR filing.
       </>
     ),
   },
