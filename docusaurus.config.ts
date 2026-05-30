@@ -112,7 +112,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://coralledger.com',
+          href: 'https://www.coralledger.com',
           label: 'CoralLedger',
           position: 'right',
         },
