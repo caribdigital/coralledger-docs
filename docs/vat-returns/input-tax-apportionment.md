@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 title: Input Tax Apportionment
 description: How CoralLedger Comply calculates recoverable input VAT when a business makes both taxable and exempt supplies
 ---
