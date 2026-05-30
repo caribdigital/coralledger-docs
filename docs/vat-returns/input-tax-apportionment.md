@@ -103,11 +103,12 @@ The full apportionment schedule is included in every return export:
 
 1. Open the VAT return for the relevant period
 2. Click **Export**
-3. Choose your preferred format: **PDF**, **Excel**, or **CSV**
+3. Choose your preferred format: **PDF**, **Excel**, **XML**, or **Form 301**
 4. The export includes the apportionment schedule:
    - **PDF** — displayed as a clearly labelled section within the return document
    - **Excel** — included as a dedicated **Input Tax Apportionment** worksheet
-   - **CSV** — included as separate rows with an `Apportionment` category label
+   - **XML** — embedded under the apportionment element of the DIR-accepted submission payload
+   - **Form 301** — included in the structured DIR submission artifact
 
 The exported schedule contains:
 
