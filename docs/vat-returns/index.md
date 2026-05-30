@@ -23,10 +23,14 @@ VAT returns are due within **21 days** after the end of the tax period (14 days 
 Each VAT return includes:
 
 ### Output VAT (Sales)
-- Total taxable supplies at 10%
-- Total taxable supplies at 5%
-- Total zero-rated supplies
+- Total taxable supplies at 10% (**Standard** category)
+- Total taxable supplies at 5% (**Reduced** category)
+- Total zero-rated supplies (**Zero-Rated** category)
 - VAT collected from customers
+
+:::info Reduced (5%) sub-categories
+When you classify a transaction as **Reduced (5%)** in the [Manual VAT Entry](/docs/transactions/manual-entry) dropdown, Comply asks which sub-category applies — Food (licensed food stores only), Hygiene, Medical, or Essential Goods — so the legal-basis citation on the audit trail is precise. All four sub-categories ultimately compute at the 5% rate. See [VAT Rates Reference](/docs/reference/vat-rates) for the canonical category list and the food-store licensing rule.
+:::
 
 ### Input VAT (Purchases)
 - VAT paid on business purchases
@@ -76,9 +80,9 @@ Your return includes all standard Bahamas VAT return lines:
 - **Calculated Fields** - All L1-L31 fields computed from your transaction data
 - **Return Preview** - Review totals and validation before filing
 - **10-Point Validation** - Comprehensive pre-flight checks
-- **Export Formats** - PDF, XML, Excel, and CSV for electronic filing
-- **Amendment Support** - Correct filed returns with change tracking
-- **Multi-Format Export** - Download as PDF, XML, Excel, or CSV
+- **Export Formats** - PDF, XML, Excel, and Form 301 for DIR submission and your own records
+- **Amendment Support** - Correct lodged returns with change tracking
+- **Multi-Format Export** - Download a lodged return as PDF, XML, Excel, or Form 301
 
 ## Return Preview & Validation
 

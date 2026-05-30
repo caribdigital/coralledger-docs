@@ -101,7 +101,7 @@ Export your completed return for submission to the DIR's Online Tax Administrati
 
 1. Open the generated return
 2. Click **Export**
-3. Choose your preferred format — **PDF**, **XML**, **Excel**, or **CSV**
+3. Choose your preferred format — **PDF**, **XML**, **Excel**, or **Form 301**
 4. Submit the figures through the [DIR OTAS portal](https://otas.bahamas.gov.bs) or in person at a DIR office
 
 :::info OTAS Export
