@@ -61,7 +61,7 @@ If you have a license key:
 You enter a grace period with read-only access. Your data is preserved. Activate a license to restore full access.
 
 ### Can I switch plans?
-Yes. Contact support@coralledger.com to discuss plan changes.
+Yes. Contact privacy@digitalcarib.com to discuss plan changes.
 
 ### What's the cancellation policy?
 You can cancel at any time. Your data is retained for 7 years per [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/).
@@ -73,4 +73,4 @@ Yes. Founding Members pay $99/mo forever, regardless of future price increases.
 
 - [View subscription details](/docs/billing)
 - [Join the Founders Circle](/docs/billing/founders-circle)
-- [Contact support](mailto:support@coralledger.com)
+- [Contact support](mailto:privacy@digitalcarib.com)

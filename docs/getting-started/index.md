@@ -8,8 +8,8 @@ description: Get up and running with CoralLedger Comply in minutes
 
 Welcome to CoralLedger Comply! This guide will help you get started with VAT compliance for your Bahamian business.
 
-:::info Free Beta — March through September 2026
-CoralLedger Comply is currently in free beta. All features are available at no cost through September 30, 2026.
+:::info Free Beta — Open Beta in progress
+CoralLedger Comply is currently in free beta. All features are available at no cost during open beta.
 :::
 
 ## What is CoralLedger Comply?
@@ -49,6 +49,6 @@ CoralLedger Comply is a VAT compliance platform built specifically for businesse
 
 ## Need Help?
 
-- **Email**: support@coralledger.com
+- **Email**: privacy@digitalcarib.com
 - **Documentation**: You're already here!
 - **In-App Help**: Access the Help Center from within CoralLedger Comply

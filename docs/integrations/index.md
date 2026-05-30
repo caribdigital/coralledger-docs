@@ -31,7 +31,7 @@ We're working on direct integrations with:
 - Bank feeds
 
 :::info Request an Integration
-Need a specific integration? Email us at support@coralledger.com
+Need a specific integration? Email us at privacy@digitalcarib.com
 :::
 
 ## API Access

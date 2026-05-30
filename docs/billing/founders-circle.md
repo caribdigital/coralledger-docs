@@ -17,7 +17,7 @@ Founding Members are the first 20 businesses to adopt CoralLedger Comply. In exc
 | Benefit | Details |
 |---------|---------|
 | **Locked-in pricing** | $99/mo forever — price never increases |
-| **Free beta access** | Full access through September 2026 at no cost |
+| **Free beta access** | Full access during open beta at no cost |
 | **Priority support** | Dedicated support queue with faster response times |
 | **Product roadmap input** | Direct influence on feature development priorities |
 | **67% lifetime discount** | Compared to standard $499/mo Accounting Firm pricing |
@@ -29,15 +29,15 @@ Founding Members are the first 20 businesses to adopt CoralLedger Comply. In exc
 |-----------|------|--------|
 | Registration opens | March 2026 | Active |
 | Beta kickoff | March 2026 | Active |
-| Feature freeze | September 2026 | Upcoming |
-| Billing begins | October 1, 2026 | Upcoming |
+| Feature freeze | After open beta | Upcoming |
+| Billing begins | After open beta | Upcoming |
 
 ## How to Join
 
 1. **Register** at [comply.coralledger.com](https://comply.coralledger.com)
 2. **Set up your business** profile
 3. Your Founding Member status is confirmed during onboarding
-4. **Add a payment method** before October 1, 2026
+4. **Add a payment method** before billing begins
 
 :::warning Limited Spots
 Only 20 Founding Member spots are available. Once claimed, no additional spots will be added.

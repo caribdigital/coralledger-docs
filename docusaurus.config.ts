@@ -165,12 +165,12 @@ const config: Config = {
             },
             {
               label: 'Contact Us',
-              href: 'mailto:support@coralledger.com',
+              href: 'mailto:privacy@digitalcarib.com',
             },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Caribbean Digital Labs. All rights reserved.`,
+      copyright: `© ${new Date().getFullYear()} Carib Digital Labs. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
