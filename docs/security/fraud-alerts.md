@@ -10,7 +10,11 @@ CoralLedger Comply's fraud detection system monitors activity in real-time and g
 
 ## Accessing Fraud Alerts
 
-Navigate to **Admin > Fraud Alerts**. This feature requires Administrator access.
+Navigate to **Admin > Fraud Alerts** (route: `/admin/fraud-alerts`). The page requires the Administrator role.
+
+:::note
+Unlike the [Kill Switch](/docs/security/kill-switch) and [IP Blocking](/docs/security/ip-blocking) pages — which gate on both Administrator role **and** 2FA via the `Require2FA` policy — the Fraud Alerts viewer is read-only and currently only role-gated. If your platform deployment requires 2FA for all Admin surfaces, raise the divergence with the security team.
+:::
 
 ## Dashboard Overview
 
