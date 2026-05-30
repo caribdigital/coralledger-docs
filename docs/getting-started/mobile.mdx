@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
 title: Mobile Experience
-description: Use CoralLedger Comply on mobile devices
+description: Using CoralLedger Comply from a phone or tablet — responsive web in any modern browser
 ---
 
 # Mobile Experience
 
-CoralLedger Comply is fully responsive and optimized for mobile devices, so you can manage VAT compliance from anywhere.
+CoralLedger Comply is a **responsive web application** — it adapts its layout to phones, tablets, and desktops without needing a separate mobile app. There is no App Store / Play Store install; you access the platform from your device's browser the same way you would on a laptop.
 
 ## Mobile Walkthrough
 
@@ -16,40 +16,49 @@ A demo recording of the responsive interface on phone and tablet will be added h
 
 ## Supported Devices
 
-- **Smartphones** — iOS and Android browsers
-- **Tablets** — iPad, Android tablets
+- **Smartphones** — iOS Safari and Android Chrome
+- **Tablets** — iPad Safari, Android tablet browsers
 - **Desktop** — All modern browsers
 
-No app installation required — access CoralLedger Comply directly from your device's browser.
+The mobile experience uses the same URL as desktop: [comply.coralledger.com](https://comply.coralledger.com). No app installation is required.
 
-## Mobile-Optimised Features
+## What works well on mobile
+
+Comply's layout reflows for narrow screens. The components you use most on mobile are designed for one-handed phone use:
 
 ### Dashboard
-The compliance dashboard adapts to smaller screens, displaying your compliance score, upcoming deadlines, and action items in a single-column layout.
+
+The Client Dashboard's KPI cards stack into a single column on a phone, with the Compliance Weather card at the top and the Recent Transactions table at the bottom. Tide Timer + Quick Actions remain prominent in the visible viewport on most phones. See [Dashboard Tour](/docs/getting-started/dashboard-tour) for the full component layout.
 
 ### Transaction Entry
-Quickly enter transactions from your phone immediately after a sale or purchase:
-1. Open [comply.coralledger.com](https://comply.coralledger.com)
-2. Navigate to **VAT Entry**
-3. Use Quick Entry mode for fast single-transaction input
+
+Quick Entry mode in VAT Entry was designed for phone input — single-line, large tap targets, minimal field set. Useful for capturing a transaction immediately after a sale or purchase while still on-site. See [Manual VAT Entry](/docs/transactions/manual-entry).
 
 ### VAT Return Review
-Review and approve draft VAT returns from your mobile device before your accountant files.
 
-### Notifications
-Receive browser-based notifications for:
-- Upcoming filing deadlines
-- Compliance score changes
-- Fraud alerts requiring review
+Review and approve a draft VAT return from your phone before forwarding to your accountant for final filing. The return summary and validation states render cleanly on small screens.
+
+## What does NOT work on mobile
+
+Worth knowing what is *not* in scope so you set the right expectations:
+
+- **No PWA install / no service worker / no manifest.** Comply is not a Progressive Web App — you cannot install it as a standalone app icon with background push notifications. Browser-only.
+- **No background notifications.** Filing deadline reminders, compliance alerts, and other notifications appear as in-tab toast messages when you are actively using Comply. They do not push to your device when the tab is closed.
+- **Offline use is not supported.** Comply needs a network connection. There is no local cache that lets you work disconnected.
+- **CSV import via the mobile browser is impractical for large files.** For multi-thousand-row imports use a desktop browser.
 
 ## Tips for Mobile Use
 
-- **Bookmark the app** — Add comply.coralledger.com to your home screen for quick access
-- **Use Quick Entry** — The simplified entry mode is ideal for mobile input
-- **Enable notifications** — Stay informed of deadlines without opening the app
+- **Bookmark in your browser** — add `comply.coralledger.com` to your phone's home screen via your browser's "Add to Home Screen" option. This creates a browser shortcut, not an installed app — it opens in your browser when tapped.
+- **Use Quick Entry mode** — designed for fast one-handed phone input. Find it on the VAT Entry page.
+- **Use the phone for review, the desktop for bulk work** — phone is great for spotting one-off transactions while on-site or reviewing alerts at a glance; desktop is the right surface for CSV import, batch filing, multi-client work, and report generation.
 
-## Next Steps
+## Browser support
 
-- [Create your account](/docs/getting-started/create-account)
-- [Enter transactions manually](/docs/transactions/manual-entry)
-- [Tour the dashboard](/docs/getting-started/dashboard-tour)
+The same browser requirements as desktop apply on mobile — see the [Performance](/docs/getting-started/performance) page for the supported browser versions.
+
+## Next steps
+
+- [Create your account](/docs/getting-started/create-account) — the registration wizard works on mobile but desktop is recommended for first-time setup
+- [Tour the dashboard](/docs/getting-started/dashboard-tour) — what the desktop layout looks like
+- [Enter transactions manually](/docs/transactions/manual-entry) — the Quick Entry path designed for phone use

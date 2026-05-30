@@ -1,145 +1,85 @@
 ---
 sidebar_position: 2
 title: Account Settings
-description: Manage your profile, security, and preferences
+description: Manage your profile, password, two-factor authentication, and notification preferences
 ---
 
 # Account Settings
 
-Manage your personal account settings, security options, and preferences.
+Manage your personal account settings, security options, and preferences. Account-level settings are distinct from **business settings** (the per-business configuration on Settings > Business); this page covers what's tied to your individual user account.
 
-## Accessing Account Settings
+## Profile information
 
-Navigate to **Settings > Account** or click your profile icon and select **Account Settings**.
+Update your basic profile from the Profile Settings page:
 
-## Profile Information
+- **Full Name** — your display name (combination of First Name + Last Name as captured at registration)
+- **Email Address** — the verified email used to sign in
+- **Phone Number** — for account recovery (optional)
+- **Profile Picture** — optional; surfaces in the top navigation, team-member lists, and activity logs
 
-### Update Your Profile
-- **Full Name** - Your display name
-- **Email Address** - Login email (verified)
-- **Phone Number** - For account recovery
-- **Timezone** - For accurate deadline displays
+Changes to your name and profile picture are visible immediately to anyone who shares a business with you.
 
-### Profile Picture
-Upload a profile photo that appears:
-- In the top navigation
-- On team member lists
-- In activity logs
+## Change your password
 
-## Security Settings
+The Change Password page lives at `/account/change-password` (or `/change-password`).
 
-### Change Password
+1. Enter your **current password**
+2. Enter and confirm your **new password**
+3. Click **Update Password**
 
-1. Go to **Settings > Change Password**
-2. Enter your current password
-3. Enter and confirm your new password
-4. Click **Update Password**
+**Password requirements** (same policy as registration):
 
-**Password Requirements:**
-- Minimum 8 characters
-- At least one uppercase letter
-- At least one number
-- At least one special character
+- **Minimum 15 characters**
+- At least one **uppercase** letter
+- At least one **lowercase** letter
+- At least one **number**
+- At least one **special character**
 
-### Two-Factor Authentication (2FA)
+If your administrator has flagged your account for required password rotation, the Change Password page surfaces a warning alert prompting you to update before continuing.
 
-Add an extra layer of security to your account.
+## Two-Factor Authentication
 
-**Enable 2FA:**
-1. Go to **Settings > Account**
-2. Find the Security section
-3. Click **Enable 2FA**
-4. Scan the QR code with your authenticator app
-5. Enter the verification code
-6. Save your backup codes securely
+CoralLedger Comply supports TOTP-based 2FA via standard authenticator apps. Setup, recovery, and the backup-code spec are documented separately at [Two-Factor Authentication](/docs/security/two-factor-auth) — that page covers when 2FA is enforced (PlatformAdmin only), when it's recommended (everyone else), and how to set it up.
 
-**Supported Apps:**
-- Google Authenticator
-- Microsoft Authenticator
-- Authy
-- 1Password
+## Notification preferences
 
-:::tip Backup Codes
-Save your backup codes in a secure location. You'll need them if you lose access to your authenticator app.
+Configure how and when CoralLedger Comply contacts you. The Notification Preferences page lets you toggle:
+
+- **Email notifications** for filing deadline reminders, compliance score changes, anomaly detection alerts, weekly summaries, and security alerts
+- **In-app notifications** — toast messages that appear when you are actively using Comply
+
+You access the preferences from your account menu. Quiet hours, per-category fine-grained controls, and channel preferences depend on Comply's notification infrastructure — see the in-app Notification Preferences page for the current options.
+
+## What is NOT on this page
+
+Worth knowing what's out of scope here so you set the right expectations:
+
+- **Active session management** (viewing logged-in devices, revoking sessions) is **not** currently a self-service surface in Comply. If you suspect your account is signed in somewhere you don't recognise, change your password — that invalidates all existing sessions — and contact support if the concern persists.
+- **Detailed login history** (timestamps, IPs, device fingerprints) is captured in the audit ledger but is not surfaced as a user-facing log on this page. Contact support if you need a copy of your login history for a specific period.
+- **Quiet hours** for notifications are not configurable on a per-user basis today. Notifications are sent according to the underlying event triggers; out-of-hours suppression is not yet available.
+
+## Privacy and data handling
+
+CoralLedger Comply handles personal data in line with the Bahamian Data Protection (Privacy of Personal Information) Act 2003. The Privacy contact for data-subject-rights requests is `privacy@digitalcarib.com` — also the address surfaced in the footer on every page.
+
+## Account deactivation and deletion
+
+### Deactivate account
+
+A temporarily deactivated account preserves your data and lets you reactivate later. Active subscriptions continue to bill if applicable. Contact support to deactivate.
+
+### Delete account
+
+Permanent account deletion removes your personal profile data. **Business data is retained for 7 years** per the [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/) — regulatory record-keeping obligations apply even after a user deletes their account. The retained data is no longer associated with your personal identity but remains in the audit ledger.
+
+Contact support to initiate account deletion.
+
+:::warning Data retention is a regulatory obligation
+Even after personal-account deletion, transaction data your business produced is retained for **7 years** under the VAT Act. This is not configurable — the retention period is set by statute.
 :::
 
-### Session Management
+## Next steps
 
-View and manage active sessions:
-- See all logged-in devices
-- View login locations
-- Revoke suspicious sessions
-
-### Login History
-
-Review your recent login activity:
-- Login timestamps
-- IP addresses
-- Device information
-- Success/failure status
-
-Access at **Account > Login History**.
-
-## Notification Preferences
-
-Control how and when you receive notifications.
-
-### Email Notifications
-
-Configure email alerts for:
-- Filing deadline reminders
-- Compliance score changes
-- Anomaly detection alerts
-- Weekly summary reports
-- Security alerts
-
-### In-App Notifications
-
-Toggle dashboard notifications for:
-- New transactions synced
-- Categorization suggestions
-- System updates
-- Team activity (for Firm users)
-
-### Quiet Hours
-
-Set times when non-urgent notifications are silenced:
-- **Start Time** - When quiet hours begin
-- **End Time** - When quiet hours end
-- **Days** - Which days to apply
-
-Access at **Settings > Notifications**.
-
-## Privacy Settings
-
-Control your privacy preferences:
-- Data sharing with analytics
-- Activity visibility to team members
-- Marketing communications
-
-Access at **Settings > Privacy**.
-
-## Danger Zone
-
-### Deactivate Account
-
-Temporarily deactivate your account:
-- Your data is preserved
-- You can reactivate anytime
-- Active subscriptions may continue
-
-### Delete Account
-
-Permanently delete your account:
-- All personal data is removed
-- Business data may be retained for compliance (7 years)
-- This action cannot be undone
-
-:::warning Data Retention
-Due to [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/) requirements, transaction data must be retained for 7 years even after account deletion.
-:::
-
-## Next Steps
-
-- [Configure business settings](/docs/settings)
-- [Set up notifications](/docs/settings/notifications)
+- [Two-Factor Authentication](/docs/security/two-factor-auth) — set up or manage 2FA
+- [Configure business settings](/docs/settings/) — per-business configuration distinct from this page
+- [Security overview](/docs/security/) — broader security posture

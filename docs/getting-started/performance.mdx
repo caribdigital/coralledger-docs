@@ -1,12 +1,12 @@
 ---
 sidebar_position: 6
 title: Performance
-description: CoralLedger Comply performance and reliability
+description: How CoralLedger Comply is built for responsive interactivity, large data handling, and reliable real-time updates
 ---
 
 # Performance
 
-CoralLedger Comply is built for speed and reliability, ensuring your compliance workflows are never slowed down by the platform.
+CoralLedger Comply is built on a server-rendered Blazor architecture that prioritises responsiveness on Caribbean network conditions. This page documents the actual performance properties of the platform rather than aspirational targets.
 
 ## Performance Walkthrough
 
@@ -14,47 +14,73 @@ CoralLedger Comply is built for speed and reliability, ensuring your compliance 
 A demo recording of fast load times and the responsive UI will be added here.
 :::
 
-## Performance Highlights
+## How the platform is built
 
-### Fast Load Times
-- Sub-second page loads for all core workflows
-- Optimized API responses for transaction lists and reports
-- Lazy loading for large data sets
+Comply runs as a Blazor Server application — UI rendering happens on the server, with the browser maintaining a SignalR connection over which DOM updates flow. This architecture has specific performance properties:
 
-### Large Data Handling
-The platform is designed to support high transaction volumes without degradation:
-- Import CSV files with thousands of transactions
-- Generate returns across full fiscal years
-- Search and filter large transaction histories in real time
+- **Initial page renders are server-side**, so the browser does not need to download a large JavaScript bundle on first load.
+- **Subsequent navigation reuses the SignalR connection**, so page transitions are fast and feel app-like.
+- **Real-time dashboard updates** push from the server when underlying data changes (e.g. new transaction imported, return state changed) without you needing to refresh.
 
-### Reliable Uptime
-- 99.9% uptime target
-- Redundant infrastructure
-- Failover for critical services
+This is the same architectural pattern as products like Microsoft Teams or GitHub Codespaces — interactive web with server-rendered UI.
 
-### Real-Time Updates
-- Compliance score recalculates instantly after transaction changes
-- Dashboard metrics update without page refresh
-- Fraud alerts delivered in real time
+## What this means for you
+
+### Responsive interactivity
+
+Dashboards and lists update without a full-page reload. Filtering a transaction grid, switching businesses, or recalculating a return preview happens in place via the SignalR channel.
+
+### Large data handling
+
+Comply is designed to handle large transaction volumes per business without paginating you out of your data:
+
+- **CSV imports** of thousands of transactions in a single file. The import progress is streamed back over SignalR so you see the row-by-row progress live.
+- **Returns** that cover full fiscal years for businesses with high transaction volumes.
+- **Server-side filtering and sorting** of transaction histories so the browser does not need to hold the full dataset in memory.
+
+### Real-time updates
+
+The Client Dashboard maintains a SignalR connection to `/dashboardHub`. Updates pushed across this connection include:
+
+- Compliance score recalculations after categorisation changes
+- New transactions imported by team members
+- Status changes on returns (e.g. Awaiting Lodgement → Lodged)
+- Compliance alerts firing or clearing
+
+You see these reflect on the dashboard without refreshing.
+
+## Caribbean network reality
+
+The platform is tested against the network conditions a typical Bahamian business will experience — including 3G mobile connections and bandwidth-limited periods. Specific accommodations:
+
+- **Skeleton placeholders** show during data loads so the page feels responsive even when the underlying query is slow.
+- **Per-page data loading** runs in `OnAfterRenderAsync` so the initial render is not blocked by long-running queries.
+- **SignalR retry + reconnect** is built in — if the connection drops, the browser reconnects when the network comes back.
 
 ## Supported Browsers
 
 | Browser | Minimum Version |
-|---------|-----------------|
+|---|---|
 | Chrome | 90+ |
 | Firefox | 88+ |
 | Safari | 14+ |
 | Edge | 90+ |
 
-## Reporting Performance Issues
+Older browsers may render the platform but interactive features (SignalR live updates, modal dialogs, MudBlazor components) may not work correctly.
+
+## Reporting performance issues
 
 If you experience slow performance:
-1. Clear your browser cache and reload
+
+1. Clear your browser cache and reload the page
 2. Check your internet connection speed
-3. Contact support at [privacy@digitalcarib.com](mailto:privacy@digitalcarib.com) with details of the slowness
+3. If the issue persists, contact [privacy@digitalcarib.com](mailto:privacy@digitalcarib.com) with:
+   - The page URL where slowness occurs
+   - The action you were taking when slowness started
+   - Your browser + version (and approximate connection speed if known)
 
-## Next Steps
+## Next steps
 
-- [Quick Start Guide](/docs/getting-started)
+- [Quick Start Guide](/docs/getting-started/)
 - [Import transactions from CSV](/docs/transactions/import-csv)
 - [Generate a VAT return](/docs/vat-returns/generate-return)
