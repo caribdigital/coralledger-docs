@@ -59,7 +59,7 @@ You can always review and change suggested categories:
 1. Go to **Transactions**
 2. Select the transaction
 3. Click **Edit Category**
-4. Choose the correct VAT category
+4. Choose the correct VAT category — **Standard (10%)**, **Reduced (5%)**, **Zero-Rated (0%)**, or **Exempt** (see [VAT Rates](/docs/reference/vat-rates) for the canonical category list and the food-store licensing rule)
 5. Optionally add a note explaining the change
 
 ## Category Review
