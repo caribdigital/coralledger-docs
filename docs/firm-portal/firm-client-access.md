@@ -59,7 +59,7 @@ Your `UserBusinessAccess` row pointing at the firm self-business is revoked. Fro
 
 ### When a firm's clients are reassigned across staff
 
-Per-staff assignment lives on the `ClientAssignment` entity (workload distribution) — a layer above access. You can have firm-portal access to a client (and see it in the grid) without being its currently-assigned practitioner. See [User Management](/docs/firm-portal/user-management) for the workload-assignment surface and §32 Attestation Entry Pathway _(documentation coming in Wave 2.2)_ for how attestation interacts with reassignment.
+Per-staff assignment lives on the `ClientAssignment` entity (workload distribution) — a layer above access. You can have firm-portal access to a client (and see it in the grid) without being its currently-assigned practitioner. See [User Management](/docs/firm-portal/user-management) for the workload-assignment surface and [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) for how attestation interacts with reassignment.
 
 ## Access vs §32 attestation — different gates
 
@@ -85,6 +85,6 @@ These properties match the project's mandatory rule that every database query fi
 ## Next steps
 
 - [Firm Portal Landing](/docs/firm-portal) — what the resolved client set looks like in the dashboard
-- §32 Attestation Entry Pathway _(documentation coming in Wave 2.2)_ — the regulatory-authority gate that runs *in addition to* access control
+- [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) — the regulatory-authority gate that runs *in addition to* access control
 - [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation) — runtime enforcement when the §32 gate fires
 - [User Management](/docs/firm-portal/user-management) — how `UserBusinessAccess` rows are created and revoked
