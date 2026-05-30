@@ -72,7 +72,7 @@ If you need to switch authenticator apps:
 
 ### Lost Access
 If you've lost both your phone and backup codes:
-1. Contact support@coralledger.com
+1. Contact privacy@digitalcarib.com
 2. You'll need to verify your identity
 3. An administrator can reset your 2FA
 

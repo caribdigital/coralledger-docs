@@ -77,4 +77,4 @@ Per-section verification of VAT Act amendment chains — sign-off by Julian Roll
 ## Need Help?
 
 Contact CoralLedger Support:
-- **Email**: support@coralledger.com
+- **Email**: privacy@digitalcarib.com
