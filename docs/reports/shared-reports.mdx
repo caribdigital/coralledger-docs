@@ -47,7 +47,11 @@ Recipients who open a shared link see:
 - Links that exceed their download limit become unavailable
 - Expired links show an "Access Denied" message
 - Invalid or tampered tokens are rejected
-- All downloads are tracked and counted
+- All downloads are tracked and counted via a per-share access log (date, IP, downloaded-file-size)
+
+:::note Access log vs immutable audit ledger
+Share-link access events (creation, download, password failure, revoke) are recorded today in a **dedicated per-share access log**, separate from Comply's [immutable audit ledger](/docs/audit/). The two surfaces are tracked together as a Comply repo follow-up so that external distribution of reports is traceable from the same audit trail as filings and lodgements. Until the follow-up lands, treat the per-share access log on the Shared Reports management surface as the source of truth for download tracking.
+:::
 
 ## Use Cases
 

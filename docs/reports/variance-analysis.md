@@ -1,12 +1,14 @@
 ---
 sidebar_position: 4
-title: Variance Analysis
-description: Analyze import vs. sales variances for VAT compliance
+title: Customs Import Variance Analysis
+description: Compare C7 customs import data against sales revenue for margin checks and VAT Box 14 reconciliation
 ---
 
-# Variance Analysis
+# Customs Import Variance Analysis
 
-The variance analysis report compares C7 customs import data against sales revenue to identify discrepancies, calculate margins, and flag potential compliance issues.
+The variance analysis report is **specifically a customs-import-vs-sales reconciliation tool**. It compares C7 customs import data against sales revenue to identify discrepancies, calculate gross margins, and flag potential compliance issues — including reconciling **VAT Return Box 14 (import VAT)** against actual C7 entries for the period.
+
+This report is **not** a generic VAT period-over-period variance tool. If you need broader period comparison, see the [Custom Report Builder](/docs/reports/custom-reports) (which includes a `PeriodComparison` report type).
 
 ## Accessing the Report
 

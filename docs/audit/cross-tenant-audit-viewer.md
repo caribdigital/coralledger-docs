@@ -31,8 +31,8 @@ The viewer uses server-side pagination for large cross-tenant result sets. Page 
 
 ## Accessing the Viewer
 
-1. Log in with platform operator credentials
-2. Navigate to **Platform > Audit Viewer**
+1. Log in with platform operator credentials (PlatformAdmin role + completed 2FA challenge — both gates enforced by the `RequirePlatformAdmin` policy)
+2. Navigate to the **Ops Portal → Audit** entry, or directly to `/ops/audit`
 3. The `PLATFORM_OPS_AUDIT_VIEWED` event is logged when the viewer is opened
 
 ## Filtering
