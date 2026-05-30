@@ -22,15 +22,19 @@ Summary cards display:
 
 ## Permission Levels
 
-| Level | Description | Access |
-|-------|-------------|--------|
-| **Owner** | Full access to all features | Everything including user management and settings |
-| **Accountant** | Manages data and reports | Transactions, returns, reports, compliance |
-| **User** | View-only access | Read-only access to data and reports |
+Comply recognises two **base permission levels** on `UserBusinessAccess`:
+
+| Level | What it grants | Notes |
+|---|---|---|
+| **Owner** | Full access to the business — settings, user management, every feature surface | At least one Owner must exist at all times (see Last-Owner protection below) |
+| **Accountant** | Default for non-Owner staff — data management within the business | Access is further refined per-category via the granular permission matrix |
+
+There is no separate "View Only" or "Review Only" permission level. A read-only experience is achieved by granting **Accountant** as the base level and turning off the editing permissions in the granular matrix.
 
 ### Granular Permissions
 
-Beyond the base permission level, you can configure granular access per user across:
+Above the base level, an Owner can configure per-category access for any Accountant. The categories are:
+
 - **Transactions** — Create, edit, delete, import
 - **Reports** — View, export, share
 - **Compliance** — View scores, manage alerts
@@ -38,11 +42,33 @@ Beyond the base permission level, you can configure granular access per user acr
 - **User Management** — Add/remove users
 - **Security** — View audit logs, security settings
 
-:::info §32 Attestation Pathway for Complex-Supply Clients
-Assigning a practitioner as the **practitioner of record** on a client (and activating their attestation profile) controls access to BICA prefill for complex-supply returns.
+Each category exposes the operations relevant to it. Toggling Transactions → Create off, for example, gives the Accountant read-and-edit access to transactions without the ability to add new ones.
 
-- **Customer-facing overview:** [coralledger.com/section-32-pathway](https://www.coralledger.com/section-32-pathway)
-- **Operator documentation:** [Section 32 Attestation Pathway](/docs/attestation/) — practitioner-of-record assignment, BICA verification, prefill activation, audit trail.
+:::warning Last-Owner protection
+A business must always have at least one Owner. The user-management surface refuses to demote or remove the **sole** remaining Owner — both actions are blocked with a clear error message. To replace the last Owner, first promote a second user to Owner, then demote the original.
+:::
+
+:::info §32 attestation is independent of permission level
+Permissions and §32 attestations are **two distinct artefacts**. Changing a user's `PermissionLevel` does **not** create, supersede, or void any `Attestation` row.
+
+- An Accountant can hold an `Active` attestation for a client and continue to sign returns under it until the attestation is voided through a separate flow.
+- Revoking a user's Accountant access from a business removes their day-to-day access but does **not** void any attestation they hold on that business. To void the attestation, route through the reassignment flow described below.
+- An Owner does not implicitly hold an attestation — Owner status grants full firm-portal access, not regulatory authority.
+
+See [Section 32 Attestation Overview](/docs/attestation/) for the admin attestation lifecycle and the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) for the creation flow. The runtime gate that fires when a user no longer holds the regulatory authority is documented at [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation).
+:::
+
+## Reassigning a Client Between Practitioners
+
+When a firm needs to transfer a client from one practitioner to another, the **Reassign Client** flow is the canonical path. It performs two coupled actions:
+
+1. The prior practitioner's `ClientAssignment` row is marked `IsActive = false`; a new `ClientAssignment` is created for the new practitioner.
+2. Every `Active` `Attestation` for the client business is moved to `VoidedByAssignmentChange` status. An `ATTESTATION_VOIDED_BY_ASSIGNMENT_CHANGE` audit-ledger entry is written for each voided row.
+
+The new practitioner must then run the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) before the client can be filed for again.
+
+:::info Today this flow is API-only
+The Reassign Client flow is available **today** only through the `/api/v1/accounting-firm/reassign-client` endpoint — the corresponding Clients-grid row action in the Comply UI is a placeholder pending implementation (see [Comply #3125](https://github.com/caribdigital/coralledgercomply/issues/3125) for the Phase 2 UI work). Until the UI ships, firms that need to reassign a client should coordinate with Comply support to invoke the API.
 :::
 
 ## Client Invitation Lifecycle

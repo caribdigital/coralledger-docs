@@ -140,8 +140,10 @@ const sidebars: SidebarsConfig = {
       items: [
         'firm-portal/index',
         'firm-portal/firm-client-access',
+        'firm-portal/client-onboarding',
         'firm-portal/batch-filing',
         'firm-portal/analytics',
+        'firm-portal/attestation-entry-pathway',
         'firm-portal/user-management',
       ],
     },
