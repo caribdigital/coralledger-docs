@@ -1,58 +1,119 @@
 ---
 sidebar_position: 3
 title: Set Up Your Business
-description: Configure your business profile in CoralLedger Comply
+description: The three account types in CoralLedger Comply and the two surfaces where business setup happens
 ---
 
 # Set Up Your Business
 
-Configure your business profile to start managing VAT compliance.
+Comply captures business information on two distinct surfaces, depending on where you are in the lifecycle:
 
-## Account Type
+- **During registration** — Step 3 of the [4-step registration wizard](/docs/getting-started/create-account#step-3-business-information) is where most users capture their business details. It's a rich form covering industry, turnover, and (where applicable) the food-store qualification block.
+- **Recovering when no business is associated** — if your account is somehow left without a business context (rare — usually only after an invitation chain breaks), Comply routes you to a thin recovery page at `/account/business-setup` that captures the minimum needed to get you back to a working dashboard.
 
-When setting up, choose your account type:
-- **New Business** — Create a new business profile from scratch
-- **Join Existing** — Enter an invitation code to join an existing firm or business
+This page covers both surfaces and the three account types you can choose between.
 
-## Required Information (New Business)
+## The three account types
 
-- **Business Name** — Your registered business name
-- **TIN** — Tax Identification Number (9 digits, no "V" prefix)
-- **VAT Number** — Your VAT registration number (optional during setup)
+When you register, you pick **one of three account types**. Your choice determines what fields are captured next and where you land after verification.
 
-## Optional Settings
+| Account type | Who picks this | What gets created |
+|---|---|---|
+| **New Business** | A single business owner registering their own business | A `Business` row with you as Owner via `UserBusinessAccess` |
+| **Join Existing** | A user joining an existing business via an invitation code | A `UserBusinessAccess` row connecting you to the existing `Business` — no new business is created |
+| **Accounting Firm** | A firm administrator registering a new accounting firm | A firm **self-business** (the house account that represents the firm itself), plus the `FirmOwner` Identity role on your account, plus `UserBusinessAccess` to the firm self-business |
 
-After initial setup, you can configure additional details at **Settings > Business**:
+The three flows route through `BusinessFirstRegistrationService` in code, with the AccountingFirm path additionally calling `CreateAccountingFirmAsync` to provision the firm self-business and assign the `FirmOwner` role.
 
-- **Trading Name** — Name you operate under (if different from registered name)
-- **Business Address** — Physical location in The Bahamas
-- **Industry** — Helps with transaction categorization
-- **Food Store License** — Required for 5% reduced rate eligibility on breadbasket items
-- **Logo** — Upload for branded VAT invoices and reports
-- **Filing Frequency** — Monthly or quarterly filing periods
-- **Large Taxpayer** — Designation for businesses meeting the Large Taxpayer threshold
+## During registration (Step 3)
 
-## TIN Format
+This is the canonical place to capture business details. The fields you see depend on your account type:
 
-Your TIN should be entered as 9 digits without dashes or prefixes. The system will format it as `###-###-###` for display.
+### New Business or Accounting Firm
 
-:::info VAT Threshold
-Businesses with taxable supplies over $100,000 BSD annually must register for VAT with the Department of Inland Revenue.
+- **Business Name** — required; appears as your business name across the app
+- **TIN** — required; 9 digits, no `V` prefix, no dashes. MOD-11 validated server-side
+- **VAT Number** — optional during registration; can be added later from **Settings > Business**
+- **Industry** — required, 15 categories. Drives some categorisation defaults later
+- **Estimated Annual Turnover** — required, 5 ranges. Auto-computes your filing frequency (**Monthly** for $5M+ annual turnover, **Quarterly** otherwise)
+
+**If your industry is food-related**, an additional food-store qualification block appears:
+
+- **Do you sell unprepared food?**
+- **Do you hold a pharmacy licence?**
+- **What percentage of your turnover is food-related?**
+
+These answers determine whether your business qualifies for the **5% Reduced rate** on hygiene / medical / breadbasket items at licensed food stores, and whether the rate-fallback rules apply (see [VAT Rates Reference](/docs/reference/vat-rates) for the engine behaviour).
+
+### Accounting Firm — additional fields
+
+For the AccountingFirm account type, two firm-level fields are also captured:
+
+- **Billing Contact Email** — where invoices will be sent once billing begins (after open beta)
+- **Expected Client Count** — used to scope the appropriate subscription tier
+
+The firm self-business uses the same Business Name + TIN + VAT Number as your firm's own registration.
+
+### Join Existing — single field
+
+For the JoinExisting account type, the only field is:
+
+- **Invitation Code** — generated by the existing business owner or firm administrator when they sent the invitation. Valid for 7 days from issue.
+
+If the code is valid, your account links to that business when verification completes. See the [Client Invitation Lifecycle](/docs/firm-portal/user-management#client-invitation-lifecycle) on the firm side for how invitations are issued.
+
+## Recovery — when no business is associated
+
+If you log in and your account does not have a current business context, Comply routes you to `/account/business-setup`. This happens rarely — usually when:
+
+- An invitation you accepted later got revoked
+- A business you were Owner of was deleted while you were not signed in
+- You signed up in a way that bypassed Step 3 of registration
+
+The recovery page is intentionally thin compared to Step 3 of registration. You choose between:
+
+- **Create New Business** — captures only **Business Name**, **TIN**, and **VAT Number** (optional). Industry, turnover, and food-store qualifications can be filled in later under **Settings > Business**.
+- **Join Existing** — captures only the **Invitation Code**.
+
+After submission, you arrive at the appropriate dashboard for the resolved business.
+
+## Optional settings (fill in later)
+
+Whether you set up during registration or via recovery, additional business details can always be filled in later from **Settings > Business**:
+
+- **Trading Name** — display name if different from registered business name
+- **Business Address** — Bahamian island + address lines + PO Box
+- **Logo** — upload for branded VAT invoices and reports
+- **Filing Frequency** — Monthly or Quarterly (auto-set from turnover during registration; editable here)
+- **Large Taxpayer designation** — for businesses meeting the threshold, see [VAT Rates Reference](/docs/reference/vat-rates) and [Filing and Payment Deadlines](/docs/statutes/filing-payment-deadlines)
+- **Food Store Licence** number and expiry — required for the 5% Reduced rate fallback rules
+
+## TIN format
+
+Your TIN is entered as **9 digits** without dashes or prefixes. The system formats it as `###-###-###` for display.
+
+:::info VAT registration threshold
+Businesses with taxable supplies over **$100,000 BSD annually** must register for VAT with the Department of Inland Revenue. See [Registration Obligation and Threshold](/docs/statutes/registration-obligation-threshold) for the statutory reference.
+
+If you are not yet registered, you can still create a Comply account and use the platform to track transactions. When your VAT number is issued, add it under **Settings > Business**.
 :::
 
-## VAT Registration
+## VAT registration
 
-If you're not yet registered:
-1. Apply at the Department of Inland Revenue
-2. Receive your VAT number
-3. Enter it in CoralLedger Comply at **Settings > Business**
+If you do not yet have a VAT number:
+
+1. Apply at the Department of Inland Revenue.
+2. Receive your VAT number.
+3. Enter it in CoralLedger Comply at **Settings > Business**.
 
 ## By Statute References
 
 - [Registration Obligation and Threshold](/docs/statutes/registration-obligation-threshold)
 
-## Next Steps
+## Next steps
 
-- [Tour the dashboard](/docs/getting-started/dashboard-tour)
+- [Create your account](/docs/getting-started/create-account) — the 4-step registration wizard
+- [Tour the dashboard](/docs/getting-started/dashboard-tour) — what you see after first login
+- [Firm Portal — Client Onboarding](/docs/firm-portal/client-onboarding) — how firms add their own clients (distinct from this page)
 - [Import your first transactions](/docs/transactions/import-csv)
 - [Enter transactions manually](/docs/transactions/manual-entry)
