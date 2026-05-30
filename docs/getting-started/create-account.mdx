@@ -1,13 +1,12 @@
 ---
 sidebar_position: 2
 title: Create Your Account
-description: Sign up for CoralLedger Comply
+description: Sign up for CoralLedger Comply — the four-step registration wizard
 ---
-
 
 # Create Your Account
 
-Get started with CoralLedger Comply by creating your account.
+Get started with CoralLedger Comply by completing the four-step registration wizard at [comply.coralledger.com/Account/Register](https://comply.coralledger.com/Account/Register).
 
 :::info Free Beta — Open Beta in progress
 CoralLedger Comply is currently in free beta. All features are available at no cost during open beta. Subscription billing begins after open beta.
@@ -26,36 +25,96 @@ Demo recordings of this workflow will be added here. Topics:
 - Business setup
 :::
 
-## Step 1: Visit the Sign-Up Page
+## The four-step wizard
 
-Go to [comply.coralledger.com/Account/Register](https://comply.coralledger.com/Account/Register)
+The registration form is a wizard with four ordered steps. You complete each step before advancing; the form persists what you've entered locally for 24 hours so you can return to a partial submission.
 
-## Step 2: Enter Your Details
+### Step 1: Account Details
 
-- **Email address** — Use your business email
-- **Password** — At least 8 characters with uppercase, lowercase, numbers, and a special character
-- **Full name** — Your name as the account owner
+Capture your personal credentials:
 
-You'll need to complete a CAPTCHA verification to proceed.
+- **First Name** and **Last Name** — separate fields, both required
+- **Email address** — required; checked for availability while you type, so you'll see immediately if the email is already registered
+- **Password** — required; **at least 15 characters** with **uppercase**, **lowercase**, **a number**, and **a special character**
+- **Confirm Password** — must match
+- **Phone Number** — optional
+- **How did you hear about us?** — optional dropdown
 
-## Step 3: Verify Your Email
+A **Cloudflare Turnstile** invisible widget runs in the background to confirm you are not a bot. There is no per-page CAPTCHA challenge unless Turnstile asks for one.
 
-Check your inbox for a verification email and click the confirmation link. You cannot log in until your email is verified.
+### Step 2: Account Type
 
-:::tip Check Your Spam Folder
-If you don't see the verification email within a few minutes, check your spam or junk folder.
+Choose what kind of account you are setting up:
+
+| Account type | Who picks this |
+|---|---|
+| **New Business** | A single business owner registering their own business |
+| **Join Existing** | A user joining an existing business via an invitation code |
+| **Accounting Firm** | A firm administrator registering an accounting firm — this also creates the firm self-business and assigns the FirmOwner Identity role |
+
+Your choice routes you through the next step's fields. See [Set Up Your Business](/docs/getting-started/setup-business) for the full description of each account type.
+
+### Step 3: Business Information
+
+The fields shown here depend on your Step 2 selection:
+
+**For New Business and Accounting Firm:**
+
+- **Business Name** — required
+- **TIN** — required, 9 digits, MOD-11 validated server-side
+- **VAT Number** — optional during registration; can be added later
+- **Industry** — required, selects from a controlled list of 15 categories
+- **Estimated Annual Turnover** — required, selects from 5 ranges. The chosen range auto-computes your **filing frequency** (Monthly for $5M+, Quarterly otherwise).
+
+If your industry is food-related, an additional **food-store qualification block** appears:
+
+- **Do you sell unprepared food?**
+- **Do you hold a pharmacy licence?**
+- **What percentage of your turnover is food-related?**
+
+These three answers determine whether your business qualifies for the 5% Reduced rate on breadbasket items, and whether the food-store fallback rules apply (see [VAT Rates Reference](/docs/reference/vat-rates) for the rate engine's behaviour).
+
+**For Accounting Firm only:** add
+
+- **Billing Contact Email**
+- **Expected Client Count**
+
+**For Join Existing:** the only field is
+
+- **Invitation Code**
+
+### Step 4: Email Verification
+
+After Step 3 submits, you receive an email from Comply containing both:
+
+- A **6-digit verification code** valid for 15 minutes
+- A **clickable link** that completes registration on the originating tab
+
+Enter the code on the registration screen or click the link from your email. Either path completes the same flow. **Until you complete verification, your user account does not exist** — there is no separate "log in but not yet verified" state in Comply.
+
+Also on this step:
+
+- Tick the **Accepted Terms** checkbox
+- The registration is finalised; you are auto-signed-in and redirected to your dashboard
+
+:::tip Check your spam folder
+If you don't see the verification email within a few minutes, check your spam or junk folder. Email arrives from CoralLedger's address.
 :::
 
-## Step 4: Complete Business Setup
+## After verification
 
-After email verification, you'll configure your business:
-- **New Business** — Enter your business name, TIN, and details
-- **Join Existing** — Enter an invitation code if joining an existing firm
+You arrive at the appropriate landing page based on your account type:
 
-## Subscription Tiers (Subscription billing begins after open beta)
+- **New Business** users land at the [Client Dashboard](/docs/getting-started/dashboard-tour) (`/client`).
+- **Accounting Firm** users land at the [Firm Portal](/docs/firm-portal/) (`/firm/portal`).
+- **Join Existing** users land at the business they were invited to.
+
+If your account somehow ends up without a business context (rare — usually only if an invitation chain breaks), you are routed to a recovery setup page — see [Set Up Your Business](/docs/getting-started/setup-business).
+
+## Subscription tiers
 
 | Tier | Founder Price | Standard Price | Clients |
-|------|---------------|----------------|---------|
+|---|---|---|---|
 | **Single Business** | $49/mo | $99/mo | 1 business |
 | **Accounting Firm** | $99/mo | $499/mo | Up to 25 clients |
 | **Enterprise** | Custom | Custom | Unlimited |
@@ -66,7 +125,9 @@ Founder pricing is locked for life for early adopters. Single Business founders 
 
 During open beta, all features are available at no cost regardless of tier.
 
-## Next Steps
+## Next steps
 
-- [Set up your business](/docs/getting-started/setup-business)
+- [Set up your business](/docs/getting-started/setup-business) — the three account types and the recovery flow
+- [Enable Two-Factor Authentication](/docs/security/two-factor-auth) — strongly recommended for all users
+- [Tour the dashboard](/docs/getting-started/dashboard-tour) — what you see after first login
 - [Learn about the Founders Circle](/docs/billing/founders-circle)

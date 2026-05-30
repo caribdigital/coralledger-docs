@@ -24,12 +24,12 @@ CoralLedger Comply is a VAT compliance platform built specifically for businesse
 
 ## Getting Started in 5 Minutes
 
-1. **Create your account** — Sign up at [comply.coralledger.com](https://comply.coralledger.com) with email verification and CAPTCHA
-2. **Set up 2FA** — Two-factor authentication is required on first login for security
-3. **Set up your business** — Enter your TIN (9 digits) and business details
-4. **Import transactions** — Upload your CSV or enter transactions manually
-5. **Review categorization** — Verify VAT categories are correct
-6. **Generate your return** — Create your VAT return with the DIR form format
+1. **Create your account** — Sign up at [comply.coralledger.com](https://comply.coralledger.com). The 4-step wizard walks you through account details, account type, business info, and email verification — see [Create Your Account](/docs/getting-started/create-account).
+2. **Set up your business** — During registration you choose between a single business, joining an existing one with an invitation code, or registering an accounting firm. See [Set Up Your Business](/docs/getting-started/setup-business).
+3. **(Recommended) Enable Two-Factor Authentication** — 2FA is strongly recommended but only enforced for PlatformAdmin users. Set it up from your account settings — see [Two-Factor Authentication](/docs/security/two-factor-auth).
+4. **Import transactions** — Upload your CSV or enter transactions manually.
+5. **Review categorization** — Verify VAT categories are correct.
+6. **Generate your return** — Create your VAT return with the DIR form format.
 
 ## Key Features
 
