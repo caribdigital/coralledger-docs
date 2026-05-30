@@ -105,7 +105,7 @@ Export your completed return for submission to the DIR's Online Tax Administrati
 4. Submit the figures through the [DIR OTAS portal](https://otas.bahamas.gov.bs) or in person at a DIR office
 
 :::info OTAS Export
-The XML export is formatted specifically for electronic submission via OTAS. Use PDF for your own records and in-person filings.
+The XML export is formatted for OTAS upload — you submit it to the DIR through the OTAS portal yourself. Use PDF for your own records and in-person filings.
 :::
 
 ## When to Use Self-Filing Mode
