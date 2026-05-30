@@ -1,97 +1,81 @@
 ---
 sidebar_position: 5
 title: Business Data Export
-description: Export a complete JSON snapshot of business data in CoralLedger Comply
+description: Export business data as CSV / Excel / JSON / XML through the tenant Admin surface; the cross-tenant Ops export is service-only today
 ---
 
 # Business Data Export
 
-Operators can export a complete snapshot of all data belonging to a business as a structured JSON file. This is useful for regulatory submissions, legal discovery, off-platform archiving, and migrations.
+CoralLedger Comply exposes business data export through two paths today, with different scopes and constraints.
 
-## Accessing Business Data Export
+## Tenant Admin export — the shipped UI
 
-Navigate to **Platform Ops > Data Operations > Export**. This feature requires PlatformAdmin access.
+The tenant Admin Data Export surface lets an Administrator export the business's own data in several formats. It is the canonical user-facing export path.
 
-## What Is Included in the Export
+### Accessing the export
 
-A full business data export contains:
+Navigate to **Admin > Data Export** (route: `/admin/data-export`). This surface requires Administrator access with 2FA enabled. The current business context applies — exports are scoped to the business you are signed into.
 
-| Data Category | Contents |
-|---------------|---------|
-| **Transactions** | All transaction records including amounts, categories, VAT, and attachments metadata |
-| **VAT Returns** | All generated and submitted returns with line-item detail |
-| **Compliance Scores** | Historical compliance score snapshots for the business |
-| **Import Batches** | Records of all CSV and bulk import operations |
-| **Privacy Settings** | The business's data privacy configuration and consent records |
+### Supported export categories
 
-:::info
-File attachments (binary content) are not included in the JSON export. The export contains attachment metadata — file name, type, size, and storage reference. Contact support if you require raw file exports.
+| Category | Format(s) |
+|---|---|
+| **Transactions** | CSV, JSON |
+| **VAT Returns** | Excel |
+| **Compliance Report** | (formatted output) |
+| **VAT XML** | DIR-accepted XML for OTAS submission |
+| **Anomaly Report** | (formatted output) |
+
+Each export is generated synchronously — when you click **Export**, the file is generated and offered for download immediately. There is no separate queue or job-status surface.
+
+### What scoping applies
+
+Exports run server-side and are strictly scoped to the current `BusinessId` (enforced via `IBusinessContextService`). Without a business context, the surface throws `UnauthorizedAccessException` — there is no tenant-Admin path to export another business's data.
+
+## Ops Portal full-business JSON export — service only today
+
+For cross-tenant export use cases (regulatory submissions, legal discovery, off-platform archiving), CoralLedger exposes the `IPlatformDataOpsService.ExportBusinessDataAsync` service method. It returns a complete JSON snapshot of a business's data including transactions, VAT returns, compliance scores, import batches, and privacy settings.
+
+:::warning No Ops Portal UI today
+A dedicated `/ops/data/export` Razor page is **not yet implemented**. The service method exists and is invoked programmatically by Comply support; an Ops Portal user-facing export page is planned but not built. If you need a cross-tenant export, raise it with the support team.
 :::
 
-## Running an Export
+When the service is invoked, it emits a `PLATFORM_OPS_DATA_DELETION_EXPORT` audit event capturing the requesting operator and the target business.
 
-1. Navigate to **Platform Ops > Data Operations > Export**
-2. Select the target business from the dropdown
-3. Optionally filter by date range to limit the export scope
-4. Click **Export Business Data**
-5. The system queues the export job; a progress indicator is displayed
-6. When complete, click **Download** to save the JSON file
+## What an Ops JSON export contains (when produced)
 
-For large businesses, export generation may take several minutes. You will receive an in-app notification and an email when the export is ready.
+The cross-tenant JSON export contains:
 
-## Export File Format
+| Data category | Contents |
+|---|---|
+| **Transactions** | All transaction records including amounts, categories, VAT, and attachment metadata |
+| **VAT Returns** | All generated, lodged, and amended returns with line-item detail |
+| **Compliance Scores** | Historical compliance score snapshots |
+| **Import Batches** | Records of all CSV and bulk import operations |
+| **Privacy Settings** | The business's privacy configuration and consent records |
 
-The export is delivered as a single `.json` file named:
+:::info File attachments not included
+File attachments (binary content) are not included in the JSON export. The export contains attachment metadata — file name, type, size, and storage reference. Contact support if you need raw file exports.
+:::
 
-```
-coralledger-export-{businessId}-{YYYY-MM-DD}.json
-```
+## Security considerations
 
-The top-level structure is:
+- Tenant Admin exports run synchronously and require Administrator + 2FA; the file is delivered to the requesting operator's browser session and is not stored on the platform.
+- Ops Portal service-method exports return bytes to the requesting service; persistence is the support team's responsibility once the export is produced.
+- The `PLATFORM_OPS_DATA_DELETION_EXPORT` audit event traces every Ops-driven export.
 
-```json
-{
-  "exportedAt": "2025-08-15T10:30:00Z",
-  "exportedBy": "operator@example.com",
-  "transactions": [ ... ],
-  "vatReturns": [ ... ],
-  "complianceScores": [ ... ],
-  "importBatches": [ ... ],
-  "privacySettings": { ... }
-}
-```
+## Use cases
 
-## Export History
+| Scenario | Path |
+|---|---|
+| **Regulatory submission to DIR** | Tenant Admin export — VAT XML or PDF artefacts of returns are usually the right surface |
+| **Legal discovery** | Coordinate with support; the Ops service-method export is the route until the UI ships |
+| **Business migration** | Tenant Admin transactions export (CSV/JSON) is usually sufficient for re-import elsewhere |
+| **Data subject request (DSAR)** | Ops service-method export is the right surface; support produces the JSON and delivers it through an authenticated channel |
 
-Each export is recorded in the Export History table with:
-
-- **Export ID** — Unique identifier
-- **Business** — Name of the exported business
-- **Requested By** — Operator who triggered the export
-- **Requested At** — Date and time of the request
-- **Status** — Queued, Processing, Complete, or Failed
-- **Download** — Link to download the completed export
-
-## Security Considerations
-
-- Exports are generated server-side and stored in access-controlled storage
-- Only the requesting operator can download the export file
-- Each export download is recorded in the [Audit Trail](/docs/audit)
-- Exports should be stored securely and in compliance with your data handling obligations
-
-## Use Cases
-
-| Scenario | Notes |
-|----------|-------|
-| **Regulatory audit** | Provide the full JSON export to DIR or other authorities |
-| **Legal discovery** | Export before or alongside legal hold placement |
-| **Business migration** | Export data before moving to another system |
-| **Off-platform archive** | Retain a copy outside CoralLedger Comply for long-term storage |
-| **Data subject request** | Fulfil a data subject access request (DSAR) |
-
-## Next Steps
+## Next steps
 
 - [Deletion requests](/docs/data-ops/deletion-requests)
 - [Legal holds](/docs/data-ops/legal-holds)
 - [Retention monitoring](/docs/data-ops/retention-monitoring)
-- [Audit trail](/docs/audit)
+- [Audit trail](/docs/audit/)

@@ -6,15 +6,15 @@ description: Manage IP address blocking in CoralLedger Comply
 
 # IP Blocking
 
-IP blocking prevents unauthorized access attempts by blocking suspicious IP addresses after repeated failed login attempts.
+IP blocking prevents access from specific IP addresses identified by an Administrator as suspicious or hostile. Blocks operate at the middleware layer — once an IP is blocked, every request from that address is rejected before reaching application logic, not only login attempts.
 
 ## Accessing IP Blocking
 
-Navigate to **Admin > IP Blocking**. This feature requires Administrator access with 2FA enabled.
+Navigate to **Admin > IP Blocking** (route: `/admin/ip-blocking`). This feature requires Administrator access with 2FA enabled.
 
 ## How It Works
 
-When multiple failed login attempts are detected from the same IP address, the system blocks that IP. Administrators can also manually block IPs.
+Administrators manually add IPs to the block list — for example after a [Fraud Alert](/docs/security/fraud-alerts) surfaces suspicious activity from a specific address. There is no automatic IP-block on repeated failed logins today; the operator triages alerts and decides whether to block. Blocks are cached for 30 seconds at the middleware layer for performance.
 
 ## Blocking an IP Address
 

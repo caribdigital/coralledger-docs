@@ -6,7 +6,7 @@ description: Data retention policies, enforcement preview, and violation detecti
 
 # Retention Monitoring
 
-CoralLedger Comply enforces per-business data retention policies through scheduled enforcement runs. The default retention period is 7 years, as required by [Value Added Tax Act, 2014, s. 26](https://laws.bahamas.gov.bs/). Operators can review retention schedules, preview upcoming enforcement actions, and investigate detected violations before data is affected.
+CoralLedger Comply enforces per-business data retention policies through scheduled enforcement runs. The default retention period is **7 years** (5-year statutory minimum under [Value Added Tax Act, 2014, Part X §79–80](https://laws.bahamas.gov.bs/); CoralLedger extends this to 7 years as platform policy). Operators can review retention schedules, preview upcoming enforcement actions, and investigate detected violations before data is affected.
 
 ## Accessing Retention Monitoring
 
@@ -18,7 +18,7 @@ All businesses are subject to the platform-wide default:
 
 | Setting | Value | Basis |
 |---------|-------|-------|
-| **Minimum retention period** | 7 years | [Value Added Tax Act, 2014, s. 26](https://laws.bahamas.gov.bs/) |
+| **Minimum retention period** | 7 years (CoralLedger policy; 5-year statutory minimum extended) | [Value Added Tax Act, 2014, Part X §79–80](https://laws.bahamas.gov.bs/) |
 | **Applies to** | Transactions, VAT returns, audit records, uploaded files | — |
 | **Enforcement** | Scheduled; runs on a scheduled basis | — |
 
@@ -76,7 +76,7 @@ The system continuously monitors for retention policy violations — records tha
 
 ### Viewing Violations
 
-Navigate to **Platform Ops > Data Operations > Retention > Violations** to see:
+The retention monitor surface exposes a **HasViolations** indicator on each business's policy summary card. The full per-violation drill-down with the columns below is **planned functionality** — the violation count is computed today via `RetentionMonitorSummary.HasViolations`, but a dedicated violations page is not yet implemented in the Comply UI:
 
 | Column | Description |
 |--------|-------------|
@@ -87,6 +87,8 @@ Navigate to **Platform Ops > Data Operations > Retention > Violations** to see:
 | **Violation Type** | Premature deletion or retention overrun |
 | **Detected On** | When the violation was flagged |
 | **Severity** | Low, Medium, or High |
+
+When a non-zero violation count appears on a business, contact the security team for the underlying detail until the dedicated UI ships.
 
 ### Resolving Violations
 

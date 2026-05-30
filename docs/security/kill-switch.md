@@ -6,19 +6,26 @@ description: Emergency fraud detection control in CoralLedger Comply
 
 # Kill Switch
 
-The kill switch is an emergency control for administrators to immediately disable or override the fraud detection system during security incidents or maintenance.
+The kill switch is an emergency control for administrators to immediately disable the **fraud detection** subsystem during security incidents, high-false-positive periods, or maintenance.
+
+:::warning Scope is fraud detection only
+The kill switch toggles the **fraud detection engine** (`KillSwitchScopes.FraudDetection`). It does **not**:
+
+- Disable the platform as a whole (there is no platform-wide kill switch)
+- Lock individual user accounts (those are managed through `PLATFORM_OPS_USER_LOCKED` actions on the Users admin page, not from this surface)
+- Stop authentication, billing, or any other subsystem
+
+If you need to lock specific accounts during an incident, use the **Ops Portal → Users** admin page and lock the affected accounts there. The kill switch itself is narrowly scoped.
+:::
 
 ## Accessing the Kill Switch
 
-Navigate to **Admin > Kill Switch**. This feature requires Administrator access with 2FA enabled.
+Navigate to **Admin > Kill Switch** (route: `/admin/kill-switch`). This page requires Administrator access with 2FA enabled.
 
-:::info Ops Portal emergency controls
-**PlatformAdmin** operators can also trigger emergency controls — including kill-switch activation and forced account lock-down — directly from the **Ops Portal**.
+:::info Ops Portal access
+PlatformAdmin operators can also reach kill-switch state through Ops Portal surfaces. All Ops Portal actions require the `RequirePlatformAdmin` policy (role + completed 2FA challenge) and are recorded in the platform-level audit log.
 
-- All Ops Portal actions require the [`RequirePlatformAdmin` policy](/docs/security#requireplatformadmin-policy) (role + 2FA check).
-- Ops Portal events are recorded in the **platform-level audit log**, separately from business-level audit entries.
-
-See [Security Overview](/docs/security) for details on the PlatformAdmin role and self-operation guards.
+See [Security Overview](/docs/security/) for details on the PlatformAdmin role and self-operation guards.
 :::
 
 ## Status Display
