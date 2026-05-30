@@ -67,5 +67,6 @@ Every attestation event — including the variant selected, the declarant identi
 - [BICA Verification](/docs/attestation/bica-verification)
 - [Session Affirmation](/docs/attestation/session-affirmation)
 - [Handover](/docs/attestation/handover)
+- [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation) — what users see when attestation or assignment is revoked
 - [Carve-Outs](/docs/attestation/carve-outs)
 - [Attestation Audit Trail](/docs/attestation/audit-trail)

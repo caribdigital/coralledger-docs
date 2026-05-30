@@ -73,6 +73,17 @@ For zero-rated exports:
 When VAT rates change, the system displays rate transition guidance for transactions near the effective date to help you apply the correct category.
 :::
 
+### Step 6: Section 32 Supply Type (Optional)
+
+For most transactions you can leave this collapsed — the default `Simple Supply` covers normal sale and purchase timing. Expand the **§32 Section Supply Type** panel only when the tax-point timing differs from the invoice/delivery date, for example:
+
+- Advance payments and deposits taken before delivery (`s. 32(3)`)
+- Continuous supplies invoiced periodically (`s. 32(4)`)
+- Construction-style retention payments released later (`s. 32(5)`)
+- Goods supplied on approval (`s. 32(6)`)
+
+The selected sub-clause is persisted on the transaction and forms part of the `VATCalculationProof` audit record. See [Section 32 Tax-Point Scenarios](/docs/transactions/section-32-tax-points) for a full guide.
+
 ## Fraud Detection
 
 The system monitors entries and may flag:
@@ -89,12 +100,19 @@ Flagged transactions are still saved but generate alerts for review.
 3. **Verify VAT categories** — Especially for reduced-rate items requiring a food store license
 4. **Enter promptly** — Don't let transactions accumulate near filing deadlines
 
+## Practitioner Revocation Gate
+
+If your attestation is revoked or your client assignment ends, Comply will display a "blocked poster" alert and prevent further transaction entry on the affected client until the successor practitioner completes their own attestation. See [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation) for details.
+
 ## By Statute References
 
 - [Tax Invoices and Credit Notes](/docs/statutes/tax-invoices-credit-notes)
+- [Time of Supply and Period Assignment](/docs/statutes/time-of-supply-period-assignment)
 
 ## Next Steps
 
+- [Section 32 Tax-Point Scenarios](/docs/transactions/section-32-tax-points) — when timing differs from the invoice date
+- [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation) — what to do if posting is blocked
 - [View your transactions](/docs/transactions)
 - [Import from CSV](/docs/transactions/import-csv)
 - [Generate a VAT return](/docs/vat-returns/generate-return)

@@ -50,6 +50,7 @@ const sidebars: SidebarsConfig = {
         'transactions/category-analytics',
         'transactions/transaction-history',
         'transactions/archived-records',
+        'transactions/section-32-tax-points',
       ],
     },
     {
@@ -105,6 +106,7 @@ const sidebars: SidebarsConfig = {
         'attestation/bica-verification',
         'attestation/session-affirmation',
         'attestation/handover',
+        'attestation/practitioner-revocation',
         'attestation/carve-outs',
         'attestation/audit-trail',
       ],
