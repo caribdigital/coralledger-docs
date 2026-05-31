@@ -53,13 +53,24 @@ async function main() {
   }
 
   const results = [];
-  for (const id of ids) {
+  // Inter-scenario delay (ms). Running 12 scenarios back-to-back trips staging's
+  // App Service throttle: typically the first 4-5 logins succeed, then a 503 / 403
+  // cascade. A 6s gap lets the rate-limiter cool between scenarios. Tunable via
+  // INTER_SCENARIO_DELAY_MS env var.
+  const interDelayMs = parseInt(process.env.INTER_SCENARIO_DELAY_MS ?? '6000', 10);
+
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
     const scenario = await loadScenario(id);
     try {
       const result = await runScenario(scenario);
       results.push({ id, ...result });
     } catch (err) {
       results.push({ id, outcome: 'failed', error: err.message });
+    }
+    if (i < ids.length - 1 && interDelayMs > 0) {
+      console.log(`  ⟶ waiting ${interDelayMs}ms before next scenario`);
+      await new Promise((r) => setTimeout(r, interDelayMs));
     }
   }
 

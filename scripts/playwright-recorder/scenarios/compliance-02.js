@@ -2,11 +2,10 @@
 //
 // Target docs page: docs/compliance/compliance-score.mdx
 // CDN target: cdn.coralledger.com/demos/compliance-02.mp4
-// Scope: read-only navigation of the Compliance Intelligence detail page, focused on the
-// recommendations / action-items section that drives score improvement.
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 
+const BASE = 'https://stg-comply.coralledger.com';
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default {
@@ -14,24 +13,27 @@ export default {
   title: 'Compliance — Improving Your Score',
   viewport: { width: 1280, height: 720 },
 
-  async record({ page, log }) {
-    log('Authenticating as BusinessOwner.');
+  async warmup({ page, log }) {
+    log('Authenticating as etienne (BusinessOwner) — warmup, no recording yet.');
     await authenticateViaTestAuth(page, {
       email: 'etienne.mckenzie@example.com',
       redirectTo: '/compliance/intelligence',
     });
-
     await page.waitForLoadState('networkidle');
-    await wait(3000);
+    await wait(2500);
+  },
 
-    log('Scrolling slowly through the intelligence page to surface recommendations.');
-    // Slower step pace than compliance-01 so the viewer can read the action items.
+  async record({ page, log }) {
+    log('Navigating to /compliance/intelligence with warm session.');
+    await page.goto(`${BASE}/compliance/intelligence`, { waitUntil: 'networkidle' });
+    await wait(2000);
+
+    log('Slow scroll through the page to surface recommendations.');
     await page.evaluate(async () => {
       const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
       const steps = 24;
-      const step = totalScroll / steps;
       for (let i = 0; i < steps; i++) {
-        window.scrollBy({ top: step, behavior: 'smooth' });
+        window.scrollBy({ top: totalScroll / steps, behavior: 'smooth' });
         await new Promise((r) => setTimeout(r, 350));
       }
     });
@@ -43,14 +45,10 @@ export default {
       await recommendations.scrollIntoViewIfNeeded();
       await recommendations.hover();
       await wait(2500);
-    } else {
-      log('No recommendations panel matched; continuing.');
     }
 
-    log('Returning to top for a clean closing frame.');
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    await wait(1500);
-
+    await wait(1200);
     log('Recording complete.');
   },
 };

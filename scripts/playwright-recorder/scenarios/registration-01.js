@@ -2,9 +2,12 @@
 //
 // Target docs page: docs/getting-started/create-account.mdx
 // CDN target: cdn.coralledger.com/demos/registration-01.mp4
-// Scope: navigate to the public sign-up form, hover the fields, scroll. NEVER fills or
-// submits — staging dataset must not gain a "Robbie tested the docs recorder" account.
+// Scope: hover fields on the public sign-up form. NEVER fills or submits.
+//
+// No warmup — public route, no auth required. The recording starts on a fresh context
+// with the cookieConsent cookie pre-injected so the bottom banner doesn't show.
 
+const BASE = 'https://stg-comply.coralledger.com';
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default {
@@ -12,12 +15,12 @@ export default {
   title: 'Account Registration — Sign-Up Form',
   viewport: { width: 1280, height: 720 },
 
+  // No warmup — registration page is public, no session needed.
+
   async record({ page, log }) {
-    log('Navigating to the public sign-up form (no auth).');
-    await page.goto('https://stg-comply.coralledger.com/Identity/Account/Register', {
-      waitUntil: 'networkidle',
-    });
-    await wait(3000);
+    log('Navigating to the public sign-up form.');
+    await page.goto(`${BASE}/Identity/Account/Register`, { waitUntil: 'networkidle' });
+    await wait(2500);
 
     log('Hovering each sign-up field in turn.');
     for (const labelPattern of [/email/i, /^password/i, /confirm.*password/i, /terms/i]) {
@@ -29,7 +32,7 @@ export default {
       }
     }
 
-    log('Scrolling through the rest of the form (Turnstile / consent / submit area).');
+    log('Scrolling through the rest of the form.');
     await page.evaluate(async () => {
       const total = document.documentElement.scrollHeight - window.innerHeight;
       const steps = 12;
@@ -40,9 +43,8 @@ export default {
     });
     await wait(1500);
 
-    log('Returning to top — never clicks Register, never submits anything.');
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    await wait(1500);
-    log('Recording complete.');
+    await wait(1200);
+    log('Recording complete — never clicked Register.');
   },
 };

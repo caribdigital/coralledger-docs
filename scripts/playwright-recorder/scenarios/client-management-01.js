@@ -2,11 +2,10 @@
 //
 // Target docs page: docs/firm-portal/index.mdx
 // CDN target: cdn.coralledger.com/demos/client-management-01.mp4
-// Scope: read-only tour of the Firm Portal client roster — shows the multi-client list
-// view that's the firm's daily landing surface.
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 
+const BASE = 'https://stg-comply.coralledger.com';
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default {
@@ -14,15 +13,20 @@ export default {
   title: 'Firm Portal — Multi-Client Dashboard',
   viewport: { width: 1280, height: 720 },
 
-  async record({ page, log }) {
-    log('Authenticating as Firm Owner (ksaconsultantsltd@gmail.com).');
+  async warmup({ page, log }) {
+    log('Authenticating as Firm Owner — warmup.');
     await authenticateViaTestAuth(page, {
       email: 'ksaconsultantsltd@gmail.com',
       redirectTo: '/firm/clients',
     });
-
     await page.waitForLoadState('networkidle');
-    await wait(3000);
+    await wait(2500);
+  },
+
+  async record({ page, log }) {
+    log('Navigating to /firm/clients with warm session.');
+    await page.goto(`${BASE}/firm/clients`, { waitUntil: 'networkidle' });
+    await wait(2500);
 
     log('Scrolling through the client roster.');
     await page.evaluate(async () => {
@@ -35,16 +39,15 @@ export default {
     });
     await wait(1500);
 
-    log('Hovering the search/filter control if available.');
     const search = page.getByPlaceholder(/search/i).first();
     if (await search.count() > 0) {
       await search.scrollIntoViewIfNeeded();
       await search.hover();
-      await wait(1800);
+      await wait(1500);
     }
 
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    await wait(1500);
+    await wait(1200);
     log('Recording complete.');
   },
 };
