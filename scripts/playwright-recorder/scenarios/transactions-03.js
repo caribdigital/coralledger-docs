@@ -2,12 +2,11 @@
 //
 // Target docs page: docs/transactions/import-csv.mdx
 // CDN target: cdn.coralledger.com/demos/transactions-03.mp4
-// Scope: navigate to the CSV import landing, show the upload UI + format requirements. No
-// actual file upload occurs — clicking the upload control would open a native file dialog
-// that interrupts recording.
+// Scope: navigate the CSV import landing; no file actually uploaded.
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 
+const BASE = 'https://stg-comply.coralledger.com';
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default {
@@ -15,17 +14,22 @@ export default {
   title: 'Transactions — CSV Import and Column Mapping',
   viewport: { width: 1280, height: 720 },
 
-  async record({ page, log }) {
-    log('Authenticating as BusinessOwner.');
+  async warmup({ page, log }) {
+    log('Authenticating as etienne — warmup.');
     await authenticateViaTestAuth(page, {
       email: 'etienne.mckenzie@example.com',
       redirectTo: '/transactions/import',
     });
-
     await page.waitForLoadState('networkidle');
-    await wait(3000);
+    await wait(2500);
+  },
 
-    log('Letting the import page settle, then scrolling through the format guidance.');
+  async record({ page, log }) {
+    log('Navigating to /transactions/import with warm session.');
+    await page.goto(`${BASE}/transactions/import`, { waitUntil: 'networkidle' });
+    await wait(2500);
+
+    log('Scrolling through format guidance.');
     await page.evaluate(async () => {
       const total = document.documentElement.scrollHeight - window.innerHeight;
       const steps = 14;
@@ -36,22 +40,16 @@ export default {
     });
     await wait(1500);
 
-    log('Highlighting the visible upload zone — skipping the underlying hidden file input.');
-    // MudFileUpload renders a visible MudPaper/MudButton wrapper around a hidden
-    // <input type="file">. Target the wrapper (visible) and avoid the hidden input.
+    log('Highlighting the visible upload-zone wrapper (skipping hidden file input).');
     const dropZone = page.locator('.mud-file-upload, [class*="upload-zone"]:not(input)').first();
     if (await dropZone.count() > 0) {
       await dropZone.scrollIntoViewIfNeeded();
       await dropZone.hover();
       await wait(2500);
-    } else {
-      log('No visible upload-zone wrapper matched — leaving the page settled.');
     }
 
-    log('Returning to top.');
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    await wait(1500);
-
+    await wait(1200);
     log('Recording complete.');
   },
 };
