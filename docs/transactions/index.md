@@ -52,7 +52,7 @@ Every transaction maintains a complete history of:
 - Original import data
 - Category changes
 - User modifications
-- 7-year retention per [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/)
+- 7-year retention per [Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/)
 
 ## Next Steps
 

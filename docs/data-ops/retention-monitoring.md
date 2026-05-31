@@ -24,6 +24,23 @@ All businesses are subject to the platform-wide default:
 
 Records that are within their retention window cannot be permanently deleted, regardless of operator action or approved deletion requests.
 
+### Why "five years" appears multiple times in the VAT Act 2014
+
+The 5-year retention period (which CoralLedger Comply extends to 7 years) is set by **§79(2)** of the VAT Act 2014, within **Part X — Record Keeping and Accounts**. Readers familiar with the Act may encounter two other "five years" that are **not** the retention obligation — distinguishing them prevents the citation confusion that has crept into Bahamian VAT documentation in the past:
+
+1. **Part VIII — Assessments.** The Comptroller has five years after a VAT return is filed to make a tax assessment. This is the *Comptroller's assessment window*, not the taxpayer's record-retention obligation. The two clocks run independently — retaining records under §79(2) is a separate obligation from the Comptroller's right to assess under Part VIII.
+2. **§50 — Input tax deduction.** §50 requires that documentation supporting an input-tax-deduction claim exist *at the time the return is filed*, but §50 itself sets **no retention period**. The retention obligation is in §79(2); §50 governs *allowability*, not *retention*. (A propagated mis-citation of §50 as the retention authority was corrected across CoralLedger documentation on 2026-05-31; see [`CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md`](https://github.com/caribdigital/coralledgercomply/blob/master/tasks/comply/CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md) for the verification bundle.)
+
+CoralLedger Comply's retention enforcement is grounded in §79(2). Operators citing the legal basis to clients or auditors should cite **VAT Act, 2014, Part X, §§79–80**.
+
+Verbatim §79(2):
+
+> Accounting records maintained pursuant to this section must be kept for a period of **five years** after —
+>
+> (a) the end of the tax period to which such records relate, in the case of a registrant; or
+>
+> (b) the occurrence of the taxable transaction to which such records relate.
+
 ## Per-Business Retention Policies
 
 Operators can configure a custom retention policy for each business:

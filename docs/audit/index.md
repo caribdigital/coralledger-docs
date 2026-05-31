@@ -10,7 +10,7 @@ CoralLedger Comply maintains an immutable audit trail of all data modifications,
 
 ## Why Audit Trails Matter
 
-[Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/) requires businesses to maintain records for 7 years. CoralLedger Comply's audit trail ensures:
+[Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/) requires businesses to maintain records for a statutory minimum of 5 years (CoralLedger Comply extends to 7 years). CoralLedger Comply's audit trail ensures:
 - **Regulatory compliance** — Complete record of all data changes
 - **Accountability** — Every action is attributed to a specific user
 - **Integrity** — Hash-chain verification prevents tampering
@@ -25,7 +25,7 @@ Each audit entry includes a cryptographic hash of the previous entry, creating a
 The `ImmutableAuditEntry` table is treated as append-only by application code — no `UPDATE` or `DELETE` operation runs against it from the service layer. Combined with the hash chain (above), modifications are detectable. Database-level Write-Once-Read-Many enforcement depends on operator configuration (PostgreSQL row-level security and operator privilege separation) and is not a guarantee from the application alone.
 
 ### 7-Year Retention
-All audit data is retained for a minimum of 7 years, in compliance with [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/).
+All audit data is retained for a minimum of 7 years (5-year statutory minimum extended by CoralLedger Comply), in compliance with [Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/).
 
 ### Chain Integrity Verification
 Administrators can verify the integrity of the entire audit chain at any time, detecting any broken links or tampering attempts.

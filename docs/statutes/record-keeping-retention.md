@@ -6,11 +6,13 @@ description: VAT record retention obligations and platform enforcement controls
 
 # Record Keeping and Retention
 
-Statutory Basis: VAT Act §26, §50
+Statutory Basis: VAT Act Part X, §§79–80
 
 ## What statute says
 
-[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 26 sets the minimum **record-keeping period**, and [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 50 governs **retention** beyond the record-keeping period (including for cancelled or closed accounts). The combined effect is a minimum **7-year retention** for all VAT-relevant records, reinforced by [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 41(3) (record-keeping requirements and good-faith reliance).
+[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), **Part X, §§79–80** is the canonical statutory authority for record retention. **§79(1)** requires every taxable person to keep accounts and records in English in relation to all sums received and expended in taxable transactions, and input/output tax and deduction-claim entitlements. **§79(2)** sets the statutory retention floor at **five years** after either the end of the tax period to which the records relate (for registrants) or the occurrence of the taxable transaction. **§80** enumerates the record types that must be kept (tax accounts, purchase/sales ledgers, invoices, debit/credit notes, bank statements, customs documentation, point-of-sale data for taxpayers above the $250,000 turnover threshold, etc.).
+
+CoralLedger Comply extends the statutory 5-year minimum to **7 years** as a policy choice — providing a defensibility margin against late-filed amended returns, audit triggers raised near the 5-year boundary, and the Comptroller's 5-year assessment-time-limit under Part VIII (which is a separate clock from the §79(2) retention obligation).
 
 Records must remain accessible and complete enough for inspection. Retention duties usually apply across transactions, returns, adjustments, and supporting evidence. Deleting records too early can weaken audit defensibility and may itself be non-compliant.
 

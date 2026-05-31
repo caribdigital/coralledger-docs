@@ -69,7 +69,7 @@ If you had dispatched on the last day of one month and the customer confirmed on
 The selected sub-clause is:
 
 1. **Persisted on the transaction record** alongside the amount, date, and VAT classification.
-2. **Captured in the `VATCalculationProof`** — the immutable per-transaction evidence record that backs the [audit trail](/docs/audit/) and supports the seven-year retention requirement under [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/).
+2. **Captured in the `VATCalculationProof`** — the immutable per-transaction evidence record that backs the [audit trail](/docs/audit/) and supports the seven-year retention requirement under [Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/).
 3. **Used by the calculation engine** to apply the correct period assignment when the tax-point date differs from the invoice or delivery date.
 
 There is no automated re-classification — once you have entered a transaction with a sub-clause, Comply trusts that selection. Picking the wrong sub-clause is a defensible practitioner decision documented in the audit trail; failing to record a non-default sub-clause when one applies is a regulated misstatement risk.

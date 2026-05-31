@@ -70,7 +70,7 @@ A temporarily deactivated account preserves your data and lets you reactivate la
 
 ### Delete account
 
-Permanent account deletion removes your personal profile data. **Business data is retained for 7 years** per the [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/) — regulatory record-keeping obligations apply even after a user deletes their account. The retained data is no longer associated with your personal identity but remains in the audit ledger.
+Permanent account deletion removes your personal profile data. **Business data is retained for 7 years** per the [Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/) (5-year statutory minimum; CoralLedger Comply extends to 7 years) — regulatory record-keeping obligations apply even after a user deletes their account. The retained data is no longer associated with your personal identity but remains in the audit ledger.
 
 Contact support to initiate account deletion.
 
