@@ -14,29 +14,36 @@ export default {
   viewport: { width: 1280, height: 720 },
 
   async record({ page, log }) {
-    log('Authenticating via TestAuth bypass.');
-    await authenticateViaTestAuth(page, { redirectTo: '/dashboard' });
+    // etienne.mckenzie@example.com is the canonical staging BusinessOwner (single-tenant)
+    // — they land directly on /client with a business context, where ComplianceWeather renders.
+    // ksaconsultantsltd@gmail.com is a firm owner with no default client and would hit
+    // "No business selected" on /client.
+    log('Authenticating via TestAuth bypass as etienne.mckenzie@example.com (BusinessOwner).');
+    await authenticateViaTestAuth(page, {
+      email: 'etienne.mckenzie@example.com',
+      redirectTo: '/client',
+    });
 
-    log('Landed on dashboard. Letting the compliance widget render.');
+    log('Landed on /client. Letting the dashboard render.');
     await page.waitForLoadState('networkidle');
-    await wait(2500);
+    await wait(3000);
 
-    log('Highlighting the Compliance Weather card on the dashboard.');
-    // Compliance Weather is the canonical compliance-score widget on /client.
-    // Hover gives the viewer a visual cue.
-    const complianceCard = page.locator('[data-testid="compliance-weather"]').first();
+    log('Highlighting the Compliance Weather card.');
+    // ComplianceWeather component renders with class `compliance-weather`; no data-testid yet
+    // (tracked separately in Comply). CSS class selector is the stable surface.
+    const complianceCard = page.locator('.compliance-weather').first();
     if (await complianceCard.count() > 0) {
       await complianceCard.scrollIntoViewIfNeeded();
       await complianceCard.hover();
-      await wait(2000);
+      await wait(2500);
     } else {
-      log('compliance-weather testid not found, skipping hover.');
+      log('WARNING: .compliance-weather not found — user may have no business context.');
     }
 
-    log('Navigating to the full Compliance Score page.');
-    // Try the explicit Compliance Score page; fall back to the dashboard alone if not
-    // available. The audit found `/compliance` was the canonical compliance surface.
-    await page.goto('https://stg-comply.coralledger.com/compliance', {
+    log('Navigating to the full Compliance Intelligence page.');
+    // ClientDashboard's ComplianceWeather "View Details" action navigates here for
+    // non-getting-started users; this is the canonical compliance detail surface.
+    await page.goto('https://stg-comply.coralledger.com/compliance/intelligence', {
       waitUntil: 'networkidle',
     });
     await wait(2500);
