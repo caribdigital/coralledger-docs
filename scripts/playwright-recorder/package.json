@@ -1,0 +1,15 @@
+{
+  "name": "coralledger-docs-video-recorder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright-driven demo video recorder for CoralLedger Comply docs. Captures .webm screen recordings of authenticated workflows against staging; pairs with scripts/convert-marketing-videos.sh for .webm -> .mp4 conversion.",
+  "type": "module",
+  "scripts": {
+    "install:browsers": "playwright install chromium",
+    "record:one": "node run.js",
+    "record:all": "node run.js --all"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
