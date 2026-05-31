@@ -19,7 +19,7 @@ This variant is presented when the [Qualifying Screen](/docs/attestation/qualify
 
 When this variant is active, the following declaration is presented before final submission:
 
-> *I, the undersigned, being the registered person or an officer of the registered person named in this return, hereby declare that the information provided in this VAT return and all accompanying schedules is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) and may result in penalties, interest, and prosecution.*
+> *I, the undersigned, being the registered person or an officer of the registered person named in this return, hereby declare that the information provided in this VAT return and all accompanying schedules is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/), and may result in penalties, interest, and prosecution under s. 61 for both me and the named registered person.*
 
 The filer must confirm this declaration by:
 

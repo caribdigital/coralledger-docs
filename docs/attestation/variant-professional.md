@@ -22,13 +22,13 @@ A BICA practitioner attests under one of seven attestation bodies (`AttestationV
 
 | Code | Practice area covered |
 |---|---|
-| **Variant A** | General VAT Compliance Attestation — the practitioner has reviewed VAT records for general compliance |
-| **Variant B** | VAT Return Preparation Attestation — the practitioner prepared or reviewed the specific return(s) being submitted |
-| **Variant C** | VAT Advisory Services Attestation — the practitioner provided VAT advisory services to the registrant |
-| **Variant A+B** | General Compliance + Return Preparation |
-| **Variant A+C** | General Compliance + Advisory Services |
-| **Variant B+C** | Return Preparation + Advisory Services |
-| **Variant A+B+C** | Full-scope attestation covering all three practice areas |
+| **Variant A** | VAT Act s. 32(2) continuous-supply attestation context |
+| **Variant B** | VAT Act s. 32(3) advance-payment attestation context |
+| **Variant C** | VAT Act s. 32 read with s. 52 retention-payment attestation context |
+| **Variant A+B** | Combined s. 32(2) and s. 32(3) attestation context |
+| **Variant A+C** | Combined s. 32(2) and s. 32 with s. 52 attestation context |
+| **Variant B+C** | Combined s. 32(3) and s. 32 with s. 52 attestation context |
+| **Variant A+B+C** | Combined s. 32(2), s. 32(3), and s. 32 with s. 52 context |
 
 The practitioner selects the variant whose scope accurately reflects their engagement with the client. The declaration text shown at submission time is determined by the selected variant body. Variants A, B, C, and A+B+C have ratified declaration bodies; the remaining combinations (A+B, A+C, B+C) carry placeholder body text and require selection of one of the four ratified variants until ratification is complete.
 
@@ -46,7 +46,7 @@ See [BICA Verification](/docs/attestation/bica-verification) for full details on
 
 Once BICA Verification passes, the following declaration is presented:
 
-> *I declare that I am a member in good standing of the Bahamas Institute of Chartered Accountants (BICA Membership No: [XXXX]), that I have prepared this VAT return in my professional capacity on behalf of the registered person named herein, and that the information provided is, to the best of my professional knowledge and belief, true, correct, and complete. I acknowledge my professional obligations under BICA's Code of Professional Conduct and understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/).*
+> *I declare that I am a member in good standing of the Bahamas Institute of Chartered Accountants (BICA Membership No: [XXXX]), that I have prepared this VAT return in my professional capacity on behalf of the registered person named herein, and that the information provided is, to the best of my professional knowledge and belief, true, correct, and complete. I acknowledge my professional obligations under BICA's Code of Professional Conduct and understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/), including penalty exposure under s. 61 for both me and the registered person named in this return.*
 
 The exact declaration body presented depends on the selected `AttestationVariant` (A, B, C, A+B+C, etc.). See [Practice-Area Attestation Body Selection](#practice-area-attestation-body-selection) above.
 

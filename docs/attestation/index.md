@@ -16,7 +16,7 @@ CoralLedger Comply implements two distinct artefacts under the umbrella term "Se
 **The Signatory Capacity Declaration is not a §32 attestation.** It is a per-return capability declaration. Both artefacts can exist independently — and for some client/return combinations, both are required.
 
 :::info Which one do I need for this return?
-- If your client is in a **§3 restricted segment** (per Julian's CLR memorandum §3 — construction with retention, retainer-billed services, SaaS subscription, real-estate developers, and similar regulated categories), **you need both**: an `Active` §32 attestation in the persistent lifecycle, *and* the per-return Signatory Capacity Declaration at filing time.
+- If your client is in a **§32 restricted segment** (for example, construction with retention, retainer-billed services, SaaS subscription, real-estate developers, and similar regulated categories), **you need both**: an `Active` §32 attestation in the persistent lifecycle, *and* the per-return Signatory Capacity Declaration at filing time.
 - If your client is **not** in a restricted segment, the per-return Signatory Capacity Declaration at filing time is sufficient on its own — no admin attestation is required.
 
 If you are unsure, see [Carve-Outs](/docs/attestation/carve-outs) for the restricted-segment determination.
@@ -38,7 +38,7 @@ This is the section's main subject. It covers the persistent attestation record 
 
 A firm captures a §32 attestation for a client when:
 
-- The client is in a §3 restricted segment (so an attestation is required).
+- The client is in a §32 restricted segment (so an attestation is required).
 - A BICA-licensed practitioner at the firm assumes responsibility for that client.
 
 The attestation is then persisted against `(BusinessId, PractitionerUserId)` with `AttestationStatus = Active`. Until that record is superseded or voided, it governs all subsequent filings for that client.
@@ -58,13 +58,13 @@ Within the firm-admin lifecycle, a BICA-licensed practitioner attests under one 
 
 | Code | Practice area covered |
 |---|---|
-| **Variant A** | General VAT Compliance Attestation |
-| **Variant B** | VAT Return Preparation Attestation |
-| **Variant C** | VAT Advisory Services Attestation |
-| **Variant A+B** | General Compliance + Return Preparation |
-| **Variant A+C** | General Compliance + Advisory Services |
-| **Variant B+C** | Return Preparation + Advisory Services |
-| **Variant A+B+C** | Full-scope attestation covering all three practice areas |
+| **Variant A** | VAT Act s. 32(2) continuous-supply attestation context |
+| **Variant B** | VAT Act s. 32(3) advance-payment attestation context |
+| **Variant C** | VAT Act s. 32 read with s. 52 retention-payment attestation context |
+| **Variant A+B** | Combined s. 32(2) and s. 32(3) attestation context |
+| **Variant A+C** | Combined s. 32(2) and s. 32 with s. 52 attestation context |
+| **Variant B+C** | Combined s. 32(3) and s. 32 with s. 52 attestation context |
+| **Variant A+B+C** | Combined s. 32(2), s. 32(3), and s. 32 with s. 52 context |
 
 Variants A, B, C, and A+B+C have ratified declaration bodies; the remaining three combinations (A+B, A+C, B+C) carry placeholder body text and require the practitioner to select one of the four ratified variants until ratification of the combinations is complete.
 
@@ -81,7 +81,7 @@ The pages below cover the firm-admin lifecycle in detail. They describe the stru
 - [Session Affirmation](/docs/attestation/session-affirmation) — identity re-confirmation mid-session
 - [Handover](/docs/attestation/handover) — transferring attestation responsibility (planned functionality)
 - [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation) — what happens when the attestation or its underlying client assignment is revoked at run time
-- [Carve-Outs](/docs/attestation/carve-outs) — which client types fall outside the standard pathway
+- [Carve-Outs](/docs/attestation/carve-outs) — hard-refusal scenarios where the standard pathway cannot proceed
 - [Attestation Audit Trail](/docs/attestation/audit-trail) — the durable record of every lifecycle event
 
 ## The Signatory Capacity Declaration (per return)
@@ -103,7 +103,7 @@ The integration points between the firm-admin attestation lifecycle and the per-
 
 1. **Prefill at filing time.** If the current user has an `Active` attestation for the client business, the Signatory Capacity Declaration prefills their name and capacity.
 2. **Posting gate at entry time.** The [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation) blocks new transaction posting on a client when the user does not have both an active client assignment *and* an `Active` attestation — independent of any specific return.
-3. **Restricted-segment requirement.** For clients in a §3 restricted segment, both artefacts must be in place for a return to be lodged. For other clients, only the per-return Signatory Capacity Declaration is required.
+3. **Restricted-segment requirement.** For clients in a §32 restricted segment, both artefacts must be in place for a return to be lodged. For other clients, only the per-return Signatory Capacity Declaration is required.
 
 ## Next steps
 
