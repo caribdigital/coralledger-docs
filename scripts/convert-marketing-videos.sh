@@ -14,8 +14,8 @@
 #   input-dir  = ./recordings
 #   output-dir = ./dist/videos
 #
-# The resulting MP4 files should be uploaded to the CDN at:
-#   https://cdn.coralledger.com/demos/<filename>.mp4
+# The resulting MP4 files should be uploaded to your active CDN host at:
+#   https://<your-cdn-host>/demos/<filename>.mp4
 #
 # Video naming convention (matches CDN paths used in the docs):
 #   registration-01 … registration-04      (4 scenes)
@@ -79,4 +79,4 @@ done < <(find "$INPUT_DIR" -maxdepth 1 -name "*.webm" -print0)
 echo ""
 echo "Done. Converted: $converted, Skipped (already exists): $skipped"
 echo ""
-echo "Next step: upload files in '$OUTPUT_DIR' to https://cdn.coralledger.com/demos/"
+echo "Next step: upload files in '$OUTPUT_DIR' to your active CDN host under /demos/"
