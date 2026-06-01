@@ -18,33 +18,36 @@ export default {
   // No warmup — registration page is public, no session needed.
 
   async record({ page, log }) {
+    // Canonical sign-up route is /Account/Register (NOT /Identity/Account/Register).
+    // Use `domcontentloaded` instead of `networkidle` — the Turnstile widget keeps the
+    // network in a not-idle state indefinitely, so `networkidle` times out.
     log('Navigating to the public sign-up form.');
-    await page.goto(`${BASE}/Identity/Account/Register`, { waitUntil: 'networkidle' });
-    await wait(2500);
+    await page.goto(`${BASE}/Account/Register`, { waitUntil: 'domcontentloaded' });
+    await wait(4000);
 
     log('Hovering each sign-up field in turn.');
-    for (const labelPattern of [/email/i, /^password/i, /confirm.*password/i, /terms/i]) {
+    for (const labelPattern of [/email/i, /^password/i, /confirm.*password/i, /first.*name/i, /last.*name/i, /terms/i]) {
       const field = page.getByLabel(labelPattern).first();
       if (await field.count() > 0) {
         await field.scrollIntoViewIfNeeded();
         await field.hover();
-        await wait(1300);
+        await wait(1800);
       }
     }
 
-    log('Scrolling through the rest of the form.');
+    log('Scrolling slowly through the rest of the form.');
     await page.evaluate(async () => {
       const total = document.documentElement.scrollHeight - window.innerHeight;
-      const steps = 12;
+      const steps = 16;
       for (let i = 0; i < steps; i++) {
         window.scrollBy({ top: total / steps, behavior: 'smooth' });
-        await new Promise((r) => setTimeout(r, 280));
+        await new Promise((r) => setTimeout(r, 420));
       }
     });
-    await wait(1500);
+    await wait(2500);
 
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    await wait(1200);
+    await wait(3000);
     log('Recording complete — never clicked Register.');
   },
 };

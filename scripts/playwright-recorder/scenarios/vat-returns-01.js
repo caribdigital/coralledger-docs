@@ -29,22 +29,27 @@ export default {
     await page.goto(`${BASE}/vatreturns`, { waitUntil: 'networkidle' });
     await wait(2500);
 
-    const createButton = page.getByRole('button', { name: /create.*(return|vat)|new.*(return|vat)|\+\s*return/i }).first();
+    // The toolbar primary action is labeled "New Return" (icon prefix in the visual). The
+    // accessibility name doesn't include the icon, so match plain "New Return" / "Create Return".
+    const createButton = page.getByRole('button', { name: /^new\s+return$|^create\s+return$|create\s+vat\s+return|new\s+vat\s+return/i }).first();
     if (await createButton.count() > 0) {
       await createButton.scrollIntoViewIfNeeded();
       await createButton.hover();
-      await wait(1200);
+      await wait(2000);
       await createButton.click({ force: true });
-      log('Create-return dialog opened.');
-      await wait(2500);
+      log('Create-return dialog opened — dwelling on period selectors.');
+      await wait(4500);
 
-      for (const labelPattern of [/period/i, /month/i, /year/i, /quarter/i]) {
+      for (const labelPattern of [/period/i, /month/i, /year/i, /quarter/i, /tax.*period/i, /filing.*type|return.*type/i]) {
         const field = page.getByLabel(labelPattern).first();
         if (await field.count() > 0) {
           await field.hover();
-          await wait(900);
+          await wait(1800);
         }
       }
+
+      log('Holding on the populated dialog.');
+      await wait(3500);
 
       log('Closing dialog without creating a return.');
       const cancelBtn = page.getByRole('button', { name: /cancel|close|discard/i }).first();
@@ -53,7 +58,18 @@ export default {
       } else {
         await page.keyboard.press('Escape');
       }
-      await wait(1500);
+      await wait(2000);
+    } else {
+      // Fallback: dwell on the returns list page if no create button surfaces.
+      log('Create return button not found — dwelling on the list view.');
+      await page.evaluate(async () => {
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        for (let i = 0; i < 10; i++) {
+          window.scrollBy({ top: total / 10, behavior: 'smooth' });
+          await new Promise((r) => setTimeout(r, 320));
+        }
+      });
+      await wait(2500);
     }
 
     log('Recording complete.');

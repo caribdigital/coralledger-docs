@@ -2,6 +2,9 @@
 //
 // Target docs page: docs/reports/index.mdx
 // CDN target: cdn.coralledger.com/demos/exports-01.mp4
+// Scope: focus on the Cash Flow Report surface (which has Export CSV button + real data
+// for ksaconsultantsltd's tagged client context). Avoids the /reports landing for
+// firm-side users where the page is sparse.
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 
@@ -14,41 +17,39 @@ export default {
   viewport: { width: 1280, height: 720 },
 
   async warmup({ page, log }) {
-    log('Authenticating — warmup, no recording yet.');
-    await authenticateViaTestAuth(page, { redirectTo: '/reports' });
+    log('Authenticating (default firm user with client context) — warmup.');
+    await authenticateViaTestAuth(page, { redirectTo: '/reports/cashflow' });
     await page.waitForLoadState('networkidle');
-    await wait(2500);
+    await wait(3000);
   },
 
   async record({ page, log }) {
-    log('Navigating to /reports with warm session.');
-    await page.goto(`${BASE}/reports`, { waitUntil: 'networkidle' });
-    await wait(2000);
-
-    log('Scrolling through the Reports landing.');
-    await page.evaluate(async () => {
-      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
-      const steps = 16;
-      for (let i = 0; i < steps; i++) {
-        window.scrollBy({ top: totalScroll / steps, behavior: 'smooth' });
-        await new Promise((r) => setTimeout(r, 250));
-      }
-    });
-    await wait(1500);
-
-    log('Navigating to Cash Flow Report for the Export CSV demo.');
+    log('Navigating directly to /reports/cashflow with warm session.');
     await page.goto(`${BASE}/reports/cashflow`, { waitUntil: 'networkidle' });
-    await wait(2500);
+    await wait(3500);
 
+    log('Hovering the Export CSV button (top-right primary action).');
     const exportButton = page.getByRole('button', { name: /export.*csv/i }).first();
     if (await exportButton.count() > 0) {
       await exportButton.scrollIntoViewIfNeeded();
       await exportButton.hover();
-      await wait(2000);
+      await wait(3000);
     }
 
+    log('Slow scroll through the cash flow timeline + obligations + monthly summary.');
+    await page.evaluate(async () => {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const steps = 20;
+      for (let i = 0; i < steps; i++) {
+        window.scrollBy({ top: total / steps, behavior: 'smooth' });
+        await new Promise((r) => setTimeout(r, 400));
+      }
+    });
+    await wait(3000);
+
+    log('Returning to top — Export CSV remains in frame on the closing dwell.');
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    await wait(1200);
+    await wait(4000);
     log('Recording complete.');
   },
 };
