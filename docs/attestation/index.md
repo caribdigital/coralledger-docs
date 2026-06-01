@@ -54,17 +54,17 @@ Each operation writes a corresponding audit event (`ATTESTATION_CREATED`, `ATTES
 
 ### Attestation bodies — Variants A / B / C and their combinations
 
-Within the firm-admin lifecycle, a BICA-licensed practitioner attests under one of seven `AttestationVariant` bodies, each corresponding to a defined practice area or combination:
+Within the firm-admin lifecycle, a BICA-licensed practitioner attests under one of seven `AttestationVariant` bodies. These codes are the statutory body identifiers used by the §32 workflow — not informal practice-area labels:
 
-| Code | Practice area covered |
+| Code | Statutory scenario covered |
 |---|---|
-| **Variant A** | General VAT Compliance Attestation |
-| **Variant B** | VAT Return Preparation Attestation |
-| **Variant C** | VAT Advisory Services Attestation |
-| **Variant A+B** | General Compliance + Return Preparation |
-| **Variant A+C** | General Compliance + Advisory Services |
-| **Variant B+C** | Return Preparation + Advisory Services |
-| **Variant A+B+C** | Full-scope attestation covering all three practice areas |
+| **Variant A** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(2) — continuous supply |
+| **Variant B** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(3) — advance payment |
+| **Variant C** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32 read with s. 52 — retention |
+| **Variant A+B** | Continuous supply + advance payment |
+| **Variant A+C** | Continuous supply + retention |
+| **Variant B+C** | Advance payment + retention |
+| **Variant A+B+C** | Combined body covering all three statutory scenarios |
 
 Variants A, B, C, and A+B+C have ratified declaration bodies; the remaining three combinations (A+B, A+C, B+C) carry placeholder body text and require the practitioner to select one of the four ratified variants until ratification of the combinations is complete.
 

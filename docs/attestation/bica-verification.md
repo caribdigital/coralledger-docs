@@ -23,20 +23,18 @@ When an accountant selects the Professional Accountant pathway on the [Qualifyin
 
 ## Verification Outcomes
 
-CoralLedger Comply consumes the official **BICA Listing of Licensees** PDF and the **Find-a-Member** web surface, then writes the outcome to the [Attestation Audit Trail](/docs/attestation/audit-trail) as a `BICA_VERIFICATION_ATTEMPTED` event. The outcome resolves to one of four canonical states:
+CoralLedger Comply consumes the official **BICA Listing of Licensees** PDF and the **Find-a-Member** web surface, then writes the outcome to the [Attestation Audit Trail](/docs/attestation/audit-trail) as a `BICA_VERIFICATION_ATTEMPTED` event. If the registry sources cannot be reached or reconciled, the attempt resolves to `Unreachable`. The outcome resolves to one of four canonical states:
 
 | State | Description (regulator-visible) | Next Step |
 |---|---|---|
 | **Verified** | BICA licence verified — licence current; expiry date carried from the listing. | Proceed to the Professional Accountant declaration. |
 | **NotFound** | BICA licence checked — no record on the BICA register. | Check for typos; contact BICA if the issue persists. |
 | **Expired** | BICA licence checked — record found, licence expired (date carried from the listing). | Contact BICA to renew before filing. |
-| **Unreachable** | BICA licence check could not be completed — BICA register did not respond. | See [Fallback Procedure](#fallback-procedure) below. |
+| **Unreachable** | BICA licence check could not be completed — BICA register did not respond. | Stop filing and retry once the BICA register is reachable. |
 
 The four-word state token (`Verified` / `NotFound` / `Expired` / `Unreachable`) is the machine-stable identifier used by audit consumers and regulator inspectors. The prose around each line is editorial and may evolve; the state token is the contract.
 
-:::note Defensive downgrade — `Stale`
-When the listing PDF and Find-a-Member surface disagree (e.g. licence present in one but not the other), or when the cached listing is older than seven days, the result is defensively downgraded to a fifth internal state, `Stale`. From the filer's perspective this surfaces the same warning treatment as `Unreachable` and the filer cannot use the Professional Accountant Variant until the next refresh resolves the disagreement.
-:::
+There is no skip or manual-upload override on this step. Only `Verified` allows the Professional Accountant Variant to continue.
 
 ## Verb Choice (Honest Language)
 
@@ -47,22 +45,6 @@ The Description verb in the audit row reflects what actually happened:
 - **check could not be completed** — used when no check happened (`Unreachable` — the register did not respond).
 
 This honesty discipline is per the regulatory product owner's sign-off (CLR-2026-04-COMPLY-01).
-
-## Fallback Procedure
-
-If the BICA registry service is unavailable at the time of filing, CoralLedger Comply activates a **manual fallback** mode:
-
-1. A notice is displayed explaining that live registry verification is temporarily unavailable
-2. You are asked to upload a copy of your **current BICA membership certificate** (PDF, JPG, or PNG, maximum 5 MB)
-3. Enter your membership number and the certificate expiry date
-4. Check the **I confirm this certificate is current and authentic** declaration
-5. Click **Proceed with Manual Verification**
-
-The uploaded certificate is stored against the attestation record. Platform administrators are notified and will review the manual verification within one business day. The return can be submitted immediately — the fallback attestation is treated as valid pending review.
-
-:::info Manual Fallback Audit Logging
-Manual fallback events are flagged in the [Attestation Audit Trail](/docs/attestation/audit-trail) with a `BICA_MANUAL_FALLBACK` marker, allowing operators to identify and follow up on returns that used this procedure.
-:::
 
 ## Verification Record
 
@@ -79,13 +61,11 @@ The Description line names the **business** being attested for (not the practiti
 | Field | Contents |
 |-------|----------|
 | `LicenceNumber` | Normalised BICA identifier as supplied by the practitioner |
-| `state` | One of `Verified` / `NotFound` / `Expired` / `Stale` / `Unreachable` |
+| `state` | One of `Verified` / `NotFound` / `Expired` / `Unreachable` |
 | `PractitionerName` | Name surfaced from the BICA listing (when present) |
 | `ListingDate` | Licence expiry / activity date from the listing (when present) |
 | `ListingPublishedAt` | UTC timestamp the listing PDF was published |
 | `FromCache` | `true` when the result was served from the 24-hour distributed cache |
-| `FindAMemberAgreement` | Whether the Find-a-Member supplementary surface agreed with the listing |
-| `StaleReason` | Explanation when the state was defensively downgraded to `Stale` |
 
 The `state=` syntax appears only in the structured metadata, never in the regulator-visible Description.
 
