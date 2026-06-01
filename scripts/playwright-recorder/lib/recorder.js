@@ -100,6 +100,28 @@ export async function runScenario(scenario) {
       log(`ERROR: ${err.message}`);
       throw err;
     } finally {
+      // Capture a final-frame full-page screenshot for visual QA. The recording's "OK" exit
+      // code only proves the script didn't throw — not that the destination rendered. The
+      // screenshot is the truth source: if it shows a blank page / error / login redirect,
+      // the .mp4 is broken regardless of what the run.js summary says.
+      try {
+        const screenshotPath = path.join(recordingsDir, `${scenario.id}_final.png`);
+        await page.screenshot({ path: screenshotPath, fullPage: true });
+        log(`Final-frame screenshot → ${path.relative(projectRoot, screenshotPath)}`);
+      } catch (err) {
+        log(`WARNING: could not capture final-frame screenshot: ${err.message}`);
+      }
+
+      // Final dwell: hold the closing frame in-recording so the viewer has time to read
+      // the resulting state. Configurable per scenario; default 5s gives every scenario a
+      // breathing-room outro and is the main lever for pushing recordings past the 20s
+      // minimum. Skip with `scenario.finalDwellMs = 0` for explicitly short demos.
+      const finalDwellMs = scenario.finalDwellMs ?? 5000;
+      if (finalDwellMs > 0) {
+        log(`Final dwell ${finalDwellMs}ms before close.`);
+        await page.waitForTimeout(finalDwellMs);
+      }
+
       const videoHandle = await page.video();
       await context.close();
 
