@@ -277,6 +277,7 @@ const sidebars: SidebarsConfig = {
         'reference/vat-rates',
         'reference/glossary',
         'reference/second-pass-audit-memo',
+        'reference/audit-verification-2026-05-30',
         'reference/amendment-chain-verification-memo',
       ],
     },
