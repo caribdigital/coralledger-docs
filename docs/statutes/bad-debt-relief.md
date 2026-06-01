@@ -6,7 +6,7 @@ description: Relief for VAT previously remitted on qualifying unpaid debts
 
 # Bad Debt Relief
 
-Statutory Basis: VAT Act §20
+Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 20
 
 ## What statute says
 

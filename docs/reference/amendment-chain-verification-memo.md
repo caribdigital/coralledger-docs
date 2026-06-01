@@ -84,7 +84,7 @@ The following sections remain cited under the 2021 chain because they were subst
 |---------|--------|
 | §2 | Definitions of international commercial service and international transport services were amended |
 | §10 | Standard rate changed from 12% to 10% |
-| §32 | Return attestation and declaration format (pending separate §32 validation under PR #106) |
+| §32 | Time-of-supply and return-declaration rules; 2021 chain retained and the attestation pathway is tracked separately under PR #106 |
 
 ## Verification
 

@@ -6,7 +6,7 @@ description: Exposure from inaccurate or late VAT compliance and control expecta
 
 # Assessments, Interest, and Penalties
 
-Statutory Basis: VAT Act §60, §61
+Statutory Basis: [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 60 and s. 61
 
 ## What statute says
 

@@ -6,7 +6,7 @@ description: Statutory apportionment requirements for mixed taxable and exempt s
 
 # Partial Exemption and Apportionment
 
-Statutory Basis: VAT Act §44
+Statutory Basis: [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44
 
 ## What statute says
 
