@@ -20,7 +20,7 @@ Under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act,
 
 ## Events Recorded
 
-The attestation audit trail captures events at each stage of the pathway. The current build emits the five lifecycle events listed under **Currently emitted** below; the events under **Planned** are reserved for upcoming features (Handover, Session Affirmation, Carve-Out routing, Digital Filing) — they will start emitting as those features ship. Integrators consuming the audit feed should ignore unknown event types gracefully.
+The attestation audit trail captures events at each stage of the pathway. The current build emits the six lifecycle events listed under **Currently emitted** below; the events under **Planned** are reserved for upcoming features (Handover, Session Affirmation, Carve-Out routing, Digital Filing) — they will start emitting as those features ship. Integrators consuming the audit feed should ignore unknown event types gracefully.
 
 ### Currently emitted
 
@@ -31,13 +31,13 @@ The attestation audit trail captures events at each stage of the pathway. The cu
 | `ATTESTATION_VOIDED_BY_ASSIGNMENT_CHANGE` | The active client assignment was changed, invalidating the prior attestation authority |
 | `ATTESTATION_RE_ATTEST_REQUIRED` | A return change after attestation requires re-attestation before submission |
 | `ATTESTATION_MODAL_CANCELLED` | The filer cancelled the attestation confirmation modal before submitting |
+| `BICA_VERIFICATION_ATTEMPTED` | A BICA licence verification was attempted. Description names the client business and embeds the resolved state (`Verified` / `NotFound` / `Expired` / `Unreachable` / `Stale`). See [BICA Verification](/docs/attestation/bica-verification) for the canonical Description lines. |
 
 ### Planned (not yet emitted)
 
 | Event | Status / target feature |
 |-------|-------------------------|
 | `ATT_SESSION_STARTED` / `ATT_QUALIFIER_COMPLETED` | Planned with [Qualifying Screen](/docs/attestation/qualifying-screen) instrumentation |
-| `ATT_BICA_VERIFIED` / `ATT_BICA_FALLBACK` | Planned with [BICA Verification](/docs/attestation/bica-verification) live registry check |
 | `ATT_SESSION_AFFIRMED` / `ATT_SESSION_AFFIRMATION_FAILED` | Planned with [Session Affirmation](/docs/attestation/session-affirmation) live capture |
 | `ATT_HANDOVER_INITIATED` / `_ACCEPTED` / `_RECALLED` / `_EXPIRED` | Planned with [Handover](/docs/attestation/handover) feature |
 | `ATT_CARVEOUT_APPLIED` | Planned with [Carve-Outs](/docs/attestation/carve-outs) routing instrumentation |
