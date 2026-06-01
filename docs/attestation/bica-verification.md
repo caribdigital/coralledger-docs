@@ -23,24 +23,30 @@ When an accountant selects the Professional Accountant pathway on the [Qualifyin
 
 ## Verification Outcomes
 
-| Result | Meaning | Next Step |
-|--------|---------|-----------|
-| **Verified — Active** | Membership is current and in good standing | Proceed to the Professional Accountant declaration |
-| **Verified — Renewal Pending** | Membership is within 30 days of renewal; still valid | A warning is shown; you may proceed |
-| **Not Verified — Lapsed** | Membership has expired | Contact BICA to renew before filing |
-| **Not Verified — Suspended** | Membership is currently suspended | You cannot use this variant; use [Authorized Agent Variant](/docs/attestation/variant-agent) or arrange for a colleague to file |
-| **Not Verified — Not Found** | Number not found in registry | Check for typos; contact BICA if the issue persists |
-| **Service Unavailable** | BICA registry is temporarily unreachable | See [Fallback Procedure](#fallback-procedure) below |
+CoralLedger Comply consumes the official **BICA Listing of Licensees** PDF and the **Find-a-Member** web surface, then writes the outcome to the [Attestation Audit Trail](/docs/attestation/audit-trail) as a `BICA_VERIFICATION_ATTEMPTED` event. The outcome resolves to one of four canonical states:
 
-## Renewal Pending Warning
+| State | Description (regulator-visible) | Next Step |
+|---|---|---|
+| **Verified** | BICA licence verified — licence current; expiry date carried from the listing. | Proceed to the Professional Accountant declaration. |
+| **NotFound** | BICA licence checked — no record on the BICA register. | Check for typos; contact BICA if the issue persists. |
+| **Expired** | BICA licence checked — record found, licence expired (date carried from the listing). | Contact BICA to renew before filing. |
+| **Unreachable** | BICA licence check could not be completed — BICA register did not respond. | See [Fallback Procedure](#fallback-procedure) below. |
 
-If your membership is within 30 days of its renewal date, a warning banner is shown before the declaration:
+The four-word state token (`Verified` / `NotFound` / `Expired` / `Unreachable`) is the machine-stable identifier used by audit consumers and regulator inspectors. The prose around each line is editorial and may evolve; the state token is the contract.
 
-:::warning BICA Renewal Due Soon
-Your BICA membership (No: XXXX) is due for renewal on [date]. Your attestation is valid today, but you must renew before that date to continue using the Professional Accountant Variant for future filings.
+:::note Defensive downgrade — `Stale`
+When the listing PDF and Find-a-Member surface disagree (e.g. licence present in one but not the other), or when the cached listing is older than seven days, the result is defensively downgraded to a fifth internal state, `Stale`. From the filer's perspective this surfaces the same warning treatment as `Unreachable` and the filer cannot use the Professional Accountant Variant until the next refresh resolves the disagreement.
 :::
 
-You may proceed with the attestation despite this warning. The renewal reminder is also written to the [Attestation Audit Trail](/docs/attestation/audit-trail) for record-keeping purposes.
+## Verb Choice (Honest Language)
+
+The Description verb in the audit row reflects what actually happened:
+
+- **verified** — used only when verification succeeded (`Verified` state).
+- **checked** — used when the BICA register answered with a definitive negative (`NotFound`, `Expired`).
+- **check could not be completed** — used when no check happened (`Unreachable` — the register did not respond).
+
+This honesty discipline is per the regulatory product owner's sign-off (CLR-2026-04-COMPLY-01).
 
 ## Fallback Procedure
 
@@ -60,17 +66,28 @@ Manual fallback events are flagged in the [Attestation Audit Trail](/docs/attest
 
 ## Verification Record
 
-Every verification attempt — whether successful or not — is recorded in the attestation session data:
+Every verification attempt — whether successful or not — is recorded in the [Attestation Audit Trail](/docs/attestation/audit-trail) as a `BICA_VERIFICATION_ATTEMPTED` event. The event carries both a regulator-visible **Description** line and a structured **metadata** payload:
+
+### Description (regulator-visible)
+
+The Description line names the **business** being attested for (not the practitioner) and embeds the four-word state token. Example for the `Unreachable` state:
+
+> `BICA licence check could not be completed for Atlantis Hotel Group — Unreachable; BICA register did not respond`
+
+### Metadata payload (machine-readable)
 
 | Field | Contents |
 |-------|----------|
-| **Membership Number** | As entered by the accountant |
-| **Verification Method** | Live Registry Lookup or Manual Fallback |
-| **Verification Result** | Verified / Not Verified / Fallback |
-| **Timestamp** | UTC date and time of the check |
-| **Registry Response** | Status code returned by the BICA registry |
+| `LicenceNumber` | Normalised BICA identifier as supplied by the practitioner |
+| `state` | One of `Verified` / `NotFound` / `Expired` / `Stale` / `Unreachable` |
+| `PractitionerName` | Name surfaced from the BICA listing (when present) |
+| `ListingDate` | Licence expiry / activity date from the listing (when present) |
+| `ListingPublishedAt` | UTC timestamp the listing PDF was published |
+| `FromCache` | `true` when the result was served from the 24-hour distributed cache |
+| `FindAMemberAgreement` | Whether the Find-a-Member supplementary surface agreed with the listing |
+| `StaleReason` | Explanation when the state was defensively downgraded to `Stale` |
 
-This record is included in the [Attestation Audit Trail](/docs/attestation/audit-trail) entry for the submission.
+The `state=` syntax appears only in the structured metadata, never in the regulator-visible Description.
 
 ## Next Steps
 
