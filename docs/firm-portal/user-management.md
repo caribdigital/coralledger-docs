@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 title: User Management
 description: Manage team members and permissions in CoralLedger Comply
 ---
