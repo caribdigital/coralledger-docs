@@ -73,7 +73,7 @@ You'll be prompted to add a payment method before billing begins.
 ## Data Retention
 
 - **Active accounts**: Unlimited data retention
-- **Cancelled accounts**: Data retained for 7 years per [Value Added Tax Act, 2014, s. 50](https://laws.bahamas.gov.bs/)
+- **Cancelled accounts**: Data retained for 7 years per [Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/) (5-year statutory minimum; CoralLedger Comply extends to 7 years)
 
 ## Next Steps
 

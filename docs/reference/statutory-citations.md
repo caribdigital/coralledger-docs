@@ -24,12 +24,16 @@ Example (s. 32 was substantively changed by the 2021 Act and is a canonical exam
 
 - [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 26
 - [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44
-- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 50
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), Part X, §§79–80
 - [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 47(1)(a)
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32(2)
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32(3)
 - [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61(c)
+
+### Part-and-section citation format
+
+When citing a record-keeping or accounts provision (Part X, §§79–80) or any other multi-section topic anchored to a Part heading, use the `Part X, §§79–80` form (Part roman numeral, sections joined with `§§`). This preserves the canonical hyperlinked citation pattern while making the Part-level grouping explicit.
 
 ## Subsection and Paragraph Rules
 
@@ -50,12 +54,16 @@ The following sections were confirmed as unamended since the original Value Adde
 
 | Section | Topic |
 |---------|-------|
-| s. 26 | Record keeping obligations |
-| s. 41(3) | Record-keeping requirements and good-faith reliance |
+| s. 26 | Record keeping obligations (citation pending re-verification per CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31) |
+| s. 41(3) | Record-keeping requirements and good-faith reliance (citation pending re-verification) |
 | s. 44 | Partial exemption and input-tax apportionment |
-| s. 50 | Retention period (seven years) |
+| Part X, §§79–80 | Record-keeping and accounts (5-year statutory retention floor in §79(2); record-types enumeration in §80) |
 | s. 60 | Late-payment interest rate |
 | s. 61 | Penalties |
+
+:::warning Citation re-verification in progress
+The `s. 26` and `s. 41(3)` entries above are carried forward from JR-008 (May 2026) but have **not** been re-verified at source. The `s. 50` citation that appeared in this table was verified at source on 2026-05-31 and found to be incorrect: §50 of the VAT Act 2014 is "Rules relating to a claim for input tax deduction", not the retention period. The canonical retention authority is **Part X, §§79–80** (§79(2) sets the 5-year statutory minimum). A follow-up verification of §26 and §41(3) is scheduled — both may need similar correction.
+:::
 
 Canonical amendment-chain examples:
 

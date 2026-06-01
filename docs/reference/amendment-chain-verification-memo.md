@@ -6,6 +6,10 @@ description: CCO sign-off memo verifying amendment chains for §26, §41(3), §4
 
 # JR-008 — Amendment Chain Verification Memo (DDS-005 Follow-up)
 
+:::warning §50 row SUPERSEDED 2026-05-31
+The `§50 | Retention period (seven years)` row in the scope table below was superseded on 2026-05-31. A source-verification of the Value Added Tax Act, 2014 (consolidated, reprinted 1 July 2024) established that **§50 is "Rules relating to a claim for input tax deduction"** and has no bearing on record retention. The canonical retention authority is **Part X, §§79–80** — §79(2) sets the 5-year statutory minimum that CoralLedger Comply extends to 7 years. Findings 2 and 3 of this memo are accurate **for the other sections covered** (§26, §41(3), §44, §60, §61), pending a separate source re-verification of §26 and §41(3) that has been scheduled. See [`CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md`](https://github.com/caribdigital/coralledgercomply/blob/master/tasks/comply/CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md) for the verification bundle.
+:::
+
 ## Scope
 
 This memo records the validation of per-section amendment chains for the Bahamas Value Added Tax Act citations used throughout CoralLedger Comply documentation, as required by issue DDS-005 (PR #104 follow-up).
@@ -18,7 +22,7 @@ The following sections were reviewed:
 | §29 | (Superseded — see Finding 1 below) | compliance/bad-debt-relief.md |
 | §41(3) | Record-keeping requirements and good-faith reliance | statutes/record-keeping-retention.md |
 | §44 | Partial exemption and input-tax apportionment | vat-returns/input-tax-apportionment.md, statutes/partial-exemption-apportionment.md |
-| §50 | Retention period (seven years) | audit/index.md, billing/index.md, billing/licensing.md, ops-portal/data-ops.md, settings/account.md, transactions/archived-records.md, statutory-citations.md, security/index.mdx, attestation/audit-trail.md |
+| ~~§50~~ → Part X, §§79–80 | Record-keeping and accounts (5-year statutory minimum in §79(2); 7-year CoralLedger Comply policy). Corrected 2026-05-31 — original `§50` citation in this memo was wrong; §50 is input-tax-deduction allowability. | audit/index.md, billing/index.md, billing/licensing.md, ops-portal/data-ops.md, settings/account.md, transactions/archived-records.md, statutory-citations.md, security/index.mdx, attestation/audit-trail.md |
 | §60 | Late-payment interest rate | statutes/assessments-interest-penalties.md |
 | §61 | Penalties (up to 200% of unpaid VAT) | compliance/intelligence-dashboard.md, security/index.mdx, statutory-citations.md, statutes/assessments-interest-penalties.md |
 

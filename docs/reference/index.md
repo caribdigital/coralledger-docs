@@ -76,7 +76,7 @@ Per-section verification of VAT Act amendment chains — sign-off by Julian Roll
 
 - [Department of Inland Revenue](https://inlandrevenue.finance.gov.bs/)
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/)
-- Commonly cited sections in this documentation: s. 26, s. 50, s. 61
+- Commonly cited sections in this documentation: s. 26, Part X §§79–80, s. 61
 - [2025 VAT Reforms](https://inlandrevenue.finance.gov.bs/)
 
 ## Need Help?
