@@ -133,7 +133,7 @@ Access at **Settings > Privacy**.
 
 ## Support
 
-- **Email**: privacy@digitalcarib.com
+- **Email**: hello@digitalcarib.com
 - **Documentation**: docs.coralledger.com
 
 ## Next Steps

@@ -161,7 +161,7 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 ## Need Help?
 
 The 2025 reforms are complex. Contact us for assistance:
-- **Email**: privacy@digitalcarib.com
+- **Email**: hello@digitalcarib.com
 - **Phone**: Schedule a consultation
 
 ## Next Steps
