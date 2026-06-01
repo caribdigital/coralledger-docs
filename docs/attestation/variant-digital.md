@@ -7,7 +7,7 @@ description: Planned future §32 attestation variant for filings signed with a q
 # Digital Filing Variant
 
 :::warning Not yet scoped for implementation
-The Digital Filing Variant is **planned but not yet scoped** for the §32 attestation admin lifecycle. The current `AttestationVariant` catalog contains seven codes — `A`, `B`, `C`, `AB`, `AC`, `BC`, `ABC` — covering the General Compliance, Return Preparation, and Advisory Services practice-area combinations. **There is no `D` code or "Digital" admin variant in the catalog today**, and no qualified-electronic-signature attestation body has been authored or ratified. The settings path `Settings > Account > Digital Signing` referenced below has not been built. This page is preserved as a forward-looking integrator-planning reference; the implementation date will be announced separately when the work is scoped.
+The Digital Filing Variant is **planned but not yet scoped** for the §32 attestation admin lifecycle. The current `AttestationVariant` catalog contains seven codes — `A`, `B`, `C`, `AB`, `AC`, `BC`, `ABC` — covering the existing statutory §32 bodies for continuous supply, advance payment, retention, and their combinations. **There is no `D` code or "Digital" admin variant in the catalog today**, and no qualified-electronic-signature attestation body has been authored or ratified. The settings path `Settings > Account > Digital Signing` referenced below has not been built. This page is preserved as a forward-looking integrator-planning reference; the implementation date will be announced separately when the work is scoped.
 :::
 
 :::info Do not confuse this with the `AuthorisedEmployee` Signatory Capacity

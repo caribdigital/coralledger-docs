@@ -31,7 +31,7 @@ The attestation audit trail captures events at each stage of the pathway. The cu
 | `ATTESTATION_VOIDED_BY_ASSIGNMENT_CHANGE` | The active client assignment was changed, invalidating the prior attestation authority |
 | `ATTESTATION_RE_ATTEST_REQUIRED` | A return change after attestation requires re-attestation before submission |
 | `ATTESTATION_MODAL_CANCELLED` | The filer cancelled the attestation confirmation modal before submitting |
-| `BICA_VERIFICATION_ATTEMPTED` | A BICA licence verification was attempted. Description names the client business and embeds the resolved state (`Verified` / `NotFound` / `Expired` / `Unreachable` / `Stale`). See [BICA Verification](/docs/attestation/bica-verification) for the canonical Description lines. |
+| `BICA_VERIFICATION_ATTEMPTED` | A BICA licence verification was attempted. Description names the client business and embeds the resolved state (`Verified` / `NotFound` / `Expired` / `Unreachable`). See [BICA Verification](/docs/attestation/bica-verification) for the canonical Description lines. |
 
 ### Planned (not yet emitted)
 

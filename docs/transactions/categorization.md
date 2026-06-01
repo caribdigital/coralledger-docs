@@ -10,7 +10,7 @@ Understanding how to categorize transactions for VAT compliance in The Bahamas.
 
 ## VAT Categories in The Bahamas
 
-As of 2025, The Bahamas applies these VAT categories:
+As of **April 1, 2026**, The Bahamas applies these VAT categories:
 
 | Category | Name | Applies To |
 |------|------|------------|

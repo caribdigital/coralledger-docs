@@ -43,15 +43,14 @@ The screen presents up to four questions, shown in sequence. Later questions app
 
 ### Question 3 — Carve-Out Check
 
-If either Question 1 or Question 2 results indicate a potential carve-out scenario (for example, a nil return or an amended return within the correction window), a third question is shown:
+If either Question 1 or Question 2 results indicate a potential carve-out scenario, a third question is shown:
 
 > **Does any of the following apply to this return?**
 
-- This is a nil return (no taxable supplies or acquisitions in the period)
-- This is an amendment to a previously submitted return
-- This return is filed under a Comptroller-approved filing arrangement
+- The return includes real-estate developer pre-sale deposits
+- The return involves a continuous supply that spans a VAT rate change
 
-A **Yes** answer routes the filer to the [Carve-Outs](/docs/attestation/carve-outs) page for further guidance. A **No** answer continues the standard pathway.
+A **Yes** answer routes the filer to the [Carve-Outs](/docs/attestation/carve-outs) refusal guidance and blocks the standard pathway. A **No** answer continues the standard pathway.
 
 ## What Happens After Qualification
 

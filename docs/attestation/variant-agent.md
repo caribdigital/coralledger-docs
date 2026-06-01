@@ -32,7 +32,7 @@ If the agent has not been formally added to the business, they cannot select thi
 
 When this variant is active, the following declaration is presented:
 
-> *I declare that I am an authorized agent of the registered person named in this return, that I have been duly authorized to prepare and file this VAT return on their behalf, and that the information provided is, to the best of my knowledge and belief, true, correct, and complete. I understand that as agent I share responsibility for the accuracy of this return and that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/).*
+> *I declare that I am an authorized agent of the registered person named in this return, that I have been duly authorized to prepare and file this VAT return on their behalf, and that the information provided is, to the best of my knowledge and belief, true, correct, and complete. I understand that as agent I share responsibility for the accuracy of this return and that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/). I further acknowledge that, for **[Client Name]**, [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61 exposes this return to penalties of up to 200% of any understated or over-claimed VAT if the return is materially incorrect.*
 
 The agent must confirm this declaration by:
 

@@ -1,12 +1,12 @@
 ---
 sidebar_position: 4
 title: 2025 VAT Reforms
-description: Understanding the July 2025 VAT reform changes
+description: Understanding the staged 2025-2026 VAT reform changes
 ---
 
 # 2025 VAT Reforms
 
-The Bahamas implemented significant VAT reforms effective July 2025. CoralLedger Comply fully supports these changes.
+The Bahamas implemented significant VAT reforms on staged commencement dates across 2025 and 2026. CoralLedger Comply fully supports these changes.
 
 ## Key Changes
 
@@ -62,7 +62,7 @@ To claim a VAT refund, at least 50% of your taxable supplies must be zero-rated.
 
 Access at **Compliance > Refund Eligibility**.
 
-### Food Store Qualification (April 2025)
+### Food Store Qualification (April 1, 2025)
 
 Licensed food stores have specific VAT treatment:
 
@@ -153,9 +153,9 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 
 ### Important Dates
 
-- **January 2025** - 2025 VAT reforms enacted
-- **April 2025** - Food store qualification rules effective
-- **July 2025** - Four-category VAT framework fully effective
+- **April 1, 2025** - Food store qualification rules effective
+- **July 1, 2025** - Four-category VAT framework fully effective
+- **September 1, 2025** - 5% reduced rate narrows to hygiene products and medications at licensed food stores
 - **April 1, 2026** - Unprepared food at licensed food stores moves to VAT Exempt; 5% rate narrows to hygiene/medication only (see [Rate Transition Handling](/docs/compliance/rate-transitions))
 
 ## Need Help?

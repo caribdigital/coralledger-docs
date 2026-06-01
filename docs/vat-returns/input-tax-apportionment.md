@@ -12,7 +12,7 @@ CoralLedger Comply calculates apportionment using the taxable/exempt supply rati
 
 ## Why Apportionment Is Required
 
-Under [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44, input tax credit is only available for VAT incurred in making **taxable** supplies. Businesses that also make exempt supplies must restrict their input tax claim to the portion that relates to taxable activity.
+Under [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44, input tax credit is only available for VAT incurred in making **taxable** supplies. For this purpose, standard-rated, reduced-rated, and zero-rated supplies are all taxable supplies; exempt supplies are not. Businesses that also make exempt supplies must restrict their input tax claim to the portion that relates to taxable activity.
 
 Examples of businesses affected:
 
@@ -20,7 +20,7 @@ Examples of businesses affected:
 - Mixed-use property businesses (residential = exempt; commercial = taxable)
 - Insurance providers with taxable ancillary services
 
-If your business makes **only** taxable (or zero-rated) supplies, apportionment does not apply and all input VAT is fully recoverable.
+If your business makes **only** taxable supplies — whether standard-rated, reduced-rated, or zero-rated — apportionment does not apply and all input VAT is fully recoverable.
 
 ## The Apportionment Formula
 
