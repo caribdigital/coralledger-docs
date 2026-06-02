@@ -43,6 +43,8 @@ If you have VAT payable:
 - **Bank Transfer** - To the Comptroller's account
 - **Cheque** - At DIR offices
 
+After you pay, return to Comply and [record the payment](/docs/vat-returns/record-dir-acknowledgement#recording-payment) so the return can advance from **Lodged** to **Lodged & Paid**.
+
 :::warning Late Filing Penalties
 Returns filed after the deadline (21 days for standard taxpayers; 14 days for large taxpayers with annual turnover ≥ $5M) may incur penalties and interest.
 :::

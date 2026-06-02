@@ -51,7 +51,7 @@ Comply tracks every VAT return through a structured eight-state lifecycle. Each 
 | **Ready to File** | Ready to File | All validations passed and the Section 61 acknowledgement + signatory have been captured. The return is locked from edits |
 | **Filing in Progress** | Filing in Progress | Artifacts (PDF / XML / Excel / Form 301) are being generated. Brief — usually seconds |
 | **Awaiting Lodgement** | Awaiting Lodgement | Artifacts are ready. You now submit externally to the DIR via OTAS / a DIR office / an authorised agent, then return to Comply to record the lodgement |
-| **Lodged** | Lodged | You have recorded the DIR lodgement using **Record DIR Acknowledgement**. The `RETURN_LODGED_WITH_DIR` audit entry has been written. Payable returns wait here until payment is recorded |
+| **Lodged** | Lodged | You have recorded the DIR lodgement using **[Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement)**. The `RETURN_LODGED_WITH_DIR` audit entry has been written. From here, you either retract (`Lodged` → `Awaiting Lodgement`, `RETURN_LODGEMENT_RETRACTED`) or record payment (`Lodged` → `Lodged & Paid`, `PAYMENT_RECORDED`) |
 | **Lodged & Paid** | Lodged & Paid | Final state for payable returns once cumulative payments cover the net VAT due. Credit/zero returns reach this state automatically immediately after Lodged |
 | **Amendment Draft** | Amendment Draft | A correction to a previously-lodged return is being composed. When lodged, the amendment goes through the same lifecycle and ends at Lodged / Lodged & Paid — there is no separate "Amended" final state |
 | **Disputed** | Disputed | A previously-lodged return is under DIR dispute. Used when the DIR challenges the return; tracking-only state |

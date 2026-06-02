@@ -112,6 +112,13 @@ When the cumulative total catches up with Net VAT due, Comply transitions the re
 
 Credit and zero-balance returns reach `Lodged & Paid` automatically via the VR-STATE-001 auto-advance immediately after `RETURN_LODGED_WITH_DIR`. There is no payment to record because none is due (a credit return means the DIR owes you; recording the DIR refund when it arrives is a separate workflow tracked outside this dialog).
 
+## Post-lodgement actions (state transitions)
+
+| Action | Transition | Key rule | Audit trail marker |
+|---|---|---|---|
+| **Retract lodgement** | `Lodged` → `Awaiting Lodgement` | Max **3 retracts per rolling 24 hours** per return; reason is mandatory | `RETURN_LODGEMENT_RETRACTED` |
+| **Record payment** | `Lodged` → `Lodged & Paid` (when cumulative paid ≥ Net VAT due) | Only for payable returns (`NetVATDue > 0`); partial payments are allowed | `PAYMENT_RECORDED` |
+
 ## What you'll see on the View Filed Return page
 
 Once you have recorded lodgement, the return becomes read-only and is visible at `/vatreturns/{Id}/view`. The DIR Lodgement Details card on that page surfaces:
