@@ -6,7 +6,7 @@ description: VAT record retention obligations and platform enforcement controls
 
 # Record Keeping and Retention
 
-Statutory Basis: VAT Act Part X, §§79–80
+Statutory Basis: [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), Part X, §§79–80
 
 ## What statute says
 

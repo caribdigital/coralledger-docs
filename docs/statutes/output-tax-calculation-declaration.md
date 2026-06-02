@@ -6,7 +6,7 @@ description: Output VAT computation duties and return declaration workflow
 
 # Output Tax Calculation and Declaration
 
-Statutory Basis: VAT Act §10
+Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 10
 
 ## What statute says
 

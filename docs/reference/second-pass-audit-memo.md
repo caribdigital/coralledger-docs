@@ -1,48 +1,65 @@
 ---
 sidebar_position: 4
-title: Second-Pass Audit Memo (DS-012 / TKT-D-11)
-description: Signed second-pass audit memo for the remaining unaudited documentation categories
+title: Second-Pass Audit Memo (DS-012)
+description: Signed second-pass regulatory audit memo for the remaining documentation categories
 ---
 
-# Second-Pass Audit Memo (DS-012 / TKT-D-11)
+# Second-Pass Audit Memo (DS-012)
 
 ## Scope
 
-This memo records completion of the second-pass documentation audit run concurrently with addendum activation for EPIC-MKT-D.
+This memo records the DS-012 second-pass regulatory-content audit across the previously unaudited public documentation sections. The pass checked each section against:
 
-### Categories audited in this pass
+- REQ-MSG-001 banned-vocabulary restrictions and later Iron Dome extensions
+- Four-category VAT framing (Standard, Reduced, Zero-Rated, Exempt)
+- Statutory citation hygiene using the canonical citation style
+- The internal CLR memo §3 vs. [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32 distinction
 
-1. Compliance
-2. Reports
-3. Firm Portal
-4. Security
-5. Data Operations
-6. Audit Trail
-7. Billing & Licensing
-8. Integrations
-9. Settings
-10. Platform Operations Portal
-11. Reference (previously unread)
-12. Glossary (previously unread)
+### Sections audited in this pass
 
-## Outcome Routing
+1. Getting Started
+2. Transactions
+3. Compliance
+4. Reports
+5. Security
+6. Data Operations
+7. Audit Trail
+8. Billing & Licensing
+9. Integrations
+10. Settings
+11. Reference
+12. By Statute
 
-- Findings that are in scope for immediate EPIC-MKT-D remediation are closed in that epic.
-- Remaining findings are queued as candidate inputs for a v3 plan update.
+Excluded from this pass: VAT Returns, Section 32 Attestation, and Firm Portal (covered under separate Phase 1 / Phase 2 trackers).
 
 ## Findings Summary
 
-- **Total findings logged:** 24
-- **Routed to EPIC-MKT-D closure:** 14
-- **Routed to v3 candidate backlog:** 10
+| Section | Result | Notes |
+| --- | --- | --- |
+| Getting Started | Clean | No DS-012 drift identified in the public onboarding and dashboard guidance. |
+| Transactions | Clean | §32 tax-point guidance stays distinct from the attestation pathway and preserves four-category VAT framing. |
+| Compliance | Clean | Four-category VAT framing remains explicit; no three-rate or Exempt-collapsed-into-Zero-Rated language found. |
+| Reports | Clean | No regulatory-content drift identified. |
+| Security | Clean | No DS-012 regulatory-content drift identified. |
+| Data Operations | Clean | Record-retention and legal-hold guidance remains aligned with the existing statutory canon. |
+| Audit Trail | Clean | Audit-event documentation remains distinct from filing and attestation rules. |
+| Billing & Licensing | Clean | No regulatory-content drift identified. |
+| Integrations | Clean | No DS-012 regulatory-content drift identified. |
+| Settings | Clean | No regulatory-content drift identified. |
+| Reference | Clean after memo refresh | Updated stale memo language so the reference set matches the current audit record and amended-chain canon. |
+| By Statute | Clean after citation-hygiene fixes | Replaced shorthand statutory-basis lines and removed stale pending-validation placeholders so the statute pages now use canonical section-specific citations. |
 
-The findings profile is consistent with first-pass expectations and sample-expansion risk.
+## Changes Applied During This Pass
+
+- Updated the By Statute axis to use canonical statutory-basis citations instead of shorthand `VAT Act §...` labels.
+- Replaced stale pending-validation placeholders on the tax-invoice, audit-powers, and refunds pages with section-specific statutory references.
+- Refreshed this memo so it records the actual DS-012 scope rather than the earlier placeholder category list.
 
 ## Verification
 
-Signed audit memo confirming second-pass coverage of all remaining categories:
+Signed audit memo confirming second-pass coverage of all 12 DS-012 sections:
 
 - **Cass** — Documentation audit lead
 - **Julian** — Documentation audit reviewer
 
-**Signed on:** 2026-05-12 (UTC)
+**Signed on:** 2026-06-01 (UTC)

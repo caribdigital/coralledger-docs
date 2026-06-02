@@ -6,7 +6,7 @@ description: Conditions for input VAT recovery and evidence requirements
 
 # Input Tax Deduction Eligibility
 
-Statutory Basis: VAT Act §22
+Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 22
 
 ## What statute says
 

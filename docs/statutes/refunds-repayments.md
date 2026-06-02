@@ -6,15 +6,11 @@ description: Refund eligibility, carry-forward treatment, and repayment obligati
 
 # Refunds and Repayments
 
-Statutory Basis: VAT Act §TBD (pending validation)
+Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2025)](https://laws.bahamas.gov.bs/), s. 56 and s. 56A
 
 ## What statute says
 
-The [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) permits refunds when input VAT exceeds output VAT and statutory eligibility conditions are satisfied. Where conditions are not met, excess input VAT is usually carried forward to future periods rather than immediately repaid. The April 2026 unprepared-food provision (per [VAT (Amendment) (No. 2) Act, 2025](https://laws.bahamas.gov.bs/), s. 2) added new refund-eligibility logic for affected sellers.
-
-:::note Section number pending validation
-The specific sections governing refund eligibility and repayment obligations under the principal Act are pending PO/Julian validation under issue #110. This page will be updated once the authoritative sections are confirmed.
-:::
+[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2025)](https://laws.bahamas.gov.bs/), s. 56 governs the carry-forward and refund treatment for excess credits, and s. 56A governs repayment of overpaid tax. Where refund conditions are not met, excess input VAT is usually carried forward to future periods rather than immediately repaid. The April 2026 unprepared-food provision (per [VAT (Amendment) (No. 2) Act, 2025](https://laws.bahamas.gov.bs/), s. 2) added new refund-eligibility logic for affected sellers.
 
 If a prior relief or refund position changes (for example, later payment on a written-off debt), businesses may need to repay or reverse the benefit in a subsequent return.
 

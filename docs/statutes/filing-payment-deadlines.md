@@ -6,7 +6,7 @@ description: Return filing deadlines, payment timing, and late-risk controls
 
 # Filing and Payment Deadlines
 
-Statutory Basis: VAT Act §47(1)(a), §46
+Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 47(1)(a) and s. 46
 
 ## What statute says
 

@@ -6,7 +6,7 @@ description: VAT registration threshold obligations and how CoralLedger Comply s
 
 # Registration Obligation and Threshold
 
-Statutory Basis: VAT Act §19, §31
+Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 19 and s. 31
 
 ## What statute says
 
