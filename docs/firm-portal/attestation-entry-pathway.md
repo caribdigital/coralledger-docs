@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Section 32 Attestation Entry Pathway
 description: The firm-side three-stage pathway that produces an Active §32 attestation for a restricted-segment client
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 title: Firm Analytics
 description: Cross-client analytics and per-staff productivity metrics surfaced by the Multi-Client Report and Staff Productivity dashboards
 ---
