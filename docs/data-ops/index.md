@@ -21,7 +21,7 @@ Files and tombstone records can be placed under a legal hold to prevent deletion
 [Learn more about legal holds](/docs/data-ops/legal-holds)
 
 ### Retention Monitoring
-Per-business retention policies are enforced on a scheduled run. The system defaults to the 7-year minimum required by [Value Added Tax Act, 2014, s. 26](https://laws.bahamas.gov.bs/). Operators can preview enforcement and review detected policy violations before taking action.
+Per-business retention policies are enforced on a scheduled run. The system defaults to **7 years** (5-year statutory minimum under [Value Added Tax Act, 2014, Part X §79–80](https://laws.bahamas.gov.bs/), extended by CoralLedger policy). Operators can preview enforcement and review detected policy violations before taking action.
 
 [Learn more about retention monitoring](/docs/data-ops/retention-monitoring)
 

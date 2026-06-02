@@ -76,4 +76,4 @@ Platform operators can access a unified view of audit activity across all busine
 - [Platform Ops event types](/docs/audit/platform-ops-events)
 - [Cross-Tenant Audit Viewer](/docs/audit/cross-tenant-audit-viewer)
 - [Security overview](/docs/security)
-- [Data retention policy](/docs/billing)
+- [Retention monitoring](/docs/data-ops/retention-monitoring)
