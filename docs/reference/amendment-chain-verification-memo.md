@@ -1,10 +1,10 @@
 ---
 sidebar_position: 5
-title: JR-008 — Amendment Chain Verification Memo
-description: CCO sign-off memo verifying amendment chains for §26, §41(3), §44, §50, §60, §61 (DDS-005 follow-up)
+title: Amendment Chain Verification Memo
+description: In-house verbatim verification of amendment chains for §26, §41(3), §44, §50, §60, §61 (DDS-005 follow-up). Independent third-party review pending.
 ---
 
-# JR-008 — Amendment Chain Verification Memo (DDS-005 Follow-up)
+# Amendment Chain Verification Memo (DDS-005 Follow-up)
 
 :::warning §50 row SUPERSEDED 2026-05-31
 The `§50 | Retention period (seven years)` row in the scope table below was superseded on 2026-05-31. A source-verification of the Value Added Tax Act, 2014 (consolidated, reprinted 1 July 2024) established that **§50 is "Rules relating to a claim for input tax deduction"** and has no bearing on record retention. The canonical retention authority is **Part X, §§79–80** — §79(2) sets the 5-year statutory minimum that CoralLedger Comply extends to 7 years. Findings 2 and 3 of this memo are accurate **for the other sections covered** (§26, §41(3), §44, §60, §61), pending a separate source re-verification of §26 and §41(3) that has been scheduled. See [`CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md`](https://github.com/caribdigital/coralledgercomply/blob/master/tasks/comply/CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md) for the verification bundle.
@@ -88,9 +88,8 @@ The following sections remain cited under the 2021 chain because they were subst
 
 ## Verification
 
-Sign-off confirming the research basis, the findings, and the documentation changes described in this memo:
+This memo documents a verbatim section-by-section comparison of the VAT Act 2014 baseline against the gazetted Amendment Acts (2014–2026). The methodology is **design-against-statute**: each amendment chain entry references the exact section reference (e.g. §6(1)(c), §32(17)) and the enacting instrument, read directly from the gazetted PDFs in the project knowledge base.
 
-- **Julian Rolle** (Chief Compliance Officer) — Section-by-section amendment chain review
-- **Cass** (Documentation Lead) — Documentation update execution
+**Independent third-party review** by a credentialed Bahamian VAT practitioner is being arranged. Until that review completes and the reviewer's sign-off is published here, the position stated in this memo represents an in-house verbatim mapping against the gazetted text — not an independent professional opinion.
 
-**Signed on:** 2026-05-12 (UTC)
+**In-house mapping last updated:** 2026-06-06 (UTC)
