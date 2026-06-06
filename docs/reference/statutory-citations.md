@@ -44,11 +44,11 @@ When citing a record-keeping or accounts provision (Part X, §§79–80) or any 
 ## Amendment Chain Rules
 
 - Omit the amendment chain when citing a section that has not been amended since the original Act: `[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 26`.
-- Use the **2021 chain** when citing a provision whose substance was changed by the VAT (Amendment) (No. 2) Act, 2021 (e.g., provisions updated as part of the rate reduction to 10% or the redefined international-service definitions). Verified under JR-008.
-- Use the **2025 chain** when citing provisions introduced or updated by the VAT (Amendment) (No. 2) Act, 2025 (for example, the licensed food-store reduced-rate provision under JR-007).
+- Use the **2021 chain** when citing a provision whose substance was changed by the VAT (Amendment) (No. 2) Act, 2021 (e.g., provisions updated as part of the rate reduction to 10% or the redefined international-service definitions).
+- Use the **2025 chain** when citing provisions introduced or updated by the VAT (Amendment) (No. 2) Act, 2025 (for example, the licensed food-store reduced-rate provision).
 - If more than one amending Act is material to the cited provision, list each in chronological order using `and`.
 
-### Sections verified as unamended since 2014 (JR-008)
+### Sections verified as unamended since 2014
 
 The following sections were confirmed as unamended since the original Value Added Tax Act, 2014, and must **not** carry any amendment-chain qualifier:
 
@@ -62,7 +62,7 @@ The following sections were confirmed as unamended since the original Value Adde
 | s. 61 | Penalties |
 
 :::warning Citation re-verification in progress
-The `s. 26` and `s. 41(3)` entries above are carried forward from JR-008 (May 2026) but have **not** been re-verified at source. The `s. 50` citation that appeared in this table was verified at source on 2026-05-31 and found to be incorrect: §50 of the VAT Act 2014 is "Rules relating to a claim for input tax deduction", not the retention period. The canonical retention authority is **Part X, §§79–80** (§79(2) sets the 5-year statutory minimum). A follow-up verification of §26 and §41(3) is scheduled — both may need similar correction.
+The `s. 26` and `s. 41(3)` entries above are carried forward from an earlier in-house verification (May 2026) but have **not** been re-verified at source. The `s. 50` citation that appeared in this table was verified at source on 2026-05-31 and found to be incorrect: §50 of the VAT Act 2014 is "Rules relating to a claim for input tax deduction", not the retention period. The canonical retention authority is **Part X, §§79–80** (§79(2) sets the 5-year statutory minimum). A follow-up verification of §26 and §41(3) is scheduled — both may need similar correction.
 :::
 
 Canonical amendment-chain examples:
