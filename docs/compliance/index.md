@@ -10,9 +10,10 @@ CoralLedger Comply helps you maintain VAT compliance with real-time monitoring, 
 
 ## Why Compliance Matters
 
-Non-compliance with Bahamas VAT regulations can result in:
-- **Penalties** - Up to 200% of unpaid VAT ([Value Added Tax Act, 2014, s. 61](https://laws.bahamas.gov.bs/))
-- **Interest** - 5% monthly on late payments
+Non-compliance with Bahamian VAT regulations can result in:
+- **Late-filing fine** - The greater of $100 or 2% of the tax payable ([Value Added Tax Act, 2014, s. 47A(3)(a)](https://laws.bahamas.gov.bs/))
+- **Late-payment fine** - 10% of the tax owed ([s. 47A(3)(b)](https://laws.bahamas.gov.bs/))
+- **Interest** - On outstanding tax at the Central Bank of The Bahamas prime lending rate plus 1% ([s. 47A(4)](https://laws.bahamas.gov.bs/))
 - **Audits** - Increased scrutiny from DIR
 - **License Issues** - Business license complications
 
@@ -45,7 +46,7 @@ Our system flags potential issues:
 Dedicated dashboards for new regulations:
 - **Construction VAT** - $1M threshold tracking
 - **Refund Eligibility** - 50% zero-rated rule monitoring
-- **Bad Debt Relief** - 12-month debt tracking
+- **Bad Debt Relief** - write-off relief tracking (VAT Act s. 53(3))
 - **Tax Savings** - Recovery opportunity detection
 
 ### Alerts

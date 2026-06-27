@@ -10,6 +10,15 @@ description: In-house verbatim verification of amendment chains for §26, §41(3
 The `§50 | Retention period (seven years)` row in the scope table below was superseded on 2026-05-31. A source-verification of the Value Added Tax Act, 2014 (consolidated, reprinted 1 July 2024) established that **§50 is "Rules relating to a claim for input tax deduction"** and has no bearing on record retention. The canonical retention authority is **Part X, §§79–80** — §79(2) sets the 5-year statutory minimum that CoralLedger Comply extends to 7 years. Findings 2 and 3 of this memo are accurate **for the other sections covered** (§26, §41(3), §44, §60, §61), pending a separate source re-verification of §26 and §41(3) that has been scheduled. See [`CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md`](https://github.com/caribdigital/coralledgercomply/blob/master/tasks/comply/CASS-VAT-ACT-RETENTION-VERIFICATION-2026-05-31.md) for the verification bundle.
 :::
 
+:::warning §61 and §20 entries SUPERSEDED (June 2026 Cass + Julian canon)
+Two further entries in this memo have been superseded by the Cass + Julian verbatim reads of June 2026, which are now the source-of-truth in the Comply codebase:
+
+- **§61 is NOT a penalty section.** It is *"Assessment as evidence in proceedings"*. The "Penalties (up to 200% of unpaid VAT)" description in the scope table below is wrong and has been stripped from the documentation. The late-filing/late-payment fines and interest are set out in **§47A** — late filing: greater of $100 or 2% of tax payable; late payment: 10% of tax owed; interest: prime + 1%.
+- **Bad-debt relief is §53, not §20.** §20 is *Voluntary Registration*. Relief arises on the write-off date under **§53(3)**; there is no 12-month statutory trigger. Finding 1 below (which concluded §20 was correct) is superseded.
+
+These corrections post-date the in-house mapping recorded below.
+:::
+
 ## Scope
 
 This memo records the validation of per-section amendment chains for the Bahamas Value Added Tax Act citations used throughout CoralLedger Comply documentation, as required by issue DDS-005 (PR #104 follow-up).
@@ -24,7 +33,7 @@ The following sections were reviewed:
 | §44 | Partial exemption and input-tax apportionment | vat-returns/input-tax-apportionment.md, statutes/partial-exemption-apportionment.md |
 | ~~§50~~ → Part X, §§79–80 | Record-keeping and accounts (5-year statutory minimum in §79(2); 7-year CoralLedger Comply policy). Corrected 2026-05-31 — original `§50` citation in this memo was wrong; §50 is input-tax-deduction allowability. | audit/index.md, billing/index.md, billing/licensing.md, ops-portal/data-ops.md, settings/account.md, transactions/archived-records.md, statutory-citations.md, security/index.mdx, attestation/audit-trail.md |
 | §60 | Late-payment interest rate | statutes/assessments-interest-penalties.md |
-| §61 | Penalties (up to 200% of unpaid VAT) | compliance/intelligence-dashboard.md, security/index.mdx, statutory-citations.md, statutes/assessments-interest-penalties.md |
+| §61 → ~~Penalties (up to 200%)~~ | **Assessment as evidence in proceedings** (NOT a penalty section). Corrected June 2026 — fines/interest for late filing/payment are §47A; the "up to 200%" figure was a fabrication and has been stripped. | compliance/intelligence-dashboard.md, security/index.mdx, statutory-citations.md, statutes/assessments-interest-penalties.md |
 
 ## Research Basis
 
@@ -47,6 +56,8 @@ Neither the 2021 nor the 2025 amendment Acts amended sections 26, 41(3), 44, 50,
 ## Findings
 
 ### Finding 1: §29 is not the bad-debt-relief section
+
+> **Superseded (June 2026):** this finding concluded that §20 was the correct bad-debt-relief section. That is wrong. Bad-debt relief is **§53** (post-supply adjustment due to bad debt); relief arises on the write-off date under **§53(3)**. §20 is *Voluntary Registration*. The documentation now cites §53(3) throughout. The original finding text is retained below for history.
 
 The issue tracking table referenced "§29" as cited in `compliance/bad-debt-relief.md`. On review, that file correctly cites **§20** (the four-criteria bad-debt-relief test), not §29. No citation of §29 was found in any file at the time of this review. §20 is the correct section for bad debt relief and retains the 2021 amendment chain pending separate validation of whether the 2021 Act changed §20.
 

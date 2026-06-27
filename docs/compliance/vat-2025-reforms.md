@@ -27,16 +27,15 @@ From April 1, 2026, unprepared food at licensed food stores moved to **Exempt** 
 
 ### Construction VAT Restrictions
 
-New rules for construction projects exceeding $1 million:
+[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 50 restricts input-VAT recovery on major construction projects.
 
-**What Changed:**
-- Input VAT on construction materials may be restricted
-- Developer exemptions have specific qualification criteria
-- Project value tracking is now required
+**What the rule does:**
+- Under **s. 50(1A)**, input VAT on a major construction project is **prohibited** from being claimed where the project meets a qualifying limb — the principal limb being a project cost **strictly greater than $1,000,000**. Other qualifying limbs include substantial renovation and waterfront works (docks, marinas, and similar).
+- Under **s. 50(1B)**, an **ordinary-course-supplier carve-out** applies, and the Comptroller may prescribe further exceptions.
 
 **How Comply Helps:**
-- Track project values against the $1M threshold
-- Monitor input VAT restrictions with period-based tracking
+- Track project values against the $1M threshold (strictly greater than $1,000,000)
+- Apply the s. 50(1A) restriction and the s. 50(1B) carve-out from a single source of truth
 - Generate compliance reports for construction projects
 
 Access the Construction VAT dashboard at **Compliance > Construction VAT**.
@@ -108,15 +107,17 @@ Because no input tax credit is available on exempt supplies, food stores that no
 - Apportionment ratio calculation and monitoring
 - Alerts when exempt supply proportion increases your non-recoverable input VAT exposure
 
-### Bad Debt Relief (12-Month Rule)
+### Bad Debt Relief
 
-Claim relief on bad debts after 12 months. See the [Bad Debt Relief](/docs/compliance/bad-debt-relief) page for the full workflow.
+Claim relief on bad debts you have written off in your accounts (VAT Act s. 53(3)). See the [Bad Debt Relief](/docs/compliance/bad-debt-relief) page for the full workflow.
 
 **Eligibility:**
-- Debt must be at least 12 months overdue
-- VAT was originally paid to the government
+- The debt is **written off** in your books — the event that makes relief available under s. 53(3)
+- VAT was originally paid to the government on the supply
 - Reasonable collection efforts were made
-- Debt is written off in your books
+- No payment has been received against the unpaid amount
+
+Comply surfaces debts more than 12 months outstanding as candidates to review — a prompt, not the statutory trigger.
 
 **How to Claim:**
 1. Go to **Compliance > Bad Debt**
@@ -137,7 +138,7 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 |-----------|----------|---------|
 | Construction VAT | Compliance > Construction VAT | $1M threshold tracking |
 | Refund Eligibility | Compliance > Refund Eligibility | 50% rule monitoring |
-| Bad Debt Relief | Compliance > Bad Debt | 12-month tracking |
+| Bad Debt Relief | Compliance > Bad Debt | Write-off relief tracking |
 | Tax Savings | Compliance > Tax Savings | Recovery opportunities |
 | Apportionment | Compliance > Apportionment | Exempt vs taxable supply ratio and input VAT recovery |
 

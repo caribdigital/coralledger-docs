@@ -54,17 +54,17 @@ Each operation writes a corresponding audit event (`ATTESTATION_CREATED`, `ATTES
 
 ### Attestation bodies — Variants A / B / C and their combinations
 
-Within the firm-admin lifecycle, a BICA-licensed practitioner attests under one of seven `AttestationVariant` bodies. These codes are the statutory body identifiers used by the §32 workflow — not informal practice-area labels:
+Within the firm-admin lifecycle, a BICA-licensed practitioner attests under one of seven `AttestationVariant` bodies. Each variant is a **practice-area declaration** — what the practitioner is attesting to for the client — made under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) and applicable BICA professional standards:
 
-| Code | Statutory scenario covered |
+| Code | Declaration scope |
 |---|---|
-| **Variant A** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(2) — continuous supply |
-| **Variant B** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(3) — advance payment |
-| **Variant C** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32 read with s. 52 — retention |
-| **Variant A+B** | Continuous supply + advance payment |
-| **Variant A+C** | Continuous supply + retention |
-| **Variant B+C** | Advance payment + retention |
-| **Variant A+B+C** | Combined body covering all three statutory scenarios |
+| **Variant A** | **General VAT Compliance Attestation** — the business is in compliance with its general VAT obligations |
+| **Variant B** | **VAT Return Preparation Attestation** — the practitioner prepared or reviewed the VAT return(s) for the period(s) stated |
+| **Variant C** | **VAT Advisory Services Attestation** — VAT advisory services were rendered in accordance with BICA professional standards |
+| **Variant A+B** | General compliance + return preparation |
+| **Variant A+C** | General compliance + advisory services |
+| **Variant B+C** | Return preparation + advisory services |
+| **Variant A+B+C** | Full-scope declaration covering all three practice areas |
 
 Variants A, B, C, and A+B+C have ratified declaration bodies; the remaining three combinations (A+B, A+C, B+C) carry placeholder body text and require the practitioner to select one of the four ratified variants until ratification of the combinations is complete.
 

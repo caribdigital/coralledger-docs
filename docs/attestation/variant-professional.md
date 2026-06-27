@@ -8,7 +8,7 @@ description: Section 32 attestation for BICA-registered accountants preparing VA
 
 The Professional Accountant Variant applies when a **BICA-registered accountant** prepares and files a VAT return on behalf of a client. This variant corresponds to the `SignatoryCapacity.BicaLicensedPractitioner` enum value in the platform, and includes an additional verification step — [BICA Verification](/docs/attestation/bica-verification) — to confirm that the accountant's professional registration is current at the time of filing.
 
-Within this signatory capacity, the practitioner additionally selects one of seven **`AttestationVariant`** bodies that identify the statutory §32 scenario being attested. See [Statutory Attestation Body Selection](#statutory-attestation-body-selection) below.
+Within this signatory capacity, the practitioner additionally selects one of seven **`AttestationVariant`** bodies that identify the practice-area scope being attested. See [Attestation Body Selection](#attestation-body-selection) below.
 
 ## Who Uses This Variant
 
@@ -16,21 +16,21 @@ This variant is presented when the [Qualifying Screen](/docs/attestation/qualify
 
 BICA stands for the **Bahamas Institute of Chartered Accountants**. Members are bound by BICA's Code of Professional Conduct, which includes obligations around accuracy, integrity, and due diligence in tax return preparation.
 
-## Statutory Attestation Body Selection
+## Attestation Body Selection {#attestation-body-selection}
 
-A BICA practitioner attests under one of seven attestation bodies (`AttestationVariant` in the platform). These codes are statutory body identifiers — not practice-area labels:
+A BICA practitioner attests under one of seven attestation bodies (`AttestationVariant` in the platform). Each body is a **practice-area declaration** of what the practitioner is attesting to, made under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) and applicable BICA professional standards:
 
-| Code | Statutory scenario covered |
+| Code | Declaration scope |
 |---|---|
-| **Variant A** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(2) — continuous supply |
-| **Variant B** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(3) — advance payment |
-| **Variant C** | [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32 read with s. 52 — retention |
-| **Variant A+B** | Continuous supply + advance payment |
-| **Variant A+C** | Continuous supply + retention |
-| **Variant B+C** | Advance payment + retention |
-| **Variant A+B+C** | Combined body covering all three statutory scenarios |
+| **Variant A** | **General VAT Compliance Attestation** — the business is in compliance with its general VAT obligations |
+| **Variant B** | **VAT Return Preparation Attestation** — the practitioner prepared or reviewed the VAT return(s) for the period(s) stated |
+| **Variant C** | **VAT Advisory Services Attestation** — VAT advisory services were rendered in accordance with BICA professional standards |
+| **Variant A+B** | General compliance + return preparation |
+| **Variant A+C** | General compliance + advisory services |
+| **Variant B+C** | Return preparation + advisory services |
+| **Variant A+B+C** | Full-scope declaration covering all three practice areas |
 
-The practitioner selects the variant whose statutory scenario accurately reflects the client's filing facts. The declaration text shown at submission time is determined by the selected variant body. Variants A, B, C, and A+B+C have ratified declaration bodies; the remaining combinations (A+B, A+C, B+C) carry placeholder body text and require selection of one of the four ratified variants until ratification is complete.
+The practitioner selects the variant whose scope accurately reflects the services rendered for the client. The declaration text shown at submission time is determined by the selected variant body. Variants A, B, C, and A+B+C have ratified declaration bodies; the remaining combinations (A+B, A+C, B+C) carry placeholder body text and require selection of one of the four ratified variants until ratification is complete.
 
 ## BICA Verification Requirement
 
@@ -46,9 +46,9 @@ See [BICA Verification](/docs/attestation/bica-verification) for full details on
 
 Once BICA Verification passes, the following declaration is presented:
 
-> *I declare that I am a member in good standing of the Bahamas Institute of Chartered Accountants (BICA Membership No: [XXXX]), that I have prepared this VAT return in my professional capacity on behalf of the registered person named herein, and that the information provided is, to the best of my professional knowledge and belief, true, correct, and complete. I acknowledge my professional obligations under BICA's Code of Professional Conduct and understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/). I further acknowledge that, for **[Client Name]**, [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61 exposes this return to penalties of up to 200% of any understated or over-claimed VAT if the return is materially incorrect.*
+> *I declare that I am a member in good standing of the Bahamas Institute of Chartered Accountants (BICA Membership No: [XXXX]), that I have prepared this VAT return in my professional capacity on behalf of the registered person named herein, and that the information provided is, to the best of my professional knowledge and belief, true, correct, and complete. I acknowledge my professional obligations under BICA's Code of Professional Conduct and understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/).*
 
-The exact declaration body presented depends on the selected `AttestationVariant` (A, B, C, A+B+C, etc.). See [Statutory Attestation Body Selection](#statutory-attestation-body-selection) above.
+The exact declaration body presented depends on the selected `AttestationVariant` (A, B, C, A+B+C, etc.). See [Attestation Body Selection](#attestation-body-selection) above.
 
 The accountant must confirm this declaration by:
 
@@ -86,7 +86,7 @@ The Professional Accountant Variant carries an explicit professional liability a
 - They have reviewed the underlying transactions and supporting records
 - They are not aware of any material misstatement or omission
 
-This does not transfer legal liability from the registrant to the accountant — under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32, the registrant remains ultimately responsible, while [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61 continues to govern penalty exposure on an incorrect return — but it does establish the accountant's professional accountability under BICA standards.
+This does not transfer legal liability from the registrant to the accountant — the registrant remains ultimately responsible for the accuracy of the return and for any resulting penalties, interest, and assessment exposure under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) — but it does establish the accountant's professional accountability under BICA standards.
 
 ## Next Steps
 

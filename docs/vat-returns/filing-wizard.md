@@ -26,23 +26,25 @@ After step 5 you are presented with a **Filing Artifacts Ready** success card �
 
 ## Step 4: Approval — Section 61 acknowledgement {#step-4-approval-section-61-acknowledgement}
 
-When you click **Approve** at step 4, Comply opens the Approve Filing dialog. The first panel is the Section 61 Penalty Acknowledgement.
+When you click **Approve** at step 4, Comply opens the Approve Filing dialog. The first panel is the Penalty Acknowledgement.
 
-The dialog quotes the relevant rule from the [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61, and tells you the **maximum penalty exposure for this specific return**:
+The dialog records your review of the penalty exposure that applies under the [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/) and your acceptance of responsibility for the accuracy of this return:
 
-> Under Bahamas VAT Act 2014, Section 61, the maximum penalty for an incorrect return is **up to 200% of the understated or over-claimed VAT** — **up to B$X on this return**.
+> Under the Value Added Tax Act, 2014, penalties for understatement or evasion apply. This acknowledgement records your review of that exposure and your acceptance of responsibility for the accuracy of this return.
 
-The dollar figure is calculated as `|Net VAT due| × 2`. The absolute value is used so credit and zero-balance returns also display a meaningful exposure (the figure represents what the penalty *could* be if the return were later found to be materially incorrect).
+You tick the acknowledgement checkbox — *"I have reviewed the penalty exposure under the VAT Act and accept responsibility for the accuracy of this return"* — to proceed. When you do, Comply writes an audit-ledger entry (event identifier `ACK_SECTION61`) **before** it transitions the return state. The entry is recorded with neutral wording — *"User acknowledged regulatory exposure under the VAT Act before filing return for [period]"*. This ordering matters — see [Audit-before-lock](#audit-before-lock).
 
-You must tick the acknowledgement checkbox to proceed. When you do, Comply writes an `ACK_SECTION61` audit-ledger entry **before** it transitions the return state. This ordering matters — see [Audit-before-lock](#audit-before-lock).
+:::note
+The dialog does **not** quote a specific penalty percentage or compute a dollar figure. Section 61 of the VAT Act is *"Assessment as evidence in proceedings"* — an evidentiary provision, **not** a penalty section — so no "% of unpaid VAT" multiplier is shown. The audit event retains the identifier `ACK_SECTION61` for continuity with the existing audit schema. The statutory fines for late filing and late payment are set out in s. 47A — see [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties).
+:::
 
 ## Step 4: Approval — Signatory capture {#step-4-approval-signatory-capture}
 
-Below the §61 panel is the Authorised Signatory panel. Comply captures three things:
+Below the acknowledgement panel is the Authorised Signatory panel. Comply captures three things:
 
 - **Full Name** — the natural-person name of the individual signing for this return, up to 200 characters.
 - **Capacity** — a drop-down listing the four [Signatory Capacities](#signatory-capacities) recognised by Bahamian VAT practice.
-- **"I confirm I am authorised…" checkbox** — a separate declaration distinct from the §61 acknowledgement.
+- **"I confirm I am authorised…" checkbox** — a separate declaration distinct from the penalty acknowledgement.
 
 When you click **Approve** to close the dialog, Comply writes a `RETURN_APPROVED_BY_SIGNATORY` audit-ledger entry capturing the name and capacity, then transitions the return state to **Ready to File**.
 
@@ -113,7 +115,7 @@ While the return sits in **Awaiting Lodgement**, no further audit-ledger writes 
 
 The five-step structure encodes three regulatory facts:
 
-1. **The §61 penalty is not a hidden term in a generic ToS** — Comply quotes the rule, calculates the specific dollar exposure, and asks for an explicit acknowledgement.
+1. **The penalty acknowledgement is not a hidden term in a generic ToS** — Comply surfaces the penalty exposure that applies under the VAT Act and asks for an explicit acknowledgement, recorded under the `ACK_SECTION61` audit event.
 2. **The signatory declaration is captured per-return**, with the name and capacity persisted to the audit ledger. There is no "signed once, applies forever" shortcut.
 3. **Comply does not file on your behalf with the DIR.** The artifacts-ready / submitted distinction is enforced in the UI wording so a reader cannot confuse the two.
 

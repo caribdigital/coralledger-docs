@@ -25,11 +25,11 @@ Example (s. 32 was substantively changed by the 2021 Act and is a canonical exam
 - [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 26
 - [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 44
 - [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), Part X, §§79–80
-- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 47A(3)(a)
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 47(1)(a)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32(2)
-- [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32(3)
-- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 61(c)
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(8)
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 32(11)
+- [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 53(3)
 
 ### Part-and-section citation format
 
@@ -39,7 +39,7 @@ When citing a record-keeping or accounts provision (Part X, §§79–80) or any 
 
 - Keep the same `s.` prefix, then append subsection/paragraph markers immediately after the section number: `s. 47(1)(a)`.
 - Do not add spaces inside subsection markers (`s. 32 (2)` is incorrect).
-- Use the exact nested level required by the source text (for example `s. 32(2)` vs `s. 32(3)`).
+- Use the exact nested level required by the source text (for example `s. 47A(3)(a)` vs `s. 47A(4)`).
 
 ## Amendment Chain Rules
 
@@ -58,8 +58,7 @@ The following sections were confirmed as unamended since the original Value Adde
 | s. 41(3) | Record-keeping requirements and good-faith reliance (citation pending re-verification) |
 | s. 44 | Partial exemption and input-tax apportionment |
 | Part X, §§79–80 | Record-keeping and accounts (5-year statutory retention floor in §79(2); record-types enumeration in §80) |
-| s. 60 | Late-payment interest rate |
-| s. 61 | Penalties |
+| s. 61 | Assessment as evidence in proceedings (**not** a penalty section — no "% of unpaid VAT" multiplier) |
 
 :::warning Citation re-verification in progress
 The `s. 26` and `s. 41(3)` entries above are carried forward from an earlier in-house verification (May 2026) but have **not** been re-verified at source. The `s. 50` citation that appeared in this table was verified at source on 2026-05-31 and found to be incorrect: §50 of the VAT Act 2014 is "Rules relating to a claim for input tax deduction", not the retention period. The canonical retention authority is **Part X, §§79–80** (§79(2) sets the 5-year statutory minimum). A follow-up verification of §26 and §41(3) is scheduled — both may need similar correction.

@@ -22,7 +22,7 @@ The displayed label for the `AwaitingDirConfirmation` state — the return's art
 ## B
 
 ### Bad Debt Relief
-A provision allowing businesses to claim back VAT on invoices that remain unpaid for 12 months or more. CoralLedger Comply tracks eligible debts by invoice age.
+A provision (VAT Act s. 53(3)) allowing businesses to claim back VAT on supplies they have written off as bad debts in their accounts. CoralLedger Comply surfaces long-outstanding debts (more than 12 months) as candidates to review and write off.
 
 ### Breadbasket Items
 Essential food items eligible for the reduced 5% VAT rate when sold by licensed food stores.

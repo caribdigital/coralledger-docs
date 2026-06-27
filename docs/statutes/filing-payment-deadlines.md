@@ -12,7 +12,7 @@ Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (
 
 [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 47(1)(a) sets the **standard filing rule** — returns and payment due within **21 days** of the end of the tax period. Large taxpayers fall under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 46, which compresses the window to **14 days** for the specified large-taxpayer threshold.
 
-Returns and associated payments must be made by the required due date, with late filing or late payment triggering penalties (see [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties)) and late-payment interest under [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 60 (Prime + 1% on the unpaid balance).
+Returns and associated payments must be made by the required due date, with late filing or late payment triggering fines and interest under [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 47A — including interest on outstanding tax at the Central Bank of The Bahamas prime lending rate plus 1% (s. 47A(4)). See [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties).
 
 Deadline compliance is a core statutory obligation: even accurate calculations can produce exposure when submission or payment occurs after the due date.
 

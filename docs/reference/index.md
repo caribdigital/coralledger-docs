@@ -76,7 +76,7 @@ Per-section verification of VAT Act amendment chains against the gazetted Amendm
 
 - [Department of Inland Revenue](https://inlandrevenue.finance.gov.bs/)
 - [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/)
-- Commonly cited sections in this documentation: s. 26, Part X §§79–80, s. 61
+- Commonly cited sections in this documentation: s. 32 (time of supply), s. 47A (late-filing/payment fines and interest), s. 53 (bad-debt relief), Part X §§79–80 (record retention)
 - [2025 VAT Reforms](https://inlandrevenue.finance.gov.bs/)
 
 ## Need Help?

@@ -1,58 +1,60 @@
 ---
 sidebar_position: 5
 title: Bad Debt Relief
-description: Claim VAT relief on invoices that remain unpaid for 12 months or more
+description: Claim VAT relief on supplies you have written off as bad debts
 ---
 
 # Bad Debt Relief
 
-Bad Debt Relief allows VAT-registered businesses to reclaim VAT already paid to the government on invoices that remain unpaid for **12 months or more**. CoralLedger Comply tracks eligible debts based on invoice age and guides you through the claim process.
+Bad Debt Relief allows VAT-registered businesses to reclaim VAT already paid to the government on supplies that have been **written off as bad debts**. CoralLedger Comply surfaces long-outstanding debts for your review and guides you through writing them off and claiming the relief.
 
 :::info Legal Basis
-Bad Debt Relief is governed by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 20, which sets the four-criteria test and permits a registered person to make a deduction in a subsequent VAT return once a debt meets the statutory criteria.
+Bad Debt Relief is governed by [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 53 (post-supply adjustment due to bad debt). Under **s. 53(3)** the relief arises on the **date the bad debt is written off in the registrant's accounts** — there is **no 12-month threshold** in s. 53. The 12-month age that Comply uses to *surface* candidate debts is a convenience prompt, not the statutory trigger.
 :::
 
 ## What Qualifies as a "Bad Debt"
 
-A debt qualifies for relief when **all** of the following conditions are met:
+Relief becomes available when a debt is **written off in your accounts** (s. 53(3)), provided:
 
 | Condition | Detail |
 |-----------|--------|
-| **Age** | The debt is at least 12 months overdue from the original invoice due date |
+| **Written off** | The debt has been formally written off in your accounting records — this is the event that makes relief available under s. 53(3) |
 | **VAT already remitted** | Output VAT on the original supply was declared and paid to the Comptroller |
 | **Collection efforts** | Reasonable steps were taken to recover the debt (documented attempts required) |
-| **Written off** | The debt has been formally written off in your accounting records |
 | **No consideration received** | No full or partial payment has been received against the invoice |
+
+:::note The 12-month age is a prompt, not the trigger
+Comply surfaces debts that are more than 12 months outstanding as **candidates** to consider writing off, shown as a **"Review From"** date. Reaching 12 months does not by itself make a debt eligible — relief becomes available when you write the debt off in your accounts.
+:::
 
 :::warning Partial Payments
 If a partial payment has been received, only the VAT attributable to the **unpaid portion** is eligible for relief.
 :::
 
-## 12-Month Tracking Workflow
+## Bad Debt Tracking Workflow
 
 CoralLedger Comply monitors outstanding invoices and advances them through the following stages:
 
-### Stage 1: Overdue Monitoring (0–11 months)
+### Stage 1: Overdue Monitoring
 - Unpaid invoices appear in the **Accounts Receivable** ageing report
 - The system records the original invoice date, due date, and VAT amount
 - No action is required at this stage
 
-### Stage 2: Approaching Eligibility (Month 10–11)
-- CoralLedger flags invoices that will reach the 12-month threshold within 60 days
+### Stage 2: Surfaced for Review ("Review From")
+- CoralLedger surfaces invoices that have been outstanding for more than 12 months as **candidates** to consider writing off, shown with a **"Review From"** date
 - An **alert** appears on the Compliance dashboard recommending you review and document collection efforts
-- Ensure collection attempts are recorded before the debt becomes eligible
+- This is a prompt to review — it does **not** by itself make the debt eligible for relief
 
-### Stage 3: Eligible for Relief (Month 12+)
+### Stage 3: Review and Write Off
 1. Navigate to **Compliance > Bad Debt**
-2. The dashboard lists all debts that have met the 12-month threshold
-3. Each entry shows:
+2. The dashboard lists surfaced candidate debts. Each entry shows:
    - Original invoice number and date
    - Customer/debtor name
    - Invoice value (gross and net)
    - Original VAT amount
-   - Relief amount available
-4. Review and confirm each eligible debt
-5. Click **Mark as Written Off** to formally write off the debt in CoralLedger
+   - Relief amount available on write-off
+3. Confirm collection efforts are documented for each debt
+4. Click **Mark as Written Off** to formally write off the debt in CoralLedger — this is the event that makes the relief available under s. 53(3)
 
 ### Stage 4: Include in VAT Return
 Once debts are written off, the relief amount is queued for inclusion in your next VAT return. See [VAT Return Impact](#vat-return-impact) below.
@@ -99,10 +101,10 @@ Navigate to **Compliance > Bad Debt > Reports** to access:
 
 | Report | Contents |
 |--------|----------|
-| **Eligible Debts Summary** | All debts meeting the 12-month threshold, grouped by period |
+| **Candidate Debts Summary** | All surfaced candidate debts (more than 12 months outstanding), grouped by period |
 | **Written-Off Debts** | Confirmed write-offs with relief amounts claimed |
 | **Claim History** | Period-by-period history of all relief amounts included in returns |
-| **Outstanding Monitoring** | Debts currently being tracked (0–11 months) |
+| **Outstanding Monitoring** | Debts currently being tracked |
 
 ### What Is Recorded per Claim
 
@@ -127,10 +129,10 @@ CoralLedger links the original transaction and return period to each claim, maki
 ## Step-by-Step Claim Guide
 
 1. Go to **Compliance > Bad Debt**
-2. Review the **Eligible Debts** tab — only debts ≥ 12 months overdue appear here
+2. Review the **Candidate Debts** tab — debts surfaced for review (more than 12 months outstanding) appear here
 3. For each debt, confirm:
    - Collection efforts are documented
-   - The debt has been written off in your books
+   - The debt is being written off in your books
 4. Select the debt(s) to claim and click **Write Off & Claim Relief**
 5. The system calculates the relief amount and schedules it for your next return
 6. When you generate your next VAT return, the relief amount is placed into **Line 16**
@@ -142,8 +144,8 @@ CoralLedger links the original transaction and return period to each claim, maki
 **Can I claim Bad Debt Relief on a debt that was later paid?**
 No. If a debtor subsequently pays after you have claimed relief, you must repay the VAT to the Comptroller by including the amount as output VAT in the return for the period in which payment was received. CoralLedger alerts you if a written-off debt receives a payment.
 
-**What if the debt is partially paid before 12 months?**
-You cannot claim relief until the full 12-month period has elapsed from the original due date. However, when the 12-month threshold is reached, you may claim relief on the outstanding balance only.
+**What if the debt is partially paid?**
+Relief is available only on the **unpaid portion**. Write off the outstanding balance in your accounts and the relief is calculated on the VAT attributable to that unpaid amount.
 
 **Is there a time limit for making a claim?**
 Claims should be made as soon as the debt qualifies. There is no indefinite carry-forward — consult your tax advisor for the applicable limitation period under Bahamas VAT law.
