@@ -4,9 +4,13 @@ title: Quick Start Guide
 description: Get up and running with CoralLedger Comply in minutes
 ---
 
+import DemoVideo from '@site/src/components/DemoVideo';
+
 # Quick Start Guide
 
 Welcome to CoralLedger Comply! This guide will help you get started with VAT compliance for your Bahamian business.
+
+<DemoVideo src="/videos/01-getting-started-dashboard.mp4" title="First login and dashboard tour" />
 
 :::info Free Beta — Open Beta in progress
 CoralLedger Comply is currently in free beta. All features are available at no cost during open beta.
