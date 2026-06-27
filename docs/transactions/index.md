@@ -10,7 +10,7 @@ import DemoVideo from '@site/src/components/DemoVideo';
 
 CoralLedger Comply makes it easy to import, review VAT categories, and manage your business transactions for VAT compliance.
 
-<DemoVideo src="/videos/02-transactions-import.mp4" title="Importing transactions and assigning VAT categories" />
+<DemoVideo src="demos/02-transactions-import.mp4" title="Importing transactions and assigning VAT categories" />
 
 ## Transaction Sources
 

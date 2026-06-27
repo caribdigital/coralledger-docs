@@ -20,6 +20,12 @@ const complyUrl = process.env.COMPLY_URL || (isStaging
   ? 'https://stg-comply.coralledger.com'
   : 'https://comply.coralledger.com');
 
+// Public DO Spaces CDN for docs media (videos/images). Staging and prod are
+// isolated buckets (mirrors the coralcomply-[stg-]nyc3-* storage split).
+const cdnUrl = process.env.CDN_URL || (isStaging
+  ? 'https://coralledger-cdn-stg-nyc3.nyc3.cdn.digitaloceanspaces.com'
+  : 'https://coralledger-cdn-nyc3.nyc3.cdn.digitaloceanspaces.com');
+
 const algoliaAppId = process.env.ALGOLIA_APP_ID;
 const algoliaApiKey = process.env.ALGOLIA_API_KEY;
 const algoliaIndexName = process.env.ALGOLIA_INDEX_NAME;
@@ -50,6 +56,7 @@ const config: Config = {
 
   customFields: {
     complyUrl: complyUrl,
+    cdnUrl: cdnUrl,
   },
 
   i18n: {
