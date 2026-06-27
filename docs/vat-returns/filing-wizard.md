@@ -4,11 +4,15 @@ title: Filing Wizard
 description: The 5-step filing wizard that captures the regulated artefacts of your VAT return before lodgement
 ---
 
+import DemoVideo from '@site/src/components/DemoVideo';
+
 # Filing Wizard
 
 The Filing Wizard guides you through the regulated capture and finalisation steps that happen between **Draft** and **Awaiting Lodgement**. It is the surface where the Section 61 acknowledgement, the signatory declaration, and the artifact generation all happen, in a strict order, with named audit-trail entries at every transition.
 
 You enter the wizard from the **Filing** page in CoralLedger Comply, after you have generated a draft return for the period.
+
+<DemoVideo src="demos/03-vatreturn-generate.mp4" title="Generating and filing a VAT return (5-step wizard)" />
 
 ## The five steps
 
