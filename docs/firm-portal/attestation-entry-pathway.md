@@ -50,8 +50,8 @@ The modal exposes four actions:
 
 | Action | What it does | Audit event |
 |---|---|---|
-| **Verify BICA** | Calls the BICA registry verification (or the documented manual-fallback path) to confirm the practitioner's BICA licence | BICA-side event (not part of the §32 lifecycle) |
-| **Submit / Sign Attestation** | Calls `AttestationService.CreateAttestationAsync` to persist the attestation row and write the lifecycle audit event | **`ATTESTATION_CREATED`** (+ implicit `ATTESTATION_SUPERSEDED` if a prior `Active` row existed for the same `(BusinessId, PractitionerUserId)`) |
+| **Declare BICA licence** (Step 2) | The practitioner enters their **name as listed with BICA**. The surface reads verbatim: “Self-declared. Not verified against the BICA registry.” No registry check runs during beta | None (no verification event fires in beta) |
+| **Sign & Submit Attestation** | Calls `AttestationService.CreateSelfAttestedAsync` to persist the attestation row and write the lifecycle audit event | **`ATTESTATION_CREATED`** (+ implicit `ATTESTATION_SUPERSEDED` if a prior `Active` row existed for the same `(BusinessId, PractitionerUserId)`) |
 | **Cancel / Close** | Closes the modal without creating the attestation; records the cancellation for audit hygiene | `ATTESTATION_MODAL_CANCELLED` |
 | **Notify me when ready** (unauthored-variant path) | Closes the modal with a deferred-completion intent | `ATTESTATION_MODAL_CANCELLED` |
 
@@ -59,11 +59,11 @@ The modal exposes four actions:
 
 ## Stage 3 — What gets persisted
 
-When the practitioner clicks **Submit**, `AttestationService.CreateAttestationAsync` runs inside a single retry-safe transaction:
+When the practitioner clicks **Sign & Submit Attestation**, `AttestationService.CreateSelfAttestedAsync` runs inside a single retry-safe transaction:
 
 1. If a prior `Active` attestation exists for the same `(BusinessId, PractitionerUserId)`, it is moved to `Superseded` status with `SupersededAt` set + the new attestation id linked.
 2. The new attestation row is persisted with `AttestationStatus = Active`, the captured variant body text (verbatim), and a `TextVersionHash` computed from `BodyId|Version|BodyText`.
-3. BICA-licence metadata is captured (number, verification status, verified-at timestamp, practitioner name).
+3. The self-declared BICA licence detail is captured with `BicaProvenance = SelfDeclaredUnverified` — the provenance marker is mandatory on the audit event, so the trail is unambiguous that the licence was self-declared, not registry-verified.
 4. The `ATTESTATION_CREATED` audit-ledger entry is written best-effort post-commit (per the project's "DB row is persisted; ledger entry missed" pattern documented for the audit ledger).
 
 The practitioner is returned to the Client Details page. The Pending Re-attestations count on the Firm Portal landing drops by one for this client.

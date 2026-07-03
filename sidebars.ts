@@ -103,7 +103,7 @@ const sidebars: SidebarsConfig = {
         'attestation/variant-agent',
         'attestation/variant-professional',
         'attestation/variant-digital',
-        'attestation/bica-verification',
+        'attestation/bica-licence-declaration',
         'attestation/session-affirmation',
         'attestation/handover',
         'attestation/practitioner-revocation',

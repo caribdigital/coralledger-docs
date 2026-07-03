@@ -77,7 +77,7 @@ The pages below cover the firm-admin lifecycle in detail. They describe the stru
 - [Qualifying Screen](/docs/attestation/qualifying-screen) — determining the applicable attestation variant
 - [Standard Variant](/docs/attestation/variant-standard), [Agent Variant](/docs/attestation/variant-agent), [Professional Variant](/docs/attestation/variant-professional) — the three primary variants
 - [Digital Variant](/docs/attestation/variant-digital) — see the page itself for current implementation status
-- [BICA Verification](/docs/attestation/bica-verification) — the BICA membership check that gates the Professional Variant
+- [BICA Licence Declaration](/docs/attestation/bica-licence-declaration) — how the Professional Variant records the practitioner's self-declared licence
 - [Session Affirmation](/docs/attestation/session-affirmation) — identity re-confirmation mid-session
 - [Handover](/docs/attestation/handover) — transferring attestation responsibility (planned functionality)
 - [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation) — what happens when the attestation or its underlying client assignment is revoked at run time
