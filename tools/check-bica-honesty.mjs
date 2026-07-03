@@ -44,6 +44,10 @@ const bicaProximityAllowlist = [
   "cannot currently verify",
   "not registry-verified",
   "no registry verification",
+  // M1 (Marcus): roadmap framing lives in docs only, clearly labelled — a "planned capability"
+  // section that says verification does NOT exist yet is the honest exception, not a claim.
+  "planned capability",
+  "is a planned",
 ];
 const BICA_PROXIMITY_WINDOW = 90;
 const escapeRegex = (term) => term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -119,6 +123,12 @@ if (process.argv.includes("--self-test")) {
     {
       name: "neutral capacity label",
       input: "This variant corresponds to the BICA-Licensed Practitioner capacity.",
+      shouldFlag: false,
+    },
+    {
+      name: "clearly-labelled planned-capability roadmap section",
+      input:
+        "Planned Capability: Registry Verification. Automated verification of practitioner licences against the BICA register is a planned capability.",
       shouldFlag: false,
     },
     {
