@@ -33,15 +33,17 @@ Your overall compliance health displayed as a letter grade (A+ to F):
 
 - **A+ / A** - Excellent compliance, minimal risk
 - **B+ / B** - Good compliance, minor improvements needed
-- **C+ / C** - Fair compliance, attention required
+- **C** - Fair compliance, attention required
 - **D** - Poor compliance, significant issues
 - **F** - Critical, immediate action needed
 
-**Grade Factors:**
-- Filing Compliance (30%)
-- Data Quality (25%)
-- Rate Accuracy (25%)
-- Documentation (20%)
+**Grade Factors** (shared with the [Compliance Score](/docs/compliance/compliance-score)):
+- VAT Accuracy (40%)
+- Completeness (25%)
+- Consistency (20%)
+- Timeliness (15%)
+
+A grade renders only after a real assessment exists - see [Not Yet Assessed](/docs/compliance/compliance-score#not-yet-assessed).
 
 ### Penalty Risk Assessment
 
@@ -112,22 +114,9 @@ Compare metrics across two periods:
 - Forecast next quarter
 - Prepare for filing deadline
 
-## API Access
+## Data endpoints (internal)
 
-For advanced users, the Intelligence API provides programmatic access:
-
-```
-GET /api/intelligence/context
-GET /api/intelligence/summary
-GET /api/intelligence/compliance-grade
-GET /api/intelligence/penalty-risk
-GET /api/intelligence/data-quality
-GET /api/intelligence/entropy
-GET /api/intelligence/vendors
-GET /api/intelligence/compare
-```
-
-Contact support for API documentation.
+The dashboard is served by internal `/api/intelligence/*` endpoints that use your signed-in session and are scoped to your business. They are **not a customer-facing programmatic API** - there is no API-key access to them, and their shapes may change without notice. For integration plans, see [Integrations](/docs/integrations/).
 
 ## Next Steps
 

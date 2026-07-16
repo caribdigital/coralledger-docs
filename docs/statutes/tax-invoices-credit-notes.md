@@ -6,11 +6,11 @@ description: Statutory invoice evidence requirements and credit note adjustments
 
 # Tax Invoices and Credit Notes
 
-Statutory Basis: [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 41(3), s. 54, and s. 55
+Statutory Basis: [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 54 and s. 55
 
 ## What statute says
 
-[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 54 governs VAT invoices and VAT sales receipts, and [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 55 governs tax credit notes and tax debit notes. Those document-level duties sit alongside [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 41(3), which reinforces the record-keeping evidence needed to support input-tax deduction and output-tax accuracy.
+[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 54 governs VAT invoices and VAT sales receipts, and [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 55 governs tax credit notes and tax debit notes. Those document-level duties sit alongside the Act's record-keeping requirements, which reinforce the evidence needed to support input-tax deduction and output-tax accuracy (the retention period itself is set by Part X, ss. 79 to 80).
 
 The legal principle is traceability: every VAT adjustment should point back to the original transaction and preserve an auditable record of why the amount changed.
 

@@ -68,7 +68,7 @@ When a firm needs to transfer a client from one practitioner to another, the **R
 The new practitioner must then run the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) before the client can be filed for again.
 
 :::info Today this flow is API-only
-The Reassign Client flow is available **today** only through the `/api/v1/accounting-firm/reassign-client` endpoint — the corresponding Clients-grid row action in the Comply UI is a placeholder pending implementation (see [Comply #3125](https://github.com/caribdigital/coralledgercomply/issues/3125) for the Phase 2 UI work). Until the UI ships, firms that need to reassign a client should coordinate with Comply support to invoke the API.
+The Reassign Client flow is available **today** only through the `/api/AccountingFirm/reassign-client` endpoint — the corresponding Clients-grid row action in the Comply UI is a placeholder pending implementation (see [Comply #3125](https://github.com/caribdigital/coralledgercomply/issues/3125) for the Phase 2 UI work). Until the UI ships, firms that need to reassign a client should coordinate with Comply support to invoke the API.
 :::
 
 ## Client Invitation Lifecycle

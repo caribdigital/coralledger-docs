@@ -82,4 +82,4 @@ Per-section verification of VAT Act amendment chains against the gazetted Amendm
 ## Need Help?
 
 Contact CoralLedger Support:
-- **Email**: hello@digitalcarib.com
+- **Email**: support@digitalcarib.com

@@ -60,9 +60,9 @@ Receive notifications for:
 
 1. **Import transactions weekly** - Stay current with your data
 2. **Review categories monthly** - Ensure accuracy
-3. **Check Intelligence Dashboard** - Monitor AI insights
+3. **Check Intelligence Dashboard** - Review the rule-based penalty-risk and anomaly signals
 4. **Address alerts promptly** - Don't let issues accumulate
-5. **File on time** - Within 21 days of period end (14 days for large taxpayers)
+5. **Lodge on time** - Within 21 days of period end (14 days for large taxpayers)
 
 ## Filing Deadlines
 

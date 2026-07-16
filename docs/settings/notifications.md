@@ -58,7 +58,7 @@ Receive a weekly summary including:
 - Upcoming deadlines
 - Action items
 
-**Schedule:** Sent Monday mornings at 9 AM (your timezone)
+**Schedule:** Sent weekly on your configured **Weekly Digest Day**
 
 ## In-App Notifications
 
@@ -85,7 +85,8 @@ Silence non-urgent notifications during specific times.
 1. Enable Quiet Hours toggle
 2. Set Start Time (e.g., 6:00 PM)
 3. Set End Time (e.g., 8:00 AM)
-4. Select Days (e.g., every day, weekends only)
+
+Quiet hours apply every day; per-day selection is not available.
 
 ### What's Affected
 - All non-critical email notifications are held
@@ -103,11 +104,8 @@ Silence non-urgent notifications during specific times.
 ### Primary Email
 Your account email receives all notifications unless specified otherwise.
 
-### Secondary Email
-Add a backup email for:
-- Critical compliance alerts
-- Security notifications
-- Billing communications
+### Backup Email Notifications
+A toggle that mirrors critical notifications to your account's backup email channel. A separately addressable secondary email is not configurable today.
 
 ### Mobile (Coming Soon)
 Push notifications for the CoralLedger Comply mobile app:

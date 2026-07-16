@@ -53,6 +53,6 @@ CoralLedger Comply is a VAT compliance platform built specifically for businesse
 
 ## Need Help?
 
-- **Email**: hello@digitalcarib.com
+- **Email**: support@digitalcarib.com
 - **Documentation**: You're already here!
 - **In-App Help**: Access the Help Center from within CoralLedger Comply

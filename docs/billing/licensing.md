@@ -11,7 +11,7 @@ View and manage your CoralLedger Comply license from the **Settings > License** 
 ## License Status
 
 Your license card shows:
-- **License type** — Founding Member, Accounting Firm, Enterprise, or Trial
+- **License type** — Founding Member, Standard Enterprise, The Solo, The Practice, The Partner, Peer Network, or Trial
 - **Status** — Active, Trial, Grace Period, or Expired
 - **Description** — Details about your current plan
 
@@ -42,18 +42,20 @@ If you have a license key:
 
 ## Plan Comparison
 
-### Accounting Firm — $99/mo (Founding Member) / $499/mo
+### Founding Member
 - Up to 25 client businesses
-- Unlimited team members
+- Founder pricing locked for life ($99/mo vs the $499/mo standard price)
 - Batch filing capabilities
-- Priority support
 
-### Enterprise — Custom Pricing
+### Standard Enterprise
+- Up to 25 client businesses
+- Full firm-portal feature set
+
+### The Partner
 - Unlimited client businesses
-- Custom integrations
-- Dedicated account manager
-- Service Level Agreement (SLA)
-- On-premise deployment option
+- The top firm tier
+
+Additional tiers (The Solo, The Practice, Peer Network) and current pricing are listed on the [pricing page](https://www.coralledger.com/pricing) - prices are maintained there, not in the documentation.
 
 ## Frequently Asked Questions
 
@@ -61,7 +63,7 @@ If you have a license key:
 You enter a grace period with read-only access. Your data is preserved. Activate a license to restore full access.
 
 ### Can I switch plans?
-Yes. Contact hello@digitalcarib.com to discuss plan changes.
+Yes. Contact support@digitalcarib.com to discuss plan changes.
 
 ### What's the cancellation policy?
 You can cancel at any time. Your data is retained for 7 years per [Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/) (5-year statutory minimum; CoralLedger Comply extends to 7 years).
@@ -73,4 +75,4 @@ Yes. Founding Members pay $99/mo forever, regardless of future price increases.
 
 - [View subscription details](/docs/billing)
 - [Join the Founders Circle](/docs/billing/founders-circle)
-- [Contact support](mailto:hello@digitalcarib.com)
+- [Contact support](mailto:support@digitalcarib.com)
