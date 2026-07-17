@@ -6,6 +6,10 @@ description: Compliance insights and analytics
 
 # Intelligence Dashboard
 
+import DemoVideo from '@site/src/components/DemoVideo';
+
+<DemoVideo src="demos/06-intelligence-dashboard.mp4" poster="demos/06-intelligence-dashboard-poster.jpg" title="Compliance intelligence dashboard tour" />
+
 The Intelligence Dashboard provides detailed analysis of your VAT compliance, offering deep insights into your business patterns and potential risks.
 
 ## Accessing the Dashboard

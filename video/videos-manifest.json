@@ -1,0 +1,72 @@
+{
+  "generated": "2026-07-17",
+  "recordedAgainst": {
+    "app": "coralledgercomply",
+    "sha": "6404128d",
+    "environment": "local Development (DevSeeder dataset)"
+  },
+  "cdn": {
+    "prod": "https://coralledger-cdn-nyc3.nyc3.cdn.digitaloceanspaces.com",
+    "staging": "https://coralledger-cdn-stg-nyc3.nyc3.cdn.digitaloceanspaces.com",
+    "prefix": "demos/"
+  },
+  "videos": [
+    {
+      "id": "01-getting-started-dashboard",
+      "title": "First login and dashboard tour",
+      "docsPage": "docs/getting-started/index.md",
+      "durationSeconds": 26,
+      "embedded": true
+    },
+    {
+      "id": "02-transactions-import",
+      "title": "Importing transactions from CSV",
+      "docsPage": "docs/transactions/import-csv.mdx (also docs/transactions/index.md)",
+      "durationSeconds": 60,
+      "embedded": true
+    },
+    {
+      "id": "03-vatreturn-generate",
+      "title": "Generating and filing a VAT return",
+      "docsPage": "docs/vat-returns/filing-wizard.md",
+      "durationSeconds": 68,
+      "embedded": true
+    },
+    {
+      "id": "04-section32-tax-points",
+      "title": "Section 32 tax points for special supplies",
+      "docsPage": "docs/transactions/section-32-tax-points.md",
+      "durationSeconds": 72,
+      "embedded": true
+    },
+    {
+      "id": "05-firm-onboarding",
+      "title": "Onboarding a client to your firm",
+      "docsPage": "docs/firm-portal/client-onboarding.md",
+      "durationSeconds": 98,
+      "embedded": true
+    },
+    {
+      "id": "06-intelligence-dashboard",
+      "title": "Compliance intelligence dashboard tour",
+      "docsPage": "docs/compliance/intelligence-dashboard.md",
+      "durationSeconds": 40,
+      "embedded": true
+    },
+    {
+      "id": "07-bad-debt",
+      "title": "Bad debt relief dashboard",
+      "docsPage": "docs/compliance/bad-debt-relief.md",
+      "durationSeconds": 33,
+      "embedded": false,
+      "held": "Uploaded but not embedded: the dashboard can never surface a write-off candidate (coralledgercomply#4055 \u2014 12-month period filter excludes the 12-month eligibility window). Re-record + embed after the fix."
+    },
+    {
+      "id": "08-reports-exports",
+      "title": "Reports and exports",
+      "docsPage": "docs/reports/index.mdx",
+      "durationSeconds": 36,
+      "embedded": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "First login and dashboard tour",
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 5.5,
+      "text": "After signing in, the dashboard shows your business at a glance."
+    },
+    {
+      "start": 6.0,
+      "end": 11.5,
+      "text": "The compliance weather panel summarizes your filing state honestly."
+    },
+    {
+      "start": 12.0,
+      "end": 17.5,
+      "text": "Below: your next deadline, sales and purchases, and net VAT position."
+    },
+    {
+      "start": 18.0,
+      "end": 22.0,
+      "text": "Quick actions take you to import, review, and return preparation."
+    }
+  ]
+}

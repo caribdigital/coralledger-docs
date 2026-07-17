@@ -1,0 +1,30 @@
+{
+  "title": "Compliance intelligence dashboard",
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 7.0,
+      "text": "Compliance Intelligence summarizes filing health for the selected business."
+    },
+    {
+      "start": 8.0,
+      "end": 14.0,
+      "text": "The score renders only when a real assessment exists."
+    },
+    {
+      "start": 15.0,
+      "end": 21.0,
+      "text": "The breakdown names each factor and its contribution."
+    },
+    {
+      "start": 22.0,
+      "end": 30.0,
+      "text": "Predictive insights and score history put the number in context."
+    },
+    {
+      "start": 31.0,
+      "end": 37.0,
+      "text": "Each recommendation names the rule that produced it."
+    }
+  ]
+}

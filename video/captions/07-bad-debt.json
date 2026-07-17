@@ -1,0 +1,25 @@
+{
+  "title": "Bad debt relief dashboard",
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 7.0,
+      "text": "The Bad Debt dashboard surfaces long-outstanding unpaid invoices."
+    },
+    {
+      "start": 8.0,
+      "end": 15.0,
+      "text": "Relief under section 53 arises when a debt is written off in your accounts."
+    },
+    {
+      "start": 16.0,
+      "end": 24.0,
+      "text": "Candidates, cancelled transactions, and refund adjustments each get their own queue."
+    },
+    {
+      "start": 25.0,
+      "end": 30.0,
+      "text": "Eligibility is tied to the write-off, not a fixed waiting period."
+    }
+  ]
+}
