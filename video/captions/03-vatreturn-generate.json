@@ -1,0 +1,40 @@
+{
+  "title": "Generating and filing a VAT return",
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 6.0,
+      "text": "From VAT Returns, create a new return for the period."
+    },
+    {
+      "start": 6.5,
+      "end": 14.0,
+      "text": "Comply calculates the return from your recorded transactions."
+    },
+    {
+      "start": 16.0,
+      "end": 26.0,
+      "text": "Before filing: review the figures and acknowledge the penalty exposure."
+    },
+    {
+      "start": 27.0,
+      "end": 36.0,
+      "text": "Validation warnings are shown plainly and must be acknowledged, never hidden."
+    },
+    {
+      "start": 38.0,
+      "end": 46.0,
+      "text": "Continue to Filing generates the artifacts. You lodge with the DIR yourself."
+    },
+    {
+      "start": 48.0,
+      "end": 58.0,
+      "text": "Back in the list, record the DIR acknowledgement to mark the return lodged."
+    },
+    {
+      "start": 59.0,
+      "end": 65.0,
+      "text": "Credit and zero returns advance to Lodged and Paid with no payment to record."
+    }
+  ]
+}

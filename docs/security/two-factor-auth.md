@@ -98,7 +98,7 @@ You can disable 2FA from the same settings panel. Doing so requires re-entering 
 
 If you've lost both your phone and your backup codes:
 
-1. Contact hello@digitalcarib.com
+1. Contact support@digitalcarib.com
 2. You'll need to verify your identity through an out-of-band channel
 3. An administrator can reset your 2FA
 

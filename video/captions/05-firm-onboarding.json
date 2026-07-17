@@ -1,0 +1,45 @@
+{
+  "title": "Onboarding a client to your firm",
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 8.0,
+      "text": "The firm portal shows every client engagement in one place."
+    },
+    {
+      "start": 9.0,
+      "end": 16.0,
+      "text": "Client Management lists your clients with their TIN and VAT status."
+    },
+    {
+      "start": 18.0,
+      "end": 30.0,
+      "text": "Onboarding starts with business identity: name, TIN, and industry."
+    },
+    {
+      "start": 32.0,
+      "end": 46.0,
+      "text": "VAT registration is recorded explicitly - answered, never assumed."
+    },
+    {
+      "start": 48.0,
+      "end": 63.0,
+      "text": "Contact and address details complete the client record."
+    },
+    {
+      "start": 65.0,
+      "end": 80.0,
+      "text": "The engagement type defines what your firm does for this client."
+    },
+    {
+      "start": 82.0,
+      "end": 89.0,
+      "text": "Only firm owners can add clients."
+    },
+    {
+      "start": 90.0,
+      "end": 96.0,
+      "text": "The new client appears immediately, ready for transactions and filings."
+    }
+  ]
+}

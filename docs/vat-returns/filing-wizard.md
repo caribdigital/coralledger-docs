@@ -12,7 +12,7 @@ The Filing Wizard guides you through the regulated capture and finalisation step
 
 You enter the wizard from the **Filing** page in CoralLedger Comply, after you have generated a draft return for the period.
 
-<DemoVideo src="demos/03-vatreturn-generate.mp4" title="Generating and filing a VAT return (5-step wizard)" />
+<DemoVideo src="demos/03-vatreturn-generate.mp4" poster="demos/03-vatreturn-generate-poster.jpg" title="Generating and filing a VAT return" />
 
 ## The five steps
 

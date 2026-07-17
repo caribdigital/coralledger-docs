@@ -20,7 +20,7 @@ Founding Members are the first 20 businesses to adopt CoralLedger Comply. In exc
 | **Free beta access** | Full access during open beta at no cost |
 | **Priority support** | Dedicated support queue with faster response times |
 | **Product roadmap input** | Direct influence on feature development priorities |
-| **67% lifetime discount** | Compared to standard $499/mo Accounting Firm pricing |
+| **Founder pricing for life** | $99/mo locked in, compared to the $499/mo standard Founding Member price |
 | **Exclusive badge** | Founding Member designation on your account |
 
 ## Program Timeline

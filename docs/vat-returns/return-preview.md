@@ -1,17 +1,17 @@
 ---
 sidebar_position: 3
 title: Return Preview & Validation
-description: Review and validate your VAT return before filing
+description: Review and validate your VAT return before you lodge it
 ---
 
 # Return Preview & Validation
 
-Before submitting your VAT return, CoralLedger Comply performs comprehensive validation to catch errors and ensure compliance.
+Before you lodge your VAT return with the DIR, CoralLedger Comply performs comprehensive validation to catch errors and support compliance.
 
 ## Accessing Return Preview
 
 1. Go to **VAT Returns**
-2. Select the period you want to file
+2. Select the period you want to prepare
 3. Click **Preview Return**
 
 ## Preview Summary
@@ -19,7 +19,7 @@ Before submitting your VAT return, CoralLedger Comply performs comprehensive val
 The preview displays:
 
 ### Period Information
-- Filing period (e.g., Q3 2024)
+- Tax period (e.g., Q3 2024)
 - Period start and end dates
 - Filing deadline
 
@@ -31,7 +31,7 @@ The preview displays:
 
 ## 10-Point Validation
 
-CoralLedger Comply performs 10 validation checks before you can file:
+CoralLedger Comply performs 10 validation checks before the return can move toward lodgement:
 
 ### Blocking Validations (Must Fix)
 
@@ -46,7 +46,7 @@ CoralLedger Comply performs 10 validation checks before you can file:
 | Check | What It Validates |
 |-------|-------------------|
 | **VAT Calculation Accuracy** | Calculations match expected totals |
-| **Filing Deadline** | Return is being filed on time |
+| **Filing Deadline** | The return is on track to be lodged on time |
 | **Duplicate Detection** | No duplicate transactions found |
 | **Category Classifications** | Categories are consistent |
 | **Minimum Transaction Count** | Period has sufficient transactions |
@@ -59,7 +59,7 @@ Each check displays a status:
 
 - **Pass** (Green) - Validation successful
 - **Warning** (Yellow) - Review recommended but not blocking
-- **Error** (Red) - Must be resolved before filing
+- **Error** (Red) - Must be resolved before the return can proceed
 
 ## Resolving Validation Issues
 
@@ -85,7 +85,7 @@ Once all blocking validations pass:
 
 1. Review the return summary
 2. Click **Proceed to Filing**
-3. Follow the submission workflow
+3. Follow the [filing wizard](/docs/vat-returns/filing-wizard) - Comply prepares the artifacts; you lodge the return with the DIR
 
 ## Best Practices
 

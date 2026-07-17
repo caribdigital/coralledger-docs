@@ -14,7 +14,9 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "check:bica-honesty": "node tools/check-bica-honesty.mjs",
-    "check:bica-honesty:self-test": "node tools/check-bica-honesty.mjs --self-test"
+    "check:bica-honesty:self-test": "node tools/check-bica-honesty.mjs --self-test",
+    "check:vocab": "node tools/check-vocab.mjs",
+    "check:vocab:self-test": "node tools/check-vocab.mjs --self-test"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

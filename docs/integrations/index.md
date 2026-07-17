@@ -31,13 +31,15 @@ We're working on direct integrations with:
 - Bank feeds
 
 :::info Request an Integration
-Need a specific integration? Email us at hello@digitalcarib.com
+Need a specific integration? Email us at support@digitalcarib.com
 :::
 
 ## API Access
 
+**Available today:** API key management (**Settings > API Keys**, 2FA-gated) and webhook notifications (**Settings > Webhooks**).
+
 :::info Coming Soon
-API access, including API key management, webhook notifications, and OAuth 2.0 authentication, is planned for a future release. It is not currently available.
+A general-purpose REST API for consuming Comply data programmatically (with OAuth 2.0) is planned for a future release. It is not currently available - the internal dashboard endpoints are session-scoped and not a supported integration surface.
 :::
 
 ## Next Steps
