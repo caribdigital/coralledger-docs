@@ -28,12 +28,7 @@ This is the default mode for businesses that sign up independently. If your busi
 
 Self-Filing Mode is enabled by default when you create a standalone business account. No additional configuration is needed.
 
-If your account was previously linked to a firm and you want to manage filings yourself again:
-
-1. Go to **Settings > Business**
-2. Scroll to the **Filing Management** section
-3. Under **Filing Mode**, select **Self-Filing**
-4. Confirm the change — firm access will be revoked immediately
+Switching from firm-managed back to self-filing is not a self-service toggle today — your business settings show the managing firm as read-only. Ask the firm to release the engagement from their portal, or contact support@digitalcarib.com to change the filing arrangement. Firm access ends when the engagement is released.
 
 :::warning Revoking Firm Access
 Switching to Self-Filing Mode removes the accounting firm's ability to view or manage your data. Coordinate with your accountant before making this change.
@@ -102,7 +97,7 @@ Export your completed return for submission to the DIR's Online Tax Administrati
 1. Open the generated return
 2. Click **Export**
 3. Choose your preferred format — **PDF**, **XML**, **Excel**, or **Form 301**
-4. Submit the figures through the [DIR OTAS portal](https://otas.bahamas.gov.bs) or in person at a DIR office
+4. Submit the figures through the [DIR OTAS portal](https://otas.revenue.gov.bs) or in person at a DIR office
 
 :::info OTAS Export
 The XML export is formatted for OTAS upload — you submit it to the DIR through the OTAS portal yourself. Use PDF for your own records and in-person filings.
@@ -117,7 +112,7 @@ Use Self-Filing Mode if any of the following apply:
 - You prefer direct control over your VAT filings and submission timing
 - You are learning VAT compliance before engaging a professional
 
-If your business grows or you engage an accounting firm, you can transition to firm-managed filing at any time from **Settings > Business > Filing Management**.
+If your business grows or you engage an accounting firm, the firm onboards your business from its Firm Portal and takes over filing management from that point.
 
 ## Next Steps
 

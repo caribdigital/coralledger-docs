@@ -6,6 +6,10 @@ description: The six-section wizard for adding a new client business to the firm
 
 # Client Onboarding
 
+import DemoVideo from '@site/src/components/DemoVideo';
+
+<DemoVideo src="demos/05-firm-onboarding.mp4" poster="demos/05-firm-onboarding-poster.jpg" title="Onboarding a client to your firm" />
+
 Client Onboarding is the firm-side wizard at `/firm/clients/onboard` that creates a new client business under the firm's management. You reach it from the **Add Client** quick action on the [Firm Portal](/docs/firm-portal/) landing or from the **Add Client** button on the Clients grid.
 
 The wizard takes a few minutes per client and runs through six structured sections. The single most important framing point is at the bottom of this page: **onboarding does not create a §32 attestation** — for restricted-segment clients, that is a separate subsequent step.

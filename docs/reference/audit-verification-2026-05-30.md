@@ -77,3 +77,17 @@ Of the 11 docs-related findings in `CASS-REMEDIATION-RESPONSE-2026-05-27`:
 - Cass plan: `CASS-REMEDIATION-RESPONSE-2026-05-27`
 - CGS brief: `CLC-FINDINGS-2026-05-26`
 - Verification grep date: 2026-05-30
+
+
+---
+
+## Addendum — 2026-07-17 second-pass (DS-012 execution)
+
+The 2026-07-17 accuracy pass (docs revision `revise/accuracy-2026-07`, absorbing DS-012 from
+issue #138) re-verified this memo's claims against the product code and found the
+"AI Intelligence card | 0 hits sitewide" row above to be **stale**:
+a "Monitor AI insights" line had shipped in `compliance/index.md` after this memo's grep date. It was removed on 2026-07-17, and
+the manual banned-vocabulary grep this memo describes is now an **enforced CI gate**
+(`tools/check-vocab.mjs`, `npm run check:vocab`, run by `.github/workflows/docs-ci.yml`) so the
+drift class cannot recur silently. This memo remains the historical record of the 2026-05-30
+verification; the vocab gate is the living control.

@@ -10,7 +10,7 @@ import DemoVideo from '@site/src/components/DemoVideo';
 
 Welcome to CoralLedger Comply! This guide will help you get started with VAT compliance for your Bahamian business.
 
-<DemoVideo src="demos/01-getting-started-dashboard.mp4" title="First login and dashboard tour" />
+<DemoVideo src="demos/01-getting-started-dashboard.mp4" poster="demos/01-getting-started-dashboard-poster.jpg" title="First login and dashboard tour" />
 
 :::info Free Beta — Open Beta in progress
 CoralLedger Comply is currently in free beta. All features are available at no cost during open beta.
@@ -53,6 +53,6 @@ CoralLedger Comply is a VAT compliance platform built specifically for businesse
 
 ## Need Help?
 
-- **Email**: hello@digitalcarib.com
+- **Email**: support@digitalcarib.com
 - **Documentation**: You're already here!
 - **In-App Help**: Access the Help Center from within CoralLedger Comply

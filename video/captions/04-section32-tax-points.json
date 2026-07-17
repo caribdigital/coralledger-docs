@@ -1,0 +1,45 @@
+{
+  "title": "Section 32 tax points for special supplies",
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 7.0,
+      "text": "Most sales use the transaction date as the VAT tax point."
+    },
+    {
+      "start": 8.0,
+      "end": 16.0,
+      "text": "Enter the transaction as usual: customer, date, description, amount."
+    },
+    {
+      "start": 18.0,
+      "end": 26.0,
+      "text": "Some supplies follow the special timing rules in section 32 of the VAT Act."
+    },
+    {
+      "start": 27.0,
+      "end": 34.0,
+      "text": "The panel lists the four scenarios with their statutory citations."
+    },
+    {
+      "start": 35.0,
+      "end": 44.0,
+      "text": "Continuous supply: tax point = billing period end or payment date, whichever is earlier."
+    },
+    {
+      "start": 45.0,
+      "end": 52.0,
+      "text": "The computed tax point is shown before anything is saved."
+    },
+    {
+      "start": 53.0,
+      "end": 60.0,
+      "text": "Advance payment: the tax point becomes the date payment was received."
+    },
+    {
+      "start": 61.0,
+      "end": 69.0,
+      "text": "Save, and the transaction carries its section 32 tax point into the correct period."
+    }
+  ]
+}

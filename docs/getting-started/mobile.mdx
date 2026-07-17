@@ -36,7 +36,7 @@ Review and approve a draft VAT return from your phone before forwarding to your 
 
 Worth knowing what is *not* in scope so you set the right expectations:
 
-- **No PWA install / no service worker / no manifest.** Comply is not a Progressive Web App — you cannot install it as a standalone app icon with background push notifications. Browser-only.
+- **Not an installable PWA.** A web manifest is present, but there is no service worker — so Comply cannot be installed as a standalone app with background push notifications. Browser-only.
 - **No background notifications.** Filing deadline reminders, compliance alerts, and other notifications appear as in-tab toast messages when you are actively using Comply. They do not push to your device when the tab is closed.
 - **Offline use is not supported.** Comply needs a network connection. There is no local cache that lets you work disconnected.
 - **CSV import via the mobile browser is impractical for large files.** For multi-thousand-row imports use a desktop browser.

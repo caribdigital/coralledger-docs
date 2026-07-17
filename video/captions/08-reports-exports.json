@@ -1,0 +1,25 @@
+{
+  "title": "Reports and exports",
+  "captions": [
+    {
+      "start": 0.5,
+      "end": 7.0,
+      "text": "The Reports page collects every report and export in one catalog."
+    },
+    {
+      "start": 8.0,
+      "end": 16.0,
+      "text": "Compliance and audit views sit alongside the standard VAT reports."
+    },
+    {
+      "start": 17.0,
+      "end": 23.0,
+      "text": "Choose a period and an export format."
+    },
+    {
+      "start": 24.0,
+      "end": 30.0,
+      "text": "Exports download immediately and appear under Recent Reports."
+    }
+  ]
+}

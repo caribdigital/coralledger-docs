@@ -12,7 +12,7 @@ After generating your VAT return, submit it to the Department of Inland Revenue.
 Submitting a VAT return is a **legal attestation under VAT Act 2014 §32** that the return is true and correct in your authorised capacity.
 
 - **Customer-facing overview:** [coralledger.com/section-32-pathway](https://www.coralledger.com/section-32-pathway)
-- **Operator documentation:** [Section 32 Attestation Pathway](/docs/attestation/) — qualifying screen, signatory variants (Standard / Agent / Professional / Digital), BICA verification, session affirmation, handover, carve-outs, audit trail.
+- **Operator documentation:** [Section 32 Attestation Pathway](/docs/attestation/) — qualifying screen, signatory variants (Standard / Agent / Professional / Digital), BICA licence declaration, session affirmation, handover, carve-outs, audit trail.
 :::
 
 ## Submission Methods

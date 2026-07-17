@@ -16,7 +16,6 @@ Manage your personal account and security.
 - Update your name and email
 - Change password
 - Two-factor authentication (2FA) setup
-- Session management
 - Login history
 
 ### Notifications
@@ -63,9 +62,7 @@ Upload your logo for:
 
 ## Integration Settings
 
-:::info Coming Soon
-API key management and webhook configuration are planned for a future release and are not currently available.
-:::
+API key management (**Settings > API Keys**, 2FA-gated) and webhook configuration (**Settings > Webhooks**) are available today: you can create and revoke keys and configure webhook endpoints that receive event notifications. A general-purpose REST API for consuming Comply data programmatically is planned but not yet available - see [Integrations](/docs/integrations/).
 
 ## Firm Settings (Firm Portal Users)
 
@@ -133,7 +130,7 @@ Access at **Settings > Privacy**.
 
 ## Support
 
-- **Email**: hello@digitalcarib.com
+- **Email**: support@digitalcarib.com
 - **Documentation**: docs.coralledger.com
 
 ## Next Steps

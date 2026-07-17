@@ -55,8 +55,8 @@ You access the preferences from your account menu. Quiet hours, per-category fin
 Worth knowing what's out of scope here so you set the right expectations:
 
 - **Active session management** (viewing logged-in devices, revoking sessions) is **not** currently a self-service surface in Comply. If you suspect your account is signed in somewhere you don't recognise, change your password — that invalidates all existing sessions — and contact support if the concern persists.
-- **Detailed login history** (timestamps, IPs, device fingerprints) is captured in the audit ledger but is not surfaced as a user-facing log on this page. Contact support if you need a copy of your login history for a specific period.
-- **Quiet hours** for notifications are not configurable on a per-user basis today. Notifications are sent according to the underlying event triggers; out-of-hours suppression is not yet available.
+- **Detailed login history** is available at **Account > Login History** - a user-facing log of your sign-ins. Device-level session revocation is not self-service; changing your password invalidates all existing sessions.
+- **Quiet hours** ARE configurable per user on the Notification Preferences page (an enable toggle plus start and end times).
 
 ## Privacy and data handling
 

@@ -7,7 +7,7 @@ description: Planned future §32 attestation variant for filings signed with a q
 # Digital Filing Variant
 
 :::warning Not yet scoped for implementation
-The Digital Filing Variant is **planned but not yet scoped** for the §32 attestation admin lifecycle. The current `AttestationVariant` catalog contains seven codes — `A`, `B`, `C`, `AB`, `AC`, `BC`, `ABC` — covering the existing statutory §32 bodies for continuous supply, advance payment, retention, and their combinations. **There is no `D` code or "Digital" admin variant in the catalog today**, and no qualified-electronic-signature attestation body has been authored or ratified. The settings path `Settings > Account > Digital Signing` referenced below has not been built. This page is preserved as a forward-looking integrator-planning reference; the implementation date will be announced separately when the work is scoped.
+The Digital Filing Variant is **planned but not yet scoped** for the attestation admin lifecycle. The current `AttestationVariant` catalog contains seven codes: `A`, `B`, `C`, `AB`, `AC`, `BC`, `ABC`. Each is a **practice-area declaration**: General VAT Compliance (`A`), VAT Return Preparation (`B`), VAT Advisory Services (`C`), and their combinations. **No "Digital" admin variant exists in the catalog today**, and no qualified-electronic-signature attestation body has been authored or ratified. (The practice-area codes are a separate taxonomy from the §32 time-of-supply variants: continuous supply, advance payment, retention, and goods on approval. Those apply to individual transactions and are documented under [Time of Supply](/docs/statutes/time-of-supply-period-assignment).) The settings path `Settings > Account > Digital Signing` referenced below has not been built. This page is preserved as a forward-looking integrator-planning reference; the implementation date will be announced separately when the work is scoped.
 :::
 
 :::info Do not confuse this with the `AuthorisedEmployee` Signatory Capacity
@@ -52,7 +52,7 @@ When this variant is active:
 
 After signature verification, the following declaration would be presented:
 
-> *I declare that I have applied my qualified electronic signature to this VAT return, that I am the registered person or an authorised representative of the registered person named herein, and that the information provided in this return is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32.*
+> *I declare that I have applied my qualified electronic signature to this VAT return, that I am the registered person or an authorised representative of the registered person named herein, and that the information provided in this return is, to the best of my knowledge and belief, true, correct, and complete. I understand that submitting a false or misleading return is an offence under the [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/).*
 
 The filer would confirm by checking **I confirm the above declaration** and clicking **Submit Return**. A password re-entry would not be required for this variant because the cryptographic signature would serve as the identity confirmation.
 

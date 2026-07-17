@@ -16,7 +16,7 @@ Under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act,
 - **Method** — Which variant was used (Standard, Agent, Professional, Digital, or Carve-Out)
 - **Integrity** — That the session was valid, not shared, and completed without interruption anomalies
 - **Timing** — Precise UTC timestamps for every stage of the pathway
-- **Professional credentials** — BICA membership number and verification result, where applicable
+- **Professional credentials** — the self-declared BICA licence detail, where applicable
 
 ## Events Recorded
 
@@ -31,7 +31,6 @@ The attestation audit trail captures events at each stage of the pathway. The cu
 | `ATTESTATION_VOIDED_BY_ASSIGNMENT_CHANGE` | The active client assignment was changed, invalidating the prior attestation authority |
 | `ATTESTATION_RE_ATTEST_REQUIRED` | A return change after attestation requires re-attestation before submission |
 | `ATTESTATION_MODAL_CANCELLED` | The filer cancelled the attestation confirmation modal before submitting |
-| `BICA_VERIFICATION_ATTEMPTED` | A BICA licence verification was attempted. Description names the client business and embeds the resolved state (`Verified` / `NotFound` / `Expired` / `Unreachable`). See [BICA Verification](/docs/attestation/bica-verification) for the canonical Description lines. |
 
 ### Planned (not yet emitted)
 

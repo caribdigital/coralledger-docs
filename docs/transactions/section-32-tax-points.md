@@ -6,6 +6,10 @@ description: Five sub-clauses of VAT Act Section 32 that govern when VAT becomes
 
 # Section 32 Tax-Point Scenarios
 
+import DemoVideo from '@site/src/components/DemoVideo';
+
+<DemoVideo src="demos/04-section32-tax-points.mp4" poster="demos/04-section32-tax-points-poster.jpg" title="Section 32 tax points for special supplies" />
+
 The **tax point** of a transaction is the moment VAT becomes due — not necessarily the moment the goods or services were delivered. For most transactions the two coincide; for advance payments, continuous supplies, retentions, and goods supplied on approval, [Section 32 of the Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/) defines a different timing rule under sub-sections **(8)**, **(11)**, **(15)**, and **(17)**.
 
 When you enter a transaction in CoralLedger Comply you can expand the **§32 Section Supply Type** panel and select the sub-clause that governs the tax point. The selection is captured on the transaction record and forms part of the [audit-trail reproducibility evidence](/docs/audit/) for the seven-year retention period.

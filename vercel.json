@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/docs/attestation/bica-verification",
+      "destination": "/docs/attestation/bica-licence-declaration",
+      "statusCode": 301
+    }
+  ]
+}

@@ -63,3 +63,21 @@ Signed audit memo confirming second-pass coverage of all 12 DS-012 sections:
 - **Julian** — Documentation audit reviewer
 
 **Signed on:** 2026-06-01 (UTC)
+
+
+---
+
+## Addendum — 2026-07-17 second-pass (DS-012 execution)
+
+The DS-012 "second-pass audit" this memo scoped was executed on 2026-07-17 as a full
+code-verification sweep (docs revision `revise/accuracy-2026-07`). The "Clean" verdicts above
+did not fully hold: material drift was found and corrected in `compliance/index.md` (banned
+vocabulary), `compliance/compliance-score.mdx` (scoring factors/weights, missing B+ grade,
+missing Not Yet Assessed state), `compliance/intelligence-dashboard.md` (nonexistent C+ grade,
+internal endpoints framed as a customer API), `reports/scheduled-reports.md` (fabricated report
+types, delivery methods, and limits), the settings cluster (session management, quiet hours,
+login history, secondary email), `transactions/import-csv.mdx` (pre-redesign import flow),
+`billing/licensing.md` (tier names, on-premise claim), `getting-started/self-filing.md`
+(fabricated settings path), and `firm-portal/user-management.md` (endpoint path). Findings that
+require regulatory reads (statute pinpoints outside the PRIMARY canon) were routed to Cass and
+Julian rather than edited. This memo remains the historical 2026-06-01 record.

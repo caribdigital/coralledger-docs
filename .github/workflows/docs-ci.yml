@@ -1,0 +1,45 @@
+# Docs CI — build + honesty gates
+#
+# The docs repo had NO CI until 2026-07-17; the BICA and REQ-MSG-001 gates were local
+# scripts nobody was forced to run, which is exactly how a banned "AI insights" line
+# shipped to production docs. This workflow makes the gates unavoidable:
+#   1. Docusaurus build — onBrokenLinks: 'throw' makes this the broken-link check too.
+#   2. BICA honesty gate — no live-registry-verification claims while bica.bs is stubbed.
+#   3. REQ-MSG-001 vocab gate — no capability overclaims / lodgement misstatements,
+#      scanning docs, customer-facing pages, and video caption manifests.
+name: Docs CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, staging]
+
+jobs:
+  build-and-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gate self-tests
+        run: |
+          npm run check:bica-honesty:self-test
+          npm run check:vocab:self-test
+
+      - name: BICA honesty gate
+        run: npm run check:bica-honesty
+
+      - name: REQ-MSG-001 vocab gate
+        run: npm run check:vocab
+
+      - name: Build (broken links throw)
+        run: npm run build

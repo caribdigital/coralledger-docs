@@ -87,6 +87,6 @@ These are documented for completeness; they do not fire the S3-005 alert directl
 ## Next steps
 
 - [§32 Attestation Pathway](/docs/attestation/) — the overall attestation regime
-- [BICA Verification](/docs/attestation/bica-verification) — the licence check that gates attestation creation
+- [BICA Licence Declaration](/docs/attestation/bica-licence-declaration) — how the practitioner's licence is recorded at attestation creation
 - [Firm Portal — User Management](/docs/firm-portal/user-management) — where client assignments are managed
 - [Audit Trail](/docs/audit/) — where every attestation lifecycle event surfaces
