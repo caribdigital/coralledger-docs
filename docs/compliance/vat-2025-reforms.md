@@ -63,12 +63,13 @@ Access at **Compliance > Refund Eligibility**.
 
 ### Food Store Qualification (April 1, 2025)
 
-Licensed food stores have specific VAT treatment:
+Food stores have specific VAT treatment. The operative definition is the [VAT (Amendment) (No. 2) Act, 2025](https://laws.bahamas.gov.bs/), s. 2(a) (in operation 1 July 2025), which defines "food store" in three limbs — **a business qualifies if it meets any of the following**:
 
-**Requirements:**
-- Valid food store license
-- Proper product categorization
-- Accurate record-keeping
+1. At least **10%** of the **prior year's** turnover under its business licence is from the sale of unprepared food for human consumption;
+2. It is **new in the year** (no prior year's turnover) and at least 10% of its **estimated** turnover for the year is from the sale of unprepared food; or
+3. It is **licensed to operate as a pharmacy** (no turnover threshold applies to this limb).
+
+The gazetted text lists the limbs as alternatives — any one qualifies. In practice, qualification also relies on proper product categorization and accurate record-keeping so the unprepared-food turnover can be evidenced.
 
 **Qualify at:**
 - Navigate to **Admin > Vendor Qualification**
