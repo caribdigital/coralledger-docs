@@ -6,6 +6,10 @@ description: Claim VAT relief on supplies you have written off as bad debts
 
 # Bad Debt Relief
 
+import DemoVideo from '@site/src/components/DemoVideo';
+
+<DemoVideo src="demos/07-bad-debt.mp4" poster="demos/07-bad-debt-poster.jpg" title="Bad debt relief dashboard" />
+
 Bad Debt Relief allows VAT-registered businesses to reclaim VAT already paid to the government on supplies that have been **written off as bad debts**. CoralLedger Comply surfaces long-outstanding debts for your review and guides you through writing them off and claiming the relief.
 
 :::info Legal Basis

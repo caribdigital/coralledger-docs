@@ -57,9 +57,8 @@
       "id": "07-bad-debt",
       "title": "Bad debt relief dashboard",
       "docsPage": "docs/compliance/bad-debt-relief.md",
-      "durationSeconds": 33,
-      "embedded": false,
-      "held": "Uploaded but not embedded: the dashboard can never surface a write-off candidate (coralledgercomply#4055 \u2014 12-month period filter excludes the 12-month eligibility window). Re-record + embed after the fix."
+      "durationSeconds": 31,
+      "embedded": true
     },
     {
       "id": "08-reports-exports",
