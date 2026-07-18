@@ -33,21 +33,21 @@ Analyze your compliance across different time periods:
 
 ### Compliance Grade
 
-Your overall compliance health displayed as a letter grade (A+ to F):
+Your overall compliance health displayed as a letter grade (A to F), applied to your rounded score:
 
-- **A+ / A** - Excellent compliance, minimal risk
-- **B+ / B** - Good compliance, minor improvements needed
-- **C** - Fair compliance, attention required
-- **D** - Poor compliance, significant issues
-- **F** - Critical, immediate action needed
+- **A** (90-100) - Excellent compliance, minimal risk
+- **B** (80-89) - Good compliance, minor improvements needed
+- **C** (70-79) - Satisfactory compliance, attention required
+- **D** (60-69) - Needs improvement, significant issues
+- **F** (below 60) - Critical, immediate action needed
 
-**Grade Factors** (shared with the [Compliance Score](/docs/compliance/compliance-score)):
-- VAT Accuracy (40%)
-- Completeness (25%)
-- Consistency (20%)
-- Timeliness (15%)
+**Grade Domains** (shared with the [Compliance Score](/docs/compliance/compliance-score)):
+- Filing Compliance (30%) - out-of-scope periods re-weight the other domains instead of scoring against you
+- Data Quality (25%)
+- Rate Accuracy (25%)
+- Documentation (20%)
 
-A grade renders only after a real assessment exists - see [Not Yet Assessed](/docs/compliance/compliance-score#not-yet-assessed).
+An overdue, unfiled return for an in-scope period caps the grade into the failing band until it is filed. A grade renders only after a real assessment exists - see [Not Yet Assessed](/docs/compliance/compliance-score#not-yet-assessed).
 
 ### Penalty Risk Assessment
 

@@ -16,13 +16,13 @@ The compliance score is a **factual status indicator** of how your data and fili
 
 | Grade | Score Range | Status |
 |-------|-------------|--------|
-| A+ | 95-100 | Excellent |
-| A | 90-94 | Very Good |
-| B+ | 85-89 | Good |
-| B | 80-84 | Good |
-| C | 70-79 | Fair |
+| A | 90-100 | Excellent |
+| B | 80-89 | Good |
+| C | 70-79 | Satisfactory |
 | D | 60-69 | Needs Improvement |
 | F | Below 60 | Critical |
+
+The letter is applied to your **rounded** score, so the number you see and the grade beside it always agree.
 
 ## Not Yet Assessed
 
@@ -30,26 +30,26 @@ A score renders **only after a real assessment exists**. Until your business cle
 
 ## Scoring Factors
 
-Your score is calculated from four weighted components:
+Your score is calculated from four weighted domains:
 
-### VAT Accuracy (40%)
-- Correct VAT rate and arithmetic on each transaction
-- Valid amounts within the correct tax period
+### Filing Compliance (30%)
+- Returns lodged within the applicable deadline (21 days standard; 14 days for large taxpayers)
+- A generated-but-unfiled draft does not count as a filing — only an actual lodgement does
+- When a period carries no filing obligation for your business (for example, before your VAT registration), this domain is marked **out of scope** and the other three domains re-weight proportionally — you are never scored down for an obligation you did not have
 
-### Completeness (25%)
+### Data Quality (25%)
 - Required fields present on every transaction (date, description, amounts, category)
 - No unprocessed gaps in the period
 
-### Consistency (20%)
-- Vendor VAT treatment and transaction types applied consistently over time
+### Rate Accuracy (25%)
+- Correct VAT rate applied to each transaction for its category and date
 
-### Timeliness (15%)
-- Returns lodged within the applicable deadline (21 days standard; 14 days for large taxpayers)
-- History of on-time lodgement
+### Documentation (20%)
+- Invoice references present on transactions
 
 ## When the score is capped
 
-If you have **overdue, unfiled returns**, your overall score is **capped** by filing timeliness regardless of how strong the other factors are — an outstanding statutory obligation is the dominant risk. The dashboard always shows a strip explaining the cap, including the earliest overdue period, so the cap is never silent.
+If you have an **overdue, unfiled return** for a period that is in scope, your overall score is **capped into the failing band** regardless of how strong the other domains are — an outstanding statutory obligation is the dominant risk. The cap lifts when the return is filed, and the dashboard explains the cap so it is never silent.
 
 ## Transactions pending review
 
