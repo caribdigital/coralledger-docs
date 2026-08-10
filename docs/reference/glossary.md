@@ -17,7 +17,7 @@ A chronological record of all changes made to transactions, categories, and VAT 
 The persistent record that a BICA-licensed practitioner has accepted the §32 attestation body text for a specific client. Has its own state machine (Active → Superseded / VoidedByAssignmentChange) and is distinct from the per-return Signatory Capacity Declaration captured at filing time. Required for §3 restricted-segment clients. See [§32 Attestation Overview](/docs/attestation/).
 
 ### Awaiting Lodgement
-The displayed label for the `AwaitingDirConfirmation` state — the return's artefacts (PDF / XML / Excel / Form 301) are generated and you now record the DIR lodgement externally. See the [VAT Returns lifecycle](/docs/vat-returns/).
+The displayed label for the `AwaitingDirConfirmation` state — the return's artefacts (PDF / XML / Excel) are generated and you now record the DIR lodgement externally. See the [VAT Returns lifecycle](/docs/vat-returns/).
 
 ## B
 

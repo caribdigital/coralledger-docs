@@ -51,7 +51,7 @@ Comply runs the transition inside a single retry-safe transaction:
 2. Persists the lodgement date, method (and other-details if applicable), and reference number.
 3. Sets `FilingState = Lodged`.
 4. Best-effort syncs the corresponding **Filing Period** row so any late-filing banner clears.
-5. Writes the `RETURN_LODGED_WITH_DIR` audit-ledger entry. This entry carries an **artifact checksum dictionary** — SHA-checksums of the exact PDF / XML / Excel / Form 301 files you submitted — so the audit trail can later prove which specific artifacts were lodged.
+5. Writes the `RETURN_LODGED_WITH_DIR` audit-ledger entry. This entry carries an **artifact checksum dictionary** — SHA-checksums of the exact PDF / XML / Excel files you submitted — so the audit trail can later prove which specific artifacts were lodged.
 
 For credit and zero-balance returns, Comply then **auto-advances** the state to **Lodged & Paid** and writes a `NO_PAYMENT_DUE` audit-ledger entry. This second transition is part of the regulatory invariant — see [VR-STATE-001](#vr-state-001-every-return-passes-through-lodged-first) below.
 

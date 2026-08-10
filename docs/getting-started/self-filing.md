@@ -96,11 +96,11 @@ Export your completed return for submission to the DIR's Online Tax Administrati
 
 1. Open the generated return
 2. Click **Export**
-3. Choose your preferred format — **PDF**, **XML**, **Excel**, or **Form 301**
+3. Choose your preferred format — **PDF**, **XML**, or **Excel**
 4. Submit the figures through the [DIR OTAS portal](https://otas.revenue.gov.bs) or in person at a DIR office
 
 :::info OTAS Export
-The XML export is formatted for OTAS upload — you submit it to the DIR through the OTAS portal yourself. Use PDF for your own records and in-person filings.
+The XML export is a structured file of your return figures. You submit your return to the DIR yourself, through the OTAS portal or in person. Use PDF for your own records and in-person filings.
 :::
 
 ## When to Use Self-Filing Mode

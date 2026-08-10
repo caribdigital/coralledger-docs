@@ -41,7 +41,7 @@ CoralLedger Comply is a VAT compliance platform built specifically for businesse
 - **VAT Returns** — Draft, submit, and amend returns with full lifecycle tracking
 - **Compliance Intelligence** — Real-time scoring, anomaly detection, and risk assessment
 - **Firm Portal** — Multi-client dashboard with batch filing for accounting firms
-- **Export Suite** — PDF, XML, Excel, CSV, and Form 301 exports
+- **Export Suite** — PDF, XML, Excel, and CSV exports
 - **Audit Trail** — Immutable hash-chain verified activity log
 - **Security** — 2FA, IP blocking, fraud alerts, and role-based access control
 

@@ -49,7 +49,7 @@ Comply tracks every VAT return through a structured eight-state lifecycle. Each 
 |---|---|---|
 | **Draft** | Draft | Return created from the period's transactions; can still be edited |
 | **Ready to File** | Ready to File | All validations passed and the Section 61 acknowledgement + signatory have been captured. The return is locked from edits |
-| **Filing in Progress** | Filing in Progress | Artifacts (PDF / XML / Excel / Form 301) are being generated. Brief — usually seconds |
+| **Filing in Progress** | Filing in Progress | Artifacts (PDF / XML / Excel) are being generated. Brief — usually seconds |
 | **Awaiting Lodgement** | Awaiting Lodgement | Artifacts are ready. You now submit externally to the DIR via OTAS / a DIR office / an authorised agent, then return to Comply to record the lodgement |
 | **Lodged** | Lodged | You have recorded the DIR lodgement using **[Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement)**. The `RETURN_LODGED_WITH_DIR` audit entry has been written. From here, you either retract (`Lodged` → `Awaiting Lodgement`, `RETURN_LODGEMENT_RETRACTED`) or record payment (`Lodged` → `Lodged & Paid`, `PAYMENT_RECORDED`) |
 | **Lodged & Paid** | Lodged & Paid | Final state for payable returns once cumulative payments cover the net VAT due. Credit/zero returns reach this state automatically immediately after Lodged |
@@ -80,9 +80,9 @@ Your return includes all standard Bahamas VAT return lines:
 - **Calculated Fields** - All L1-L31 fields computed from your transaction data
 - **Return Preview** - Review totals and validation before filing
 - **10-Point Validation** - Comprehensive pre-flight checks
-- **Export Formats** - PDF, XML, Excel, and Form 301 for DIR submission and your own records
+- **Export Formats** - PDF, XML and Excel for your own records and for submitting the figures yourself
 - **Amendment Support** - Correct lodged returns with change tracking
-- **Multi-Format Export** - Download a lodged return as PDF, XML, Excel, or Form 301
+- **Multi-Format Export** - Download a lodged return as PDF, XML or Excel
 
 ## Return Preview & Validation
 

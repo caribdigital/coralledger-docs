@@ -24,7 +24,7 @@ Comply renders the wizard as a numbered timeline:
 | **2** | VAT Validation | The [10-point validation](/docs/vat-returns/return-preview) runs; you address blocking issues. | _(no audit write)_ |
 | **3** | Document Generation | Pre-flight check that the artifacts can be generated cleanly. | _(no audit write)_ |
 | **4** | **Approval** | You complete the [Section 61 acknowledgement](#step-4-approval-section-61-acknowledgement) and the [signatory capture](#step-4-approval-signatory-capture). The return transitions **Draft → Ready to File**. | `ACK_SECTION61`, then `RETURN_APPROVED_BY_SIGNATORY` |
-| **5** | **Submission** | Comply generates the PDF, XML, Excel, and Form 301 artifacts atomically and transitions **Ready to File → Filing in Progress → Awaiting Lodgement**. | `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED` |
+| **5** | **Submission** | Comply generates the PDF, XML and Excel artifacts atomically and transitions **Ready to File → Filing in Progress → Awaiting Lodgement**. | `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED` |
 
 After step 5 you are presented with a **Filing Artifacts Ready** success card — described below in [What "Filing Artifacts Ready" means](#what-filing-artifacts-ready-means).
 
@@ -93,7 +93,7 @@ You will not normally notice this behaviour because audit writes are fast. It ma
 When you click the Submit Filing button at step 5, Comply runs the finalisation routine, which:
 
 1. **Locks** the return for concurrent modification using a database-level compare-and-swap. A second concurrent caller (e.g. a duplicate browser tab) sees an error and does not duplicate work.
-2. **Generates** the PDF, XML, Excel, and Form 301 artifacts inside a single retry-safe transaction. Either all four are produced or none are persisted.
+2. **Generates** the PDF, XML and Excel artifacts inside a single retry-safe transaction. Either all three are produced or none are persisted.
 3. **Writes** two audit-ledger entries: `FILING_INITIATED` (the start-of-finalisation marker) and `FILING_ARTIFACTS_GENERATED` (the end-of-finalisation marker, carrying the artifact set's identifiers).
 4. **Transitions** the return through Ready to File → Filing in Progress → **Awaiting Lodgement**.
 
@@ -110,7 +110,7 @@ After step 5 completes, Comply displays a card titled **Filing Artifacts Ready**
 The Filing Artifacts Ready card offers three actions:
 
 - **Download PDF** — a human-readable summary for your records and for in-person filings.
-- **Download XML** — the DIR-accepted submission format for upload via OTAS.
+- **Download XML** — structured XML of the return figures.
 - **Record DIR Acknowledgement** — the in-app capture you complete after the DIR confirms receipt of your submission. See [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) for the full flow.
 
 While the return sits in **Awaiting Lodgement**, no further audit-ledger writes happen — the next lifecycle event is when you record the lodgement.
