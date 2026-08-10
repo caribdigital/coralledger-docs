@@ -30,7 +30,7 @@ For high-stakes returns (restricted-segment, large net VAT exposure, recent comp
 
 ## Accessing Batch Filing
 
-Navigate to **Firm Portal → Batch VAT Filing** (the quick action on the landing page) or directly to `/firm/batch-filing`.
+Navigate to **Firm Portal → Batch return preparation** (the quick action on the landing page) or directly to `/firm/batch-filing`.
 
 ## The four-step wizard
 

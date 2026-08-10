@@ -36,7 +36,7 @@ The reverse charge mechanism for construction services exceeding $1 million. Par
 The Comptroller of the Department of Inland Revenue, responsible for VAT administration in The Bahamas.
 
 ### Compliance Score
-A grade (A+ to F) indicating your VAT compliance health based on categorization accuracy, filing timeliness, documentation, and anomaly resolution.
+A grade (A to F) indicating your VAT compliance health based on categorization accuracy, filing timeliness, documentation, and anomaly resolution.
 
 ## D
 

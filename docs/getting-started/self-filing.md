@@ -42,7 +42,7 @@ The dashboard looks slightly different depending on your filing mode.
 
 | Widget | Description |
 |--------|-------------|
-| **Compliance Score** | Your real-time A+ to F compliance grade |
+| **Compliance Score** | Your real-time A to F compliance grade |
 | **Next Filing Deadline** | Countdown to your next return due date |
 | **Net VAT Position** | Current period's VAT payable or refundable |
 | **Recent Activity** | Your latest transactions and actions |
