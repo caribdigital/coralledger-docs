@@ -23,7 +23,7 @@ Navigate to **Admin > Data Export** (route: `/admin/data-export`). This surface 
 | **Transactions** | CSV, JSON |
 | **VAT Returns** | Excel |
 | **Compliance Report** | (formatted output) |
-| **VAT XML** | DIR-accepted XML for OTAS submission |
+| **VAT XML** | Structured XML of the return figures |
 | **Anomaly Report** | (formatted output) |
 
 Each export is generated synchronously — when you click **Export**, the file is generated and offered for download immediately. There is no separate queue or job-status surface.
