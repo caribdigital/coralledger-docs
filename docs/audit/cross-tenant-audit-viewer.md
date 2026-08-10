@@ -20,8 +20,8 @@ The viewer merges two audit record sources using a server-side fan-out merge:
 
 | Source | Content |
 |--------|---------|
-| **ImmutableAuditEntry** | All business data events — transactions, returns, settings, user actions |
-| **SecurityAuditLog** | Authentication and security events — logins, IP blocks, fraud alerts, 2FA events |
+| **ImmutableAuditEntry** | All business data events - transactions, returns, settings, user actions |
+| **SecurityAuditLog** | Authentication and security events - logins, IP blocks, fraud alerts, 2FA events |
 
 Entries from both sources are combined and ordered chronologically. The **Source** column in the table indicates which log each entry originates from.
 
@@ -31,7 +31,7 @@ The viewer uses server-side pagination for large cross-tenant result sets. Page 
 
 ## Accessing the Viewer
 
-1. Log in with platform operator credentials (PlatformAdmin role + completed 2FA challenge — both gates enforced by the `RequirePlatformAdmin` policy)
+1. Log in with platform operator credentials (PlatformAdmin role + completed 2FA challenge - both gates enforced by the `RequirePlatformAdmin` policy)
 2. Navigate to the **Ops Portal → Audit** entry, or directly to `/ops/audit`
 3. The `PLATFORM_OPS_AUDIT_VIEWED` event is logged when the viewer is opened
 
@@ -51,8 +51,8 @@ Select a specific business to scope the view to a single tenant, or leave unset 
 
 ### By Date Range
 
-- **Start Date** — Beginning of the period (inclusive)
-- **End Date** — End of the period (inclusive)
+- **Start Date** - Beginning of the period (inclusive)
+- **End Date** - End of the period (inclusive)
 
 ### By Actor Email
 
@@ -132,11 +132,11 @@ When enabled for your deployment, these events provide an audit trail of when pl
 
 ## Best Practices for Operators
 
-1. **Scope to a single business when possible** — Narrowing the scope reduces load time and makes exports more manageable.
-2. **Filter by actor email for investigations** — Use the actor email filter to trace all actions performed by a specific user.
-3. **Run chain verification after anomalies** — If unexpected entries appear, run per-business chain verification immediately.
-4. **Export in smaller batches** — Stay well under the 10,000-row cap by applying tight date ranges.
-5. **End impersonation sessions promptly** — Always close impersonation sessions as soon as support tasks are complete to minimize the window of elevated access.
+1. **Scope to a single business when possible** - Narrowing the scope reduces load time and makes exports more manageable.
+2. **Filter by actor email for investigations** - Use the actor email filter to trace all actions performed by a specific user.
+3. **Run chain verification after anomalies** - If unexpected entries appear, run per-business chain verification immediately.
+4. **Export in smaller batches** - Stay well under the 10,000-row cap by applying tight date ranges.
+5. **End impersonation sessions promptly** - Always close impersonation sessions as soon as support tasks are complete to minimize the window of elevated access.
 
 ## Related Events
 

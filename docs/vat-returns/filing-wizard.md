@@ -26,9 +26,9 @@ Comply renders the wizard as a numbered timeline:
 | **4** | **Approval** | You complete the [Section 61 acknowledgement](#step-4-approval-section-61-acknowledgement) and the [signatory capture](#step-4-approval-signatory-capture). The return transitions **Draft → Ready to File**. | `ACK_SECTION61`, then `RETURN_APPROVED_BY_SIGNATORY` |
 | **5** | **Submission** | Comply generates the PDF, XML and Excel artifacts atomically and transitions **Ready to File → Filing in Progress → Awaiting Lodgement**. | `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED` |
 
-After step 5 you are presented with a **Filing Artifacts Ready** success card — described below in [What "Filing Artifacts Ready" means](#what-filing-artifacts-ready-means).
+After step 5 you are presented with a **Filing Artifacts Ready** success card - described below in [What "Filing Artifacts Ready" means](#what-filing-artifacts-ready-means).
 
-## Step 4: Approval — Section 61 acknowledgement {#step-4-approval-section-61-acknowledgement}
+## Step 4: Approval - Section 61 acknowledgement {#step-4-approval-section-61-acknowledgement}
 
 When you click **Approve** at step 4, Comply opens the Approve Filing dialog. The first panel is the Penalty Acknowledgement.
 
@@ -36,32 +36,32 @@ The dialog records your review of the penalty exposure that applies under the [V
 
 > Under the Value Added Tax Act, 2014, penalties for understatement or evasion apply. This acknowledgement records your review of that exposure and your acceptance of responsibility for the accuracy of this return.
 
-You tick the acknowledgement checkbox — *"I have reviewed the penalty exposure under the VAT Act and accept responsibility for the accuracy of this return"* — to proceed. When you do, Comply writes an audit-ledger entry (event identifier `ACK_SECTION61`) **before** it transitions the return state. The entry is recorded with neutral wording — *"User acknowledged regulatory exposure under the VAT Act before filing return for [period]"*. This ordering matters — see [Audit-before-lock](#audit-before-lock).
+You tick the acknowledgement checkbox - *"I have reviewed the penalty exposure under the VAT Act and accept responsibility for the accuracy of this return"* - to proceed. When you do, Comply writes an audit-ledger entry (event identifier `ACK_SECTION61`) **before** it transitions the return state. The entry is recorded with neutral wording - *"User acknowledged regulatory exposure under the VAT Act before filing return for [period]"*. This ordering matters - see [Audit-before-lock](#audit-before-lock).
 
 :::note
-The dialog does **not** quote a specific penalty percentage or compute a dollar figure. Section 61 of the VAT Act is *"Assessment as evidence in proceedings"* — an evidentiary provision, **not** a penalty section — so no "% of unpaid VAT" multiplier is shown. The audit event retains the identifier `ACK_SECTION61` for continuity with the existing audit schema. The statutory fines for late filing and late payment are set out in s. 47A — see [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties).
+The dialog does **not** quote a specific penalty percentage or compute a dollar figure. Section 61 of the VAT Act is *"Assessment as evidence in proceedings"* - an evidentiary provision, **not** a penalty section - so no "% of unpaid VAT" multiplier is shown. The audit event retains the identifier `ACK_SECTION61` for continuity with the existing audit schema. The statutory fines for late filing and late payment are set out in s. 47A - see [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties).
 :::
 
-## Step 4: Approval — Signatory capture {#step-4-approval-signatory-capture}
+## Step 4: Approval - Signatory capture {#step-4-approval-signatory-capture}
 
 Below the acknowledgement panel is the Authorised Signatory panel. Comply captures three things:
 
-- **Full Name** — the natural-person name of the individual signing for this return, up to 200 characters.
-- **Capacity** — a drop-down listing the four [Signatory Capacities](#signatory-capacities) recognised by Bahamian VAT practice.
-- **"I confirm I am authorised…" checkbox** — a separate declaration distinct from the penalty acknowledgement.
+- **Full Name** - the natural-person name of the individual signing for this return, up to 200 characters.
+- **Capacity** - a drop-down listing the four [Signatory Capacities](#signatory-capacities) recognised by Bahamian VAT practice.
+- **"I confirm I am authorised…" checkbox** - a separate declaration distinct from the penalty acknowledgement.
 
 When you click **Approve** to close the dialog, Comply writes a `RETURN_APPROVED_BY_SIGNATORY` audit-ledger entry capturing the name and capacity, then transitions the return state to **Ready to File**.
 
 ### §32 attestation prefill
 
-If your CoralLedger account has an active **§32 attestation** for this client business (you are the BICA-licensed practitioner of record), Comply will pre-fill your name and set Capacity to `BICA-Licensed Practitioner`. The prefill is checked at the moment the dialog opens via a single correlated existence query against both your active client assignment and your active attestation record — see [Section 32 Attestation Overview](/docs/attestation/) for how that determination is made.
+If your CoralLedger account has an active **§32 attestation** for this client business (you are the BICA-licensed practitioner of record), Comply will pre-fill your name and set Capacity to `BICA-Licensed Practitioner`. The prefill is checked at the moment the dialog opens via a single correlated existence query against both your active client assignment and your active attestation record - see [Section 32 Attestation Overview](/docs/attestation/) for how that determination is made.
 
 You can override the prefilled values if a different signatory is signing this specific return.
 
 :::warning Is a §32 attestation also required for this return?
-The Signatory Capacity Declaration captured here is a **per-return** artefact — it is required on every return regardless of client type. It is **not** the same as a §32 attestation in the firm-admin lifecycle.
+The Signatory Capacity Declaration captured here is a **per-return** artefact - it is required on every return regardless of client type. It is **not** the same as a §32 attestation in the firm-admin lifecycle.
 
-- If your client is in a **§3 restricted segment** (per Julian's CLR memorandum §3 — construction with retention, retainer-billed services, SaaS subscription, real-estate developers, and similar regulated categories), the firm must **also** have an `Active` persistent §32 attestation for this `(client, practitioner)` pair before the return can be lodged. See [§32 Attestation Lifecycle (Firm Admin)](/docs/attestation/).
+- If your client is in a **§3 restricted segment** (per Julian's CLR memorandum §3 - construction with retention, retainer-billed services, SaaS subscription, real-estate developers, and similar regulated categories), the firm must **also** have an `Active` persistent §32 attestation for this `(client, practitioner)` pair before the return can be lodged. See [§32 Attestation Lifecycle (Firm Admin)](/docs/attestation/).
 - If your client is **not** in a restricted segment, the Signatory Capacity Declaration captured here is sufficient on its own.
 
 If you are unsure whether your client is in a restricted segment, see [Carve-Outs](/docs/attestation/carve-outs).
@@ -82,9 +82,9 @@ The capacity value is recorded on the `RETURN_APPROVED_BY_SIGNATORY` audit entry
 
 ## Audit-before-lock
 
-A subtle but important design choice: the two audit entries from step 4 — `ACK_SECTION61` and `RETURN_APPROVED_BY_SIGNATORY` — are written **before** the return is locked from edits.
+A subtle but important design choice: the two audit entries from step 4 - `ACK_SECTION61` and `RETURN_APPROVED_BY_SIGNATORY` - are written **before** the return is locked from edits.
 
-If the audit ledger is briefly unavailable (a backend transient), Comply will surface the error and **leave the return unlocked** so you can retry. The alternative — locking first, then attempting the audit write — would risk a state where the return is locked but no attestation evidence exists. That outcome would be regulatorily worse than leaving the return unlocked.
+If the audit ledger is briefly unavailable (a backend transient), Comply will surface the error and **leave the return unlocked** so you can retry. The alternative - locking first, then attempting the audit write - would risk a state where the return is locked but no attestation evidence exists. That outcome would be regulatorily worse than leaving the return unlocked.
 
 You will not normally notice this behaviour because audit writes are fast. It matters during incident recovery.
 
@@ -101,34 +101,34 @@ If finalisation fails partway, Comply rolls the return back to Ready to File so 
 
 ## What "Filing Artifacts Ready" means
 
-After step 5 completes, Comply displays a card titled **Filing Artifacts Ready**. The wording is deliberate — Comply has prepared everything you need to submit to the DIR, but **Comply itself has not submitted anything**. The actual submission to the Department of Inland Revenue happens externally:
+After step 5 completes, Comply displays a card titled **Filing Artifacts Ready**. The wording is deliberate - Comply has prepared everything you need to submit to the DIR, but **Comply itself has not submitted anything**. The actual submission to the Department of Inland Revenue happens externally:
 
-- via the [DIR's OTAS online portal](https://otas.revenue.gov.bs),
+- through a current DIR lodgement channel,
 - by walking the artifacts into a DIR office (Nassau or Freeport), or
 - via an authorised agent.
 
 The Filing Artifacts Ready card offers three actions:
 
-- **Download PDF** — a human-readable summary for your records and for in-person filings.
-- **Download XML** — structured XML of the return figures.
-- **Record DIR Acknowledgement** — the in-app capture you complete after the DIR confirms receipt of your submission. See [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) for the full flow.
+- **Download PDF** - a human-readable summary for your records and for in-person filings.
+- **Download XML** - structured XML of the return figures.
+- **Record DIR Acknowledgement** - the in-app capture you complete after the DIR confirms receipt of your submission. See [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) for the full flow.
 
-While the return sits in **Awaiting Lodgement**, no further audit-ledger writes happen — the next lifecycle event is when you record the lodgement.
+While the return sits in **Awaiting Lodgement**, no further audit-ledger writes happen - the next lifecycle event is when you record the lodgement.
 
 ## Why the wizard exists
 
 The five-step structure encodes three regulatory facts:
 
-1. **The penalty acknowledgement is not a hidden term in a generic ToS** — Comply surfaces the penalty exposure that applies under the VAT Act and asks for an explicit acknowledgement, recorded under the `ACK_SECTION61` audit event.
+1. **The penalty acknowledgement is not a hidden term in a generic ToS** - Comply surfaces the penalty exposure that applies under the VAT Act and asks for an explicit acknowledgement, recorded under the `ACK_SECTION61` audit event.
 2. **The signatory declaration is captured per-return**, with the name and capacity persisted to the audit ledger. There is no "signed once, applies forever" shortcut.
 3. **Comply does not file on your behalf with the DIR.** The artifacts-ready / submitted distinction is enforced in the UI wording so a reader cannot confuse the two.
 
-These choices align with the principle from the [§32 Attestation Pathway](/docs/attestation/) that the regulatorily binding act happens in person between the registrant (or their authorised signatory) and the DIR — not silently inside the platform.
+These choices align with the principle from the [§32 Attestation Pathway](/docs/attestation/) that the regulatorily binding act happens in person between the registrant (or their authorised signatory) and the DIR - not silently inside the platform.
 
 ## Next steps
 
-- [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) — the post-wizard step
-- [VAT Returns Overview](/docs/vat-returns/) — the canonical state machine
-- [Submit VAT Return](/docs/vat-returns/submit-return) — the external-submission workflow
-- [Section 32 Attestation Pathway](/docs/attestation/) — how the BICA-licensed practitioner prefill works
-- [Audit Trail](/docs/audit/) — where the audit-ledger entries surface
+- [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) - the post-wizard step
+- [VAT Returns Overview](/docs/vat-returns/) - the canonical state machine
+- [Submit VAT Return](/docs/vat-returns/submit-return) - the external-submission workflow
+- [Section 32 Attestation Pathway](/docs/attestation/) - how the BICA-licensed practitioner prefill works
+- [Audit Trail](/docs/audit/) - where the audit-ledger entries surface

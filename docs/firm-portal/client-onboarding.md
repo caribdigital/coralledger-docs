@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: Client Onboarding
-description: The six-section wizard for adding a new client business to the firm — Owner-only, with explicit framing of what onboarding does and does not do
+description: The six-section wizard for adding a new client business to the firm - Owner-only, with explicit framing of what onboarding does and does not do
 ---
 
 # Client Onboarding
@@ -12,7 +12,7 @@ import DemoVideo from '@site/src/components/DemoVideo';
 
 Client Onboarding is the firm-side wizard at `/firm/clients/onboard` that creates a new client business under the firm's management. You reach it from the **Add Client** quick action on the [Firm Portal](/docs/firm-portal/) landing or from the **Add Client** button on the Clients grid.
 
-The wizard takes a few minutes per client and runs through six structured sections. The single most important framing point is at the bottom of this page: **onboarding does not create a §32 attestation** — for restricted-segment clients, that is a separate subsequent step.
+The wizard takes a few minutes per client and runs through six structured sections. The single most important framing point is at the bottom of this page: **onboarding does not create a §32 attestation** - for restricted-segment clients, that is a separate subsequent step.
 
 ## Who can onboard a client
 
@@ -30,33 +30,33 @@ The wizard walks through these sections in order. Each section's required fields
 
 ### 1. Business identification
 
-- **Business name** — required; how the client will appear in your firm grid
-- **Trading name** — optional; surfaced on outputs that show DBA / trading style
-- **TIN** — required; 9 digits, **MOD-11 validated** server-side via `OnboardingService.ValidateTINAsync`. An invalid TIN is rejected at this step
-- **Industry category** — required; selects from a controlled list. Some categories (food-related) enable the conditional Food Store License section in step 6.
+- **Business name** - required; how the client will appear in your firm grid
+- **Trading name** - optional; surfaced on outputs that show DBA / trading style
+- **TIN** - required; 9 digits, **MOD-11 validated** server-side via `OnboardingService.ValidateTINAsync`. An invalid TIN is rejected at this step
+- **Industry category** - required; selects from a controlled list. Some categories (food-related) enable the conditional Food Store License section in step 6.
 
 ### 2. VAT configuration
 
-- **VAT number** — required for registered businesses
-- **VAT registration date** — required; cross-field paired with the VAT number (must be a real registration date, not a placeholder)
-- **Annual turnover** — required; the value auto-computes the **filing frequency** via `FilingFrequencyHelper`: turnover ≥ $5M assigns **Monthly** filing, otherwise **Quarterly**. The auto-computed value is shown to you before commit.
-- **Fiscal year end** — required; drives period generation in step 6 of the post-submit flow.
+- **VAT number** - required for registered businesses
+- **VAT registration date** - required; cross-field paired with the VAT number (must be a real registration date, not a placeholder)
+- **Annual turnover** - required; the value auto-computes the **filing frequency** via `FilingFrequencyHelper`: turnover ≥ $5M assigns **Monthly** filing, otherwise **Quarterly**. The auto-computed value is shown to you before commit.
+- **Fiscal year end** - required; drives period generation in step 6 of the post-submit flow.
 
 ### 3. Contact + Billing contact
 
 - **Primary contact name, email, phone**
-- **Billing contact** — defaults to primary contact; can be set independently
+- **Billing contact** - defaults to primary contact; can be set independently
 
 ### 4. Address
 
 - **Address line 1**, **Address line 2** (optional)
-- **Island** — selects from the `BahamasIsland` enum (New Providence, Grand Bahama, Abaco, etc.)
+- **Island** - selects from the `BahamasIsland` enum (New Providence, Grand Bahama, Abaco, etc.)
 - **PO Box** (optional)
 
 ### 5. Engagement
 
 - **Engagement start date**
-- **Engagement type** — `FullService` / `FilingOnly` / `AdvisoryOnly`. This is a firm-internal classification that does not affect Comply's filing behaviour but is surfaced on workload reports
+- **Engagement type** - `FullService` / `FilingOnly` / `AdvisoryOnly`. This is a firm-internal classification that does not affect Comply's filing behaviour but is surfaced on workload reports
 
 ### 6. Food Store Licence (conditional)
 
@@ -74,8 +74,8 @@ When you click **Add Client** at the end of the wizard, `ClientOnboardingService
 1. A new `Business` row is created with `ManagingOrgId = your firm's id`, `Status = "Active"`, `IsActive = true`. This is what makes the new client appear in your Firm Portal grid via the [firm-to-client access traversal](/docs/firm-portal/firm-client-access).
 2. `UserBusinessAccess` rows are granted to every firm-business owner with `PermissionLevel = "Owner"` and `Role = "Owner"`. This ensures Owner-level staff can immediately work on the new client without separate per-user grants.
 3. The transaction commits.
-4. **After commit**, `FilingPeriodService.GeneratePeriodsForBusinessAsync(yearsAhead: 2)` runs — Comply pre-creates two years of filing periods (monthly or quarterly per the assigned frequency) so the client's filing calendar is populated.
-5. A `BusinessCreated` audit event is written best-effort (try/catch). A ledger-write failure does not roll back the client creation — the persisted business is the source of truth; the ledger entry is the audit-trail evidence.
+4. **After commit**, `FilingPeriodService.GeneratePeriodsForBusinessAsync(yearsAhead: 2)` runs - Comply pre-creates two years of filing periods (monthly or quarterly per the assigned frequency) so the client's filing calendar is populated.
+5. A `BusinessCreated` audit event is written best-effort (try/catch). A ledger-write failure does not roll back the client creation - the persisted business is the source of truth; the ledger entry is the audit-trail evidence.
 
 You return to the Firm Portal landing with the new client visible in the grid.
 
@@ -85,21 +85,21 @@ Two regulatory-clarity points that catch every new firm onboarding a §3 restric
 
 ### Onboarding does NOT create a §32 attestation
 
-The wizard creates the `Business` row and the access grants — that's it. No `Attestation` row is persisted. For a non-restricted-segment client this is sufficient: the per-return [Signatory Capacity Declaration](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) at filing time satisfies §32 on its own.
+The wizard creates the `Business` row and the access grants - that's it. No `Attestation` row is persisted. For a non-restricted-segment client this is sufficient: the per-return [Signatory Capacity Declaration](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) at filing time satisfies §32 on its own.
 
-For a **§3 restricted-segment client**, you must subsequently run the §32 Attestation Entry Pathway (Wave 2.2 deliverable — `attestation-entry-pathway`) from the client's record before any return can be lodged. The Firm Portal landing's [`Pending Re-attestations` KPI card](/docs/firm-portal/#the-dashboard-at-a-glance) surfaces this requirement; new clients in restricted segments appear there immediately after onboarding.
+For a **§3 restricted-segment client**, you must subsequently run the §32 Attestation Entry Pathway (Wave 2.2 deliverable - `attestation-entry-pathway`) from the client's record before any return can be lodged. The Firm Portal landing's [`Pending Re-attestations` KPI card](/docs/firm-portal/#the-dashboard-at-a-glance) surfaces this requirement; new clients in restricted segments appear there immediately after onboarding.
 
 ### Onboarding does NOT send a client invitation
 
-The wizard creates the client business under your firm's management; it does not send an invitation email to the client's owner or staff to log in to Comply themselves. To grant the client direct access to their own business, use the separate **Invite Client** flow on the Clients grid — see [Client Invitation Lifecycle](/docs/firm-portal/user-management#client-invitation-lifecycle).
+The wizard creates the client business under your firm's management; it does not send an invitation email to the client's owner or staff to log in to Comply themselves. To grant the client direct access to their own business, use the separate **Invite Client** flow on the Clients grid - see [Client Invitation Lifecycle](/docs/firm-portal/user-management#client-invitation-lifecycle).
 
-## Bulk import — for large client books
+## Bulk import - for large client books
 
 For firms migrating an existing book of clients into Comply, the **Bulk Client Import** flow at `/firm/clients/bulk-import` accepts a CSV file with the same fields as the wizard, validated row-by-row before any row commits. The Bulk Client Import surface is the CSV-driven analog to this wizard and runs through the same `ClientOnboardingService` per row.
 
 ## Next steps
 
-- [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) — why your newly-onboarded client appears in your grid
-- [Firm Portal](/docs/firm-portal/) — landing page + dashboard
-- [User Management](/docs/firm-portal/user-management) — granting access to additional firm staff + client-side invitations
-- [Filing Wizard](/docs/vat-returns/filing-wizard) — what happens at filing time for non-restricted-segment clients
+- [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) - why your newly-onboarded client appears in your grid
+- [Firm Portal](/docs/firm-portal/) - landing page + dashboard
+- [User Management](/docs/firm-portal/user-management) - granting access to additional firm staff + client-side invitations
+- [Filing Wizard](/docs/vat-returns/filing-wizard) - what happens at filing time for non-restricted-segment clients

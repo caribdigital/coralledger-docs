@@ -17,7 +17,7 @@ A chronological record of all changes made to transactions, categories, and VAT 
 The persistent record that a BICA-licensed practitioner has accepted the §32 attestation body text for a specific client. Has its own state machine (Active → Superseded / VoidedByAssignmentChange) and is distinct from the per-return Signatory Capacity Declaration captured at filing time. Required for §3 restricted-segment clients. See [§32 Attestation Overview](/docs/attestation/).
 
 ### Awaiting Lodgement
-The displayed label for the `AwaitingDirConfirmation` state — the return's artefacts (PDF / XML / Excel) are generated and you now record the DIR lodgement externally. See the [VAT Returns lifecycle](/docs/vat-returns/).
+The displayed label for the `AwaitingDirConfirmation` state - the return's artefacts (PDF / XML / Excel) are generated and you now record the DIR lodgement externally. See the [VAT Returns lifecycle](/docs/vat-returns/).
 
 ## B
 
@@ -54,7 +54,7 @@ Goods or services that are outside the VAT system. No VAT is charged and no inpu
 ## F
 
 ### Filing Wizard
-The 5-step in-app flow that finalises a VAT return — Transaction Review → VAT Validation → Document Generation → **Approval** (§61 acknowledgement + signatory capture) → Submission. See [Filing Wizard](/docs/vat-returns/filing-wizard).
+The 5-step in-app flow that finalises a VAT return - Transaction Review → VAT Validation → Document Generation → **Approval** (§61 acknowledgement + signatory capture) → Submission. See [Filing Wizard](/docs/vat-returns/filing-wizard).
 
 ### Food Store License
 A licensed food store qualification for VAT purposes.
@@ -76,10 +76,10 @@ A document recording a taxable supply, which must include specific information f
 ## L
 
 ### Lodged
-The displayed label for the `Lodged` state — DIR Acknowledgement has been captured and `RETURN_LODGED_WITH_DIR` written to the audit ledger. For payable returns the next state is `Lodged & Paid` after payment is recorded; for credit/zero returns the state advances automatically. See the [VAT Returns lifecycle](/docs/vat-returns/) and [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement).
+The displayed label for the `Lodged` state - DIR Acknowledgement has been captured and `RETURN_LODGED_WITH_DIR` written to the audit ledger. For payable returns the next state is `Lodged & Paid` after payment is recorded; for credit/zero returns the state advances automatically. See the [VAT Returns lifecycle](/docs/vat-returns/) and [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement).
 
 ### Lodged & Paid
-The terminal state for a payable return — cumulative payments equal or exceed the Net VAT due. Credit/zero returns reach this state automatically immediately after `Lodged` per the VR-STATE-001 invariant.
+The terminal state for a payable return - cumulative payments equal or exceed the Net VAT due. Credit/zero returns reach this state automatically immediately after `Lodged` per the VR-STATE-001 invariant.
 
 ## O
 
@@ -92,7 +92,7 @@ VAT collected by a business on sales that must be remitted to the Comptroller.
 A KPI surfaced on the Firm Portal landing that counts clients whose `(client, practitioner)` pair has no `Active` §32 attestation, or whose existing attestation's body-text version hash has drifted. Clicking the KPI navigates to the filtered client grid for triage. See [Firm Portal](/docs/firm-portal/).
 
 ### Practitioner of Record
-The BICA-licensed practitioner holding an `Active` §32 attestation for a client business. Determined by a correlated EXISTS check across `ClientAssignment` (active workload) AND `Attestation` (active regulatory authority) — both gates must pass. See [§32 Attestation Overview](/docs/attestation/) and [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation).
+The BICA-licensed practitioner holding an `Active` §32 attestation for a client business. Determined by a correlated EXISTS check across `ClientAssignment` (active workload) AND `Attestation` (active regulatory authority) - both gates must pass. See [§32 Attestation Overview](/docs/attestation/) and [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation).
 
 ## R
 
@@ -103,12 +103,12 @@ Businesses where 50% or more of supplies are zero-rated may be eligible for VAT 
 A business registered for VAT with the Department of Inland Revenue.
 
 ### Restricted Segment (§3)
-A client classification (per Julian's CLR memorandum §3) requiring an active §32 attestation before returns can be lodged — typically construction with retention, retainer-billed services, SaaS subscription, real-estate developers. §3 here refers to the internal CLR memo section, **not** §3 of the VAT Act. See [§32 Attestation Overview](/docs/attestation/).
+A client classification (per Julian's CLR memorandum §3) requiring an active §32 attestation before returns can be lodged - typically construction with retention, retainer-billed services, SaaS subscription, real-estate developers. §3 here refers to the internal CLR memo section, **not** §3 of the VAT Act. See [§32 Attestation Overview](/docs/attestation/).
 
 ## S
 
 ### Signatory Capacity Declaration
-The per-return capture inside the Filing Wizard's Approval step where the user records who is signing this specific return and in what capacity (`RegisteredTaxpayer`, `BicaLicensedPractitioner`, `AuthorisedEmployee`, `AuthorisedAgent`). Distinct from the persistent §32 Attestation Lifecycle. See [Filing Wizard — Step 4 Approval](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture).
+The per-return capture inside the Filing Wizard's Approval step where the user records who is signing this specific return and in what capacity (`RegisteredTaxpayer`, `BicaLicensedPractitioner`, `AuthorisedEmployee`, `AuthorisedAgent`). Distinct from the persistent §32 Attestation Lifecycle. See [Filing Wizard - Step 4 Approval](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture).
 
 
 
@@ -143,12 +143,12 @@ A periodic report submitted to the DIR summarizing taxable supplies and VAT coll
 ## V
 
 ### VR-STATE-001
-The regulatory invariant (Julian-approved 2026-05-25) that every VAT return — including credit and zero-balance returns — must transition through the `Lodged` state before reaching `Lodged & Paid`. The `Lodged` event always produces a clean `RETURN_LODGED_WITH_DIR` audit row before any auto-advance to `Lodged & Paid` runs.
+The regulatory invariant (Julian-approved 2026-05-25) that every VAT return - including credit and zero-balance returns - must transition through the `Lodged` state before reaching `Lodged & Paid`. The `Lodged` event always produces a clean `RETURN_LODGED_WITH_DIR` audit row before any auto-advance to `Lodged & Paid` runs.
 
 ## W
 
 ### WORM
-Write Once Read Many — a data storage compliance standard ensuring records cannot be modified or deleted after creation. CoralLedger Comply's `ImmutableAuditEntry` table is treated as append-only by the application layer; database-level WORM enforcement depends on operator configuration. See [Audit Trail](/docs/audit/).
+Write Once Read Many - a data storage compliance standard ensuring records cannot be modified or deleted after creation. CoralLedger Comply's `ImmutableAuditEntry` table is treated as append-only by the application layer; database-level WORM enforcement depends on operator configuration. See [Audit Trail](/docs/audit/).
 
 ## Z
 

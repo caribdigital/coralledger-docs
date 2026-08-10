@@ -66,7 +66,7 @@ Receive notifications for:
 
 ## Filing Deadlines
 
-VAT returns are due within **21 days** after the end of the tax period. Large taxpayers (annual turnover ≥ $5M) must file within **14 days**. The deadline is not a fixed calendar date — it varies depending on when the period ends.
+VAT returns are due within **21 days** after the end of the tax period. Large taxpayers (annual turnover ≥ $5M) must file within **14 days**. The deadline is not a fixed calendar date - it varies depending on when the period ends.
 
 | Period example | Period end | Standard deadline | Large taxpayer deadline |
 |----------------|-----------|-------------------|-------------------------|

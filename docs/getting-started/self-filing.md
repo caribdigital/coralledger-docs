@@ -6,7 +6,7 @@ description: Manage and file your own VAT returns without an accounting firm
 
 # Self-Filing Mode
 
-Self-Filing Mode is designed for business owners who manage their own VAT compliance directly — without an accounting firm handling returns on their behalf.
+Self-Filing Mode is designed for business owners who manage their own VAT compliance directly - without an accounting firm handling returns on their behalf.
 
 ## What Is Self-Filing Mode?
 
@@ -14,7 +14,7 @@ In Self-Filing Mode, you have full ownership of your VAT workflow:
 
 - **You** record transactions, review categorizations, and generate returns
 - **You** export and submit returns directly to the Department of Inland Revenue (DIR)
-- **No firm access** — your data is not visible to or managed by any external accounting firm
+- **No firm access** - your data is not visible to or managed by any external accounting firm
 
 This is the default mode for businesses that sign up independently. If your business is later onboarded by an accounting firm, the firm will manage your compliance instead (Firm-Managed Mode).
 
@@ -28,7 +28,7 @@ This is the default mode for businesses that sign up independently. If your busi
 
 Self-Filing Mode is enabled by default when you create a standalone business account. No additional configuration is needed.
 
-Switching from firm-managed back to self-filing is not a self-service toggle today — your business settings show the managing firm as read-only. Ask the firm to release the engagement from their portal, or contact support@digitalcarib.com to change the filing arrangement. Firm access ends when the engagement is released.
+Switching from firm-managed back to self-filing is not a self-service toggle today - your business settings show the managing firm as read-only. Ask the firm to release the engagement from their portal, or contact support@digitalcarib.com to change the filing arrangement. Firm access ends when the engagement is released.
 
 :::warning Revoking Firm Access
 Switching to Self-Filing Mode removes the accounting firm's ability to view or manage your data. Coordinate with your accountant before making this change.
@@ -51,7 +51,7 @@ The **Quick Actions** panel gives you direct access to:
 - Import transactions
 - Enter a new transaction
 - Generate VAT return
-- Export for OTAS (Online Tax Administration System)
+- Export for external lodgement
 
 ### Firm-Managed Dashboard
 
@@ -73,8 +73,8 @@ See [Set Up Your Business](/docs/getting-started/setup-business) for full detail
 ### Step 2: Enter Transactions
 Record all taxable activity for the period:
 
-- **CSV Import** — Upload exports from your accounting system via [Import CSV](/docs/transactions/import-csv)
-- **Manual Entry** — Enter transactions one at a time via [Manual VAT Entry](/docs/transactions/manual-entry)
+- **CSV Import** - Upload exports from your accounting system via [Import CSV](/docs/transactions/import-csv)
+- **Manual Entry** - Enter transactions one at a time via [Manual VAT Entry](/docs/transactions/manual-entry)
 
 Review suggested VAT categorizations and correct any misclassifications before proceeding.
 
@@ -84,23 +84,23 @@ Once all transactions are entered:
 1. Go to **VAT Returns**
 2. Click **Generate New Return**
 3. Select the filing period
-4. Review the summary — output VAT, input VAT, and net position
+4. Review the summary - output VAT, input VAT, and net position
 5. Address any compliance alerts before proceeding
 
-CoralLedger Comply calculates all L1–L31 DIR form fields from your transaction data.
+CoralLedger Comply calculates all L1-L31 DIR form fields from your transaction data.
 
 See [Generate VAT Return](/docs/vat-returns/generate-return) for the full guide.
 
-### Step 4: Export for OTAS
-Export your completed return for submission to the DIR's Online Tax Administration System:
+### Step 4: Export for External Lodgement
+Export your completed return for submission through a current DIR lodgement channel:
 
 1. Open the generated return
 2. Click **Export**
-3. Choose your preferred format — **PDF**, **XML**, or **Excel**
-4. Submit the figures through the [DIR OTAS portal](https://otas.revenue.gov.bs) or in person at a DIR office
+3. Choose your preferred format - **PDF**, **XML**, or **Excel**
+4. Submit the figures through a current DIR lodgement channel
 
-:::info OTAS Export
-The XML export is a structured file of your return figures. You submit your return to the DIR yourself, through the OTAS portal or in person. Use PDF for your own records and in-person filings.
+:::info XML Export
+The XML export is a structured file of your return figures. You submit your return to the DIR yourself through a current lodgement channel. Use PDF for your own records and in-person filings.
 :::
 
 ## When to Use Self-Filing Mode

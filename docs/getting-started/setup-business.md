@@ -8,8 +8,8 @@ description: The three account types in CoralLedger Comply and the two surfaces 
 
 Comply captures business information on two distinct surfaces, depending on where you are in the lifecycle:
 
-- **During registration** — Step 3 of the [4-step registration wizard](/docs/getting-started/create-account#step-3-business-information) is where most users capture their business details. It's a rich form covering industry, turnover, and (where applicable) the food-store qualification block.
-- **Recovering when no business is associated** — if your account is somehow left without a business context (rare — usually only after an invitation chain breaks), Comply routes you to a thin recovery page at `/account/business-setup` that captures the minimum needed to get you back to a working dashboard.
+- **During registration** - Step 3 of the [4-step registration wizard](/docs/getting-started/create-account#step-3-business-information) is where most users capture their business details. It's a rich form covering industry, turnover, and (where applicable) the food-store qualification block.
+- **Recovering when no business is associated** - if your account is somehow left without a business context (rare - usually only after an invitation chain breaks), Comply routes you to a thin recovery page at `/account/business-setup` that captures the minimum needed to get you back to a working dashboard.
 
 This page covers both surfaces and the three account types you can choose between.
 
@@ -20,7 +20,7 @@ When you register, you pick **one of three account types**. Your choice determin
 | Account type | Who picks this | What gets created |
 |---|---|---|
 | **New Business** | A single business owner registering their own business | A `Business` row with you as Owner via `UserBusinessAccess` |
-| **Join Existing** | A user joining an existing business via an invitation code | A `UserBusinessAccess` row connecting you to the existing `Business` — no new business is created |
+| **Join Existing** | A user joining an existing business via an invitation code | A `UserBusinessAccess` row connecting you to the existing `Business` - no new business is created |
 | **Accounting Firm** | A firm administrator registering a new accounting firm | A firm **self-business** (the house account that represents the firm itself), plus the `FirmOwner` Identity role on your account, plus `UserBusinessAccess` to the firm self-business |
 
 The three flows route through `BusinessFirstRegistrationService` in code, with the AccountingFirm path additionally calling `CreateAccountingFirmAsync` to provision the firm self-business and assign the `FirmOwner` role.
@@ -31,11 +31,11 @@ This is the canonical place to capture business details. The fields you see depe
 
 ### New Business or Accounting Firm
 
-- **Business Name** — required; appears as your business name across the app
-- **TIN** — required; 9 digits, no `V` prefix, no dashes. MOD-11 validated server-side
-- **VAT Number** — optional during registration; can be added later from **Settings > Business**
-- **Industry** — required, 15 categories. Drives some categorisation defaults later
-- **Estimated Annual Turnover** — required, 5 ranges. Auto-computes your filing frequency (**Monthly** for $5M+ annual turnover, **Quarterly** otherwise)
+- **Business Name** - required; appears as your business name across the app
+- **TIN** - required; 9 digits, no `V` prefix, no dashes. MOD-11 validated server-side
+- **VAT Number** - optional during registration; can be added later from **Settings > Business**
+- **Industry** - required, 15 categories. Drives some categorisation defaults later
+- **Estimated Annual Turnover** - required, 5 ranges. Auto-computes your filing frequency (**Monthly** for $5M+ annual turnover, **Quarterly** otherwise)
 
 **If your industry is food-related**, an additional food-store qualification block appears:
 
@@ -45,26 +45,26 @@ This is the canonical place to capture business details. The fields you see depe
 
 These answers determine whether your business qualifies for the **5% Reduced rate** on hygiene / medical / breadbasket items at licensed food stores, and whether the rate-fallback rules apply (see [VAT Rates Reference](/docs/reference/vat-rates) for the engine behaviour).
 
-### Accounting Firm — additional fields
+### Accounting Firm - additional fields
 
 For the AccountingFirm account type, two firm-level fields are also captured:
 
-- **Billing Contact Email** — where invoices will be sent once billing begins (after open beta)
-- **Expected Client Count** — used to scope the appropriate subscription tier
+- **Billing Contact Email** - where invoices will be sent once billing begins (after open beta)
+- **Expected Client Count** - used to scope the appropriate subscription tier
 
 The firm self-business uses the same Business Name + TIN + VAT Number as your firm's own registration.
 
-### Join Existing — single field
+### Join Existing - single field
 
 For the JoinExisting account type, the only field is:
 
-- **Invitation Code** — generated by the existing business owner or firm administrator when they sent the invitation. Valid for 7 days from issue.
+- **Invitation Code** - generated by the existing business owner or firm administrator when they sent the invitation. Valid for 7 days from issue.
 
 If the code is valid, your account links to that business when verification completes. See the [Client Invitation Lifecycle](/docs/firm-portal/user-management#client-invitation-lifecycle) on the firm side for how invitations are issued.
 
-## Recovery — when no business is associated
+## Recovery - when no business is associated
 
-If you log in and your account does not have a current business context, Comply routes you to `/account/business-setup`. This happens rarely — usually when:
+If you log in and your account does not have a current business context, Comply routes you to `/account/business-setup`. This happens rarely - usually when:
 
 - An invitation you accepted later got revoked
 - A business you were Owner of was deleted while you were not signed in
@@ -72,8 +72,8 @@ If you log in and your account does not have a current business context, Comply 
 
 The recovery page is intentionally thin compared to Step 3 of registration. You choose between:
 
-- **Create New Business** — captures only **Business Name**, **TIN**, and **VAT Number** (optional). Industry, turnover, and food-store qualifications can be filled in later under **Settings > Business**.
-- **Join Existing** — captures only the **Invitation Code**.
+- **Create New Business** - captures only **Business Name**, **TIN**, and **VAT Number** (optional). Industry, turnover, and food-store qualifications can be filled in later under **Settings > Business**.
+- **Join Existing** - captures only the **Invitation Code**.
 
 After submission, you arrive at the appropriate dashboard for the resolved business.
 
@@ -81,12 +81,12 @@ After submission, you arrive at the appropriate dashboard for the resolved busin
 
 Whether you set up during registration or via recovery, additional business details can always be filled in later from **Settings > Business**:
 
-- **Trading Name** — display name if different from registered business name
-- **Business Address** — Bahamian island + address lines + PO Box
-- **Logo** — upload for branded VAT invoices and reports
-- **Filing Frequency** — Monthly or Quarterly (auto-set from turnover during registration; editable here)
-- **Large Taxpayer designation** — for businesses meeting the threshold, see [VAT Rates Reference](/docs/reference/vat-rates) and [Filing and Payment Deadlines](/docs/statutes/filing-payment-deadlines)
-- **Food Store Licence** number and expiry — required for the 5% Reduced rate fallback rules
+- **Trading Name** - display name if different from registered business name
+- **Business Address** - Bahamian island + address lines + PO Box
+- **Logo** - upload for branded VAT invoices and reports
+- **Filing Frequency** - Monthly or Quarterly (auto-set from turnover during registration; editable here)
+- **Large Taxpayer designation** - for businesses meeting the threshold, see [VAT Rates Reference](/docs/reference/vat-rates) and [Filing and Payment Deadlines](/docs/statutes/filing-payment-deadlines)
+- **Food Store Licence** number and expiry - required for the 5% Reduced rate fallback rules
 
 ## TIN format
 
@@ -112,8 +112,8 @@ If you do not yet have a VAT number:
 
 ## Next steps
 
-- [Create your account](/docs/getting-started/create-account) — the 4-step registration wizard
-- [Tour the dashboard](/docs/getting-started/dashboard-tour) — what you see after first login
-- [Firm Portal — Client Onboarding](/docs/firm-portal/client-onboarding) — how firms add their own clients (distinct from this page)
+- [Create your account](/docs/getting-started/create-account) - the 4-step registration wizard
+- [Tour the dashboard](/docs/getting-started/dashboard-tour) - what you see after first login
+- [Firm Portal - Client Onboarding](/docs/firm-portal/client-onboarding) - how firms add their own clients (distinct from this page)
 - [Import your first transactions](/docs/transactions/import-csv)
 - [Enter transactions manually](/docs/transactions/manual-entry)

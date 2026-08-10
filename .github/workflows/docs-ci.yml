@@ -41,5 +41,8 @@ jobs:
       - name: REQ-MSG-001 vocab gate
         run: npm run check:vocab
 
+      - name: Estate vocabulary, typography, and date gate
+        run: npm run check:estate-content
+
       - name: Build (broken links throw)
         run: npm run build

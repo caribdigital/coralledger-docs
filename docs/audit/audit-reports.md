@@ -13,23 +13,23 @@ Access detailed audit reports to review all system activity, verify data integri
 The page lives at `/reports/audit` (also reachable as `/reports/audit-logs`). Navigate via **Reports > Audit Logs** in the sidebar. Some features require 2FA to be enabled.
 
 :::note "Audit Reports" and "Audit Logs" are the same page
-This page IS the audit-log viewer. "Reports" framing reflects the page's read-and-export capability — there is no separate report-generator surface for audit data. The filtered Export button on this page is the only audit-export path.
+This page IS the audit-log viewer. "Reports" framing reflects the page's read-and-export capability - there is no separate report-generator surface for audit data. The filtered Export button on this page is the only audit-export path.
 :::
 
 ## Dashboard Overview
 
 The audit reports page displays summary cards:
-- **Total Entries** — Total audit entries in the system
-- **Today's Activity** — Actions recorded today
-- **Critical Events** — High-severity events requiring attention
-- **Compliance %** — Overall audit chain integrity percentage
+- **Total Entries** - Total audit entries in the system
+- **Today's Activity** - Actions recorded today
+- **Critical Events** - High-severity events requiring attention
+- **Compliance %** - Overall audit chain integrity percentage
 
 ## Filtering Audit Entries
 
 ### By Event Type
 Filter by specific categories such as:
 - Transaction events
-- Return filing events (note: the newer VAT Returns lifecycle events — `FILING_INITIATED`, `RETURN_LODGED_WITH_DIR`, `RETURN_LODGEMENT_RETRACTED`, `PAYMENT_RECORDED`, etc. — are emitted today but the dropdown's hard-coded category list does not yet include them; use "All Events" to see them. Tracked as a Comply repo follow-up.)
+- Return filing events (note: the newer VAT Returns lifecycle events - `FILING_INITIATED`, `RETURN_LODGED_WITH_DIR`, `RETURN_LODGEMENT_RETRACTED`, `PAYMENT_RECORDED`, etc. - are emitted today but the dropdown's hard-coded category list does not yet include them; use "All Events" to see them. Tracked as a Comply repo follow-up.)
 - User authentication events
 - Settings changes
 - Security events
@@ -42,8 +42,8 @@ Filter entries to a specific business or tenant.
 Filter entries by the email address of the person who performed the action.
 
 ### By Date Range
-- **Start Date** — Beginning of the reporting period
-- **End Date** — End of the reporting period
+- **Start Date** - Beginning of the reporting period
+- **End Date** - End of the reporting period
 
 ## Audit Entry Table
 
@@ -104,10 +104,10 @@ Exports are capped at **10,000 rows**. If your result set is larger, narrow your
 
 ## Best Practices
 
-1. **Review critical events daily** — Check for unexpected security or data events
-2. **Verify chain integrity monthly** — Run the hash verification to confirm no tampering
-3. **Export quarterly** — Keep external backups of audit data for your records
-4. **Investigate anomalies** — Follow up on any unexpected entries
+1. **Review critical events daily** - Check for unexpected security or data events
+2. **Verify chain integrity monthly** - Run the hash verification to confirm no tampering
+3. **Export quarterly** - Keep external backups of audit data for your records
+4. **Investigate anomalies** - Follow up on any unexpected entries
 
 ## By Statute References
 

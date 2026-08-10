@@ -14,7 +14,7 @@ The Firm Portal is the central surface for accounting professionals managing VAT
 - **Bookkeepers** handling multiple business clients on a shared team
 - **Tax professionals** preparing and lodging client VAT returns
 
-Each of these workflows is shaped by the same access traversal — see [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) for the model that determines which clients appear in your grid.
+Each of these workflows is shaped by the same access traversal - see [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) for the model that determines which clients appear in your grid.
 
 ## The dashboard at a glance
 
@@ -24,7 +24,7 @@ The Firm Portal landing page renders **seven KPI cards** drawing on aggregate da
 |---|---|---|
 | **Total Clients** | Count of active client businesses in your access set | Excludes archived clients |
 | **Pending Filings** | Count of returns in `ReadyToFile` / `AwaitingDirConfirmation` state across clients | Bridges to [Filing Wizard](/docs/vat-returns/filing-wizard) |
-| **Pending Re-attestations** | Count of clients with no active §32 attestation or with a stale attestation (text-drift detected) | **Clickable** — links to the client grid pre-filtered to `?filter=pending-reattestation`. Surfaces the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) for the firm administrator |
+| **Pending Re-attestations** | Count of clients with no active §32 attestation or with a stale attestation (text-drift detected) | **Clickable** - links to the client grid pre-filtered to `?filter=pending-reattestation`. Surfaces the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) for the firm administrator |
 | **Compliance Score** | Aggregate firm compliance health with High / Medium / Low / Not-Assessed chips | Computed from per-client compliance scores |
 | **Portfolio Net VAT** | Sum of net VAT due / refundable across the period | Negative if the portfolio is a net refund |
 | **Returns Filed This Quarter** | Count of returns that reached `Lodged` or `Lodged & Paid` in the current quarter | See the [canonical lifecycle](/docs/vat-returns/#return-lifecycle) for state definitions |
@@ -40,10 +40,10 @@ The Quick Actions row sits below the KPI cards and offers four navigation shortc
 
 | Button | Destination |
 |---|---|
-| **Add Client** | `/firm/clients/onboard` — see [Adding a client](#adding-a-client) below |
-| **Batch return preparation** | `/firm/batch-filing` — see [Batch Filing](/docs/firm-portal/batch-filing) |
-| **Multi-Client Reports** | `/firm/reports` — see [Firm Analytics](/docs/firm-portal/analytics) |
-| **Staff Productivity** | `/firm/productivity` — workload distribution + per-staff metrics |
+| **Add Client** | `/firm/clients/onboard` - see [Adding a client](#adding-a-client) below |
+| **Batch return preparation** | `/firm/batch-filing` - see [Batch Filing](/docs/firm-portal/batch-filing) |
+| **Multi-Client Reports** | `/firm/reports` - see [Firm Analytics](/docs/firm-portal/analytics) |
+| **Staff Productivity** | `/firm/productivity` - workload distribution + per-staff metrics |
 | **Refresh** | Reloads dashboard data without leaving the page |
 
 ## The client grid
@@ -54,7 +54,7 @@ Below the KPI cards and Quick Actions, the Firm Portal renders a paginated **cli
 
 The client grid supports search across the **business name, TIN, and VAT number** columns. Type at least **two characters** in the search input above the grid; results filter live with a short (300 ms) debounce, and a screen-reader-friendly live region announces "N clients match" alongside the result count.
 
-The search composes with the **Filing Frequency filter** (All / Monthly / Quarterly) — both apply together. The grid paginates and sorts server-side.
+The search composes with the **Filing Frequency filter** (All / Monthly / Quarterly) - both apply together. The grid paginates and sorts server-side.
 
 If no clients match, an empty-state panel describes the active filters so you know whether to broaden your search or clear the filing-frequency filter.
 
@@ -64,15 +64,15 @@ The search is being extended with additional matching modes (fuzzy / tokenised) 
 
 From the Firm Portal landing, click the **Add Client** quick action (or the Add Client button on the Clients grid). This opens the Client Onboarding wizard at `/firm/clients/onboard`.
 
-The wizard captures six structured sections (Business Identification, VAT Configuration, Contact + Billing, Address, Engagement, conditional Food Store License). It is gated to **firm Owners only** — non-Owners cannot onboard clients.
+The wizard captures six structured sections (Business Identification, VAT Configuration, Contact + Billing, Address, Engagement, conditional Food Store License). It is gated to **firm Owners only** - non-Owners cannot onboard clients.
 
 See [Client Onboarding](/docs/firm-portal/client-onboarding) for the full capture sequence, the validation rules, and what onboarding does *not* do (specifically: it does not create a §32 attestation; that is a separate step for restricted-segment clients).
 
 ## Managing permissions
 
-The Firm Portal recognises two base permission levels — **Owner** and **Accountant**. Non-Owner access is further refined via the **granular permission matrix**, which lets an Owner toggle per-category access (Transactions, Reports, Compliance, Settings, User Management, Security) for any Accountant user.
+The Firm Portal recognises two base permission levels - **Owner** and **Accountant**. Non-Owner access is further refined via the **granular permission matrix**, which lets an Owner toggle per-category access (Transactions, Reports, Compliance, Settings, User Management, Security) for any Accountant user.
 
-There is no separate "View Only" or "Review Only" tier as a named third level — a read-only experience is achieved via granular permissions on an Accountant.
+There is no separate "View Only" or "Review Only" tier as a named third level - a read-only experience is achieved via granular permissions on an Accountant.
 
 See [User Management](/docs/firm-portal/user-management) for the canonical permission reference, the Last-Owner protection, and the client invitation lifecycle.
 
@@ -84,21 +84,21 @@ The lifecycle states themselves (Active / Superseded / VoidedByAssignmentChange)
 
 ## Subscription tiers
 
-:::info Free Beta — Open Beta in progress
+:::info Free Beta - Open Beta in progress
 All Firm Portal features are available at no cost during open beta. Subscription billing begins after open beta.
 :::
 
 | Tier | Max Clients | Price | Notes |
 |---|---|---|---|
-| **Founding Member** | 25 | $99/mo | Locked for life — limited to 20 spots |
+| **Founding Member** | 25 | $99/mo | Locked for life - limited to 20 spots |
 | **Accounting Firm** | 25 | $499/mo | Standard pricing |
 | **Enterprise** | Unlimited | Custom | Dedicated support, SLA |
 
 ## Next steps
 
-- [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) — the access model that resolves your client set
-- [Client Onboarding](/docs/firm-portal/client-onboarding) — the 6-section wizard for adding a client
-- [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) — what to do for restricted-segment clients
-- [Batch Filing](/docs/firm-portal/batch-filing) — file multiple returns in a single workflow
-- [Firm Analytics](/docs/firm-portal/analytics) — cross-client trends and staff productivity
-- [User Management](/docs/firm-portal/user-management) — permissions, granular access, and the client invitation lifecycle
+- [How Firm-to-Client Access Works](/docs/firm-portal/firm-client-access) - the access model that resolves your client set
+- [Client Onboarding](/docs/firm-portal/client-onboarding) - the 6-section wizard for adding a client
+- [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) - what to do for restricted-segment clients
+- [Batch Filing](/docs/firm-portal/batch-filing) - file multiple returns in a single workflow
+- [Firm Analytics](/docs/firm-portal/analytics) - cross-client trends and staff productivity
+- [User Management](/docs/firm-portal/user-management) - permissions, granular access, and the client invitation lifecycle

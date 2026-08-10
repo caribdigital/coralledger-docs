@@ -11,9 +11,9 @@ View and manage your CoralLedger Comply license from the **Settings > License** 
 ## License Status
 
 Your license card shows:
-- **License type** — Founding Member, Standard Enterprise, The Solo, The Practice, The Partner, Peer Network, or Trial
-- **Status** — Active, Trial, Grace Period, or Expired
-- **Description** — Details about your current plan
+- **License type** - Founding Member, Standard Enterprise, The Solo, The Practice, The Partner, Peer Network, or Trial
+- **Status** - Active, Trial, Grace Period, or Expired
+- **Description** - Details about your current plan
 
 ### Status Indicators
 
@@ -22,15 +22,15 @@ Your license card shows:
 | **Free Beta - Active** | Beta period, all features available at no cost |
 | **Trial Active** | Trial period with countdown of remaining days |
 | **Grace Period** | Read-only access after trial expiry |
-| **Expired** | No access — activate a license to restore |
+| **Expired** | No access - activate a license to restore |
 
 ## Usage Statistics
 
 The license page displays your current usage:
-- **Businesses** — Number of business profiles created vs. your plan limit
-- **Team Members** — Number of users added vs. your plan limit
-- **Transactions This Month** — Monthly transaction count
-- **Returns Filed This Year** — Annual return filing count
+- **Businesses** - Number of business profiles created vs. your plan limit
+- **Team Members** - Number of users added vs. your plan limit
+- **Transactions This Month** - Monthly transaction count
+- **Returns Filed This Year** - Annual return filing count
 
 ## Activating a License
 

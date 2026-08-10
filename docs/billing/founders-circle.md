@@ -16,7 +16,7 @@ Founding Members are the first 20 businesses to adopt CoralLedger Comply. In exc
 
 | Benefit | Details |
 |---------|---------|
-| **Locked-in pricing** | $99/mo forever — price never increases |
+| **Locked-in pricing** | $99/mo forever - price never increases |
 | **Free beta access** | Full access during open beta at no cost |
 | **Priority support** | Dedicated support queue with faster response times |
 | **Product roadmap input** | Direct influence on feature development priorities |

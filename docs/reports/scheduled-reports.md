@@ -18,26 +18,26 @@ A scheduled report is one of the supported report types configured to run at a s
 | **Transaction Export** | The period's transaction data in your chosen format |
 | **Cash Flow** | VAT-aware cash-flow view for the period |
 
-Schedules are independent of manual report runs — you can still generate reports on demand at any time while a schedule is active.
+Schedules are independent of manual report runs - you can still generate reports on demand at any time while a schedule is active.
 
 ## Creating a Schedule
 
 Navigate to **Settings > Report Scheduling**, then click **New Schedule**.
 
-1. **Choose a report type** — VAT Summary, Transaction Export, or Cash Flow
-2. **Set the frequency** — Daily, Weekly, Monthly, or Quarterly
-3. **Select the output format** — PDF, Excel, CSV, or JSON
-4. **Enter recipient email addresses** — one or more, separated by commas
-5. **Save** — the schedule becomes active and shows its next run time
+1. **Choose a report type** - VAT Summary, Transaction Export, or Cash Flow
+2. **Set the frequency** - Daily, Weekly, Monthly, or Quarterly
+3. **Select the output format** - PDF, Excel, CSV, or JSON
+4. **Enter recipient email addresses** - one or more, separated by commas
+5. **Save** - the schedule becomes active and shows its next run time
 
 ## Managing Schedules
 
 The schedule list shows each schedule's report type, next run, last run status, and an active/paused toggle:
 
-- **Active toggle** — switch a schedule off to pause it without deleting it; switch it back on to resume
-- **Run Now** — trigger an immediate run of an active schedule
-- **Edit** — change the type, frequency, format, or recipients; changes apply from the next run
-- **Delete** — remove the schedule
+- **Active toggle** - switch a schedule off to pause it without deleting it; switch it back on to resume
+- **Run Now** - trigger an immediate run of an active schedule
+- **Edit** - change the type, frequency, format, or recipients; changes apply from the next run
+- **Delete** - remove the schedule
 
 Each run's outcome appears in the **Last Status** column; a failed run shows the failure state so you can correct the configuration (for example, an invalid recipient address).
 

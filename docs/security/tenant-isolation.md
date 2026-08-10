@@ -6,7 +6,7 @@ description: How CoralLedger Comply enforces per-business data isolation using a
 
 # Tenant Isolation Architecture
 
-CoralLedger Comply is a multi-tenant application. Every business's data lives in the same database, so strict isolation is critical. This page explains exactly how that isolation is enforced in code — useful for developers extending or auditing the platform.
+CoralLedger Comply is a multi-tenant application. Every business's data lives in the same database, so strict isolation is critical. This page explains exactly how that isolation is enforced in code - useful for developers extending or auditing the platform.
 
 ## Overview
 
@@ -19,7 +19,7 @@ Data isolation is enforced through an EF Core [global query filter](https://lear
 An earlier implementation used a `readonly` field captured at `DbContext` construction time:
 
 ```csharp
-// Old approach — BusinessId fixed at construction, wrong for long-lived contexts
+// Old approach - BusinessId fixed at construction, wrong for long-lived contexts
 private readonly Guid _businessId = businessContext.GetCurrentBusinessId();
 
 modelBuilder.Entity<Transaction>()
@@ -28,12 +28,12 @@ modelBuilder.Entity<Transaction>()
 
 In Blazor Server, a single `DbContext` instance can outlive a single request. If the user switched tenant context (for example via the `?bid=` query parameter), the captured field would not update and queries would continue returning the old tenant's data.
 
-### Current approach — Expression.Property
+### Current approach - Expression.Property
 
 `VATContext.CurrentBusinessId` is now a **property** that reads the current context on every call:
 
 ```csharp
-// New approach — evaluated at query execution time
+// New approach - evaluated at query execution time
 private Guid CurrentBusinessId => _businessContext.GetCurrentBusinessIdSync();
 
 modelBuilder.Entity<Transaction>()
@@ -87,7 +87,7 @@ Append `?bid=<businessId>` to any Blazor Server URL to switch tenant context:
 https://your-instance.example.com/transactions?bid=3fa85f64-5717-4562-b3fc-2c963f66afa6
 ```
 
-The middleware intercepts the parameter, calls `SetCurrentBusinessId()`, and removes `?bid=` from the URL before the page renders. All EF Core queries made during that circuit session will be scoped to the requested business — subject to the usual authorization checks that verify the current user has access to that business.
+The middleware intercepts the parameter, calls `SetCurrentBusinessId()`, and removes `?bid=` from the URL before the page renders. All EF Core queries made during that circuit session will be scoped to the requested business - subject to the usual authorization checks that verify the current user has access to that business.
 
 :::warning
 The `?bid=` parameter is an authorized context-switch, not an access bypass. The authorization middleware validates that the authenticated user is a member of the target business before the switch takes effect. Attempts to switch to an unauthorized business ID are rejected with a 403.
@@ -99,7 +99,7 @@ The `?bid=` parameter is an authorized context-switch, not an access bypass. The
 |----------|--------|
 | **Filter scope** | All EF Core entities with a `BusinessId` column |
 | **Evaluated** | At query execution time (per-query) |
-| **Bypass protection** | Raw SQL queries that bypass EF Core must explicitly include a `BusinessId` predicate — enforced as a mandatory code-review requirement |
+| **Bypass protection** | Raw SQL queries that bypass EF Core must explicitly include a `BusinessId` predicate - enforced as a mandatory code-review requirement |
 | **Cross-tenant detection** | The EF Core global query filter is the primary control preventing cross-tenant data from being returned; the fraud detection layer monitors for other anomalous cross-business access patterns |
 
 ## Next Steps

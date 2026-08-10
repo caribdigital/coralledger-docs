@@ -20,7 +20,7 @@ Examples of businesses affected:
 - Mixed-use property businesses (residential = exempt; commercial = taxable)
 - Insurance providers with taxable ancillary services
 
-If your business makes **only** taxable supplies — whether standard-rated, reduced-rated, or zero-rated — apportionment does not apply and all input VAT is fully recoverable.
+If your business makes **only** taxable supplies - whether standard-rated, reduced-rated, or zero-rated - apportionment does not apply and all input VAT is fully recoverable.
 
 ## The Apportionment Formula
 
@@ -61,7 +61,7 @@ Input VAT on costs that are **shared** between taxable and exempt activities (su
 
 ```
 Recoverable Input VAT =
-  (Directly Attributed — Taxable) +
+  (Directly Attributed - Taxable) +
   (Residual Input VAT × Deductible Fraction)
 ```
 
@@ -105,9 +105,9 @@ The full apportionment schedule is included in every return export:
 2. Click **Export**
 3. Choose your preferred format: **PDF**, **Excel**, or **XML**
 4. The export includes the apportionment schedule:
-   - **PDF** — displayed as a clearly labelled section within the return document
-   - **Excel** — included as a dedicated **Input Tax Apportionment** worksheet
-   - **XML** — embedded under the apportionment element of the DIR-accepted submission payload
+   - **PDF** - displayed as a clearly labelled section within the return document
+   - **Excel** - included as a dedicated **Input Tax Apportionment** worksheet
+   - **XML** - embedded under the apportionment element of the structured return data
 
 The exported schedule contains:
 
@@ -121,9 +121,9 @@ This provides a complete audit trail and supports any review by the Department o
 
 ## Compliance Considerations
 
-- **Record keeping** — Maintain clear records distinguishing costs directly attributable to taxable vs. exempt activities from shared costs
-- **Category accuracy** — Correct VAT categorization of your supplies (taxable vs. exempt) directly affects the deductible fraction; errors will over- or under-state recoverable input VAT
-- **Partial exemption review** — If your business mix changes significantly, review your apportionment methodology with a VAT advisor
+- **Record keeping** - Maintain clear records distinguishing costs directly attributable to taxable vs. exempt activities from shared costs
+- **Category accuracy** - Correct VAT categorization of your supplies (taxable vs. exempt) directly affects the deductible fraction; errors will over- or under-state recoverable input VAT
+- **Partial exemption review** - If your business mix changes significantly, review your apportionment methodology with a VAT advisor
 
 ## By Statute References
 

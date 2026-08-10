@@ -10,13 +10,13 @@ CoralLedger Comply is built on a server-rendered Blazor architecture that priori
 
 ## How the platform is built
 
-Comply runs as a Blazor Server application — UI rendering happens on the server, with the browser maintaining a SignalR connection over which DOM updates flow. This architecture has specific performance properties:
+Comply runs as a Blazor Server application - UI rendering happens on the server, with the browser maintaining a SignalR connection over which DOM updates flow. This architecture has specific performance properties:
 
 - **Initial page renders are server-side**, so the browser does not need to download a large JavaScript bundle on first load.
 - **Subsequent navigation reuses the SignalR connection**, so page transitions are fast and feel app-like.
 - **Real-time dashboard updates** push from the server when underlying data changes (e.g. new transaction imported, return state changed) without you needing to refresh.
 
-This is the same architectural pattern as products like Microsoft Teams or GitHub Codespaces — interactive web with server-rendered UI.
+This is the same architectural pattern as products like Microsoft Teams or GitHub Codespaces - interactive web with server-rendered UI.
 
 ## What this means for you
 
@@ -45,11 +45,11 @@ You see these reflect on the dashboard without refreshing.
 
 ## Caribbean network reality
 
-The platform is tested against the network conditions a typical Bahamian business will experience — including 3G mobile connections and bandwidth-limited periods. Specific accommodations:
+The platform is tested against the network conditions a typical Bahamian business will experience - including 3G mobile connections and bandwidth-limited periods. Specific accommodations:
 
 - **Skeleton placeholders** show during data loads so the page feels responsive even when the underlying query is slow.
 - **Per-page data loading** runs in `OnAfterRenderAsync` so the initial render is not blocked by long-running queries.
-- **SignalR retry + reconnect** is built in — if the connection drops, the browser reconnects when the network comes back.
+- **SignalR retry + reconnect** is built in - if the connection drops, the browser reconnects when the network comes back.
 
 ## Supported Browsers
 

@@ -15,10 +15,10 @@ Navigate to **Settings > User Management** or **Settings > Users**. This feature
 ## Dashboard Overview
 
 Summary cards display:
-- **Total Users** — Active users on your account
-- **Owners** — Users with full access
-- **Accountants** — Users with data management access
-- **Pending Invites** — Outstanding invitations
+- **Total Users** - Active users on your account
+- **Owners** - Users with full access
+- **Accountants** - Users with data management access
+- **Pending Invites** - Outstanding invitations
 
 ## Permission Levels
 
@@ -26,8 +26,8 @@ Comply recognises two **base permission levels** on `UserBusinessAccess`:
 
 | Level | What it grants | Notes |
 |---|---|---|
-| **Owner** | Full access to the business — settings, user management, every feature surface | At least one Owner must exist at all times (see Last-Owner protection below) |
-| **Accountant** | Default for non-Owner staff — data management within the business | Access is further refined per-category via the granular permission matrix |
+| **Owner** | Full access to the business - settings, user management, every feature surface | At least one Owner must exist at all times (see Last-Owner protection below) |
+| **Accountant** | Default for non-Owner staff - data management within the business | Access is further refined per-category via the granular permission matrix |
 
 There is no separate "View Only" or "Review Only" permission level. A read-only experience is achieved by granting **Accountant** as the base level and turning off the editing permissions in the granular matrix.
 
@@ -35,17 +35,17 @@ There is no separate "View Only" or "Review Only" permission level. A read-only 
 
 Above the base level, an Owner can configure per-category access for any Accountant. The categories are:
 
-- **Transactions** — Create, edit, delete, import
-- **Reports** — View, export, share
-- **Compliance** — View scores, manage alerts
-- **Settings** — Business settings, preferences
-- **User Management** — Add/remove users
-- **Security** — View audit logs, security settings
+- **Transactions** - Create, edit, delete, import
+- **Reports** - View, export, share
+- **Compliance** - View scores, manage alerts
+- **Settings** - Business settings, preferences
+- **User Management** - Add/remove users
+- **Security** - View audit logs, security settings
 
 Each category exposes the operations relevant to it. Toggling Transactions → Create off, for example, gives the Accountant read-and-edit access to transactions without the ability to add new ones.
 
 :::warning Last-Owner protection
-A business must always have at least one Owner. The user-management surface refuses to demote or remove the **sole** remaining Owner — both actions are blocked with a clear error message. To replace the last Owner, first promote a second user to Owner, then demote the original.
+A business must always have at least one Owner. The user-management surface refuses to demote or remove the **sole** remaining Owner - both actions are blocked with a clear error message. To replace the last Owner, first promote a second user to Owner, then demote the original.
 :::
 
 :::info §32 attestation is independent of permission level
@@ -53,7 +53,7 @@ Permissions and §32 attestations are **two distinct artefacts**. Changing a use
 
 - An Accountant can hold an `Active` attestation for a client and continue to sign returns under it until the attestation is voided through a separate flow.
 - Revoking a user's Accountant access from a business removes their day-to-day access but does **not** void any attestation they hold on that business. To void the attestation, route through the reassignment flow described below.
-- An Owner does not implicitly hold an attestation — Owner status grants full firm-portal access, not regulatory authority.
+- An Owner does not implicitly hold an attestation - Owner status grants full firm-portal access, not regulatory authority.
 
 See [Section 32 Attestation Overview](/docs/attestation/) for the admin attestation lifecycle and the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) for the creation flow. The runtime gate that fires when a user no longer holds the regulatory authority is documented at [Practitioner Revocation Gate](/docs/attestation/practitioner-revocation).
 :::
@@ -68,7 +68,7 @@ When a firm needs to transfer a client from one practitioner to another, the **R
 The new practitioner must then run the [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) before the client can be filed for again.
 
 :::info Today this flow is API-only
-The Reassign Client flow is available **today** only through the `/api/AccountingFirm/reassign-client` endpoint — the corresponding Clients-grid row action in the Comply UI is a placeholder pending implementation (see [Comply #3125](https://github.com/caribdigital/coralledgercomply/issues/3125) for the Phase 2 UI work). Until the UI ships, firms that need to reassign a client should coordinate with Comply support to invoke the API.
+The Reassign Client flow is available **today** only through the `/api/AccountingFirm/reassign-client` endpoint - the corresponding Clients-grid row action in the Comply UI is a placeholder pending implementation (see [Comply #3125](https://github.com/caribdigital/coralledgercomply/issues/3125) for the Phase 2 UI work). Until the UI ships, firms that need to reassign a client should coordinate with Comply support to invoke the API.
 :::
 
 ## Client Invitation Lifecycle
@@ -76,10 +76,10 @@ The Reassign Client flow is available **today** only through the `/api/Accountin
 When a firm invites a client business to CoralLedger Comply, the invitation passes through several states. Understanding each stage helps you manage outstanding invitations and troubleshoot delivery issues.
 
 :::note
-Client invitations (covered in this section) are distinct from team member invitations. Use **Invite Client** to bring a client business under your firm's management; use **Invite User** to add a colleague to your own account — see [Inviting a Team Member](#inviting-a-team-member) below.
+Client invitations (covered in this section) are distinct from team member invitations. Use **Invite Client** to bring a client business under your firm's management; use **Invite User** to add a colleague to your own account - see [Inviting a Team Member](#inviting-a-team-member) below.
 :::
 
-### 1 — Send
+### 1 - Send
 
 1. Click **Invite Client**
 2. Enter the client's email address
@@ -87,16 +87,16 @@ Client invitations (covered in this section) are distinct from team member invit
 
 CoralLedger Comply generates a unique, time-limited token and sends it to the provided email address. The token is valid for **7 days** from the time of sending. The pending invitations table is updated immediately.
 
-### 2 — Resend (token refresh)
+### 2 - Resend (token refresh)
 
 If the original invitation has not been accepted, you can resend it:
 
 1. Locate the invitation in the pending invitations table
 2. Click **Resend**
 
-Resending **rotates the token** and resets the 7-day expiry window. The previous token is invalidated instantly — any link the client may have saved will no longer work. Use this option when the client reports not receiving the original email or when the original token has expired.
+Resending **rotates the token** and resets the 7-day expiry window. The previous token is invalidated instantly - any link the client may have saved will no longer work. Use this option when the client reports not receiving the original email or when the original token has expired.
 
-### 3 — Revoke
+### 3 - Revoke
 
 To cancel an outstanding invitation before the client accepts it:
 
@@ -109,7 +109,7 @@ A revoked invitation is marked as consumed and cannot be used to accept the invi
 Revoking an invitation is irreversible. If you need to invite the same client again, send a new invitation.
 :::
 
-### 4 — Accept
+### 4 - Accept
 
 When the client clicks the invitation link:
 
@@ -119,7 +119,7 @@ When the client clicks the invitation link:
 
 Once accepted, the client business appears in your **Clients** dashboard and can be managed through the Firm Portal.
 
-### 5 — Expire
+### 5 - Expire
 
 Tokens that have not been accepted or revoked within 7 days are rejected when the client attempts to use the link. The invitation remains visible in the pending invitations table as **Expired**. You can send a fresh invitation from the actions menu.
 

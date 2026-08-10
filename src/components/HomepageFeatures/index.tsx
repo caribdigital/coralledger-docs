@@ -36,8 +36,8 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Immutable hash-chain verified audit trail with 7-year retention.
-        Export a complete audit defense package — transaction log, rate
-        classifications, and apportionment workings — in one click.
+        Export a complete audit defense package - transaction log, rate
+        classifications, and apportionment workings - in one click.
       </>
     ),
   },
@@ -47,8 +47,8 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Generate VAT returns with 10-point pre-flight validation. Preview totals,
-        catch errors before filing, and export in PDF, XML, Excel, or Form 301
-        formats ready for OTAS upload or in-person DIR filing.
+        catch errors before filing, and export in PDF, XML, or Excel formats
+        for review and external lodgement.
       </>
     ),
   },
