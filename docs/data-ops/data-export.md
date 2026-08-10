@@ -8,13 +8,13 @@ description: Export business data as CSV / Excel / JSON / XML through the tenant
 
 CoralLedger Comply exposes business data export through two paths today, with different scopes and constraints.
 
-## Tenant Admin export — the shipped UI
+## Tenant Admin export - the shipped UI
 
 The tenant Admin Data Export surface lets an Administrator export the business's own data in several formats. It is the canonical user-facing export path.
 
 ### Accessing the export
 
-Navigate to **Admin > Data Export** (route: `/admin/data-export`). This surface requires Administrator access with 2FA enabled. The current business context applies — exports are scoped to the business you are signed into.
+Navigate to **Admin > Data Export** (route: `/admin/data-export`). This surface requires Administrator access with 2FA enabled. The current business context applies - exports are scoped to the business you are signed into.
 
 ### Supported export categories
 
@@ -23,16 +23,16 @@ Navigate to **Admin > Data Export** (route: `/admin/data-export`). This surface 
 | **Transactions** | CSV, JSON |
 | **VAT Returns** | Excel |
 | **Compliance Report** | (formatted output) |
-| **VAT XML** | DIR-accepted XML for OTAS submission |
+| **VAT XML** | Structured XML of the return figures |
 | **Anomaly Report** | (formatted output) |
 
-Each export is generated synchronously — when you click **Export**, the file is generated and offered for download immediately. There is no separate queue or job-status surface.
+Each export is generated synchronously - when you click **Export**, the file is generated and offered for download immediately. There is no separate queue or job-status surface.
 
 ### What scoping applies
 
-Exports run server-side and are strictly scoped to the current `BusinessId` (enforced via `IBusinessContextService`). Without a business context, the surface throws `UnauthorizedAccessException` — there is no tenant-Admin path to export another business's data.
+Exports run server-side and are strictly scoped to the current `BusinessId` (enforced via `IBusinessContextService`). Without a business context, the surface throws `UnauthorizedAccessException` - there is no tenant-Admin path to export another business's data.
 
-## Ops Portal full-business JSON export — service only today
+## Ops Portal full-business JSON export - service only today
 
 For cross-tenant export use cases (regulatory submissions, legal discovery, off-platform archiving), CoralLedger exposes the `IPlatformDataOpsService.ExportBusinessDataAsync` service method. It returns a complete JSON snapshot of a business's data including transactions, VAT returns, compliance scores, import batches, and privacy settings.
 
@@ -55,7 +55,7 @@ The cross-tenant JSON export contains:
 | **Privacy Settings** | The business's privacy configuration and consent records |
 
 :::info File attachments not included
-File attachments (binary content) are not included in the JSON export. The export contains attachment metadata — file name, type, size, and storage reference. Contact support if you need raw file exports.
+File attachments (binary content) are not included in the JSON export. The export contains attachment metadata - file name, type, size, and storage reference. Contact support if you need raw file exports.
 :::
 
 ## Security considerations
@@ -68,7 +68,7 @@ File attachments (binary content) are not included in the JSON export. The expor
 
 | Scenario | Path |
 |---|---|
-| **Regulatory submission to DIR** | Tenant Admin export — VAT XML or PDF artefacts of returns are usually the right surface |
+| **Regulatory submission to DIR** | Tenant Admin export - VAT XML or PDF artefacts of returns are usually the right surface |
 | **Legal discovery** | Coordinate with support; the Ops service-method export is the route until the UI ships |
 | **Business migration** | Tenant Admin transactions export (CSV/JSON) is usually sufficient for re-import elsewhere |
 | **Data subject request (DSAR)** | Ops service-method export is the right surface; support produces the JSON and delivers it through an authenticated channel |

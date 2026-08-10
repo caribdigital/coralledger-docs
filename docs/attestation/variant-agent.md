@@ -6,11 +6,11 @@ description: Section 32 attestation for authorized agents filing on behalf of a 
 
 # Authorized Agent Variant
 
-The Authorized Agent Variant applies when a third party — such as an accountant, law firm, or business representative — files a VAT return on behalf of the registered person under a formal agency arrangement. This variant corresponds to the `SignatoryCapacity.AuthorisedAgent` enum value in the platform.
+The Authorized Agent Variant applies when a third party - such as an accountant, law firm, or business representative - files a VAT return on behalf of the registered person under a formal agency arrangement. This variant corresponds to the `SignatoryCapacity.AuthorisedAgent` enum value in the platform.
 
 ## Who Uses This Variant
 
-This variant is presented when the [Qualifying Screen](/docs/attestation/qualifying-screen) determines that the filer's signatory capacity is **`AuthorisedAgent`** — acting on behalf of the registered person, rather than the registrant themselves.
+This variant is presented when the [Qualifying Screen](/docs/attestation/qualifying-screen) determines that the filer's signatory capacity is **`AuthorisedAgent`** - acting on behalf of the registered person, rather than the registrant themselves.
 
 An authorized agent is any individual or firm that:
 
@@ -26,7 +26,7 @@ Before the Authorized Agent Variant can be used, the agent relationship must be 
 2. The agent's user account is invited and assigned the **Accountant** role
 3. The agent accepts the invitation and completes their profile
 
-If the agent has not been formally added to the business, they cannot select this variant — the Qualifying Screen will block progression and prompt the owner to set up the agent relationship first.
+If the agent has not been formally added to the business, they cannot select this variant - the Qualifying Screen will block progression and prompt the owner to set up the agent relationship first.
 
 ## Declaration Text
 

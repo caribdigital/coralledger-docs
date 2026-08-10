@@ -6,33 +6,33 @@ description: How CoralLedger Comply manages VAT rate changes across transition d
 
 # Rate Transition Handling
 
-When VAT rates change — such as the April 2026 reforms that moved certain goods between rate categories — CoralLedger Comply applies the correct rate based on each transaction's date and preserves the historical accuracy of all existing records.
+When VAT rates change - such as the April 2026 reforms that moved certain goods between rate categories - CoralLedger Comply applies the correct rate based on each transaction's date and preserves the historical accuracy of all existing records.
 
 ## What Is a Rate Transition?
 
-A rate transition occurs when a category of goods or services moves from one VAT rate to another on a specific effective date. The April 2026 reforms are a significant example: certain unprepared food items that were previously taxable (at 10% or 5%) became **Exempt** as of April 1, 2026.
+A rate transition occurs when a category of goods or services moves from one VAT rate to another on a specific effective date. The April 2026 reforms are a significant example: certain unprepared food items that were previously taxable (at 10% or 5%) became **Exempt** as of 1 Apr 2026.
 
 ### April 2026 Category Changes
 
-| Item Category | Before April 1, 2026 | From April 1, 2026 |
+| Item Category | Before 1 Apr 2026 | From 1 Apr 2026 |
 |---------------|----------------------|--------------------|
 | Unprepared / raw food | 10% Standard or 5% Reduced | Exempt |
 | Essential grocery staples (breadbasket) | 5% Reduced | Exempt |
 | Prepared food / restaurant meals | 10% Standard | 10% Standard (unchanged) |
 | Other retail goods | 10% Standard | 10% Standard (unchanged) |
 
-:::info April 1, 2026 Effective Date
-The April 2026 rate changes took effect on **April 1, 2026**. Transactions dated on or after this date use the new rates; transactions dated before this date retain their original rates.
+:::info 1 Apr 2026 Effective Date
+The April 2026 rate changes took effect on **1 Apr 2026**. Transactions dated on or after this date use the new rates; transactions dated before this date retain their original rates.
 :::
 
 ## How Comply Manages the Transition Date
 
 ### Date-Based Rate Application
 
-Comply uses each transaction's **transaction date** — not the import date or filing date — to determine the applicable VAT rate. This means:
+Comply uses each transaction's **transaction date** - not the import date or filing date - to determine the applicable VAT rate. This means:
 
-- A grocery purchase dated **March 31, 2026** retains the pre-transition rate (e.g., 5% Reduced).
-- The same grocery purchase dated **April 1, 2026** is assigned the post-transition rate (Exempt).
+- A grocery purchase dated **31 Mar 2026** retains the pre-transition rate (e.g., 5% Reduced).
+- The same grocery purchase dated **1 Apr 2026** is assigned the post-transition rate (Exempt).
 
 You do not need to manually update categorization rules; the system applies the correct rate based on the date you record.
 
@@ -40,9 +40,9 @@ You do not need to manually update categorization rules; the system applies the 
 
 Existing transactions are **never retroactively re-rated**. Once a transaction is saved with a rate that was valid on its transaction date, that rate is locked for historical accuracy:
 
-1. **Immutable historical rates** — Past transactions reflect the rate in force at the time of the transaction.
-2. **Audit trail integrity** — The audit log records the rate applied and the effective date table used at the time of categorization.
-3. **VAT return accuracy** — Returns generated for periods before April 2026 calculate using pre-transition rates; returns for periods on or after April 2026 use post-transition rates.
+1. **Immutable historical rates** - Past transactions reflect the rate in force at the time of the transaction.
+2. **Audit trail integrity** - The audit log records the rate applied and the effective date table used at the time of categorization.
+3. **VAT return accuracy** - Returns generated for periods before April 2026 calculate using pre-transition rates; returns for periods on or after April 2026 use post-transition rates.
 
 ### Categorization Rule Behaviour at Transition
 
@@ -67,29 +67,29 @@ Box 5 on the Bahamas VAT return is the line item for **Reduced/Essential Goods**
 
 ### Significance Post-April 2026
 
-After April 1, 2026, the goods that previously populated Box 5 as 5%-rated are reclassified as Exempt. This has two practical consequences:
+After 1 Apr 2026, the goods that previously populated Box 5 as 5%-rated are reclassified as Exempt. This has two practical consequences:
 
-1. **Box 5 values decrease** — Transactions dated on or after April 1, 2026 for these goods no longer contribute to Box 5.
-2. **Exempt supplies increase** — The same goods now appear in the Exempt supplies summary instead, which affects your refund eligibility calculation under the 50% rule.
+1. **Box 5 values decrease** - Transactions dated on or after 1 Apr 2026 for these goods no longer contribute to Box 5.
+2. **Exempt supplies increase** - The same goods now appear in the Exempt supplies summary instead, which affects your refund eligibility calculation under the 50% rule.
 
 ### Box 5 in VAT Returns Generated by Comply
 
 | Return Period | Box 5 Contents |
 |---------------|----------------|
-| Periods ending before April 1, 2026 | All 5%-rated reduced/essential goods transactions |
-| Periods that span April 1, 2026 | Split: pre-transition transactions at 5%; post-transition transactions as Exempt |
-| Periods starting on or after April 1, 2026 | Only 5%-rated items that remain in the reduced category |
+| Periods ending before 1 Apr 2026 | All 5%-rated reduced/essential goods transactions |
+| Periods that span 1 Apr 2026 | Split: pre-transition transactions at 5%; post-transition transactions as Exempt |
+| Periods starting on or after 1 Apr 2026 | Only 5%-rated items that remain in the reduced category |
 
-When generating a return that **spans** the April 1, 2026 date, Comply splits the Box 5 calculation so that each transaction is reported at the rate applicable on its transaction date.
+When generating a return that **spans** the 1 Apr 2026 date, Comply splits the Box 5 calculation so that each transaction is reported at the rate applicable on its transaction date.
 
 ## Transition Alerts in the UI
 
 Comply surfaces rate transition guidance in several places:
 
-- **Transaction list** — A banner appears when viewing transactions near the transition date.
-- **Categorization screen** — A tooltip flags items whose category changed on April 1, 2026.
-- **VAT return preview** — A transition summary section shows how many transactions were split across the rate change and what the combined Box 5 impact is.
-- **Intelligence Dashboard** — The period-comparison view highlights the Box 5 shift between pre- and post-transition periods.
+- **Transaction list** - A banner appears when viewing transactions near the transition date.
+- **Categorization screen** - A tooltip flags items whose category changed on 1 Apr 2026.
+- **VAT return preview** - A transition summary section shows how many transactions were split across the rate change and what the combined Box 5 impact is.
+- **Intelligence Dashboard** - The period-comparison view highlights the Box 5 shift between pre- and post-transition periods.
 
 ## Frequently Asked Questions
 
@@ -103,7 +103,7 @@ The Rate Accuracy component of your compliance score will flag the mismatch. Cor
 
 ### How do I know which of my items are affected by the April 2026 change?
 
-Go to **Compliance > Rate Transitions** to see a list of vendor/category rules that have been updated and the transactions that fall near the April 1, 2026 date.
+Go to **Compliance > Rate Transitions** to see a list of vendor/category rules that have been updated and the transactions that fall near the 1 Apr 2026 date.
 
 ### Will my refund eligibility change after April 2026?
 

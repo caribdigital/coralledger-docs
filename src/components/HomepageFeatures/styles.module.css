@@ -6,8 +6,11 @@
 }
 
 .featureIcon {
-  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  margin-inline: auto;
   margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
 }
 
 .features h3 {

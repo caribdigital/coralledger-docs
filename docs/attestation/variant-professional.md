@@ -6,7 +6,7 @@ description: Section 32 attestation for BICA-registered accountants preparing VA
 
 # Professional Accountant Variant
 
-The Professional Accountant Variant applies when a **BICA-registered accountant** prepares and files a VAT return on behalf of a client. This variant corresponds to the `SignatoryCapacity.BicaLicensedPractitioner` enum value in the platform, and includes an additional declaration step — the [BICA Licence Declaration](/docs/attestation/bica-licence-declaration) — which records the practitioner's self-declared BICA licence as part of the attestation.
+The Professional Accountant Variant applies when a **BICA-registered accountant** prepares and files a VAT return on behalf of a client. This variant corresponds to the `SignatoryCapacity.BicaLicensedPractitioner` enum value in the platform, and includes an additional declaration step - the [BICA Licence Declaration](/docs/attestation/bica-licence-declaration) - which records the practitioner's self-declared BICA licence as part of the attestation.
 
 Within this signatory capacity, the practitioner additionally selects one of seven **`AttestationVariant`** bodies that identify the practice-area scope being attested. See [Attestation Body Selection](#attestation-body-selection) below.
 
@@ -22,9 +22,9 @@ A BICA practitioner attests under one of seven attestation bodies (`AttestationV
 
 | Code | Declaration scope |
 |---|---|
-| **Variant A** | **General VAT Compliance Attestation** — the business is in compliance with its general VAT obligations |
-| **Variant B** | **VAT Return Preparation Attestation** — the practitioner prepared or reviewed the VAT return(s) for the period(s) stated |
-| **Variant C** | **VAT Advisory Services Attestation** — VAT advisory services were rendered in accordance with BICA professional standards |
+| **Variant A** | **General VAT Compliance Attestation** - the business is in compliance with its general VAT obligations |
+| **Variant B** | **VAT Return Preparation Attestation** - the practitioner prepared or reviewed the VAT return(s) for the period(s) stated |
+| **Variant C** | **VAT Advisory Services Attestation** - VAT advisory services were rendered in accordance with BICA professional standards |
 | **Variant A+B** | General compliance + return preparation |
 | **Variant A+C** | General compliance + advisory services |
 | **Variant B+C** | Return preparation + advisory services |
@@ -37,7 +37,7 @@ The practitioner selects the variant whose scope accurately reflects the service
 Before the professional declaration is presented, the accountant records their [BICA Licence Declaration](/docs/attestation/bica-licence-declaration):
 
 1. Enter your **name as listed with BICA** when prompted
-2. The entry is stored as self-attested — the surface states plainly that it is not checked against the BICA registry during beta
+2. The entry is stored as self-attested - the surface states plainly that it is not checked against the BICA registry during beta
 3. Proceed to the professional declaration and sign
 
 See the [BICA Licence Declaration](/docs/attestation/bica-licence-declaration) page for what is recorded and whose responsibility the declaration is.
@@ -86,7 +86,7 @@ The Professional Accountant Variant carries an explicit professional liability a
 - They have reviewed the underlying transactions and supporting records
 - They are not aware of any material misstatement or omission
 
-This does not transfer legal liability from the registrant to the accountant — the registrant remains ultimately responsible for the accuracy of the return and for any resulting penalties, interest, and assessment exposure under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) — but it does establish the accountant's professional accountability under BICA standards.
+This does not transfer legal liability from the registrant to the accountant - the registrant remains ultimately responsible for the accuracy of the return and for any resulting penalties, interest, and assessment exposure under the [Value Added Tax Act, 2014 (as amended)](https://laws.bahamas.gov.bs/) - but it does establish the accountant's professional accountability under BICA standards.
 
 ## Next Steps
 

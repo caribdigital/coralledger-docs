@@ -57,16 +57,16 @@ Calculates your exposure to the late-filing and late-payment fines set out in [V
 - Recommended actions to reduce risk
 
 :::warning Penalty Rates
-Late filing is fined at the **greater of $100 or 2% of the tax payable**, and late payment at **10% of the tax owed**, with **interest on outstanding tax at the Central Bank of The Bahamas prime lending rate plus 1%** ([Value Added Tax Act, 2014, s. 47A](https://laws.bahamas.gov.bs/)). Section 61 of the Act is an evidentiary provision (*"Assessment as evidence in proceedings"*), **not** a penalty section — there is no "200% of unpaid VAT" multiplier.
+Late filing is fined at the **greater of $100 or 2% of the tax payable**, and late payment at **10% of the tax owed**, with **interest on outstanding tax at the Central Bank of The Bahamas prime lending rate plus 1%** ([Value Added Tax Act, 2014, s. 47A](https://laws.bahamas.gov.bs/)). Section 61 of the Act is an evidentiary provision (*"Assessment as evidence in proceedings"*), **not** a penalty section - there is no "200% of unpaid VAT" multiplier.
 :::
 
 ### Risk Indicators
 
-Each risk indicator is shown as a **level and a direction** — a current value against a threshold, with a status of **Normal**, **Warning**, or **Critical**. Indicators describe where a metric stands and which way it is trending; they are not a prediction that a figure will reach zero.
+Each risk indicator is shown as a **level and a direction** - a current value against a threshold, with a status of **Normal**, **Warning**, or **Critical**. Indicators describe where a metric stands and which way it is trending; they are not a prediction that a figure will reach zero.
 
 ### Provisional figures and pending review
 
-Money figures are presented **neutrally** — Net VAT can be a payable or a refund, and is never coloured as "good" or "bad". When a period still has transactions awaiting review, the dashboard marks the Net VAT figure as **provisional** ("Provisional — N pending review; promote before filing") and shows how the figure would change once those items are promoted. Promote pending items before relying on the number for filing.
+Money figures are presented **neutrally** - Net VAT can be a payable or a refund, and is never coloured as "good" or "bad". When a period still has transactions awaiting review, the dashboard marks the Net VAT figure as **provisional** ("Provisional - N pending review; promote before filing") and shows how the figure would change once those items are promoted. Promote pending items before relying on the number for filing.
 
 ### Data Quality Score
 

@@ -10,23 +10,23 @@ Understanding how to categorize transactions for VAT compliance in The Bahamas.
 
 ## VAT Categories in The Bahamas
 
-As of **April 1, 2026**, The Bahamas applies these VAT categories:
+As of **1 Apr 2026**, The Bahamas applies these VAT categories:
 
 | Category | Name | Applies To |
 |------|------|------------|
 | Standard (10%) | Standard Rate | Most goods and services |
-| Reduced (5%) | Reduced Rate | Hygiene products and medications at licensed food stores (narrow scope — not a general food rate) |
+| Reduced (5%) | Reduced Rate | Hygiene products and medications at licensed food stores (narrow scope - not a general food rate) |
 | Zero-Rated (0%) | Zero-Rated | Exports, inter-island shipping |
-| Exempt | VAT Exempt | Financial services, education, healthcare, **unprepared food at licensed food stores (from April 1, 2026)** |
+| Exempt | VAT Exempt | Financial services, education, healthcare, **unprepared food at licensed food stores (from 1 Apr 2026)** |
 
 **Note:** Inter-island shipping remains Zero-Rated in CoralLedger Comply under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 9, First Schedule Part I.
 
-:::info April 2026 Change — Unprepared Food is Now Exempt
-As of **April 1, 2026**, unprepared food sold at licensed food stores moved from a reduced/breadbasket rate to **VAT Exempt** status. This means:
+:::info April 2026 Change - Unprepared Food is Now Exempt
+As of **1 Apr 2026**, unprepared food sold at licensed food stores moved from a reduced/breadbasket rate to **VAT Exempt** status. This means:
 - **No VAT is charged** on the sale
 - **No input tax credits** can be claimed on related purchases (unlike Zero-Rated supplies)
 
-This affects apportionment calculations for businesses that sell a mix of taxable and exempt supplies. See [2025 VAT Reforms — April 2026 Food Exemption](/docs/compliance/vat-2025-reforms#april-2026-food-exemption-transition) for details.
+This affects apportionment calculations for businesses that sell a mix of taxable and exempt supplies. See [2025 VAT Reforms - April 2026 Food Exemption](/docs/compliance/vat-2025-reforms#april-2026-food-exemption-transition) for details.
 :::
 
 ## Categorization Suggestions
@@ -59,7 +59,7 @@ You can always review and change suggested categories:
 1. Go to **Transactions**
 2. Select the transaction
 3. Click **Edit Category**
-4. Choose the correct VAT category — **Standard (10%)**, **Reduced (5%)**, **Zero-Rated (0%)**, or **Exempt** (see [VAT Rates](/docs/reference/vat-rates) for the canonical category list and the food-store licensing rule)
+4. Choose the correct VAT category - **Standard (10%)**, **Reduced (5%)**, **Zero-Rated (0%)**, or **Exempt** (see [VAT Rates](/docs/reference/vat-rates) for the canonical category list and the food-store licensing rule)
 5. Optionally add a note explaining the change
 
 ## Category Review

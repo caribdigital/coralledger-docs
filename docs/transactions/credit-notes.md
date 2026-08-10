@@ -15,10 +15,10 @@ Navigate to **Credit Notes** from the main navigation, or go to `/credit-notes`.
 ## Dashboard Overview
 
 Summary cards display:
-- **Total** — All credit notes in the system
-- **Draft** — Credit notes not yet issued
-- **Issued** — Active credit notes
-- **Applied** — Credit notes applied to VAT returns
+- **Total** - All credit notes in the system
+- **Draft** - Credit notes not yet issued
+- **Issued** - Active credit notes
+- **Applied** - Credit notes applied to VAT returns
 
 ## Creating a Credit Note
 
@@ -58,8 +58,8 @@ Once a credit note is issued, it can be applied to a VAT return:
 
 ## Filtering and Searching
 
-- **Status filter** — Draft, Issued, Applied, Voided
-- **Search** — Find by credit note number or customer name
+- **Status filter** - Draft, Issued, Applied, Voided
+- **Search** - Find by credit note number or customer name
 
 ## Downloading PDFs
 

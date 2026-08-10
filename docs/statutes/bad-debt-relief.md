@@ -10,18 +10,18 @@ Statutory Basis: [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 5
 
 ## What statute says
 
-[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 53 provides for a post-supply adjustment where a registered person has accounted for output VAT on a supply that is subsequently not paid. Under **s. 53(3)**, the relief arises on the **date the bad debt is written off in the accounts of the registrant** — not after a fixed elapsed-time wait. There is **no 12-month threshold** in s. 53.
+[Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 53 provides for a post-supply adjustment where a registered person has accounted for output VAT on a supply that is subsequently not paid. Under **s. 53(3)**, the relief arises on the **date the bad debt is written off in the accounts of the registrant** - not after a fixed elapsed-time wait. There is **no 12-month threshold** in s. 53.
 
 To claim relief, the registrant must have:
 
 1. Accounted for output VAT on the original **taxable supply**
-2. **Written off** the debt in its accounts — this is the event that makes relief available under s. 53(3)
+2. **Written off** the debt in its accounts - this is the event that makes relief available under s. 53(3)
 3. Retained evidence of the debt and of reasonable steps taken to recover it
 
 If a debt on which relief was claimed is later paid, the relief must be reversed in a subsequent return.
 
 :::note The 12-month age is a prompt, not the trigger
-CoralLedger Comply surfaces debts that are more than 12 months outstanding as **candidates** to consider writing off — a convenience heuristic, shown as a **"Review From"** date. The 12-month age is **not** the statutory eligibility condition; relief becomes available when the debt is written off in the accounts under s. 53(3).
+CoralLedger Comply surfaces debts that are more than 12 months outstanding as **candidates** to consider writing off - a convenience heuristic, shown as a **"Review From"** date. The 12-month age is **not** the statutory eligibility condition; relief becomes available when the debt is written off in the accounts under s. 53(3).
 :::
 
 The legal policy is corrective: if output VAT was paid on a supply that is not ultimately collected, the law may permit relief to avoid permanent overpayment.

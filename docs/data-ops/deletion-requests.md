@@ -39,11 +39,11 @@ A pending request is created and the user is notified by email.
 
 Operators see all pending requests in the **Deletion Requests** queue, including:
 
-- **Requestor** — Name and email of the user
-- **Submitted** — Date and time of submission
-- **Scope** — What data the request covers
-- **Reason** — Reason provided by the user
-- **Status** — Current status of the request
+- **Requestor** - Name and email of the user
+- **Submitted** - Date and time of submission
+- **Scope** - What data the request covers
+- **Reason** - Reason provided by the user
+- **Status** - Current status of the request
 
 ### 3. Approval or Rejection
 
@@ -60,7 +60,7 @@ The request status changes to **Approved** and the 30-day DPA grace period begin
 
 1. Open the request
 2. Click **Reject**
-3. Enter a rejection reason (required — this is communicated to the user)
+3. Enter a rejection reason (required - this is communicated to the user)
 4. Confirm the rejection
 
 The request status changes to **Rejected**. No data is deleted.
@@ -101,11 +101,11 @@ The request status changes to **Completed** and a final audit entry is created.
 
 ## Request History
 
-All deletion requests — regardless of outcome — are retained in the request history table. You can filter by:
+All deletion requests - regardless of outcome - are retained in the request history table. You can filter by:
 
-- **Status** — Pending, Verified, Approved, InProgress, Completed, Rejected, Cancelled
-- **Date range** — Submission date
-- **Requestor** — Search by name or email
+- **Status** - Pending, Verified, Approved, InProgress, Completed, Rejected, Cancelled
+- **Date range** - Submission date
+- **Requestor** - Search by name or email
 
 ## Audit Trail
 

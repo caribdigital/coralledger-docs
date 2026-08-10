@@ -117,8 +117,8 @@ Every impersonation session is bookended by `PLATFORM_OPS_IMPERSONATION_START` a
 
 `PLATFORM_OPS_*` entries use the same structure as all other audit entries. The fields most relevant to platform ops events are:
 
-- **ActorId** — Identifies the platform staff member who performed the action. During an active impersonation session this reflects the operator, not the impersonated user.
-- **TargetType / TargetId** — Identify the resource that was acted upon (e.g., a user, business, or tenant).
+- **ActorId** - Identifies the platform staff member who performed the action. During an active impersonation session this reflects the operator, not the impersonated user.
+- **TargetType / TargetId** - Identify the resource that was acted upon (e.g., a user, business, or tenant).
 
 ## Next Steps
 

@@ -6,7 +6,7 @@ description: Compare C7 customs import data against sales revenue for margin che
 
 # Customs Import Variance Analysis
 
-The variance analysis report is **specifically a customs-import-vs-sales reconciliation tool**. It compares C7 customs import data against sales revenue to identify discrepancies, calculate gross margins, and flag potential compliance issues — including reconciling **VAT Return Box 14 (import VAT)** against actual C7 entries for the period.
+The variance analysis report is **specifically a customs-import-vs-sales reconciliation tool**. It compares C7 customs import data against sales revenue to identify discrepancies, calculate gross margins, and flag potential compliance issues - including reconciling **VAT Return Box 14 (import VAT)** against actual C7 entries for the period.
 
 This report is **not** a generic VAT period-over-period variance tool. If you need broader period comparison, see the [Custom Report Builder](/docs/reports/custom-reports) (which includes a `PeriodComparison` report type).
 
@@ -41,9 +41,9 @@ After running an analysis, three summary cards display:
 ## Attention Flags
 
 The report groups attention flags by severity:
-- **Critical** — Issues requiring immediate investigation
-- **Review** — Items that should be examined
-- **Warning** — Potential concerns to monitor
+- **Critical** - Issues requiring immediate investigation
+- **Review** - Items that should be examined
+- **Warning** - Potential concerns to monitor
 
 Each flag shows:
 - Description of the issue
@@ -66,9 +66,9 @@ A detailed breakdown by category showing:
 ## VAT Reconciliation
 
 A summary reconciliation showing:
-- **Box 14 (Import VAT)** — VAT paid on imports
-- **Output VAT (Sales)** — VAT collected on sales
-- **Net VAT Position** — Whether you owe VAT or are eligible for a refund
+- **Box 14 (Import VAT)** - VAT paid on imports
+- **Output VAT (Sales)** - VAT collected on sales
+- **Net VAT Position** - Whether you owe VAT or are eligible for a refund
 
 ## Next Steps
 

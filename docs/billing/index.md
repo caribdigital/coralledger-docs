@@ -8,10 +8,10 @@ description: CoralLedger Comply subscription plans and billing information
 
 Manage your CoralLedger Comply subscription, view billing details, and explore available plans.
 
-:::info Free Beta — Open Beta in progress
+:::info Free Beta - Open Beta in progress
 CoralLedger Comply is currently in **free beta**. All features are available at no cost during open beta. Subscription billing begins after open beta.
 
-**Founding Member Special**: Lock in $99/mo for life — limited to 20 spots.
+**Founding Member Special**: Lock in $99/mo for life - limited to 20 spots.
 :::
 
 ## Current Beta Program
@@ -20,7 +20,7 @@ CoralLedger Comply is in open beta. During the beta period:
 
 - **All features** are fully available at no cost
 - **No credit card** required during beta
-- **Data is preserved** — everything you enter during beta carries forward
+- **Data is preserved** - everything you enter during beta carries forward
 - **Founding Members** can lock in discounted pricing before billing starts
 
 ## Subscription Tiers
@@ -34,7 +34,7 @@ CoralLedger Comply is in open beta. During the beta period:
 ### Founding Member Pricing
 
 :::tip Limited to 20 Spots
-Founding Members lock in $99/mo for life — this price never increases, even as we add features and raise standard pricing. This represents a 67% lifetime discount.
+Founding Members lock in $99/mo for life - this price never increases, even as we add features and raise standard pricing. This represents a 67% lifetime discount.
 :::
 
 **Founding Member benefits include:**

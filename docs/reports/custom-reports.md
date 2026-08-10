@@ -16,7 +16,7 @@ Navigate to **Reports > Custom Report Builder**.
 
 The report builder uses a three-panel layout:
 
-### Left Panel — Configuration
+### Left Panel - Configuration
 
 **Report Name**: Give your report a descriptive name.
 
@@ -34,9 +34,9 @@ The report builder uses a three-panel layout:
 - Year to Date
 
 **Filters**:
-- **Transaction Direction** — All, Sales Only, or Purchases Only
-- **VAT Categories** — Multi-select: Standard, Zero-Rated, Exempt, Standard Import
-- **Minimum Amount** — Filter out small transactions
+- **Transaction Direction** - All, Sales Only, or Purchases Only
+- **VAT Categories** - Multi-select: Standard, Zero-Rated, Exempt, Standard Import
+- **Minimum Amount** - Filter out small transactions
 
 **Output Format**: Choose export format:
 - CSV
@@ -44,7 +44,7 @@ The report builder uses a three-panel layout:
 - PDF
 - JSON
 
-### Middle Panel — Column Selection
+### Middle Panel - Column Selection
 
 Select which columns to include in your report:
 - Date
@@ -64,7 +64,7 @@ Select which columns to include in your report:
 
 Use **Select All**, **Clear All**, or **Reset** to quickly manage columns. Drag columns to reorder them.
 
-### Right Panel — Preview
+### Right Panel - Preview
 
 Click **Load Preview** to see a sample of your report (top 5 rows, first 4 columns) before generating the full report.
 

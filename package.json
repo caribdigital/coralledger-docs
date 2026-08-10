@@ -16,7 +16,8 @@
     "check:bica-honesty": "node tools/check-bica-honesty.mjs",
     "check:bica-honesty:self-test": "node tools/check-bica-honesty.mjs --self-test",
     "check:vocab": "node tools/check-vocab.mjs",
-    "check:vocab:self-test": "node tools/check-vocab.mjs --self-test"
+    "check:vocab:self-test": "node tools/check-vocab.mjs --self-test",
+    "check:estate-content": "node tools/check-estate-content.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

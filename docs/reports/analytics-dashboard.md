@@ -31,9 +31,9 @@ The Analytics Dashboard is divided into several panels:
 
 The VAT Trend Chart plots three lines across the selected date range:
 
-- **Output Tax** — VAT collected on sales (taxable supplies)
-- **Input Tax** — VAT paid on purchases (claimable input tax)
-- **Net VAT** — Output tax minus input tax (your net liability or refund position)
+- **Output Tax** - VAT collected on sales (taxable supplies)
+- **Input Tax** - VAT paid on purchases (claimable input tax)
+- **Net VAT** - Output tax minus input tax (your net liability or refund position)
 
 Each data point represents one filing period (typically one month).
 
@@ -42,7 +42,7 @@ Each data point represents one filing period (typically one month).
 - A rising **Output Tax** line indicates growing sales.
 - A rising **Input Tax** line indicates growing business expenditure.
 - When **Net VAT** is positive, you owe VAT to the DIR; when negative, you may be owed a refund.
-- Gaps or flat lines often indicate periods with no imported transactions — check for missing data.
+- Gaps or flat lines often indicate periods with no imported transactions - check for missing data.
 
 ### Period-over-Period Comparisons
 
@@ -106,10 +106,10 @@ All charts and summary cards on the page reflect the same selected period.
 
 At the top of the dashboard, four summary cards display key figures for the selected period:
 
-- **Total Output Tax** — Total VAT charged on taxable supplies
-- **Total Input Tax** — Total claimable input VAT
-- **Net VAT Position** — Liability (positive) or refund entitlement (negative)
-- **Transaction Count** — Number of transactions included in the analysis
+- **Total Output Tax** - Total VAT charged on taxable supplies
+- **Total Input Tax** - Total claimable input VAT
+- **Net VAT Position** - Liability (positive) or refund entitlement (negative)
+- **Transaction Count** - Number of transactions included in the analysis
 
 ## Relation to Compliance Scoring
 
@@ -122,7 +122,7 @@ The data visualised in the Analytics Dashboard directly influences your [Complia
 | Sudden unexplained spikes in output or input tax | Triggers anomaly alerts that lower the overall score |
 | Consistent period-over-period data | Supports a stable or improving compliance grade |
 
-Reviewing the Analytics Dashboard regularly helps you catch data issues early — before they affect your VAT return or compliance grade.
+Reviewing the Analytics Dashboard regularly helps you catch data issues early - before they affect your VAT return or compliance grade.
 
 For a deeper review of your data patterns, see the [Intelligence Dashboard](/docs/compliance/intelligence-dashboard).
 

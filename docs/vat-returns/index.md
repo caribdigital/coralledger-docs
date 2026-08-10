@@ -15,7 +15,7 @@ VAT returns in The Bahamas are filed:
 - **Quarterly** - For most registered businesses
 
 :::info Filing Deadline
-VAT returns are due within **21 days** after the end of the tax period (14 days for large taxpayers with annual turnover ≥ $5M). The deadline varies by period — it is not a fixed calendar date.
+VAT returns are due within **21 days** after the end of the tax period (14 days for large taxpayers with annual turnover ≥ $5M). The deadline varies by period - it is not a fixed calendar date.
 :::
 
 ## Return Components
@@ -29,7 +29,7 @@ Each VAT return includes:
 - VAT collected from customers
 
 :::info Reduced (5%) sub-categories
-When you classify a transaction as **Reduced (5%)** in the [Manual VAT Entry](/docs/transactions/manual-entry) dropdown, Comply asks which sub-category applies — Food (licensed food stores only), Hygiene, Medical, or Essential Goods — so the legal-basis citation on the audit trail is precise. All four sub-categories ultimately compute at the 5% rate. See [VAT Rates Reference](/docs/reference/vat-rates) for the canonical category list and the food-store licensing rule.
+When you classify a transaction as **Reduced (5%)** in the [Manual VAT Entry](/docs/transactions/manual-entry) dropdown, Comply asks which sub-category applies - Food (licensed food stores only), Hygiene, Medical, or Essential Goods - so the legal-basis citation on the audit trail is precise. All four sub-categories ultimately compute at the 5% rate. See [VAT Rates Reference](/docs/reference/vat-rates) for the canonical category list and the food-store licensing rule.
 :::
 
 ### Input VAT (Purchases)
@@ -49,19 +49,19 @@ Comply tracks every VAT return through a structured eight-state lifecycle. Each 
 |---|---|---|
 | **Draft** | Draft | Return created from the period's transactions; can still be edited |
 | **Ready to File** | Ready to File | All validations passed and the Section 61 acknowledgement + signatory have been captured. The return is locked from edits |
-| **Filing in Progress** | Filing in Progress | Artifacts (PDF / XML / Excel / Form 301) are being generated. Brief — usually seconds |
-| **Awaiting Lodgement** | Awaiting Lodgement | Artifacts are ready. You now submit externally to the DIR via OTAS / a DIR office / an authorised agent, then return to Comply to record the lodgement |
+| **Filing in Progress** | Filing in Progress | Artifacts (PDF / XML / Excel) are being generated. Brief - usually seconds |
+| **Awaiting Lodgement** | Awaiting Lodgement | Artifacts are ready. You now submit externally through a current DIR lodgement channel, then return to Comply to record the lodgement |
 | **Lodged** | Lodged | You have recorded the DIR lodgement using **[Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement)**. The `RETURN_LODGED_WITH_DIR` audit entry has been written. From here, you either retract (`Lodged` → `Awaiting Lodgement`, `RETURN_LODGEMENT_RETRACTED`) or record payment (`Lodged` → `Lodged & Paid`, `PAYMENT_RECORDED`) |
 | **Lodged & Paid** | Lodged & Paid | Final state for payable returns once cumulative payments cover the net VAT due. Credit/zero returns reach this state automatically immediately after Lodged |
-| **Amendment Draft** | Amendment Draft | A correction to a previously-lodged return is being composed. When lodged, the amendment goes through the same lifecycle and ends at Lodged / Lodged & Paid — there is no separate "Amended" final state |
+| **Amendment Draft** | Amendment Draft | A correction to a previously-lodged return is being composed. When lodged, the amendment goes through the same lifecycle and ends at Lodged / Lodged & Paid - there is no separate "Amended" final state |
 | **Disputed** | Disputed | A previously-lodged return is under DIR dispute. Used when the DIR challenges the return; tracking-only state |
 
 :::note Lodgement, not "filing"
-The regulatorily significant transition is **lodgement** — recorded by you in Comply when you have submitted the return to the DIR. "Filed" is not a state name in Comply; the displayed labels are **Awaiting Lodgement**, **Lodged**, and **Lodged & Paid**. Comply does not currently receive direct confirmation from the DIR.
+The regulatorily significant transition is **lodgement** - recorded by you in Comply when you have submitted the return to the DIR. "Filed" is not a state name in Comply; the displayed labels are **Awaiting Lodgement**, **Lodged**, and **Lodged & Paid**. Comply does not currently receive direct confirmation from the DIR.
 :::
 
 :::info Every return passes through Lodged first (VR-STATE-001)
-Even **credit and zero-balance returns** transition through `Lodged` before reaching `Lodged & Paid`, so the `RETURN_LODGED_WITH_DIR` audit entry always has a clean lodgement timestamp. Credit/zero returns auto-advance to `Lodged & Paid` immediately after the audit entry has been written. This is a deliberate regulatory invariant — see [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement#vr-state-001-every-return-passes-through-lodged-first) for the full state-transition table.
+Even **credit and zero-balance returns** transition through `Lodged` before reaching `Lodged & Paid`, so the `RETURN_LODGED_WITH_DIR` audit entry always has a clean lodgement timestamp. Credit/zero returns auto-advance to `Lodged & Paid` immediately after the audit entry has been written. This is a deliberate regulatory invariant - see [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement#vr-state-001-every-return-passes-through-lodged-first) for the full state-transition table.
 :::
 
 ## DIR Form Fields (L1-L31)
@@ -80,9 +80,9 @@ Your return includes all standard Bahamas VAT return lines:
 - **Calculated Fields** - All L1-L31 fields computed from your transaction data
 - **Return Preview** - Review totals and validation before filing
 - **10-Point Validation** - Comprehensive pre-flight checks
-- **Export Formats** - PDF, XML, Excel, and Form 301 for DIR submission and your own records
+- **Export Formats** - PDF, XML and Excel for your own records and for submitting the figures yourself
 - **Amendment Support** - Correct lodged returns with change tracking
-- **Multi-Format Export** - Download a lodged return as PDF, XML, Excel, or Form 301
+- **Multi-Format Export** - Download a lodged return as PDF, XML or Excel
 
 ## Return Preview & Validation
 
@@ -98,16 +98,16 @@ Learn more about [Return Preview & Validation](/docs/vat-returns/return-preview)
 
 CoralLedger Comply supports two filing modes:
 
-- **Self-Filing** — You manage and submit your own VAT returns directly to the DIR. See [Self-Filing Mode](/docs/getting-started/self-filing).
-- **Firm-Managed** — An accounting firm manages filing on your behalf through the [Firm Portal](/docs/firm-portal/).
+- **Self-Filing** - You manage and submit your own VAT returns directly to the DIR. See [Self-Filing Mode](/docs/getting-started/self-filing).
+- **Firm-Managed** - An accounting firm manages filing on your behalf through the [Firm Portal](/docs/firm-portal/).
 
 ## Next Steps
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)
 - [Preview and validate](/docs/vat-returns/return-preview)
-- [Filing Wizard](/docs/vat-returns/filing-wizard) — §61 acknowledgement, signatory capture, and artifact generation
-- [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) — capture the DIR-side lodgement; retract and record payment
-- [Submit to the Comptroller](/docs/vat-returns/submit-return) — the external submission workflow
+- [Filing Wizard](/docs/vat-returns/filing-wizard) - §61 acknowledgement, signatory capture, and artifact generation
+- [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) - capture the DIR-side lodgement; retract and record payment
+- [Submit to the Comptroller](/docs/vat-returns/submit-return) - the external submission workflow
 - [Claim Bad Debt Relief (L16 adjustment)](/docs/compliance/bad-debt-relief)
 - [Input Tax Apportionment](/docs/vat-returns/input-tax-apportionment)
 - [Self-Filing Mode guide](/docs/getting-started/self-filing)

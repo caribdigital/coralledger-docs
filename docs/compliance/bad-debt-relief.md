@@ -13,7 +13,7 @@ import DemoVideo from '@site/src/components/DemoVideo';
 Bad Debt Relief allows VAT-registered businesses to reclaim VAT already paid to the government on supplies that have been **written off as bad debts**. CoralLedger Comply surfaces long-outstanding debts for your review and guides you through writing them off and claiming the relief.
 
 :::info Legal Basis
-Bad Debt Relief is governed by [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 53 (post-supply adjustment due to bad debt). Under **s. 53(3)** the relief arises on the **date the bad debt is written off in the registrant's accounts** — there is **no 12-month threshold** in s. 53. The 12-month age that Comply uses to *surface* candidate debts is a convenience prompt, not the statutory trigger.
+Bad Debt Relief is governed by [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 53 (post-supply adjustment due to bad debt). Under **s. 53(3)** the relief arises on the **date the bad debt is written off in the registrant's accounts** - there is **no 12-month threshold** in s. 53. The 12-month age that Comply uses to *surface* candidate debts is a convenience prompt, not the statutory trigger.
 :::
 
 ## What Qualifies as a "Bad Debt"
@@ -22,13 +22,13 @@ Relief becomes available when a debt is **written off in your accounts** (s. 53(
 
 | Condition | Detail |
 |-----------|--------|
-| **Written off** | The debt has been formally written off in your accounting records — this is the event that makes relief available under s. 53(3) |
+| **Written off** | The debt has been formally written off in your accounting records - this is the event that makes relief available under s. 53(3) |
 | **VAT already remitted** | Output VAT on the original supply was declared and paid to the Comptroller |
 | **Collection efforts** | Reasonable steps were taken to recover the debt (documented attempts required) |
 | **No consideration received** | No full or partial payment has been received against the invoice |
 
 :::note The 12-month age is a prompt, not the trigger
-Comply surfaces debts that are more than 12 months outstanding as **candidates** to consider writing off, shown as a **"Review From"** date. Reaching 12 months does not by itself make a debt eligible — relief becomes available when you write the debt off in your accounts.
+Comply surfaces debts that are more than 12 months outstanding as **candidates** to consider writing off, shown as a **"Review From"** date. Reaching 12 months does not by itself make a debt eligible - relief becomes available when you write the debt off in your accounts.
 :::
 
 :::warning Partial Payments
@@ -47,7 +47,7 @@ CoralLedger Comply monitors outstanding invoices and advances them through the f
 ### Stage 2: Surfaced for Review ("Review From")
 - CoralLedger surfaces invoices that have been outstanding for more than 12 months as **candidates** to consider writing off, shown with a **"Review From"** date
 - An **alert** appears on the Compliance dashboard recommending you review and document collection efforts
-- This is a prompt to review — it does **not** by itself make the debt eligible for relief
+- This is a prompt to review - it does **not** by itself make the debt eligible for relief
 
 ### Stage 3: Review and Write Off
 1. Navigate to **Compliance > Bad Debt**
@@ -58,7 +58,7 @@ CoralLedger Comply monitors outstanding invoices and advances them through the f
    - Original VAT amount
    - Relief amount available on write-off
 3. Confirm collection efforts are documented for each debt
-4. Click **Mark as Written Off** to formally write off the debt in CoralLedger — this is the event that makes the relief available under s. 53(3)
+4. Click **Mark as Written Off** to formally write off the debt in CoralLedger - this is the event that makes the relief available under s. 53(3)
 
 ### Stage 4: Include in VAT Return
 Once debts are written off, the relief amount is queued for inclusion in your next VAT return. See [VAT Return Impact](#vat-return-impact) below.
@@ -71,7 +71,7 @@ Bad Debt Relief reduces your net VAT payable by decreasing the **Output VAT** yo
 
 | Line | Description | Effect |
 |------|-------------|--------|
-| **L16** | Bad Debt Relief — Output VAT adjustment | Negative adjustment reducing output tax |
+| **L16** | Bad Debt Relief - Output VAT adjustment | Negative adjustment reducing output tax |
 | **L21** | Net VAT (Output minus Input minus adjustments) | Reduced by the relief amount |
 
 The relief appears as a **credit adjustment** on your return. If Output VAT minus Input VAT minus Bad Debt Relief results in a negative figure, the excess may carry forward or be refunded subject to the [50% zero-rated refund eligibility rule](/docs/compliance/vat-2025-reforms#refund-eligibility-50-rule).
@@ -133,7 +133,7 @@ CoralLedger links the original transaction and return period to each claim, maki
 ## Step-by-Step Claim Guide
 
 1. Go to **Compliance > Bad Debt**
-2. Review the **Candidate Debts** tab — debts surfaced for review (more than 12 months outstanding) appear here
+2. Review the **Candidate Debts** tab - debts surfaced for review (more than 12 months outstanding) appear here
 3. For each debt, confirm:
    - Collection efforts are documented
    - The debt is being written off in your books
@@ -152,7 +152,7 @@ No. If a debtor subsequently pays after you have claimed relief, you must repay 
 Relief is available only on the **unpaid portion**. Write off the outstanding balance in your accounts and the relief is calculated on the VAT attributable to that unpaid amount.
 
 **Is there a time limit for making a claim?**
-Claims should be made as soon as the debt qualifies. There is no indefinite carry-forward — consult your tax advisor for the applicable limitation period under Bahamas VAT law.
+Claims should be made as soon as the debt qualifies. There is no indefinite carry-forward - consult your tax advisor for the applicable limitation period under Bahamas VAT law.
 
 **How do I record collection efforts?**
 Attach documentation in the **Notes & Attachments** section of the transaction or use the debt record in the Bad Debt dashboard. Acceptable evidence includes demand letters, email correspondence, and evidence of legal proceedings.
