@@ -162,7 +162,7 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 
 ## Need Help?
 
-The 2025 reforms are complex. Contact us for assistance:
+The VAT framework, as amended through 2026, is complex. Contact us for assistance:
 - **Email**: support@digitalcarib.com
 - **Phone**: Schedule a consultation
 

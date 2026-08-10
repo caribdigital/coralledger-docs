@@ -30,6 +30,7 @@ const algoliaAppId = process.env.ALGOLIA_APP_ID;
 const algoliaApiKey = process.env.ALGOLIA_API_KEY;
 const algoliaIndexName = process.env.ALGOLIA_INDEX_NAME;
 const hasAlgoliaConfig = Boolean(algoliaAppId && algoliaApiKey && algoliaIndexName);
+const supportEmail = process.env.SUPPORT_EMAIL?.trim();
 
 const config: Config = {
   title: 'CoralLedger Comply Documentation',
@@ -170,14 +171,19 @@ const config: Config = {
               label: 'System Status',
               href: 'https://status.coralledger.com/status',
             },
+            ...(supportEmail ? [{ label: 'Contact Us', href: `mailto:${supportEmail}` }] : []),
             {
-              label: 'Contact Us',
-              href: 'mailto:privacy@digitalcarib.com',
+              label: 'Terms of Service',
+              href: `${complyUrl}/legal/terms-of-service`,
+            },
+            {
+              label: 'Privacy Policy',
+              href: `${complyUrl}/legal/privacy-policy`,
             },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Carib Digital Labs. All rights reserved.`,
+      copyright: `CoralLedger Comply · a Carib Digital Labs product<br />© ${new Date().getFullYear()} Carib Digital Labs. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
