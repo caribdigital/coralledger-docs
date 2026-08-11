@@ -36,17 +36,42 @@ const retiredForms = [
   [/\bOTAS\b/i, '#4202 / RDF-1: unverified external portal token'],
 ];
 
+function violationsFor(source, label = 'self-test') {
+  const violations = [];
+  let copy = authoredCopy(source);
+  for (const [pattern, ruling] of retiredForms) {
+    if (pattern.test(copy)) violations.push(`${label}: ${ruling}`);
+  }
+  copy = copy.replace(/§{1,2}\s*\d+[A-Za-z]?(?:\([^)]*\))?\s*(?:–|&ndash;|&#8211;)\s*\d+[A-Za-z]?(?:\([^)]*\))?/g, '');
+  if (/(?:—|–|&mdash;|&ndash;|&#8212;|&#8211;)/i.test(copy)) violations.push(`${label}: authored prose em/en dash`);
+  if (/\b(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\s+[0-3]?\d,\s+20\d{2}\b/.test(copy)) violations.push(`${label}: display date must use “14 Aug 2026” order`);
+  return violations;
+}
+
+if (process.argv.includes('--self-test')) {
+  const cases = [
+    ['Form 301 is rejected', 'Use Form 301.', true],
+    ['OTAS is rejected', 'Submit through OTAS.', true],
+    ['month-first date is rejected', 'Updated Aug 14, 2026.', true],
+    ['canonical copy passes', 'Updated 14 Aug 2026.', false],
+  ];
+  const failures = cases.filter(([, input, expected]) => (violationsFor(input).length > 0) !== expected);
+  const rendered = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
+    .format(new Date('2026-08-14T09:30:00Z'));
+  if (rendered !== '14 Aug 2026') failures.push(['rendered date sample', rendered, '14 Aug 2026']);
+  if (failures.length) {
+    console.error('Estate content self-test FAILED:', failures);
+    process.exit(1);
+  }
+  console.log(`Estate content self-test passed (${cases.length} guard cases + rendered date sample).`);
+  process.exit(0);
+}
+
 const files = ['docs', 'src'].flatMap((target) => filesUnder(path.join(repoRoot, target)));
 const violations = [];
 for (const file of files) {
   const relative = path.relative(repoRoot, file).replaceAll('\\', '/');
-  let source = authoredCopy(readFileSync(file, 'utf8'));
-  for (const [pattern, ruling] of retiredForms) {
-    if (pattern.test(source)) violations.push(`${relative}: ${ruling}`);
-  }
-  source = source.replace(/§{1,2}\s*\d+[A-Za-z]?(?:\([^)]*\))?\s*(?:–|&ndash;|&#8211;)\s*\d+[A-Za-z]?(?:\([^)]*\))?/g, '');
-  if (/(?:—|–|&mdash;|&ndash;|&#8212;|&#8211;)/i.test(source)) violations.push(`${relative}: authored prose em/en dash`);
-  if (/\b(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\s+[0-3]?\d,\s+20\d{2}\b/.test(source)) violations.push(`${relative}: display date must use “14 Aug 2026” order`);
+  violations.push(...violationsFor(readFileSync(file, 'utf8'), relative));
 }
 
 if (violations.length) {
