@@ -18,6 +18,7 @@ function filesUnder(directory) {
 
 function authoredCopy(source) {
   return source
+    .replace(/<!--\s*statutory-quotation\s*-->[\s\S]*?<!--\s*\/statutory-quotation\s*-->/gi, ' ')
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/~~~[\s\S]*?~~~/g, ' ')
     .replace(/`[^`]*`/g, ' ')
@@ -34,6 +35,7 @@ const retiredForms = [
   [/File\s+multi-rate\s+VAT\s+returns/i, 'Cass A10: use “Prepare multi-rate VAT returns”'],
   [/Form\s+301/i, '#4202 / RDF-1: quarantined export token'],
   [/\bOTAS\b/i, '#4202 / RDF-1: unverified external portal token'],
+  [/(?:DIR|Department of Inland Revenue)[- ](?:accepted|approved|recognised|recognized)|(?:accepted|approved|recognised|recognized)\s+by\s+(?:the\s+)?(?:DIR|Department of Inland Revenue)|certified[- ]by\s+(?:the\s+)?(?:DIR|Department of Inland Revenue)/i, 'Cass C3: never characterise what the DIR does with product output'],
 ];
 
 function violationsFor(source, label = 'self-test') {
@@ -70,6 +72,8 @@ if (process.argv.includes('--self-test')) {
     ['OTAS is rejected', 'Submit through OTAS.', true],
     ['month-first date is rejected', 'Updated Aug 14, 2026.', true],
     ['canonical copy passes', 'Updated 14 Aug 2026.', false],
+    ['DIR acceptance family is rejected', 'Output approved by the DIR.', true],
+    ['statutory quotation is allowed', '<!-- statutory-quotation -->approved by the DIR<!-- /statutory-quotation -->', false],
   ];
   const failures = cases.filter(([, input, expected]) => (violationsFor(input).length > 0) !== expected);
   const rendered = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
