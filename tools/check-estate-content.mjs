@@ -48,6 +48,22 @@ function violationsFor(source, label = 'self-test') {
   return violations;
 }
 
+function attestationCitationCounts(source) {
+  const counts = { symbol: 0, word: 0 };
+  const context = /(?:attest|signator|practitioner|prefill|licen[cs])/i;
+  for (const [form, pattern] of [
+    ['symbol', /§\s*32/gi],
+    ['word', /section\s+32/gi],
+  ]) {
+    let match;
+    while ((match = pattern.exec(source)) !== null) {
+      const window = source.slice(Math.max(0, match.index - 140), match.index + match[0].length + 140);
+      if (context.test(window)) counts[form]++;
+    }
+  }
+  return counts;
+}
+
 if (process.argv.includes('--self-test')) {
   const cases = [
     ['Form 301 is rejected', 'Use Form 301.', true],
@@ -59,6 +75,8 @@ if (process.argv.includes('--self-test')) {
   const rendered = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
     .format(new Date('2026-08-14T09:30:00Z'));
   if (rendered !== '14 Aug 2026') failures.push(['rendered date sample', rendered, '14 Aug 2026']);
+  if (attestationCitationCounts('§ 32 attestation').symbol !== 1) failures.push(['symbol citation form', 'not detected', 'detected']);
+  if (attestationCitationCounts('Section 32 practitioner').word !== 1) failures.push(['word citation form', 'not detected', 'detected']);
   if (failures.length) {
     console.error('Estate content self-test FAILED:', failures);
     process.exit(1);
@@ -69,9 +87,18 @@ if (process.argv.includes('--self-test')) {
 
 const files = ['docs', 'src'].flatMap((target) => filesUnder(path.join(repoRoot, target)));
 const violations = [];
+const attestationCitationBaseline = { symbol: 83, word: 29 };
+const attestationCitationActual = { symbol: 0, word: 0 };
 for (const file of files) {
   const relative = path.relative(repoRoot, file).replaceAll('\\', '/');
   violations.push(...violationsFor(readFileSync(file, 'utf8'), relative));
+  const counts = attestationCitationCounts(authoredCopy(readFileSync(file, 'utf8')));
+  attestationCitationActual.symbol += counts.symbol;
+  attestationCitationActual.word += counts.word;
+}
+if (attestationCitationActual.symbol !== attestationCitationBaseline.symbol ||
+    attestationCitationActual.word !== attestationCitationBaseline.word) {
+  violations.push(`attestation-anchored §32/Section 32 baseline changed: expected ${JSON.stringify(attestationCitationBaseline)}, got ${JSON.stringify(attestationCitationActual)}. Reduce the baseline with a ruled fix; never increase it.`);
 }
 
 if (violations.length) {
