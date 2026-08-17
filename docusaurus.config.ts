@@ -106,6 +106,7 @@ const config: Config = {
       logo: {
         alt: 'CoralLedger Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
       },
       items: [
         {
