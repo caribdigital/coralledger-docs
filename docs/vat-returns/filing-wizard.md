@@ -8,7 +8,7 @@ import DemoVideo from '@site/src/components/DemoVideo';
 
 # Filing Wizard
 
-The Filing Wizard guides you through the regulated capture and finalisation steps that happen between **Draft** and **Awaiting Lodgement**. It is the surface where the Section 61 acknowledgement, the signatory declaration, and the artifact generation all happen, in a strict order, with named audit-trail entries at every transition.
+The Filing Wizard guides you through the regulated capture and finalisation steps that happen between **Draft** and **Awaiting Lodgement**. It is the surface where the Penalty acknowledgement, the signatory declaration, and the artifact generation all happen, in a strict order, with named audit-trail entries at every transition.
 
 You enter the wizard from the **Filing** page in CoralLedger Comply, after you have generated a draft return for the period.
 
@@ -23,12 +23,12 @@ Comply renders the wizard as a numbered timeline:
 | **1** | Transaction Review | You confirm that every transaction for the period is imported, categorised, and accounted for. | _(no audit write)_ |
 | **2** | VAT Validation | The [10-point validation](/docs/vat-returns/return-preview) runs; you address blocking issues. | _(no audit write)_ |
 | **3** | Document Generation | Pre-flight check that the artifacts can be generated cleanly. | _(no audit write)_ |
-| **4** | **Approval** | You complete the [Section 61 acknowledgement](#step-4-approval-section-61-acknowledgement) and the [signatory capture](#step-4-approval-signatory-capture). The return transitions **Draft → Ready to File**. | `ACK_SECTION61`, then `RETURN_APPROVED_BY_SIGNATORY` |
+| **4** | **Approval** | You complete the [Penalty acknowledgement](#step-4-approval-penalty-acknowledgement) and the [signatory capture](#step-4-approval-signatory-capture). The return transitions **Draft → Ready to File**. | `REGULATORY_EXPOSURE_ACKNOWLEDGED`, then `RETURN_APPROVED_BY_SIGNATORY` |
 | **5** | **Submission** | Comply generates the PDF, XML and Excel artifacts atomically and transitions **Ready to File → Filing in Progress → Awaiting Lodgement**. | `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED` |
 
 After step 5 you are presented with a **Filing Artifacts Ready** success card - described below in [What "Filing Artifacts Ready" means](#what-filing-artifacts-ready-means).
 
-## Step 4: Approval - Section 61 acknowledgement {#step-4-approval-section-61-acknowledgement}
+## Step 4: Approval - Penalty acknowledgement {#step-4-approval-penalty-acknowledgement}
 
 When you click **Approve** at step 4, Comply opens the Approve Filing dialog. The first panel is the Penalty Acknowledgement.
 
@@ -36,10 +36,10 @@ The dialog records your review of the penalty exposure that applies under the [V
 
 > Under the Value Added Tax Act, 2014, penalties for understatement or evasion apply. This acknowledgement records your review of that exposure and your acceptance of responsibility for the accuracy of this return.
 
-You tick the acknowledgement checkbox - *"I have reviewed the penalty exposure under the VAT Act and accept responsibility for the accuracy of this return"* - to proceed. When you do, Comply writes an audit-ledger entry (event identifier `ACK_SECTION61`) **before** it transitions the return state. The entry is recorded with neutral wording - *"User acknowledged regulatory exposure under the VAT Act before filing return for [period]"*. This ordering matters - see [Audit-before-lock](#audit-before-lock).
+You tick the acknowledgement checkbox - *"I have reviewed the penalty exposure under the VAT Act and accept responsibility for the accuracy of this return"* - to proceed. When you do, Comply writes an audit-ledger entry (event identifier `REGULATORY_EXPOSURE_ACKNOWLEDGED`) **before** it transitions the return state. The entry is recorded with neutral wording - *"User acknowledged regulatory exposure under the VAT Act before filing return for [period]"*. This ordering matters - see [Audit-before-lock](#audit-before-lock).
 
 :::note
-The dialog does **not** quote a specific penalty percentage or compute a dollar figure. Section 61 of the VAT Act is *"Assessment as evidence in proceedings"* - an evidentiary provision, **not** a penalty section - so no "% of unpaid VAT" multiplier is shown. The audit event retains the identifier `ACK_SECTION61` for continuity with the existing audit schema. The statutory fines for late filing and late payment are set out in s. 47A - see [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties).
+The dialog does **not** quote a specific penalty percentage or compute a dollar figure. Section 61 of the VAT Act is *"Assessment as evidence in proceedings"* - an evidentiary provision, **not** a penalty section - so no "% of unpaid VAT" multiplier is shown. The audit event is recorded under the neutral identifier `REGULATORY_EXPOSURE_ACKNOWLEDGED`. The statutory fines for late filing and late payment are set out in s. 47A - see [Assessments, Interest, and Penalties](/docs/statutes/assessments-interest-penalties).
 :::
 
 ## Step 4: Approval - Signatory capture {#step-4-approval-signatory-capture}
@@ -82,7 +82,7 @@ The capacity value is recorded on the `RETURN_APPROVED_BY_SIGNATORY` audit entry
 
 ## Audit-before-lock
 
-A subtle but important design choice: the two audit entries from step 4 - `ACK_SECTION61` and `RETURN_APPROVED_BY_SIGNATORY` - are written **before** the return is locked from edits.
+A subtle but important design choice: the two audit entries from step 4 - `REGULATORY_EXPOSURE_ACKNOWLEDGED` and `RETURN_APPROVED_BY_SIGNATORY` - are written **before** the return is locked from edits.
 
 If the audit ledger is briefly unavailable (a backend transient), Comply will surface the error and **leave the return unlocked** so you can retry. The alternative - locking first, then attempting the audit write - would risk a state where the return is locked but no attestation evidence exists. That outcome would be regulatorily worse than leaving the return unlocked.
 
@@ -119,7 +119,7 @@ While the return sits in **Awaiting Lodgement**, no further audit-ledger writes 
 
 The five-step structure encodes three regulatory facts:
 
-1. **The penalty acknowledgement is not a hidden term in a generic ToS** - Comply surfaces the penalty exposure that applies under the VAT Act and asks for an explicit acknowledgement, recorded under the `ACK_SECTION61` audit event.
+1. **The penalty acknowledgement is not a hidden term in a generic ToS** - Comply surfaces the penalty exposure that applies under the VAT Act and asks for an explicit acknowledgement, recorded under the `REGULATORY_EXPOSURE_ACKNOWLEDGED` audit event.
 2. **The signatory declaration is captured per-return**, with the name and capacity persisted to the audit ledger. There is no "signed once, applies forever" shortcut.
 3. **Comply does not file on your behalf with the DIR.** The artifacts-ready / submitted distinction is enforced in the UI wording so a reader cannot confuse the two.
 

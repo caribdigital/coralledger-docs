@@ -35,7 +35,7 @@ Administrators can verify the integrity of the entire audit chain at any time, d
 | Event Category | Examples |
 |----------------|----------|
 | **Transactions** | Created, modified, deleted, imported |
-| **VAT Returns lifecycle** | `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED`, `RETURN_APPROVED_BY_SIGNATORY`, `ACK_SECTION61`, `RETURN_LODGED_WITH_DIR` (with artifact checksums), `RETURN_LODGEMENT_RETRACTED`, `PAYMENT_RECORDED`, `NO_PAYMENT_DUE` - see [VAT Returns lifecycle](/docs/vat-returns/) |
+| **VAT Returns lifecycle** | `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED`, `RETURN_APPROVED_BY_SIGNATORY`, `REGULATORY_EXPOSURE_ACKNOWLEDGED`, `RETURN_LODGED_WITH_DIR` (with artifact checksums), `RETURN_LODGEMENT_RETRACTED`, `PAYMENT_RECORDED`, `NO_PAYMENT_DUE` - see [VAT Returns lifecycle](/docs/vat-returns/) |
 | **§32 Attestation lifecycle** | `ATTESTATION_CREATED`, `ATTESTATION_SUPERSEDED`, `ATTESTATION_VOIDED_BY_ASSIGNMENT_CHANGE`, `ATTESTATION_RE_ATTEST_REQUIRED`, `ATTESTATION_MODAL_CANCELLED` - see [§32 Attestation Overview](/docs/attestation/) |
 | **User Actions** | Login, logout, password change, 2FA events |
 | **Settings Changes** | Business profile updates, permission changes |
