@@ -8,7 +8,7 @@ import DemoVideo from '@site/src/components/DemoVideo';
 
 # Filing Wizard
 
-The Filing Wizard guides you through the regulated capture and finalisation steps that happen between **Draft** and **Awaiting Lodgement**. It is the surface where the Penalty acknowledgement, the signatory declaration, and the artifact generation all happen, in a strict order, with named audit-trail entries at every transition.
+The Filing Wizard guides you through the regulated capture and finalisation steps that happen between **Draft** and **Awaiting Lodgement**. It is the surface where the finalisation acknowledgement, the signatory declaration, and the artifact generation all happen, in a strict order, with named audit-trail entries at every transition.
 
 You enter the wizard from the **Filing** page in CoralLedger Comply, after you have generated a draft return for the period.
 
@@ -23,14 +23,14 @@ Comply renders the wizard as a numbered timeline:
 | **1** | Transaction Review | You confirm that every transaction for the period is imported, categorised, and accounted for. | _(no audit write)_ |
 | **2** | VAT Validation | The [10-point validation](/docs/vat-returns/return-preview) runs; you address blocking issues. | _(no audit write)_ |
 | **3** | Document Generation | Pre-flight check that the artifacts can be generated cleanly. | _(no audit write)_ |
-| **4** | **Approval** | You complete the [Penalty acknowledgement](#step-4-approval-penalty-acknowledgement) and the [signatory capture](#step-4-approval-signatory-capture). The return transitions **Draft → Ready to File**. | `REGULATORY_EXPOSURE_ACKNOWLEDGED`, then `RETURN_APPROVED_BY_SIGNATORY` |
+| **4** | **Approval** | You complete the [finalisation acknowledgement](#finalisation-acknowledgement) and the [signatory capture](#step-4-approval-signatory-capture). The return transitions **Draft → Ready to File**. | `REGULATORY_EXPOSURE_ACKNOWLEDGED`, then `RETURN_APPROVED_BY_SIGNATORY` |
 | **5** | **Submission** | Comply generates the PDF, XML and Excel artifacts atomically and transitions **Ready to File → Filing in Progress → Awaiting Lodgement**. | `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED` |
 
 After step 5 you are presented with a **Filing Artifacts Ready** success card - described below in [What "Filing Artifacts Ready" means](#what-filing-artifacts-ready-means).
 
-## Step 4: Approval - Penalty acknowledgement {#step-4-approval-penalty-acknowledgement}
+## Step 4: Approval - Finalisation acknowledgement {#finalisation-acknowledgement}
 
-When you click **Approve** at step 4, Comply opens the Approve Filing dialog. The first panel is the Penalty Acknowledgement.
+When you click **Approve** at step 4, Comply opens the Approve Filing dialog. The first panel is the finalisation acknowledgement.
 
 The dialog records your review of the penalty exposure that applies under the [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/) and your acceptance of responsibility for the accuracy of this return:
 
@@ -48,7 +48,7 @@ Below the acknowledgement panel is the Authorised Signatory panel. Comply captur
 
 - **Full Name** - the natural-person name of the individual signing for this return, up to 200 characters.
 - **Capacity** - a drop-down listing the four [Signatory Capacities](#signatory-capacities) recognised by Bahamian VAT practice.
-- **"I confirm I am authorised…" checkbox** - a separate declaration distinct from the penalty acknowledgement.
+- **"I confirm I am authorised…" checkbox** - a separate declaration distinct from the finalisation acknowledgement.
 
 When you click **Approve** to close the dialog, Comply writes a `RETURN_APPROVED_BY_SIGNATORY` audit-ledger entry capturing the name and capacity, then transitions the return state to **Ready to File**.
 
@@ -119,7 +119,7 @@ While the return sits in **Awaiting Lodgement**, no further audit-ledger writes 
 
 The five-step structure encodes three regulatory facts:
 
-1. **The penalty acknowledgement is not a hidden term in a generic ToS** - Comply surfaces the penalty exposure that applies under the VAT Act and asks for an explicit acknowledgement, recorded under the `REGULATORY_EXPOSURE_ACKNOWLEDGED` audit event.
+1. **The finalisation acknowledgement is not a hidden term in a generic ToS** - Comply surfaces the penalty exposure that applies under the VAT Act and asks for an explicit acknowledgement, recorded under the `REGULATORY_EXPOSURE_ACKNOWLEDGED` audit event.
 2. **The signatory declaration is captured per-return**, with the name and capacity persisted to the audit ledger. There is no "signed once, applies forever" shortcut.
 3. **Comply does not file on your behalf with the DIR.** The artifacts-ready / submitted distinction is enforced in the UI wording so a reader cannot confuse the two.
 
