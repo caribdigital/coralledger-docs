@@ -74,7 +74,7 @@ If you need to correct a previously-lodged return:
 1. Navigate to the lodged return on the VAT Returns page.
 2. Click **Amend**. The amendment is created in the **Amendment Draft** state - distinct from the original return, which remains in its existing Lodged / Lodged & Paid state for audit history.
 3. Make corrections to the affected line items.
-4. Submit the amendment through the same approval and submission workflow as a fresh return - Section 61 acknowledgement, signatory capture, artifact generation, and Record DIR Acknowledgement.
+4. Submit the amendment through the same approval and submission workflow as a fresh return - finalisation acknowledgement, signatory capture, artifact generation, and Record DIR Acknowledgement.
 5. When the amendment is lodged it follows the same lifecycle and ends at **Lodged** (or **Lodged & Paid** once paid).
 
 There is no separate "Amended" final state - both the original return and its amendment are durable lifecycle records visible in the audit trail.

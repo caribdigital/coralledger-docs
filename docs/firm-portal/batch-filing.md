@@ -10,8 +10,8 @@ Batch Filing lets a firm process VAT returns for many clients in a single coordi
 
 Before you read the workflow, two regulatory framings matter:
 
-:::warning Batch filing does not capture per-client §61 acknowledgement or per-client signatory capacity
-The [single-client Filing Wizard](/docs/vat-returns/filing-wizard) captures a §61 penalty acknowledgement and a signatory capacity declaration per return. The batch flow uses a **single batch-wide consent checkbox** and does not capture either per-client. For clients in a §3 restricted segment, route them through the single-client Filing Wizard instead so the per-return Signatory Capacity Declaration runs.
+:::warning Batch filing does not capture per-client finalisation acknowledgement or per-client signatory capacity
+The [single-client Filing Wizard](/docs/vat-returns/filing-wizard) captures a finalisation acknowledgement and a signatory capacity declaration per return. The batch flow uses a **single batch-wide consent checkbox** and does not capture either per-client. For clients in a §3 restricted segment, route them through the single-client Filing Wizard instead so the per-return Signatory Capacity Declaration runs.
 :::
 
 :::warning Batch filing does not verify §32 attestation status today
@@ -26,7 +26,7 @@ These framings reflect what the app does today, not what it ought to do. Both wa
 - The clients are **not** in §3 restricted segments - i.e. they don't require an active §32 attestation.
 - The clients have been recently validated and you expect the batch to pass cleanly.
 
-For high-stakes returns (restricted-segment, large net VAT exposure, recent compliance issues) prefer the single-client Filing Wizard so the per-return §61 / signatory capture and attestation gates run.
+For high-stakes returns (restricted-segment, large net VAT exposure, recent compliance issues) prefer the single-client Filing Wizard so the per-return finalisation acknowledgement / signatory capture and attestation gates run.
 
 ## Accessing Batch Filing
 
@@ -62,7 +62,7 @@ You can deselect NotReady or AlreadyFiled clients here.
 
 ### Step 3 - Confirm
 
-This step's confirmation checkbox is the **single batch-wide consent**. It is not a per-client §61 acknowledgement and it is not a signatory capacity declaration - both of those artefacts are captured per-return only in the single-client Filing Wizard.
+This step's confirmation checkbox is the **single batch-wide consent**. It is not a per-client finalisation acknowledgement and it is not a signatory capacity declaration - both of those artefacts are captured per-return only in the single-client Filing Wizard.
 
 :::warning All-or-nothing refusal
 **If any selected client has a blocking validation error at submit time, the entire batch is refused.** Comply does not start the batch and silently skip NotReady clients - it stops with a clear error so you can re-triage. Remove NotReady clients from the selection or resolve their blocking errors before retrying.
@@ -96,7 +96,7 @@ The Multi-Client Reports surface (`/firm/reports`) shows batch-filing activity a
 
 ## Next steps
 
-- [Filing Wizard](/docs/vat-returns/filing-wizard) - single-client filing where per-client §61 acknowledgement + signatory capture happen
+- [Filing Wizard](/docs/vat-returns/filing-wizard) - single-client filing where per-client finalisation acknowledgement + signatory capture happen
 - [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) - the post-artefacts lodgement capture (per client, not batched)
 - [Firm Analytics](/docs/firm-portal/analytics) - cross-client reporting context
 - [§32 Attestation Entry Pathway](/docs/firm-portal/attestation-entry-pathway) - for restricted-segment clients that the batch flow does not gate

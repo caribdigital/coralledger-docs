@@ -128,7 +128,7 @@ Once you have recorded lodgement, the return becomes read-only and is visible at
 - DIR Reference Number (if you recorded one)
 - Current Filing State (Lodged or Lodged & Paid)
 
-Plus a paginated **Audit Trail** timeline showing every audit-ledger entry for the return - including `ACK_SECTION61`, `RETURN_APPROVED_BY_SIGNATORY`, `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED`, `RETURN_LODGED_WITH_DIR`, `PAYMENT_RECORDED` (or `NO_PAYMENT_DUE`), and any `RETURN_LODGEMENT_RETRACTED` events from corrections.
+Plus a paginated **Audit Trail** timeline showing every audit-ledger entry for the return - including `REGULATORY_EXPOSURE_ACKNOWLEDGED`, `RETURN_APPROVED_BY_SIGNATORY`, `FILING_INITIATED`, `FILING_ARTIFACTS_GENERATED`, `RETURN_LODGED_WITH_DIR`, `PAYMENT_RECORDED` (or `NO_PAYMENT_DUE`), and any `RETURN_LODGEMENT_RETRACTED` events from corrections.
 
 ## Next steps
 

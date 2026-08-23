@@ -54,7 +54,7 @@ Goods or services that are outside the VAT system. No VAT is charged and no inpu
 ## F
 
 ### Filing Wizard
-The 5-step in-app flow that finalises a VAT return - Transaction Review → VAT Validation → Document Generation → **Approval** (§61 acknowledgement + signatory capture) → Submission. See [Filing Wizard](/docs/vat-returns/filing-wizard).
+The 5-step in-app flow that finalises a VAT return - Transaction Review → VAT Validation → Document Generation → **Approval** (finalisation acknowledgement + signatory capture) → Submission. See [Filing Wizard](/docs/vat-returns/filing-wizard).
 
 ### Food Store License
 A licensed food store qualification for VAT purposes.

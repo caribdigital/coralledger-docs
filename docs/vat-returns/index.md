@@ -48,7 +48,7 @@ Comply tracks every VAT return through a structured eight-state lifecycle. Each 
 | State | Displayed label | Description |
 |---|---|---|
 | **Draft** | Draft | Return created from the period's transactions; can still be edited |
-| **Ready to File** | Ready to File | All validations passed and the Section 61 acknowledgement + signatory have been captured. The return is locked from edits |
+| **Ready to File** | Ready to File | All validations passed and the finalisation acknowledgement + signatory have been captured. The return is locked from edits |
 | **Filing in Progress** | Filing in Progress | Artifacts (PDF / XML / Excel) are being generated. Brief - usually seconds |
 | **Awaiting Lodgement** | Awaiting Lodgement | Artifacts are ready. You now submit externally through a current DIR lodgement channel, then return to Comply to record the lodgement |
 | **Lodged** | Lodged | You have recorded the DIR lodgement using **[Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement)**. The `RETURN_LODGED_WITH_DIR` audit entry has been written. From here, you either retract (`Lodged` → `Awaiting Lodgement`, `RETURN_LODGEMENT_RETRACTED`) or record payment (`Lodged` → `Lodged & Paid`, `PAYMENT_RECORDED`) |
@@ -105,7 +105,7 @@ CoralLedger Comply supports two filing modes:
 
 - [Generate your VAT return](/docs/vat-returns/generate-return)
 - [Preview and validate](/docs/vat-returns/return-preview)
-- [Filing Wizard](/docs/vat-returns/filing-wizard) - §61 acknowledgement, signatory capture, and artifact generation
+- [Filing Wizard](/docs/vat-returns/filing-wizard) - finalisation acknowledgement, signatory capture, and artifact generation
 - [Record DIR Acknowledgement](/docs/vat-returns/record-dir-acknowledgement) - capture the DIR-side lodgement; retract and record payment
 - [Submit to the Comptroller](/docs/vat-returns/submit-return) - the external submission workflow
 - [Claim Bad Debt Relief (L16 adjustment)](/docs/compliance/bad-debt-relief)
