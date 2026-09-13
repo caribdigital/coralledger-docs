@@ -3,7 +3,7 @@
 // Target docs page: docs/reports/index.mdx
 // CDN target: <CDN_URL>/demos/exports-01.mp4
 // Scope: focus on the Cash Flow Report surface (which has Export CSV button + real data
-// for ksaconsultantsltd's tagged client context). Avoids the /reports landing for
+// for the fixture firm owner's tagged client context). Avoids the /reports landing for
 // firm-side users where the page is sparse.
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
