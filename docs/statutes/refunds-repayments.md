@@ -18,6 +18,10 @@ If a prior relief or refund position changes (for example, later payment on a wr
 
 CoralLedger Comply tracks return-period net positions, supports refund eligibility analysis tied to current reform rules, and preserves history of claims and adjustments. The platform helps users understand whether a period result appears refundable or likely to carry forward.
 
+### Section 56A overpayment review
+
+Section 56A is a separate route for VAT overpaid because the wrong rate was charged. Comply can surface the transaction evidence and the applicable overpayment amount for review. The result is an informational assessment: it does not itself establish entitlement, approve a claim, or submit anything to the Department of Inland Revenue. Confirm the statutory position, correct the customer charge where required, and make any prescribed claim through the official channel.
+
 Related compliance dashboards highlight ratio-based thresholds and trend movement so teams can anticipate changes before filing.
 
 ## Customer responsibility

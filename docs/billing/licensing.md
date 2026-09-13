@@ -11,7 +11,7 @@ View and manage your CoralLedger Comply license from the **Settings > License** 
 ## License Status
 
 Your license card shows:
-- **License type** - Founding Member, Standard Enterprise, The Solo, The Practice, The Partner, Peer Network, or Trial
+- **License type** - active taxpayer, founding allocation, deregistered read-only, or trial
 - **Status** - Active, Trial, Grace Period, or Expired
 - **Description** - Details about your current plan
 
@@ -42,20 +42,9 @@ If you have a license key:
 
 ## Plan Comparison
 
-### Founding Member
-- Up to 25 client businesses
-- Founder pricing locked for life ($99/mo vs the $499/mo standard price)
-- Batch filing capabilities
+### Current commercial model
 
-### Standard Enterprise
-- Up to 25 client businesses
-- Full firm-portal feature set
-
-### The Partner
-- Unlimited client businesses
-- The top firm tier
-
-Additional tiers (The Solo, The Practice, Peer Network) and current pricing are listed on the [pricing page](https://www.coralledger.com/pricing) - prices are maintained there, not in the documentation.
+The public contract is per active VAT registration (one nine-digit TIN): B$199/month. The first 25 activated taxpayers receive B$59/month while active. Deregistered taxpayers remain read-only and exportable at B$19/month from the next billing month. Qualifying paired referrals provide both active taxpayers up to B$20/month off, up to five pairs, never below B$59/month. See the [public pricing page](https://www.coralledger.com/pricing) for the authoritative presentation.
 
 ## Frequently Asked Questions
 
@@ -68,11 +57,11 @@ Yes. Contact support@digitalcarib.com to discuss plan changes.
 ### What's the cancellation policy?
 You can cancel at any time. Your data is retained for 7 years per [Value Added Tax Act, 2014, Part X, §§79–80](https://laws.bahamas.gov.bs/) (5-year statutory minimum; CoralLedger Comply extends to 7 years).
 
-### Is my Founding Member price really locked for life?
-Yes. Founding Members pay $99/mo forever, regardless of future price increases.
+### What happens when a taxpayer deregisters?
+The taxpayer record is retained read-only and remains exportable at B$19/month from the next billing month.
 
 ## Next Steps
 
 - [View subscription details](/docs/billing)
-- [Join the Founders Circle](/docs/billing/founders-circle)
+- [Subscription and billing](/docs/billing)
 - [Contact support](mailto:support@digitalcarib.com)
