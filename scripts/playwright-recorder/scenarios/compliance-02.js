@@ -1,7 +1,7 @@
 // compliance-02: Compliance — Improving Your Score
 //
 // Target docs page: docs/compliance/compliance-score.mdx
-// CDN target: cdn.coralledger.com/demos/compliance-02.mp4
+// CDN target: <CDN_URL>/demos/compliance-02.mp4
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 

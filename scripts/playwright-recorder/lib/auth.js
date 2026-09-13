@@ -14,7 +14,7 @@
 //      normal cookie jar from this point on, so we never need to send the secret again.
 //
 // Required env var: STAGING_TEST_AUTH_SECRET.
-// Default user:     ksaconsultantsltd@gmail.com (Accounting Firm Owner with full perms).
+// Default user:     reef.firm.owner@coralledger.test (fixture firm owner).
 //
 // Reference: tests/CoralComply.E2E.Tests/Smoke/SmokeTestBase.cs lines 240-303 in caribdigital/coralledgercomply
 
@@ -22,12 +22,12 @@
  * @param {import('playwright').Page} page
  * @param {object} [opts]
  * @param {string} [opts.baseUrl] - Defaults to https://stg-comply.coralledger.com.
- * @param {string} [opts.email]   - Defaults to ksaconsultantsltd@gmail.com.
+ * @param {string} [opts.email]   - Defaults to reef.firm.owner@coralledger.test.
  * @param {string} [opts.redirectTo] - Defaults to /dashboard.
  */
 export async function authenticateViaTestAuth(page, opts = {}) {
   const baseUrl = opts.baseUrl ?? process.env.SMOKE_BASE_URL ?? 'https://stg-comply.coralledger.com';
-  const email = opts.email ?? 'ksaconsultantsltd@gmail.com';
+  const email = opts.email ?? 'reef.firm.owner@coralledger.test';
   const redirectTo = opts.redirectTo ?? '/dashboard';
 
   const secret = process.env.STAGING_TEST_AUTH_SECRET;

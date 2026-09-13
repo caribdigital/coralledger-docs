@@ -1,7 +1,7 @@
 // client-management-02: Firm Portal — Adding and Managing Clients
 //
 // Target docs page: docs/firm-portal/index.mdx
-// CDN target: cdn.coralledger.com/demos/client-management-02.mp4
+// CDN target: <CDN_URL>/demos/client-management-02.mp4 (see README)
 // Flow: start at /firm/clients (the rich list view), hover + click "+ Add Client" which
 // navigates to /firm/clients/onboard, dwell on the onboarding wizard. End there — don't
 // navigate back to the list (that would make the wizard be the BULK of the video while
@@ -20,7 +20,7 @@ export default {
   async warmup({ page, log }) {
     log('Authenticating as Firm Owner — warmup.');
     await authenticateViaTestAuth(page, {
-      email: 'ksaconsultantsltd@gmail.com',
+      email: 'reef.firm.owner@coralledger.test',
       redirectTo: '/firm/clients',
     });
     await page.waitForLoadState('networkidle');

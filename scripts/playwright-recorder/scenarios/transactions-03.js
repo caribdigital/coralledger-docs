@@ -1,7 +1,7 @@
 // transactions-03: Transactions — CSV Import and Column Mapping
 //
 // Target docs page: docs/transactions/import-csv.mdx
-// CDN target: cdn.coralledger.com/demos/transactions-03.mp4
+// CDN target: <CDN_URL>/demos/transactions-03.mp4
 // Scope: navigate the CSV import landing; no file actually uploaded.
 
 import { authenticateViaTestAuth } from '../lib/auth.js';

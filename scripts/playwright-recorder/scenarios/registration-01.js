@@ -1,7 +1,7 @@
 // registration-01: Account Registration — Sign-Up Form
 //
 // Target docs page: docs/getting-started/create-account.mdx
-// CDN target: cdn.coralledger.com/demos/registration-01.mp4
+// CDN target: <CDN_URL>/demos/registration-01.mp4
 // Scope: hover fields on the public sign-up form. NEVER fills or submits.
 //
 // No warmup — public route, no auth required. The recording starts on a fresh context

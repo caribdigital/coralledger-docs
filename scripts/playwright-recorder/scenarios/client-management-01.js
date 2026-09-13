@@ -1,7 +1,7 @@
 // client-management-01: Firm Portal — Multi-Client Dashboard
 //
 // Target docs page: docs/firm-portal/index.mdx
-// CDN target: cdn.coralledger.com/demos/client-management-01.mp4
+// CDN target: <CDN_URL>/demos/client-management-01.mp4 (see README)
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 
@@ -16,7 +16,7 @@ export default {
   async warmup({ page, log }) {
     log('Authenticating as Firm Owner — warmup.');
     await authenticateViaTestAuth(page, {
-      email: 'ksaconsultantsltd@gmail.com',
+      email: 'reef.firm.owner@coralledger.test',
       redirectTo: '/firm/clients',
     });
     await page.waitForLoadState('networkidle');
