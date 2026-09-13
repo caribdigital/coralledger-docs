@@ -1,7 +1,7 @@
 // exports-01: Reports — Export Formats and Download Options
 //
 // Target docs page: docs/reports/index.mdx
-// CDN target: cdn.coralledger.com/demos/exports-01.mp4
+// CDN target: <CDN_URL>/demos/exports-01.mp4
 // Scope: focus on the Cash Flow Report surface (which has Export CSV button + real data
 // for ksaconsultantsltd's tagged client context). Avoids the /reports landing for
 // firm-side users where the page is sparse.

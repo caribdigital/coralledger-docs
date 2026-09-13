@@ -1,7 +1,7 @@
 // transactions-01: Transactions — Quick Entry and Advanced Mode
 //
 // Target docs page: docs/transactions/manual-entry.mdx
-// CDN target: cdn.coralledger.com/demos/transactions-01.mp4
+// CDN target: <CDN_URL>/demos/transactions-01.mp4
 // Scope: drive the canonical manual-entry form at /vat/entry (the destination the
 // "+ Add" toolbar button on /transactions links to). Hover fields, scroll through
 // advanced sections, NEVER submit.

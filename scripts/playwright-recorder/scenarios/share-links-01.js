@@ -1,7 +1,7 @@
 // share-links-01: Shared Reports — Creating and Managing Secure Share Links
 //
 // Target docs page: docs/reports/shared-reports.mdx
-// CDN target: cdn.coralledger.com/demos/share-links-01.mp4
+// CDN target: <CDN_URL>/demos/share-links-01.mp4
 // Surface: the "Manage Shared Links" button on /vatreturns (VATReturns.razor:125 calls
 // OpenManageSharedLinksDialog → opens a real dialog). The Cash Flow Report surface has
 // no share affordance, so drive from /vatreturns instead.

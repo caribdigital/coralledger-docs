@@ -8,7 +8,7 @@ Pairs with `scripts/convert-marketing-videos.sh` for `.webm` → `.mp4` conversi
 
 - Node 18+
 - Playwright Chromium browser installed (one-time)
-- `STAGING_TEST_AUTH_SECRET` env var set to the staging TestAuth bypass secret. Same value used by the Comply Reef smoke suite — see `tests/CoralComply.E2E.Tests/Smoke/SmokeTestConfig.cs` in the Comply repo.
+- `STAGING_TEST_AUTH_SECRET` env var set to the staging TestAuth bypass secret. The app setting is `TestAuth__StagingSecret` (bound as `TestAuth:StagingSecret`); use the same value as the Comply Reef smoke suite. Never print or commit this value.
 
 ## Install
 
@@ -43,7 +43,12 @@ cd ../..   # back to docs repo root
 
 ## Upload to CDN
 
-Once the `cdn.coralledger.com` host is provisioned (Azure Blob + Front Door), upload the produced `.mp4` files to `https://cdn.coralledger.com/demos/`. The `DemoVideo` component on the docs site (`src/components/DemoVideo/`) already targets that path.
+Upload the produced `.mp4` files to the DigitalOcean Spaces bucket represented by `CDN_URL` in `docusaurus.config.ts`:
+
+- staging: `https://coralledger-cdn-stg-nyc3.nyc3.cdn.digitaloceanspaces.com/demos/`
+- production: `https://coralledger-cdn-nyc3.nyc3.cdn.digitaloceanspaces.com/demos/`
+
+The docs site resolves relative `DemoVideo` paths against this environment-specific base URL. Do not use the unprovisioned `cdn.coralledger.com` placeholder.
 
 ## Scenarios
 
@@ -58,7 +63,7 @@ More scenarios will be added as the proof-of-concept work expands.
 
 The recorder authenticates against staging using the **TestAuth bypass** — the same path the Reef smoke suite uses (see `tests/CoralComply.E2E.Tests/Smoke/SmokeTestBase.cs:240-303` in the Comply repo). The bypass attaches the `X-TestAuth-Secret` header to requests matching `**/api/test-auth/**`; once authenticated, the standard auth cookies carry the session.
 
-Default test user: `ksaconsultantsltd@gmail.com` — the Accounting Firm Owner with full Owner permissions on the staging dataset.
+Default test user: `reef.firm.owner@coralledger.test` — the fixture firm owner defined by `SmokeTestConfig.FirmOwnerEmail`, with Owner/Owner access to the synthetic `Reef Fixture Firm Ltd` business. Override with `SMOKE_FIRM_OWNER_EMAIL` only when a separately approved fixture is required. Never use a real customer account.
 
 ## Adding a new scenario
 
