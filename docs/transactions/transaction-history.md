@@ -6,7 +6,7 @@ description: Search and filter historical transactions in CoralLedger Comply
 
 # Transaction History
 
-Transaction History provides a complete, searchable record of every transaction ever processed in your account — including transactions from periods that have already been filed. This is distinct from the active **Transactions** view, which focuses on the current unfiled period.
+Transaction History provides a complete, searchable record of every transaction ever processed in your account - including transactions from periods that have already been filed. This is distinct from the active **Transactions** view, which focuses on the current unfiled period.
 
 ## Accessing Transaction History
 
@@ -29,12 +29,12 @@ Transactions that belong to a submitted VAT return are shown in read-only mode i
 
 Use the search and filter bar to locate specific transactions:
 
-- **Keyword search** — Matches against description, vendor/customer name, and reference number
-- **Date range** — Filter by transaction date or import date
-- **Transaction type** — Sales, Purchases, Imports, Exports, Credit Notes, Debit Notes
-- **VAT category** — Filter to a specific rate (0%, 5%, 10%, Exempt)
-- **Filing status** — Filed, Unfiled, or All
-- **Amount range** — Set minimum and maximum net or gross amounts
+- **Keyword search** - Matches against description, vendor/customer name, and reference number
+- **Date range** - Filter by transaction date or import date
+- **Transaction type** - Sales, Purchases, Imports, Exports, Credit Notes, Debit Notes
+- **VAT category** - Filter to a specific rate (0%, 5%, 10%, Exempt)
+- **Filing status** - Filed, Unfiled, or All
+- **Amount range** - Set minimum and maximum net or gross amounts
 
 Combine multiple filters to narrow results. Active filters are shown as removable chips below the search bar.
 

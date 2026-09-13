@@ -54,7 +54,7 @@ Record-only close-out documenting Cass remediation items already clean on `main`
 [View Audit Verification Record (2026-05-30)](/docs/reference/audit-verification-2026-05-30)
 
 ### Amendment Chain Verification Memo
-Per-section verification of VAT Act amendment chains against the gazetted Amendment Acts (2014–2026). In-house verbatim mapping against the gazetted text; independent third-party practitioner review pending.
+Per-section verification of VAT Act amendment chains against the gazetted Amendment Acts (2014-2026). In-house verbatim mapping against the gazetted text; independent third-party practitioner review pending.
 
 [View Amendment Chain Verification Memo](/docs/reference/amendment-chain-verification-memo)
 

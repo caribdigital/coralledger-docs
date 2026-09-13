@@ -29,7 +29,7 @@ All users are required to set up 2FA on first login. This adds a second verifica
 - Session timeout for inactive users
 - View and revoke active sessions from Account Settings
 - Login history with IP address and device tracking
-- **Session revocation on soft-delete** — when an operator account is soft-deleted, `UpdateSecurityStampAsync` is called immediately, invalidating all of that user's active sessions across every device
+- **Session revocation on soft-delete** - when an operator account is soft-deleted, `UpdateSecurityStampAsync` is called immediately, invalidating all of that user's active sessions across every device
 
 ## Threat Protection
 
@@ -62,7 +62,7 @@ PlatformAdmin operators can sign in as any user in a read-only session for suppo
 ### Multi-Tenant Isolation
 All EF Core queries are filtered by Business ID at query execution time, providing strong logical separation between businesses. Cross-tenant access is prevented for all queries that go through the tenant-aware data access layer.
 
-The EF Core global query filter re-evaluates the current `BusinessId` on every EF Core query, so switching tenants mid-session — including via the `?bid=` query parameter in Blazor Server — takes effect immediately without requiring a page reload or new database connection.
+The EF Core global query filter re-evaluates the current `BusinessId` on every EF Core query, so switching tenants mid-session - including via the `?bid=` query parameter in Blazor Server - takes effect immediately without requiring a page reload or new database connection.
 
 [Learn more about the tenant filter architecture](/docs/security/tenant-isolation)
 
@@ -83,7 +83,7 @@ All data modifications are recorded in an immutable, hash-chain verified audit l
 
 | Role | Scope | Permissions |
 |------|-------|-------------|
-| **PlatformAdmin** | Platform-wide (Ops Portal) | Full platform administration — manage all businesses, operators, and emergency controls. Requires 2FA. Ops Portal access controlled by `RequirePlatformAdmin` policy (role + 2FA); role assignment managed separately. |
+| **PlatformAdmin** | Platform-wide (Ops Portal) | Full platform administration - manage all businesses, operators, and emergency controls. Requires 2FA. Ops Portal access controlled by `RequirePlatformAdmin` policy (role + 2FA); role assignment managed separately. |
 | **Owner** | Business | Full access to all features and settings within a business |
 | **Accountant** | Business | Manage transactions, returns, and reports |
 | **User** | Business | View-only access to data and reports |
@@ -94,8 +94,8 @@ Granular permissions can be configured per user for: Transactions, Reports, Comp
 
 Access to the Ops Portal is enforced by the `RequirePlatformAdmin` authorization policy, implemented in `PlatformAdminAuthorizationHandler`. This policy combines two checks:
 
-1. **Role check** — the user must hold the `PlatformAdmin` role.
-2. **2FA check** — the user must have completed two-factor authentication for the current session.
+1. **Role check** - the user must hold the `PlatformAdmin` role.
+2. **2FA check** - the user must have completed two-factor authentication for the current session.
 
 Requests that fail either check are rejected with a `403 Forbidden` response before any application endpoint or controller logic is executed.
 
@@ -114,11 +114,11 @@ When a PlatformAdmin impersonates a business account, an HTTP-level middleware e
 
 ## Best Practices
 
-1. **Enable 2FA immediately** — Required for all users
-2. **Use strong, unique passwords** — Don't reuse passwords from other services
-3. **Review login history regularly** — Check for unrecognized access
-4. **Limit user permissions** — Grant only the access each team member needs
-5. **Monitor fraud alerts** — Act on security notifications promptly
+1. **Enable 2FA immediately** - Required for all users
+2. **Use strong, unique passwords** - Don't reuse passwords from other services
+3. **Review login history regularly** - Check for unrecognized access
+4. **Limit user permissions** - Grant only the access each team member needs
+5. **Monitor fraud alerts** - Act on security notifications promptly
 
 ## Next Steps
 

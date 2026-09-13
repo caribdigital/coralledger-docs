@@ -10,9 +10,9 @@ This section provides a statute-first navigation path for teams that review VAT 
 
 Each page follows the same structure:
 
-1. **What statute says** — Practical summary of the legal requirement
-2. **What platform does** — How CoralLedger Comply supports the requirement
-3. **Customer responsibility** — What your team must still do
+1. **What statute says** - Practical summary of the legal requirement
+2. **What platform does** - How CoralLedger Comply supports the requirement
+3. **Customer responsibility** - What your team must still do
 
 :::info
 This section is a practical product guide, not legal advice. Use it alongside official Department of Inland Revenue materials and your VAT advisor.

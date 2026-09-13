@@ -6,11 +6,11 @@ description: Transferring attestation responsibility between parties within the 
 
 # Handover
 
-:::warning Coming Soon — not yet available
-The Handover feature described on this page is **planned functionality** and is not yet available in the production platform. No handover button is present on the attestation screen, no 24-hour expiring link is generated, and no `ATT_HANDOVER_*` audit events are emitted in the current build. This page is published in advance so firms can plan their preparer→owner workflow against the intended behavior; the implementation date will be announced separately. Until launch, use a fresh login by the owner or director to complete attestation — never share a session.
+:::warning Coming Soon - not yet available
+The Handover feature described on this page is **planned functionality** and is not yet available in the production platform. No handover button is present on the attestation screen, no 24-hour expiring link is generated, and no `ATT_HANDOVER_*` audit events are emitted in the current build. This page is published in advance so firms can plan their preparer→owner workflow against the intended behavior; the implementation date will be announced separately. Until launch, use a fresh login by the owner or director to complete attestation - never share a session.
 :::
 
-A Handover transfers the active attestation session from one responsible party to another — for example, from a preparer who built the return to the business owner who must ultimately sign it, or from one firm accountant to a senior colleague who will attest the filing.
+A Handover transfers the active attestation session from one responsible party to another - for example, from a preparer who built the return to the business owner who must ultimately sign it, or from one firm accountant to a senior colleague who will attest the filing.
 
 ## When to Use Handover
 
@@ -49,7 +49,7 @@ When the recipient clicks the handover link:
 
 1. They are directed to the CoralLedger Comply login page (or the return directly, if already logged in)
 2. After login, the return is pre-loaded in the attestation pathway
-3. A [Session Affirmation](/docs/attestation/session-affirmation) is required — the recipient must confirm their identity before proceeding
+3. A [Session Affirmation](/docs/attestation/session-affirmation) is required - the recipient must confirm their identity before proceeding
 4. The [Qualifying Screen](/docs/attestation/qualifying-screen) is presented fresh for the new responsible party
 5. The attestation continues as normal from the qualifying step onward
 

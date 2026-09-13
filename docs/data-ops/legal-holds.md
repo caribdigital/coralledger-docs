@@ -28,7 +28,7 @@ CoralLedger Comply supports two levels of hold:
 1. Locate the file in the relevant transaction, return, or document list
 2. Click the **⋮** (more options) menu next to the file
 3. Select **Place Legal Hold**
-4. Enter the reason for the hold (required — e.g., *"Active litigation — Case #2025-0412"*)
+4. Enter the reason for the hold (required - e.g., *"Active litigation - Case #2025-0412"*)
 5. Optionally enter an expected release date for reference
 6. Click **Confirm**
 
@@ -75,13 +75,13 @@ The **Hold Until** date is informational only. The hold is still enforced after 
 
 The active holds dashboard displays all current holds with:
 
-- **Type** — File or Tombstone Record
-- **Subject** — File name or record identifier
-- **Held** — Whether the hold is currently active
-- **Placed By** — Operator who placed the hold
-- **Placed On** — Date and time the hold was created
-- **Reason** — Reason provided when placing the hold
-- **Hold Until** — Optional reference date
+- **Type** - File or Tombstone Record
+- **Subject** - File name or record identifier
+- **Held** - Whether the hold is currently active
+- **Placed By** - Operator who placed the hold
+- **Placed On** - Date and time the hold was created
+- **Reason** - Reason provided when placing the hold
+- **Hold Until** - Optional reference date
 
 ## Audit Trail
 
@@ -96,11 +96,11 @@ This creates a complete evidentiary chain suitable for legal proceedings.
 
 ## Best Practices
 
-1. **Always provide a specific reason** — Reference case numbers, investigation IDs, or regulatory notices
-2. **Set a Hold Until date** — Helps operators track ongoing obligations; note that the hold must still be manually released
-3. **Review active holds regularly** — Confirm holds are still required; release promptly when resolved
-4. **Coordinate with legal counsel** — Ensure hold scope matches the legal requirements
-5. **Never rely on holds as a substitute for backup** — Legal holds prevent deletion, not data loss from other causes
+1. **Always provide a specific reason** - Reference case numbers, investigation IDs, or regulatory notices
+2. **Set a Hold Until date** - Helps operators track ongoing obligations; note that the hold must still be manually released
+3. **Review active holds regularly** - Confirm holds are still required; release promptly when resolved
+4. **Coordinate with legal counsel** - Ensure hold scope matches the legal requirements
+5. **Never rely on holds as a substitute for backup** - Legal holds prevent deletion, not data loss from other causes
 
 ## Next Steps
 

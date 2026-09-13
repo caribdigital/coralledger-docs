@@ -6,7 +6,7 @@ description: Data lifecycle management in CoralLedger Comply
 
 # Data Operations
 
-CoralLedger Comply gives operators full control over the data lifecycle — from user-initiated deletion requests and legal holds through to scheduled retention enforcement and full business data export.
+CoralLedger Comply gives operators full control over the data lifecycle - from user-initiated deletion requests and legal holds through to scheduled retention enforcement and full business data export.
 
 ## Features
 

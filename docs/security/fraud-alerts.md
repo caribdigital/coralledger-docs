@@ -13,16 +13,16 @@ CoralLedger Comply's fraud detection system monitors activity in real-time and g
 Navigate to **Admin > Fraud Alerts** (route: `/admin/fraud-alerts`). The page requires the Administrator role.
 
 :::note
-Unlike the [Kill Switch](/docs/security/kill-switch) and [IP Blocking](/docs/security/ip-blocking) pages — which gate on both Administrator role **and** 2FA via the `Require2FA` policy — the Fraud Alerts viewer is read-only and currently only role-gated. If your platform deployment requires 2FA for all Admin surfaces, raise the divergence with the security team.
+Unlike the [Kill Switch](/docs/security/kill-switch) and [IP Blocking](/docs/security/ip-blocking) pages - which gate on both Administrator role **and** 2FA via the `Require2FA` policy - the Fraud Alerts viewer is read-only and currently only role-gated. If your platform deployment requires 2FA for all Admin surfaces, raise the divergence with the security team.
 :::
 
 ## Dashboard Overview
 
 The fraud alerts dashboard displays:
-- **Total Alerts** — All detected alerts in the selected time period
-- **Critical** — Highest severity alerts requiring immediate attention
-- **High Priority** — Important alerts to investigate
-- **Blocked Actions** — Actions blocked by the system
+- **Total Alerts** - All detected alerts in the selected time period
+- **Critical** - Highest severity alerts requiring immediate attention
+- **High Priority** - Important alerts to investigate
+- **Blocked Actions** - Actions blocked by the system
 
 ## Filtering Alerts
 
@@ -43,12 +43,12 @@ The fraud alerts dashboard displays:
 ## Alert Details
 
 Each alert includes:
-- **Severity** — Critical, High, Medium, or Low (color-coded)
-- **Timestamp** — When the alert was generated (with relative time)
-- **Threat Type** — Category of detected threat
-- **Source IP** — IP address associated with the activity
-- **Action Taken** — What the system did in response
-- **Details** — Full description of the detected activity
+- **Severity** - Critical, High, Medium, or Low (color-coded)
+- **Timestamp** - When the alert was generated (with relative time)
+- **Threat Type** - Category of detected threat
+- **Source IP** - IP address associated with the activity
+- **Action Taken** - What the system did in response
+- **Details** - Full description of the detected activity
 
 ## Auto-Refresh
 

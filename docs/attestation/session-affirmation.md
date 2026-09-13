@@ -6,7 +6,7 @@ description: Mid-session identity confirmation step in the Section 32 Attestatio
 
 # Session Affirmation
 
-Session Affirmation is a mid-pathway identity confirmation step that occurs after the qualifying variant has been selected but before the final declaration is presented. Its purpose is to confirm that the person actively completing the attestation is the same authenticated user who initiated the session — protecting against unattended browser sessions and unauthorized completion.
+Session Affirmation is a mid-pathway identity confirmation step that occurs after the qualifying variant has been selected but before the final declaration is presented. Its purpose is to confirm that the person actively completing the attestation is the same authenticated user who initiated the session - protecting against unattended browser sessions and unauthorized completion.
 
 ## When Session Affirmation Is Triggered
 
@@ -29,9 +29,9 @@ When affirmation is required, the attestation flow pauses and a modal dialog is 
 
 The user must complete one of the following confirmation methods, in order of preference:
 
-1. **Password confirmation** — Enter the current account password
-2. **2FA code** — Enter a valid TOTP code from the registered authenticator app
-3. **Email OTP** — Request a one-time passcode sent to the registered email address (available if both password and 2FA fail)
+1. **Password confirmation** - Enter the current account password
+2. **2FA code** - Enter a valid TOTP code from the registered authenticator app
+3. **Email OTP** - Request a one-time passcode sent to the registered email address (available if both password and 2FA fail)
 
 :::info Why Both Password and 2FA Are Listed
 The platform prefers password confirmation for speed, but if the user has been away from the computer and their password manager is not available, the 2FA or email OTP paths provide a secure alternative. All three methods satisfy the affirmation requirement.
@@ -42,8 +42,8 @@ The platform prefers password confirmation for speed, but if the user has been a
 | Outcome | Result |
 |---------|--------|
 | **Successful** | The attestation session is refreshed; the 30-minute submission window restarts |
-| **Failed — wrong password** | An error is shown; up to 3 attempts are permitted before the session is invalidated |
-| **Failed — wrong 2FA code** | An error is shown; up to 3 attempts are permitted |
+| **Failed - wrong password** | An error is shown; up to 3 attempts are permitted before the session is invalidated |
+| **Failed - wrong 2FA code** | An error is shown; up to 3 attempts are permitted |
 | **Abandoned** | The user closes the dialog or navigates away; the attestation session is terminated and the return reverts to **Draft** |
 | **Locked out** | After 3 consecutive failures, the session is invalidated and the user is logged out |
 

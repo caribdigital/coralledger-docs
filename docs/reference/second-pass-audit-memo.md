@@ -59,15 +59,15 @@ Excluded from this pass: VAT Returns, Section 32 Attestation, and Firm Portal (c
 
 Signed audit memo confirming second-pass coverage of all 12 DS-012 sections:
 
-- **Cass** — Documentation audit lead
-- **Julian** — Documentation audit reviewer
+- **Cass** - Documentation audit lead
+- **Julian** - Documentation audit reviewer
 
 **Signed on:** 2026-06-01 (UTC)
 
 
 ---
 
-## Addendum — 2026-07-17 second-pass (DS-012 execution)
+## Addendum - 2026-07-17 second-pass (DS-012 execution)
 
 The DS-012 "second-pass audit" this memo scoped was executed on 2026-07-17 as a full
 code-verification sweep (docs revision `revise/accuracy-2026-07`). The "Clean" verdicts above

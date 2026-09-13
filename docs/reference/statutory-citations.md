@@ -58,10 +58,10 @@ The following sections were confirmed as unamended since the original Value Adde
 | s. 41(3) | Record-keeping requirements and good-faith reliance (citation pending re-verification) |
 | s. 44 | Partial exemption and input-tax apportionment |
 | Part X, §§79–80 | Record-keeping and accounts (5-year statutory retention floor in §79(2); record-types enumeration in §80) |
-| s. 61 | Assessment as evidence in proceedings (**not** a penalty section — no "% of unpaid VAT" multiplier) |
+| s. 61 | Assessment as evidence in proceedings (**not** a penalty section - no "% of unpaid VAT" multiplier) |
 
 :::warning Citation re-verification in progress
-The `s. 26` and `s. 41(3)` entries above are carried forward from an earlier in-house verification (May 2026) but have **not** been re-verified at source. The `s. 50` citation that appeared in this table was verified at source on 2026-05-31 and found to be incorrect: §50 of the VAT Act 2014 is "Rules relating to a claim for input tax deduction", not the retention period. The canonical retention authority is **Part X, §§79–80** (§79(2) sets the 5-year statutory minimum). A follow-up verification of §26 and §41(3) is scheduled — both may need similar correction.
+The `s. 26` and `s. 41(3)` entries above are carried forward from an earlier in-house verification (May 2026) but have **not** been re-verified at source. The `s. 50` citation that appeared in this table was verified at source on 2026-05-31 and found to be incorrect: §50 of the VAT Act 2014 is "Rules relating to a claim for input tax deduction", not the retention period. The canonical retention authority is **Part X, §§79–80** (§79(2) sets the 5-year statutory minimum). A follow-up verification of §26 and §41(3) is scheduled - both may need similar correction.
 :::
 
 Canonical amendment-chain examples:

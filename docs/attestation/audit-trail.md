@@ -6,21 +6,21 @@ description: Immutable audit logging for Section 32 attestation events in CoralL
 
 # Attestation Audit Trail
 
-Every event in the Section 32 Attestation Pathway is recorded in an immutable, hash-chain verified audit log. This log provides a complete, tamper-proof record of who attested each VAT return, under which variant, and when — supporting regulatory compliance, internal governance, and any subsequent audit or dispute process.
+Every event in the Section 32 Attestation Pathway is recorded in an immutable, hash-chain verified audit log. This log provides a complete, tamper-proof record of who attested each VAT return, under which variant, and when - supporting regulatory compliance, internal governance, and any subsequent audit or dispute process.
 
 ## Why the Attestation Audit Trail Exists
 
 Under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32, a VAT return must be accompanied by a signed declaration. The attestation audit trail documents that this requirement was met for every submitted return, preserving:
 
-- **Identity** — Exactly who completed the attestation and their role at the time
-- **Method** — Which variant was used (Standard, Agent, Professional, Digital, or Carve-Out)
-- **Integrity** — That the session was valid, not shared, and completed without interruption anomalies
-- **Timing** — Precise UTC timestamps for every stage of the pathway
-- **Professional credentials** — the self-declared BICA licence detail, where applicable
+- **Identity** - Exactly who completed the attestation and their role at the time
+- **Method** - Which variant was used (Standard, Agent, Professional, Digital, or Carve-Out)
+- **Integrity** - That the session was valid, not shared, and completed without interruption anomalies
+- **Timing** - Precise UTC timestamps for every stage of the pathway
+- **Professional credentials** - the self-declared BICA licence detail, where applicable
 
 ## Events Recorded
 
-The attestation audit trail captures events at each stage of the pathway. The current build emits the six lifecycle events listed under **Currently emitted** below; the events under **Planned** are reserved for upcoming features (Handover, Session Affirmation, Carve-Out routing, Digital Filing) — they will start emitting as those features ship. Integrators consuming the audit feed should ignore unknown event types gracefully.
+The attestation audit trail captures events at each stage of the pathway. The current build emits the six lifecycle events listed under **Currently emitted** below; the events under **Planned** are reserved for upcoming features (Handover, Session Affirmation, Carve-Out routing, Digital Filing) - they will start emitting as those features ship. Integrators consuming the audit feed should ignore unknown event types gracefully.
 
 ### Currently emitted
 
@@ -88,9 +88,9 @@ Platform administrators can search attestation events across all businesses usin
 
 Attestation audit records are subject to the same immutability and retention rules as all other audit data in CoralLedger Comply:
 
-- **WORM compliance** — Records cannot be modified or deleted after creation
-- **Hash-chain verification** — Each record is cryptographically linked to the previous entry; any tampering breaks the chain
-- **7-year retention** — All attestation records are retained for a minimum of 7 years (5-year statutory minimum extended by CoralLedger Comply), in compliance with [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), Part X, §§79–80
+- **WORM compliance** - Records cannot be modified or deleted after creation
+- **Hash-chain verification** - Each record is cryptographically linked to the previous entry; any tampering breaks the chain
+- **7-year retention** - All attestation records are retained for a minimum of 7 years (5-year statutory minimum extended by CoralLedger Comply), in compliance with [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), Part X, §§79–80
 
 ## Exporting Attestation Records
 

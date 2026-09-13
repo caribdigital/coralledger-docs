@@ -15,10 +15,10 @@ Navigate to **Reports > Cash Flow**.
 ## Summary Cards
 
 The report displays four key metrics:
-- **Total Outstanding** — Unpaid VAT obligations across all periods
-- **Due Next 30 Days** — VAT payments due within the next month
-- **Paid Last 90 Days** — Total VAT paid in the past quarter
-- **Overdue Amount** — Payments past their due date
+- **Total Outstanding** - Unpaid VAT obligations across all periods
+- **Due Next 30 Days** - VAT payments due within the next month
+- **Paid Last 90 Days** - Total VAT paid in the past quarter
+- **Overdue Amount** - Payments past their due date
 
 ## Payment Timeline
 

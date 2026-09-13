@@ -18,7 +18,7 @@ Choose your preferred theme:
 
 | Theme | Description |
 |-------|-------------|
-| **Light** | Clean and bright — best for well-lit environments |
+| **Light** | Clean and bright - best for well-lit environments |
 | **Dark** | Designed for low-light use |
 | **System** | Matches your operating system's theme setting |
 

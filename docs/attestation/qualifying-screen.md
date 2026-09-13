@@ -6,7 +6,7 @@ description: How CoralLedger Comply determines which Section 32 attestation vari
 
 # Qualifying Screen
 
-The Qualifying Screen is the first step in the Section 32 Attestation Pathway. It presents a short set of questions to determine which **signatory capacity** applies to the current filer and filing context — mapping to one of the four variants (Standard `RegisteredTaxpayer`, Agent `AuthorisedAgent`, Professional `BicaLicensedPractitioner`, or Digital `AuthorisedEmployee` *coming soon*).
+The Qualifying Screen is the first step in the Section 32 Attestation Pathway. It presents a short set of questions to determine which **signatory capacity** applies to the current filer and filing context - mapping to one of the four variants (Standard `RegisteredTaxpayer`, Agent `AuthorisedAgent`, Professional `BicaLicensedPractitioner`, or Digital `AuthorisedEmployee` *coming soon*).
 
 ## When the Qualifying Screen Appears
 
@@ -22,7 +22,7 @@ You cannot bypass the Qualifying Screen. If a prior attestation session has expi
 
 The screen presents up to four questions, shown in sequence. Later questions appear only if earlier answers require further qualification.
 
-### Question 1 — Filer Role
+### Question 1 - Filer Role
 
 > **Who is completing this attestation?**
 
@@ -32,16 +32,16 @@ The screen presents up to four questions, shown in sequence. Later questions app
 | I am filing as an authorized agent on behalf of the registrant | Routes to [Authorized Agent Variant](/docs/attestation/variant-agent) |
 | I am a BICA-registered accountant preparing this return | Routes to [Professional Accountant Variant](/docs/attestation/variant-professional) |
 
-### Question 2 — Signature Method
+### Question 2 - Signature Method
 
 > **How will you sign this return?**
 
 | Option | Result |
 |--------|--------|
 | Electronic confirmation in this session | Routes to [Standard Declaration Variant](/docs/attestation/variant-standard) |
-| Qualified electronic signature (digital certificate) | *(Coming soon)* Routes to [Digital Filing Variant](/docs/attestation/variant-digital) — disabled in current build |
+| Qualified electronic signature (digital certificate) | *(Coming soon)* Routes to [Digital Filing Variant](/docs/attestation/variant-digital) - disabled in current build |
 
-### Question 3 — Carve-Out Check
+### Question 3 - Carve-Out Check
 
 If either Question 1 or Question 2 results indicate a potential carve-out scenario, a third question is shown:
 
@@ -58,7 +58,7 @@ Once the qualifying questions are answered, CoralLedger Comply:
 
 1. Determines and records the attestation variant for the session
 2. Displays the relevant declaration text for the identified variant
-3. Locks the qualification result to the current session — answers cannot be changed without abandoning and restarting the submission
+3. Locks the qualification result to the current session - answers cannot be changed without abandoning and restarting the submission
 
 :::warning Restarting Qualification
 If you select the wrong qualifying option, you must abandon the current attestation session and restart the submission process. Any answers already given are discarded and the return remains in **Draft** status.

@@ -19,10 +19,10 @@ The Bahamas now operates a four-category VAT system: Standard (10%), Reduced (5%
 | **10%** Standard | Default rate for most goods and services |
 | **5%** Reduced | Hygiene products and medications at licensed food stores (narrow scope) |
 | **0%** Zero-Rated | Exports, international transport, and Third Schedule unprepared food sold by retailers that do **not** qualify as licensed food stores |
-| **Exempt** | Unprepared food at licensed food stores (from April 1, 2026), financial services, residential rent, education, healthcare |
+| **Exempt** | Unprepared food at licensed food stores (from 1 Apr 2026), financial services, residential rent, education, healthcare |
 
 :::info April 2026 Update
-From April 1, 2026, unprepared food at licensed food stores moved to **Exempt** status. See [April 2026 Food Exemption Transition](#april-2026-food-exemption-transition) below.
+From 1 Apr 2026, unprepared food at licensed food stores moved to **Exempt** status. See [April 2026 Food Exemption Transition](#april-2026-food-exemption-transition) below.
 :::
 
 ### Construction VAT Restrictions
@@ -30,7 +30,7 @@ From April 1, 2026, unprepared food at licensed food stores moved to **Exempt** 
 [Value Added Tax Act, 2014](https://laws.bahamas.gov.bs/), s. 50 restricts input-VAT recovery on major construction projects.
 
 **What the rule does:**
-- Under **s. 50(1A)**, input VAT on a major construction project is **prohibited** from being claimed where the project meets a qualifying limb — the principal limb being a project cost **strictly greater than $1,000,000**. Other qualifying limbs include substantial renovation and waterfront works (docks, marinas, and similar).
+- Under **s. 50(1A)**, input VAT on a major construction project is **prohibited** from being claimed where the project meets a qualifying limb - the principal limb being a project cost **strictly greater than $1,000,000**. Other qualifying limbs include substantial renovation and waterfront works (docks, marinas, and similar).
 - Under **s. 50(1B)**, an **ordinary-course-supplier carve-out** applies, and the Comptroller may prescribe further exceptions.
 
 **How Comply Helps:**
@@ -61,15 +61,15 @@ To claim a VAT refund, at least 50% of your taxable supplies must be zero-rated.
 
 Access at **Compliance > Refund Eligibility**.
 
-### Food Store Qualification (April 1, 2025)
+### Food Store Qualification (1 Apr 2025)
 
-Food stores have specific VAT treatment. The operative definition is the [VAT (Amendment) (No. 2) Act, 2025](https://laws.bahamas.gov.bs/), s. 2(a) (in operation 1 July 2025), which defines "food store" in three limbs — **a business qualifies if it meets any of the following**:
+Food stores have specific VAT treatment. The operative definition is the [VAT (Amendment) (No. 2) Act, 2025](https://laws.bahamas.gov.bs/), s. 2(a) (in operation 1 July 2025), which defines "food store" in three limbs - **a business qualifies if it meets any of the following**:
 
 1. At least **10%** of the **prior year's** turnover under its business licence is from the sale of unprepared food for human consumption;
 2. It is **new in the year** (no prior year's turnover) and at least 10% of its **estimated** turnover for the year is from the sale of unprepared food; or
 3. It is **licensed to operate as a pharmacy** (no turnover threshold applies to this limb).
 
-The gazetted text lists the limbs as alternatives — any one qualifies. In practice, qualification also relies on proper product categorization and accurate record-keeping so the unprepared-food turnover can be evidenced.
+The gazetted text lists the limbs as alternatives - any one qualifies. In practice, qualification also relies on proper product categorization and accurate record-keeping so the unprepared-food turnover can be evidenced.
 
 **Qualify at:**
 - Navigate to **Admin > Vendor Qualification**
@@ -78,17 +78,17 @@ The gazetted text lists the limbs as alternatives — any one qualifies. In prac
 
 ### April 2026 Food Exemption Transition {#april-2026-food-exemption-transition}
 
-Effective **April 1, 2026**, unprepared food at licensed food stores moved to **VAT Exempt** status. This is distinct from both the 5% reduced rate and zero-rating.
+Effective **1 Apr 2026**, unprepared food at licensed food stores moved to **VAT Exempt** status. This is distinct from both the 5% reduced rate and zero-rating.
 
 **What Changed:**
-- Unprepared food (bread, rice, flour, fresh produce, etc.) is no longer taxable at 5% — it is now Exempt
+- Unprepared food (bread, rice, flour, fresh produce, etc.) is no longer taxable at 5% - it is now Exempt
 - The 5% reduced rate now applies only to the narrow category of hygiene products and medications at licensed food stores
 - Exempt supplies carry **no input tax credit** for the supplier, unlike zero-rated supplies
 
 **Seller-Axis Clarification:**
-The same Third Schedule items are **Zero-Rated** when sold by retailers that do **not** qualify as licensed food stores, but **Exempt** when sold by licensed food stores from April 1, 2026. The category turns on seller qualification, not on a different item list.
+The same Third Schedule items are **Zero-Rated** when sold by retailers that do **not** qualify as licensed food stores, but **Exempt** when sold by licensed food stores from 1 Apr 2026. The category turns on seller qualification, not on a different item list.
 
-**Exempt vs Zero-Rated — Why It Matters:**
+**Exempt vs Zero-Rated - Why It Matters:**
 
 | | Exempt | Zero-Rated |
 |---|---|---|
@@ -104,7 +104,7 @@ Because no input tax credit is available on exempt supplies, food stores that no
 - CoralLedger Comply tracks exempt vs taxable supply ratios and assists with apportionment calculations at **Compliance > Apportionment**
 
 **Comply Features:**
-- Date-based reclassification of unprepared food transactions dated on or after April 1, 2026
+- Date-based reclassification of unprepared food transactions dated on or after 1 Apr 2026
 - Apportionment ratio calculation and monitoring
 - Alerts when exempt supply proportion increases your non-recoverable input VAT exposure
 
@@ -113,12 +113,12 @@ Because no input tax credit is available on exempt supplies, food stores that no
 Claim relief on bad debts you have written off in your accounts (VAT Act s. 53(3)). See the [Bad Debt Relief](/docs/compliance/bad-debt-relief) page for the full workflow.
 
 **Eligibility:**
-- The debt is **written off** in your books — the event that makes relief available under s. 53(3)
+- The debt is **written off** in your books - the event that makes relief available under s. 53(3)
 - VAT was originally paid to the government on the supply
 - Reasonable collection efforts were made
 - No payment has been received against the unpaid amount
 
-Comply surfaces debts more than 12 months outstanding as candidates to review — a prompt, not the statutory trigger.
+Comply surfaces debts more than 12 months outstanding as candidates to review - a prompt, not the statutory trigger.
 
 **How to Claim:**
 1. Go to **Compliance > Bad Debt**
@@ -155,14 +155,14 @@ CoralLedger Comply includes dedicated dashboards for each 2025 reform:
 
 ### Important Dates
 
-- **April 1, 2025** - Food store qualification rules effective
-- **July 1, 2025** - Four-category VAT framework fully effective
-- **September 1, 2025** - 5% reduced rate narrows to hygiene products and medications at licensed food stores
-- **April 1, 2026** - Unprepared food at licensed food stores moves to VAT Exempt; 5% rate narrows to hygiene/medication only (see [Rate Transition Handling](/docs/compliance/rate-transitions))
+- **1 Apr 2025** - Food store qualification rules effective
+- **1 Jul 2025** - Four-category VAT framework fully effective
+- **1 Sep 2025** - 5% reduced rate narrows to hygiene products and medications at licensed food stores
+- **1 Apr 2026** - Unprepared food at licensed food stores moves to VAT Exempt; 5% rate narrows to hygiene/medication only (see [Rate Transition Handling](/docs/compliance/rate-transitions))
 
 ## Need Help?
 
-The 2025 reforms are complex. Contact us for assistance:
+The VAT framework, as amended through 2026, is complex. Contact us for assistance:
 - **Email**: support@digitalcarib.com
 - **Phone**: Schedule a consultation
 

@@ -10,16 +10,16 @@ Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (
 
 ## What statute says
 
-[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32 governs **time of supply** — the rule that determines when tax becomes due and which filing period includes the transaction. Even when an invoice is uploaded later, the legal treatment usually follows the transaction or tax-point date rather than the data entry date.
+[Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32 governs **time of supply** - the rule that determines when tax becomes due and which filing period includes the transaction. Even when an invoice is uploaded later, the legal treatment usually follows the transaction or tax-point date rather than the data entry date.
 
 Section 32 includes sub-rules for specific supply types:
 
-- **§32(8) — Continuous Supply** — supplies that do not have a single discrete tax point (e.g., utility services, subscriptions); the tax point falls at the end of each billing period, or earlier if payment is received
-- **§32(11) — Advance Payment** — supplies for which payment precedes delivery (deposits, retainer fees); the tax point is the date payment is received
-- **§32(15) — Goods on Approval** — goods supplied on a trial/approval basis; the tax point is when the goods are adopted, or 12 months after delivery, whichever is earlier
-- **§32(17) — Retention Payment** — held-back amounts on a contract; the tax point is the earlier of when the retained consideration falls due or is received
+- **§32(8) - Continuous Supply** - supplies that do not have a single discrete tax point (e.g., utility services, subscriptions); the tax point falls at the end of each billing period, or earlier if payment is received
+- **§32(11) - Advance Payment** - supplies for which payment precedes delivery (deposits, retainer fees); the tax point is the date payment is received
+- **§32(15) - Goods on Approval** - goods supplied on a trial/approval basis; the tax point is when the goods are adopted, or 12 months after delivery, whichever is earlier
+- **§32(17) - Retention Payment** - held-back amounts on a contract; the tax point is the earlier of when the retained consideration falls due or is received
 
-Transaction dating is reinforced by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 15 (transaction dating requirements) and the amended s. 15A (effective April 1, 2025).
+Transaction dating is reinforced by [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 15 (transaction dating requirements) and the amended s. 15A (effective 1 Apr 2025).
 
 This is especially important during law changes and rate transitions. A transaction that falls before an effective date may be treated differently from an otherwise identical transaction after that date.
 

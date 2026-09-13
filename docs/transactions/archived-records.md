@@ -16,9 +16,9 @@ Navigate to **VAT Management → Archived Records** in the sidebar.
 
 A transaction record is moved to Archived Records when:
 
-1. **The VAT return it belongs to is filed and the retention window has passed the active threshold** — filed returns older than the current and two preceding periods are moved out of the standard Transaction History view and into Archives.
-2. **The business account is closed or suspended** — all transactions are archived immediately.
-3. **A data retention policy applies** — records scheduled for archiving by an administrator or compliance rule.
+1. **The VAT return it belongs to is filed and the retention window has passed the active threshold** - filed returns older than the current and two preceding periods are moved out of the standard Transaction History view and into Archives.
+2. **The business account is closed or suspended** - all transactions are archived immediately.
+3. **A data retention policy applies** - records scheduled for archiving by an administrator or compliance rule.
 
 Archived records are **read-only**. They cannot be edited, recategorized, or deleted (unless a formal deletion request is raised via [Data Operations](/docs/data-ops/deletion-requests)).
 
@@ -28,11 +28,11 @@ The Archived Records page works similarly to [Transaction History](/docs/transac
 
 ### Search and Filters
 
-- **Keyword search** — Matches description, vendor/customer name, and reference number
-- **Date range** — Filter by transaction date
-- **Transaction type** — Sales, Purchases, Imports, Exports, Credit Notes, Debit Notes
-- **VAT category** — Filter by rate
-- **Archive date** — When the record was moved to archive
+- **Keyword search** - Matches description, vendor/customer name, and reference number
+- **Date range** - Filter by transaction date
+- **Transaction type** - Sales, Purchases, Imports, Exports, Credit Notes, Debit Notes
+- **VAT category** - Filter by rate
+- **Archive date** - When the record was moved to archive
 
 ### Results Table
 

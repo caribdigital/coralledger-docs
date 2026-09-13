@@ -31,11 +31,11 @@ See [Security Overview](/docs/security/) for details on the PlatformAdmin role a
 ## Status Display
 
 The kill switch dashboard shows:
-- **Current state** — Active or Inactive
-- **Circuit breaker status** — System health indicator
-- **Consecutive failures** — Count of sequential fraud detection failures
-- **False positive count** — Incorrect fraud detections
-- **Total activations** — Historical activation count
+- **Current state** - Active or Inactive
+- **Circuit breaker status** - System health indicator
+- **Consecutive failures** - Count of sequential fraud detection failures
+- **False positive count** - Incorrect fraud detections
+- **Total activations** - Historical activation count
 
 ## Activating the Kill Switch
 

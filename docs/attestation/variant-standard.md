@@ -29,7 +29,7 @@ The filer must confirm this declaration by:
 4. Clicking **Submit Return**
 
 :::info Why a Password Is Required
-The password re-entry step is a standard security measure. It ensures that the person completing the attestation is the authenticated session holder — not an unattended browser session. This is consistent with the electronic signature expectation under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32.
+The password re-entry step is a standard security measure. It ensures that the person completing the attestation is the authenticated session holder - not an unattended browser session. This is consistent with the electronic signature expectation under [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (No. 2) Act, 2021)](https://laws.bahamas.gov.bs/), s. 32.
 :::
 
 ## Validation Checks

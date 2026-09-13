@@ -41,9 +41,9 @@ Click any row to drill into the individual transactions for that category.
 
 Use the controls at the top of the page to narrow the analysis:
 
-- **Date range** — Select a preset (current month, last quarter, last year) or enter a custom start and end date
-- **Transaction type** — Filter to Sales, Purchases, Imports, Exports, or All
-- **Search** — Find a specific category by name
+- **Date range** - Select a preset (current month, last quarter, last year) or enter a custom start and end date
+- **Transaction type** - Filter to Sales, Purchases, Imports, Exports, or All
+- **Search** - Find a specific category by name
 
 ## Interpreting the Data
 

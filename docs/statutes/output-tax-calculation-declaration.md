@@ -14,10 +14,10 @@ Statutory Basis: [Value Added Tax Act, 2014 (as amended by the VAT (Amendment) (
 
 The Bahamas VAT system applies four categories:
 
-- **Standard** (10%) — most goods and services, per s. 10
-- **Reduced** (5%) — hygiene products and medications at licensed food stores, per [VAT (Amendment) Act 2024, s. 12A](https://laws.bahamas.gov.bs/)
-- **Zero-Rated** (0%) — qualifying exports (per s. 22) and specified essentials
-- **Exempt** — services where no VAT is charged and no input tax is recoverable (financial services, residential rent, etc.); also unprepared food at licensed food stores from April 1, 2026 per [VAT (Amendment) (No. 2) Act, 2025](https://laws.bahamas.gov.bs/), s. 2
+- **Standard** (10%) - most goods and services, per s. 10
+- **Reduced** (5%) - hygiene products and medications at licensed food stores, per [VAT (Amendment) Act 2024, s. 12A](https://laws.bahamas.gov.bs/)
+- **Zero-Rated** (0%) - qualifying exports (per s. 22) and specified essentials
+- **Exempt** - services where no VAT is charged and no input tax is recoverable (financial services, residential rent, etc.); also unprepared food at licensed food stores from 1 Apr 2026 per [VAT (Amendment) (No. 2) Act, 2025](https://laws.bahamas.gov.bs/), s. 2
 
 Output tax is not just a single total. It is a structured declaration that depends on correct categorization, timing, and adjustment handling across all sales-related activity.
 
@@ -30,7 +30,7 @@ The April 2026 food exemption applies on a **seller axis**:
 | **Licensed food store** | **Exempt** | Standard 10% |
 | **Non-licensed seller** (e.g., convenience store, fast-food outlet, hotel) | **Zero-Rated 0%** | Standard 10% |
 
-The matrix is intentional. Licensed food stores can already absorb VAT on inputs through their pricing — the exemption pushes the relief direct to consumers. Non-licensed sellers cannot, so zero-rating preserves their input-tax recovery while still removing the tax from the consumer's basket. Comply applies the correct treatment by combining the **seller's licensing status** with the **food preparation state** captured during transaction entry.
+The matrix is intentional. Licensed food stores can already absorb VAT on inputs through their pricing - the exemption pushes the relief direct to consumers. Non-licensed sellers cannot, so zero-rating preserves their input-tax recovery while still removing the tax from the consumer's basket. Comply applies the correct treatment by combining the **seller's licensing status** with the **food preparation state** captured during transaction entry.
 
 ## What platform does
 

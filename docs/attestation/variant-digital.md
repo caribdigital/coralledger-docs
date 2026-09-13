@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 title: Digital Filing Variant
-description: Planned future §32 attestation variant for filings signed with a qualified electronic signature — not yet in implementation scope
+description: Planned future §32 attestation variant for filings signed with a qualified electronic signature - not yet in implementation scope
 ---
 
 # Digital Filing Variant
@@ -11,7 +11,7 @@ The Digital Filing Variant is **planned but not yet scoped** for the attestation
 :::
 
 :::info Do not confuse this with the `AuthorisedEmployee` Signatory Capacity
-The per-return [Signatory Capacity Declaration](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) at filing time **does** accept `AuthorisedEmployee` as a live capacity value today. That is a different artefact — see [Section 32 Attestation Overview](/docs/attestation/) for the distinction between the firm-admin attestation lifecycle (which this page is part of) and the per-return Signatory Capacity Declaration (which is not). Selecting `AuthorisedEmployee` in the Approve Filing dialog is fully supported today and does **not** depend on the Digital Filing Variant described on this page.
+The per-return [Signatory Capacity Declaration](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) at filing time **does** accept `AuthorisedEmployee` as a live capacity value today. That is a different artefact - see [Section 32 Attestation Overview](/docs/attestation/) for the distinction between the firm-admin attestation lifecycle (which this page is part of) and the per-return Signatory Capacity Declaration (which is not). Selecting `AuthorisedEmployee` in the Approve Filing dialog is fully supported today and does **not** depend on the Digital Filing Variant described on this page.
 :::
 
 The Digital Filing Variant, as originally specified, would apply when the filer signs the VAT return using a **qualified electronic signature** backed by a recognised digital certificate. This variant would meet heightened signature requirements available to businesses that have provisioned a digital signing credential in CoralLedger Comply.
@@ -34,17 +34,17 @@ Before using this variant, a digital signing credential would need to be registe
 2. Click **Register Certificate** *(not yet built)*.
 3. Upload your X.509 certificate (PEM or DER format).
 4. CoralLedger Comply validates the certificate chain and expiry date.
-5. Click **Confirm** — the certificate is linked to your account.
+5. Click **Confirm** - the certificate is linked to your account.
 
 ## Intended signing flow (forward-looking only)
 
 When this variant is active:
 
-1. CoralLedger Comply generates a **return digest** — a SHA-256 hash of the return data package.
+1. CoralLedger Comply generates a **return digest** - a SHA-256 hash of the return data package.
 2. The return digest is displayed for review.
 3. You sign the digest using your private key:
-   - **Browser-based signing** — using the CoralLedger signing extension or a PKCS#11-compatible device (hardware token or smartcard).
-   - **File-based signing** — download the digest, sign it offline with your certificate toolchain, and upload the signature file.
+   - **Browser-based signing** - using the CoralLedger signing extension or a PKCS#11-compatible device (hardware token or smartcard).
+   - **File-based signing** - download the digest, sign it offline with your certificate toolchain, and upload the signature file.
 4. CoralLedger Comply verifies the signature against the registered certificate.
 5. If verification passes, the declaration confirmation screen is shown.
 
@@ -56,12 +56,12 @@ After signature verification, the following declaration would be presented:
 
 The filer would confirm by checking **I confirm the above declaration** and clicking **Submit Return**. A password re-entry would not be required for this variant because the cryptographic signature would serve as the identity confirmation.
 
-## Until launch — what to use today
+## Until launch - what to use today
 
-Until the Digital Filing Variant is scoped and implemented in the firm-admin attestation lifecycle, use the [Standard](/docs/attestation/variant-standard), [Agent](/docs/attestation/variant-agent), or [Professional](/docs/attestation/variant-professional) variants for capturing §32 attestations in the persistent admin lifecycle. At per-return filing time, the [Signatory Capacity Declaration](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) is captured today via the Filing Wizard and supports all four `SignatoryCapacity` values — including `AuthorisedEmployee` — independently of this admin-side variant.
+Until the Digital Filing Variant is scoped and implemented in the firm-admin attestation lifecycle, use the [Standard](/docs/attestation/variant-standard), [Agent](/docs/attestation/variant-agent), or [Professional](/docs/attestation/variant-professional) variants for capturing §32 attestations in the persistent admin lifecycle. At per-return filing time, the [Signatory Capacity Declaration](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) is captured today via the Filing Wizard and supports all four `SignatoryCapacity` values - including `AuthorisedEmployee` - independently of this admin-side variant.
 
 ## Next steps
 
-- [Section 32 Attestation Overview](/docs/attestation/) — the two distinct §32 artefacts explained
-- [Filing Wizard — Step 4 Approval](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) — the per-return Signatory Capacity Declaration that is live today
-- [Standard Variant](/docs/attestation/variant-standard), [Agent Variant](/docs/attestation/variant-agent), [Professional Variant](/docs/attestation/variant-professional) — the three live attestation pathway variants
+- [Section 32 Attestation Overview](/docs/attestation/) - the two distinct §32 artefacts explained
+- [Filing Wizard - Step 4 Approval](/docs/vat-returns/filing-wizard#step-4-approval-signatory-capture) - the per-return Signatory Capacity Declaration that is live today
+- [Standard Variant](/docs/attestation/variant-standard), [Agent Variant](/docs/attestation/variant-agent), [Professional Variant](/docs/attestation/variant-professional) - the three live attestation pathway variants
