@@ -273,6 +273,7 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'reference/index',
+        'reference/product-surface',
         'reference/statutory-citations',
         'reference/vat-rates',
         'reference/glossary',
