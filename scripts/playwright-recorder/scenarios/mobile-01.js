@@ -1,7 +1,7 @@
 // mobile-01: Mobile — Responsive Interface on Phone and Tablet
 //
 // Target docs page: docs/getting-started/mobile.mdx
-// CDN target: cdn.coralledger.com/demos/mobile-01.mp4
+// CDN target: <CDN_URL>/demos/mobile-01.mp4
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 

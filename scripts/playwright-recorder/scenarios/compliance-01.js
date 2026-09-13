@@ -1,7 +1,7 @@
 // compliance-01: Compliance — Score Overview and Grading
 //
 // Target docs page: docs/compliance/compliance-score.mdx
-// CDN target: cdn.coralledger.com/demos/compliance-01.mp4
+// CDN target: <CDN_URL>/demos/compliance-01.mp4
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 

@@ -1,7 +1,7 @@
 // vat-returns-01: VAT Returns — Selecting a Period and Reviewing Summary
 //
 // Target docs page: docs/vat-returns/generate-return.mdx
-// CDN target: cdn.coralledger.com/demos/vat-returns-01.mp4
+// CDN target: <CDN_URL>/demos/vat-returns-01.mp4
 // Scope: open Create VAT Return dialog, hover period fields, CANCEL.
 
 import { authenticateViaTestAuth } from '../lib/auth.js';

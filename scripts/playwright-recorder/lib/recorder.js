@@ -1,7 +1,7 @@
 // Per-scenario recording driver.
 //
 // Each scenario module exports a default object with:
-//   - id          (string)   - matches the target .mp4 name in cdn.coralledger.com/demos/<id>.mp4
+//   - id          (string)   - matches the target .mp4 name in <CDN_URL>/demos/<id>.mp4
 //   - title       (string)   - human-readable; used in run logs
 //   - viewport    (object)   - { width, height }
 //   - warmup      (async fn) - OPTIONAL: runs in a NON-recording context. Use this for

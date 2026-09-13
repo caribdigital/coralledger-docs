@@ -1,7 +1,7 @@
 // performance-01: Performance — Fast Load Times and Responsive UI
 //
 // Target docs page: docs/getting-started/performance.mdx
-// CDN target: cdn.coralledger.com/demos/performance-01.mp4
+// CDN target: <CDN_URL>/demos/performance-01.mp4
 
 import { authenticateViaTestAuth } from '../lib/auth.js';
 
