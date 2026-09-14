@@ -34,6 +34,7 @@ jobs:
         run: |
           npm run check:bica-honesty:self-test
           npm run check:vocab:self-test
+          npm run check:recording-identity:self-test
 
       - name: BICA honesty gate
         run: npm run check:bica-honesty
@@ -43,6 +44,12 @@ jobs:
 
       - name: Estate vocabulary, typography, and date gate
         run: npm run check:estate-content
+
+      # Demo recordings are captured from a live app and published to a public CDN, so the identity
+      # they are recorded as is a data-protection control, not a style choice. Until 2026-09-13 the
+      # recorder defaulted to a real customer account.
+      - name: Recording identity gate
+        run: npm run check:recording-identity
 
       - name: Build (broken links throw)
         run: npm run build
