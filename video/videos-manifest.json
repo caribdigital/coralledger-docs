@@ -51,7 +51,7 @@
       "title": "Compliance intelligence dashboard tour",
       "docsPage": "docs/compliance/intelligence-dashboard.md",
       "durationSeconds": 41,
-      "embedded": true
+      "embedded": false
     },
     {
       "id": "07-bad-debt",
