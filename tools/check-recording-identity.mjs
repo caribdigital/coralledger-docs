@@ -25,6 +25,7 @@ import path from "node:path";
 const root = process.cwd();
 const RECORDER = path.join("scripts", "playwright-recorder");
 const FIXTURE_DOMAIN = "@coralledger.test";
+const APPROVED_DEFAULT_IDENTITY = "casuarina.demo.owner@coralledger.test";
 // Any e-mail-shaped literal. Deliberately broad: the failure is a REAL address appearing
 // here, and we cannot enumerate the addresses that would be wrong.
 const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
@@ -86,10 +87,10 @@ for (const rel of files) {
 const authPath = path.join(RECORDER, "lib", "auth.js");
 if (existsSync(path.join(root, authPath))) {
   const auth = readFileSync(path.join(root, authPath), "utf8");
-  if (!auth.includes(FIXTURE_DOMAIN)) {
+  if (!auth.includes(APPROVED_DEFAULT_IDENTITY)) {
     problems.push(
-      `${authPath} no longer names a fixture identity at all. The default must be the fixture ` +
-        `firm owner — removing it does not make the recorder safe, it makes the next caller guess.`,
+      `${authPath} no longer names the approved #445 capture persona (${APPROVED_DEFAULT_IDENTITY}). ` +
+        `The default must remain pinned to the sealed Casuarina cast.`,
     );
   }
 }

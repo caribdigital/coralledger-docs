@@ -28,6 +28,9 @@
 export async function authenticateViaTestAuth(page, opts = {}) {
   const baseUrl = opts.baseUrl ?? process.env.SMOKE_BASE_URL ?? 'https://stg-comply.coralledger.com';
   const email = opts.email ?? process.env.SMOKE_FIRM_OWNER_EMAIL ?? 'casuarina.demo.owner@coralledger.test';
+  if (!email.toLowerCase().endsWith('@coralledger.test')) {
+    throw new Error('The public Docs recorder only permits approved @coralledger.test fixture identities.');
+  }
   const redirectTo = opts.redirectTo ?? '/dashboard';
 
   const secret = process.env.STAGING_TEST_AUTH_SECRET;
