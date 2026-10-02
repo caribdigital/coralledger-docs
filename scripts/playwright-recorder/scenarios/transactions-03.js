@@ -15,9 +15,8 @@ export default {
   viewport: { width: 1280, height: 720 },
 
   async warmup({ page, log }) {
-    log('Authenticating as etienne — warmup.');
+    log('Authenticating as the approved fixture owner — warmup.');
     await authenticateViaTestAuth(page, {
-      email: 'etienne.mckenzie@example.com',
       redirectTo: '/transactions/import',
     });
     await page.waitForLoadState('networkidle');

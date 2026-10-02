@@ -19,7 +19,6 @@ export default {
   async warmup({ page, log }) {
     log('Authenticating as etienne — warmup at /vat/entry.');
     await authenticateViaTestAuth(page, {
-      email: 'etienne.mckenzie@example.com',
       redirectTo: '/vat/entry',
     });
     await page.waitForLoadState('networkidle');

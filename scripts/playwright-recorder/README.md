@@ -63,7 +63,7 @@ More scenarios will be added as the proof-of-concept work expands.
 
 The recorder authenticates against staging using the **TestAuth bypass** — the same path the Reef smoke suite uses (see `tests/CoralComply.E2E.Tests/Smoke/SmokeTestBase.cs:240-303` in the Comply repo). The bypass attaches the `X-TestAuth-Secret` header to requests matching `**/api/test-auth/**`; once authenticated, the standard auth cookies carry the session.
 
-Default test user: `reef.firm.owner@coralledger.test` — the fixture firm owner defined by `SmokeTestConfig.FirmOwnerEmail`, with Owner/Owner access to the synthetic `Reef Fixture Firm Ltd` business. Override with `SMOKE_FIRM_OWNER_EMAIL` only when a separately approved fixture is required. Never use a real customer account.
+Default test user: `casuarina.demo.owner@coralledger.test` — the approved #445 fixture owner used for the sealed Casuarina capture cast. `SMOKE_FIRM_OWNER_EMAIL` may select another explicitly approved `@coralledger.test` fixture. The recorder guard rejects every other identity, including `@example.com`. Never use a real customer or personally named account.
 
 ## Adding a new scenario
 

@@ -28,32 +28,18 @@ const FIXTURE_DOMAIN = "@coralledger.test";
 // Any e-mail-shaped literal. Deliberately broad: the failure is a REAL address appearing
 // here, and we cannot enumerate the addresses that would be wrong.
 const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
-// Addresses that are not fixture identities but are also not a real person's.
-//
-// @example.com is reserved by RFC 2606 and can never belong to a real customer, so a seeded staging
-// user there is a different risk class from the customer account this guard was written for: the
-// first is untidy, the second was a live tenant on a public CDN. Seven scenarios use
-// etienne.mckenzie@example.com and are permitted here rather than blanket-rewritten, because they
-// may depend on that persona's taxpayer-side permissions and changing them unread would trade a
-// tidy identity for broken recordings.
-//
-// That is a deliberate narrowing, not a clearance: moving them onto registry fixtures is follow-up,
-// and the residual question - whether the staging dataset those recordings capture contains real
-// customer data at all - is bigger than this guard and belongs with whoever owns the KSA
-// remediation.
-const ALLOWED_DOMAINS = ["@example.com"];
 const ALLOWED = new Set(["noreply@anthropic.com"]);
 const permitted = (a) =>
-  a.endsWith(FIXTURE_DOMAIN) || ALLOWED.has(a) || ALLOWED_DOMAINS.some((d) => a.endsWith(d));
+  a.endsWith(FIXTURE_DOMAIN) || ALLOWED.has(a);
 
 if (process.argv.includes("--self-test")) {
-  const offending = 'const email = opts.email ?? "somecustomer@gmail.com";';
+  const offending = 'const emails = ["somecustomer@gmail.com", "etienne.mckenzie@example.com"];';
   const found = (offending.match(EMAIL) || []).filter((e) => !permitted(e));
-  if (found.length !== 1) {
+  if (found.length !== 2) {
     console.error("SELF-TEST FAILED: a real customer address was not detected as off-fixture");
     process.exit(1);
   }
-  const fixture = 'email: "reef.firm.owner@coralledger.test"';
+  const fixture = 'email: "casuarina.demo.owner@coralledger.test"';
   if ((fixture.match(EMAIL) || []).some((e) => !e.endsWith(FIXTURE_DOMAIN))) {
     console.error("SELF-TEST FAILED: a fixture address was wrongly flagged");
     process.exit(1);
@@ -88,14 +74,14 @@ for (const rel of files) {
     problems.push(
       `${rel} names '${address}', which is not a fixture identity (${FIXTURE_DOMAIN}). ` +
         `These recordings are published to a public CDN, so they may only be captured as a ` +
-        `fixture persona. Use reef.firm.owner@coralledger.test (SmokeTestConfig.FirmOwnerEmail ` +
+        `fixture persona. Use casuarina.demo.owner@coralledger.test (approved #445 capture persona; ` +
         `in caribdigital/coralledgercomply, overridable via SMOKE_FIRM_OWNER_EMAIL). If this ` +
         `address is genuinely not a sign-in identity, add it to ALLOWED with the reason.`,
     );
   }
 }
 
-// PRESENCE: the fixture identity must actually be the default. An empty recorder would pass
+// PRESENCE: the fixture domain must actually be the default. An empty recorder would pass
 // the absence rule above while teaching nobody which identity to use.
 const authPath = path.join(RECORDER, "lib", "auth.js");
 if (existsSync(path.join(root, authPath))) {

@@ -20,7 +20,6 @@ export default {
   async warmup({ page, log }) {
     log('Authenticating as Firm Owner — warmup.');
     await authenticateViaTestAuth(page, {
-      email: 'reef.firm.owner@coralledger.test',
       redirectTo: '/firm/clients',
     });
     await page.waitForLoadState('networkidle');
