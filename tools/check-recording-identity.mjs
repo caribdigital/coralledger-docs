@@ -29,9 +29,7 @@ const APPROVED_DEFAULT_IDENTITY = "casuarina.demo.owner@coralledger.test";
 // Any e-mail-shaped literal. Deliberately broad: the failure is a REAL address appearing
 // here, and we cannot enumerate the addresses that would be wrong.
 const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
-const ALLOWED = new Set(["noreply@anthropic.com"]);
-const permitted = (a) =>
-  a.endsWith(FIXTURE_DOMAIN) || ALLOWED.has(a);
+const permitted = (a) => a.endsWith(FIXTURE_DOMAIN);
 
 if (process.argv.includes("--self-test")) {
   const offending = 'const emails = ["somecustomer@gmail.com", "etienne.mckenzie@example.com"];';
